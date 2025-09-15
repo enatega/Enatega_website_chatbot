@@ -137,19 +137,14 @@ def chat(req: ChatReq):
     )
 
 
-# --- mount static folder ---
-# serves /index.html, /style.css, /app.js, images, etc.
 app.mount("/static", StaticFiles(directory="frontend/public"), name="static")
 
-# --- root route -> index.html ---
 @app.get("/", include_in_schema=False)
 def root():
     return FileResponse("frontend/public/index.html")
 
-# --- optional: avoid favicon 404 noise ---
 @app.get("/favicon.ico", include_in_schema=False)
 def favicon():
-    # put a real favicon at frontend/public/favicon.ico if you want
     return Response(status_code=204)
 
 
