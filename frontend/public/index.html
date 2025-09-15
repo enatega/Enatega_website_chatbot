@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enatega Chatbot</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="chat-launcher" id="launcher">💬 Chat</div>
+
+  <div class="chat-widget hidden" id="widget">
+    <div class="chat-header">
+      <div>
+        <strong>Enatega Assistant</strong>
+        <div class="sub">Answers based on enatega.com</div>
+      </div>
+      <button class="icon" id="closeBtn" aria-label="Close">✕</button>
+    </div>
+
+    <div class="chat-body" id="messages"></div>
+
+    <div class="chat-footer">
+      <input id="input" type="text" placeholder="Type your question…" autocomplete="off" />
+      <button id="sendBtn">Send</button>
+    </div>
+    <div class="latency" id="latency"></div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
