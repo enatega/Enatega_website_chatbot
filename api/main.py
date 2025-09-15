@@ -16,6 +16,8 @@ from langchain.memory import ConversationBufferMemory  # or ConversationSummaryM
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, Response
 # ---------- env ----------
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -133,6 +135,23 @@ def chat(req: ChatReq):
         used_chunks=len(docs),
         latency_ms=int((time.time() - t0) * 1000),
     )
+
+
+# --- mount static folder ---
+# serves /index.html, /style.css, /app.js, images, etc.
+app.mount("/static", StaticFiles(directory="frontend/public"), name="static")
+
+# --- root route -> index.html ---
+@app.get("/", include_in_schema=False)
+def root():
+    return FileResponse("frontend/public/index.html")
+
+# --- optional: avoid favicon 404 noise ---
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon():
+    # put a real favicon at frontend/public/favicon.ico if you want
+    return Response(status_code=204)
+
 
 @app.post("/clear")
 def clear(session_id: str):

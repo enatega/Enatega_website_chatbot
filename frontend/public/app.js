@@ -1,4 +1,5 @@
-const API_BASE = (localStorage.getItem("chat_api_base") || "http://127.0.0.1:8000").replace(/\/$/, "");
+// const API_BASE = (localStorage.getItem("chat_api_base") || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API_BASE = "https://enatega-bot.onrender.com";
 const SESSION_ID = localStorage.getItem("chat_session_id") || crypto.randomUUID();
 localStorage.setItem("chat_session_id", SESSION_ID);
 
