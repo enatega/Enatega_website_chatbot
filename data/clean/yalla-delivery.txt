@@ -1,0 +1,182 @@
+# Yalla: Redefining Food and Grocery Delivery Across the Region  
+**Powered by Enatega**
+
+Yalla is a dynamic food and grocery delivery app built on Enatega, offering a seamless bilingual experience.  
+Designed for growth, it delivers fast, intuitive service across the regional market.
+
+**Visit Website**
+
+---
+
+## About Yalla
+
+Yalla is a powerful, all-in-one food and grocery delivery app built on the Enatega platform.  
+
+- Designed to meet the fast-paced demands of a growing customer base  
+- Combines intuitive design with modern features  
+- Offers a world-class delivery experience in both Arabic and English  
+
+This case study highlights how Yalla became a standout player in the regional market—and how it continues to grow.
+
+---
+
+## The Challenges Faced by Yalla
+
+Yalla set out to solve a common frustration: juggling multiple apps for different delivery needs.  
+The goals included:
+
+1. **Multifunctional Deliveries** — Combining food, grocery, and retail orders in one app  
+2. **Multi-language Accessibility** — Supporting Arabic and English  
+3. **Feature-Rich Functionality** — Competing with giants like Wolt and Haat  
+4. **Localized Payments** — Offering region-specific payment gateways
+
+To achieve this, Yalla needed a **flexible, scalable solution** and a **fast, high-quality development partner**.
+
+---
+
+## The Development Journey
+
+Using Enatega’s white-label framework as a foundation, the Enatega team customized the platform beyond food delivery.  
+Key enhancements:
+
+- Grocery and retail integration  
+- Vendor tools for managing complex inventories  
+- Support for regional fulfillment models  
+
+This gave Yalla an edge from day one, serving both restaurants and supermarkets through a unified experience.
+
+---
+
+## PHASE I — Adapting Enatega for Multifunctional Delivery
+
+- Localization was critical  
+- UI designed for both RTL (Arabic) and LTR (English)  
+- All interface elements translated and culturally adapted
+
+---
+
+## PHASE II — Building a Multi-Language, User-Centric Interface
+
+To stand out in a saturated space, Yalla introduced:
+
+- Real-time interactive map views  
+- Smart search filters (cuisine, price, availability, dietary needs)  
+- Personalized recommendations  
+- Category-based menus for groceries, food, and essentials
+
+---
+
+## PHASE III — Developing Market-Leading Features
+
+- Needed flexible, regionally compliant payment solutions  
+- Enatega integrated **HYP**, a local payment provider  
+- Enabled seamless credit/debit card payments
+
+---
+
+## PHASE IV — Payment Gateway Customization
+
+- Custom payment gateway integration aligned with regional standards  
+- Supported fast and secure digital transactions for all order types
+
+---
+
+## Launch & Results
+
+With an agile approach, Yalla’s MVP launched in just a few months.
+
+**Immediate results:**
+
+- 60,000+ active monthly users  
+- 50+ operational restaurants and vendors onboarded  
+- Daily order volume steadily increasing  
+- Positive reviews highlighting UI simplicity and multi-functionality
+
+Yalla quickly became a go-to food and grocery delivery app across the region.
+
+---
+
+## Client Showcase: Yalla in Action
+
+Explore how Yalla is transforming delivery through real-world product footage.  
+Swipe through the carousel to view:
+
+- Video 1  
+- Video 2  
+- Video 3  
+- Video 4
+
+---
+
+## Looking Ahead: Scaling Up and Reaching Further
+
+Yalla’s roadmap includes:
+
+- Expanding to more cities and restaurant partners  
+- Onboarding retail and pharmacy partners  
+- Enhancing loyalty programs and in-app promotions  
+- Optimizing for low-bandwidth regions
+
+Yalla’s success shows what’s possible with a clear vision, strong technology, and the right development team.
+
+**Schedule a meeting and get started today**  
+**Get A Quote**
+
+---
+
+## Resources
+
+- Blog  
+- Documentation  
+- Features  
+- Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew  
+- Case Studies: Yalla Delivery, StylizeNOW, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery
+
+---
+
+## Get in Touch
+
+**Address:** 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States  
+**Email:** sales@enatega.com  
+**Phone:** +1 (307) 776-8999  
+
+**Privacy Policy** | **Terms & Conditions**  
+©2024 Enatega · All rights reserved  
+Powered by Ninjas Code
+
+---
+
+## Demo Apps
+
+**Customer App** — Easy onboarding, ordering, and tracking  
+**Rider App** — Order assignment, route optimization, real-time tracking  
+**Restaurant App** — Manage orders, update menus, track performance  
+**Website** — Showcase services and enable online ordering  
+**Admin Dashboard** — Manage users, vendors, orders, analytics  
+**Server** — Robust infrastructure for real-time data sync
+
+**View Demos for each**
+
+---
+
+## DeliverXpress Demo
+
+- Customer App — View Demo  
+- Restaurant App — View Demo  
+- Rider App — View Demo  
+- Web — View Demo  
+- Admin — View Demo
+
+---
+
+## Support
+
+**Thank you!** Your message has been sent.  
+Facing a problem? Get support.
+
+**I’m interested in the product, want more information**  
+**Send**
+
+← Back  
+
+**English | Español**

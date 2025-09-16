@@ -3,7 +3,32 @@ import pathlib, re, textwrap
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
-URL = "https://enatega.com/"
+URLS = [
+    "https://enatega.com/",
+
+    # Case studies
+    "https://enatega.com/yalla-delivery/",
+    "https://enatega.com/stylizenow/",
+    "https://enatega.com/easy-eats/",
+    "https://enatega.com/vinifynd/",
+    "https://enatega.com/snap-delivered/",
+    "https://enatega.com/borku-delivery/",
+
+    # Use cases
+    "https://enatega.com/gift-delivery-solution/",
+    "https://enatega.com/liquor-delivery-solution/",
+    "https://enatega.com/food-and-beverage-solution/",
+    "https://enatega.com/laundry-on-demand-services-solution/",
+    "https://enatega.com/milk-delivery-solution/",
+    "https://enatega.com/flower-delivery-solution/",
+    "https://enatega.com/courier-delivery-solution/",
+    "https://enatega.com/roadside-assistance-services-solution/",
+    "https://enatega.com/grocery-delivery-solution/",
+    "https://enatega.com/medicine-delivery-solution/",
+    "https://enatega.com/beauty-services-scheduling-solution/",
+    "https://enatega.com/document-delivery-solution/",
+]
+
 RAW = pathlib.Path("data/raw"); RAW.mkdir(parents=True, exist_ok=True)
 CLEAN = pathlib.Path("data/clean"); CLEAN.mkdir(parents=True, exist_ok=True)
 RAW_HTML = RAW / "home_rendered.html"
@@ -89,39 +114,35 @@ def preview(text: str, n=900) -> str:
     return textwrap.shorten(text, width=n, placeholder="…")
 
 def main():
-    html, rendered_text = render_page(URL)
+    for url in URLS:
+        slug = url.rstrip("/").split("/")[-1] or "home"
+        raw_file = RAW / f"{slug}.html"
+        clean_file = CLEAN / f"{slug}.txt"
 
-    RAW_HTML.write_text(html, encoding="utf-8")
+        html, rendered_text = render_page(url)
+        raw_file.write_text(html, encoding="utf-8")
 
-    # first try HTML-based extraction
-    cleaned = normalize(clean_main_text_from_html(html))
+        # clean HTML
+        cleaned = normalize(clean_main_text_from_html(html))
+        if len(cleaned.split()) < 60 and rendered_text:
+            cleaned = normalize(rendered_text)
+        clean_file.write_text(cleaned, encoding="utf-8")
 
-    # fallback: if too short, prefer rendered visible text from the browser
-    if len(cleaned.split()) < 60 and rendered_text:
-        cleaned = normalize(rendered_text)
+        # metadata
+        title = ""
+        try:
+            soup = BeautifulSoup(html, "lxml")
+            title = (soup.title.string or "").strip() if soup.title and soup.title.string else ""
+        except Exception:
+            pass
 
-    CLEAN_TXT.write_text(cleaned, encoding="utf-8")
+        print("="*60)
+        print(f"URL: {url}")
+        print(f"Saved → {raw_file.name}, {clean_file.name}")
+        print(f"Title: {title}")
+        print(f"Words: {len(cleaned.split())}")
+        print("Preview:", preview(cleaned, 300))
 
-    # metadata
-    title = ""
-    try:
-        soup = BeautifulSoup(html, "lxml")
-        title = (soup.title.string or "").strip() if soup.title and soup.title.string else ""
-    except Exception:
-        pass
-
-    print(f"Rendered HTML → {RAW_HTML.resolve()}")
-    print(f"Clean text    → {CLEAN_TXT.resolve()}")
-    print(f"Title: {title}")
-    # quick headings from HTML (may be empty on heavy-SPAs)
-    try:
-        main = BeautifulSoup(html, "lxml").select_one("main, [role=main], article, .content, .container, .wrapper")
-        headings = [h.get_text(strip=True) for h in (main or BeautifulSoup(html, "lxml")).select("h1, h2, h3")]
-    except Exception:
-        headings = []
-    print(f"Headings (first 10): {headings[:10]}")
-    print(f"Characters: {len(cleaned)} | Words: {len(cleaned.split())}")
-    print("\nPreview (~900 chars):\n", preview(cleaned, 900))
 
 if __name__ == "__main__":
     main()

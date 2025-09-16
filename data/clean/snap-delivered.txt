@@ -1,0 +1,154 @@
+# Snap Delivered: Disrupting the Food Delivery Industry
+
+Eliminate the surprise delivery fee and order meals from your favorite restaurants in no time!  
+**Go To Website**
+
+---
+
+## What is Snap Delivered?
+
+Snap Delivered is a food delivery platform powered by Enatega, similar to companies like Foodpanda and UberEats.  
+
+Founded in 2019, Snap Delivered aimed to **disrupt the food delivery industry** by challenging existing standards, including:
+
+- How much riders get paid  
+- How much business owners are charged per delivery
+
+It offered a **flat $2 per delivery** model for business owners.  
+This transparent pricing:
+
+- Enabled new restaurants to join easily  
+- Automated their delivery operations  
+- Leveled the playing field for small and large restaurants alike
+
+---
+
+## Challenges Faced by Snap Delivered
+
+Despite its innovative approach, Snap Delivered faced several challenges:
+
+### Highly Competitive Landscape
+Competing against industry giants like UberEats, Grubhub, and DoorDash made market penetration difficult.
+
+### The Marketplace Dilemma
+Attracting both customers and restaurants required heavy marketing and incentives.  
+Convincing users to switch from existing platforms was challenging, and retention was even harder.
+
+### Rider Management
+Managing a vast rider network and ensuring timely, accurate deliveries demanded investment in logistics systems.
+
+### Profitability
+Charging only $2 per delivery pressured profits.  
+Balancing affordability for restaurants and sustainability for Snap Delivered was a delicate act.
+
+---
+
+## Overcoming the Challenges
+
+Snap Delivered adopted several strategies to address these obstacles:
+
+### Built Strategic Partnerships
+Collaborated closely with small and medium-sized local restaurants.  
+This helped differentiate from large competitors and create an inclusive platform.
+
+### Introduced Customer Incentives
+Launched discounts, exclusive deals, and loyalty programs.  
+This boosted user acquisition and retention for both customers and restaurants.
+
+### Invested in Platform Upgrades
+Improved:
+
+- User experience  
+- Delivery route optimization  
+- Data analytics for operational efficiency
+
+### Initiated Referral Programs
+Allowed individuals and businesses to earn via recruitment and word-of-mouth referrals.  
+This fueled organic platform growth without heavy marketing costs.
+
+---
+
+## Launching Version 1.0
+
+- Development of the first version was on a tight deadline.  
+- Ninjas Code adopted an **agile approach** to prioritize features and adapt quickly.  
+- Regular feedback sessions with the Snap team kept the project aligned with the vision.
+
+---
+
+## The Future for Snap Delivered
+
+Snap Delivered’s strategies have shown positive results:
+
+- Gained traction among local businesses and consumers  
+- Carved out a niche in the competitive landscape  
+- Flexible pricing and community engagement are fueling growth
+
+Looking ahead, Snap Delivered will continue to focus on:
+
+- Innovation and sustainability  
+- Strengthening partnerships  
+- Staying ahead of industry tech trends  
+- Building a collaborative ecosystem with partners
+
+**Schedule a meeting and get started today**  
+**Get A Quote**
+
+---
+
+## Resources
+
+- Blog  
+- Documentation  
+- Features  
+- Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew  
+- Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery
+
+---
+
+## Get in Touch
+
+**Address:** 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States  
+**Email:** sales@enatega.com  
+**Phone:** +1 (307) 776-8999  
+
+**Privacy Policy** | **Terms & Conditions**  
+©2024 Enatega · All rights reserved  
+Powered by Ninjas Code
+
+---
+
+## Demo Apps
+
+**Customer App** — Easy onboarding, ordering, and tracking  
+**Rider App** — Order assignment, route optimization, real-time tracking  
+**Restaurant App** — Manage orders, update menus, track performance  
+**Website** — Showcase services and enable online ordering  
+**Admin Web Dashboard** — Manage users, restaurants, orders, analytics  
+**Server** — Robust infrastructure for real-time data sync
+
+**View Demos for each**
+
+---
+
+## DeliverXpress Demo
+
+- Customer App — View Demo  
+- Restaurant App — View Demo  
+- Rider App — View Demo  
+- Web — View Demo  
+- Admin — View Demo
+
+---
+
+## Support
+
+**Thank you!** Your message has been sent.  
+Facing a problem? Get support.
+
+**I’m interested in the product, want more information**  
+**Send**
+
+← Back  
+
+**English | Español**
