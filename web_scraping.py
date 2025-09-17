@@ -14,6 +14,11 @@ URLS = [
     "https://enatega.com/snap-delivered/",
     "https://enatega.com/borku-delivery/",
 
+    # Features
+    "https://enatega.com/multi-vendor-features/",
+    "https://enatega.com/multi-vendor-doc/overview-of-the-api/",
+   
+
     # Use cases
     "https://enatega.com/gift-delivery-solution/",
     "https://enatega.com/liquor-delivery-solution/",

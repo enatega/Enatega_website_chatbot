@@ -1,25 +1,25 @@
 # Easy Eats: For The Students, By The Students
 
 ## Introduction
-Easy Eats is a campus and dormitory food delivery service developed by Ninjas Code and powered by Enatega. It is specifically designed for college students who want food delivered to their dorm rooms or within their college campuses. Easy Eats differentiates itself from other food delivery services like UberEats and Grubhub by employing only student drivers and offering more options tailored to college students, while emphasizing student-focused features.
+Easy Eats is a campus and dormitory food delivery service developed by Ninjas Code and powered by Enatega. It is specifically designed for college students who want food delivered to their dorm rooms or within their college campuses. Easy Eats differentiates itself from other food delivery services like UberEats and Grubhub by employing only student drivers and offering more options tailored to college students, while also emphasizing student-focused features.
 
 ## Getting Started
-Easy Eats began as a passion project by a group of college students aiming to simplify life for their peers on campus. The founders entered the Greenlight Maine competition, which encourages entrepreneurs and innovators from various industries, including college students, to present their ideas for funding and support. Prior to this, Easy Eats collaborated with the Ninjas Code team to develop a solution that would cater specifically to college students while incorporating features commonly found in competing services. They sought an app that would attract early investors and provide a unique user experience. The customizability of the Enatega solution facilitated the development of an ideal college food delivery app, despite encountering typical software development challenges.
+Easy Eats began as a passion project by a group of college students aiming to simplify life for their peers on campus. The founders entered the Greenlight Maine competition, which encourages entrepreneurs and innovators from various industries, including college students, to present their ideas for funding and startup development. Prior to this, Easy Eats collaborated with the Ninjas Code team to create a solution that catered specifically to college students while incorporating features commonly found in competing services. They sought an app that would attract early investors and provide a unique user experience. The customizability of the Enatega solution facilitated the development of an ideal college food delivery app, despite the typical hurdles encountered in software development.
 
 ## The Development Journey
-The Easy Eats team outlined the necessary features and customizations for their food delivery application. Following standard development practices, Ninjas Code gathered the requirements from the Easy Eats team and established a step-by-step process for implementing the required features. A clear roadmap was created to keep the development on track and provide a vision of the expected timelines.
+The Easy Eats team outlined the necessary features and customizations for their food delivery application. Following standard development practices, Ninjas Code gathered the requirements from the Easy Eats team and established a step-by-step process for implementing the required features. A clear roadmap was created to keep the development on track and provide a vision of the expected project timelines.
 
 ### Designing A User-Friendly UI/UX
 The initial focus for the Ninjas Code team was to create a clean and user-friendly experience for college students who would use the app to order and deliver food. The design team crafted a sleek and intuitive user interface that aligned with the Easy Eats brand. With an easy onboarding flow and a modern user experience, the team successfully brought Easy Eats' vision to life.
 
 ### Student-Focused Features
-Given that the primary audience for Easy Eats was college students, the features were tailored to their needs. A significant feature was the ability to order food directly to dorm rooms, accommodating group orders for students sharing their living spaces.
+Given that college students were the primary target audience, the app's features were designed with their needs in mind. A key feature was the ability to order food directly to dorm rooms, including options for group ordering to accommodate students sharing dorms with others.
 
 ### Student Driver Onboarding
 All riders for the Easy Eats app are fellow students, which is essential for ensuring quick deliveries to dorm rooms. Student drivers are familiar with the college's locations, allowing them to deliver orders directly without getting lost. The Ninjas Code team ensured that the rider onboarding process was straightforward, enabling Easy Eats to onboard as many riders as possible quickly.
 
-### Automatic Payment for Riders and Restaurants
-The development team implemented a wallet feature for riders and restaurants, automating the payment process while ensuring accessibility. Both restaurants and riders can transfer funds to their accounts directly from their wallets almost immediately whenever they choose.
+### Automatic Payment For Riders And Restaurants
+The development team implemented a wallet feature for both riders and restaurants, automating the payment process while ensuring accessibility. Funds could be transferred to the accounts of both restaurants and riders almost immediately from their wallets.
 
 ## Launching The App
 Once all requested features for version 1.0 were completed, the app was ready for launch. The Easy Eats founders participated in the Greenlight Maine competition, where they presented their app to the judges. After showcasing the app's unique features, the Easy Eats team won the competition, receiving $25,000 to expand their operations. Subsequently, they launched the app at their college in Maine and extended operations to nearby universities.
@@ -34,15 +34,15 @@ Schedule a meeting to learn more about Easy Eats and how it can benefit you.
 - Blog
 - Documentation
 - Features
-- Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
-- Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery
+- Compare
+- Case Studies
 
 ## Get In Touch
 1021 E Lincolnway Suite #6581,  
 Cheyenne, Wyoming 82001,  
 United States  
-sales@enatega.com  
-+1 (307) 776-8999  
+Email: sales@enatega.com  
+Phone: +1 (307) 776-8999  
 
 ## Privacy Policy
 ## Terms & Conditions

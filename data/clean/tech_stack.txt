@@ -1,0 +1,15 @@
+# Technical Stack of Enatega
+
+Enatega utilizes the following technologies in its technical stack:
+
+## Backend Technologies
+- Node JS
+- Express
+
+## Frontend Technologies
+- React JS
+- React Native
+- Next JS
+
+## Data Query Language
+- GraphQL
