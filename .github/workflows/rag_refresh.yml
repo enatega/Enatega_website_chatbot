@@ -29,3 +29,12 @@ jobs:
 
       - name: Run pipeline
         run: ./run_pipeline.sh
+
+      - name: Commit and push updated data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/clean/*.txt data/clean/*.jsonl data/raw/*.html
+          git commit -m "Auto-update data from pipeline [skip ci]" || echo "No changes to commit"
+          git push
+
