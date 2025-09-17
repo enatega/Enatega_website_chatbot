@@ -9,6 +9,11 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      QDRANT_URL: ${{ secrets.QDRANT_URL }}
+      QDRANT_API_KEY: ${{ secrets.QDRANT_API_KEY }}
+      COLLECTION_NAME: ${{ secrets.COLLECTION_NAME }}
     steps:
       - uses: actions/checkout@v4
 
@@ -21,13 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
-
-      - name: Export env
-        run: |
-          echo "QDRANT_URL=${{ secrets.QDRANT_URL }}" >> $GITHUB_ENV
-          echo "QDRANT_API_KEY=${{ secrets.QDRANT_API_KEY }}" >> $GITHUB_ENV
-          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
-          echo "COLLECTION_NAME=${{ secrets.COLLECTION_NAME }}" >> $GITHUB_ENV
 
       - name: Run pipeline
         run: ./run_pipeline.sh
