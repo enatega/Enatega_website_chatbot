@@ -29,7 +29,7 @@ To tackle user acquisition and retention, Snap Delivered has implemented custome
 Recognizing the importance of technology, Snap Delivered continually invests in upgrading its platform. Improvements include enhancing user experience, optimizing delivery routes, and implementing advanced data analytics for operational efficiency.
 
 ### Initiated Referral Programs
-While maintaining an affordable flat rate, Snap Delivered has introduced referral programs that allow individuals to increase their income. These options enable anyone involved with Snap Delivered to earn money through recruitment and word-of-mouth advertising.
+While maintaining an affordable flat rate, Snap Delivered introduced referral programs that allow individuals to increase their income. These options enable anyone involved with Snap Delivered to earn money through recruitment and word-of-mouth advertising.
 
 ## Launching Version 1.0
 The development of Snap Delivered's first version was time-sensitive. The Ninjas Code team adopted an agile development approach, prioritizing features and making adjustments as needed. Regular feedback sessions with the Snap team ensured alignment with the initial vision.
@@ -38,6 +38,8 @@ The development of Snap Delivered's first version was time-sensitive. The Ninjas
 Snap Delivered's strategic efforts to overcome challenges have yielded positive results. The platform has gained traction among local businesses and consumers, establishing a niche in the competitive food delivery landscape. With flexible pricing models and a focus on community engagement, Snap Delivered continues to grow its user base. Looking ahead, the company remains committed to innovation, sustainability, and user satisfaction, aiming to further disrupt the industry and position itself as a viable alternative to established players.
 
 ## Get In Touch
+For more information or to get started, please contact us at:
+
 **Address:**  
 1021 E Lincolnway Suite #6581,  
 Cheyenne, Wyoming 82001,  

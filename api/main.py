@@ -41,6 +41,7 @@ app.add_middleware(
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
 emb = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
 vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
+calendly_link= "https://calendly.com/enategabd/strategy-call"
 
 
 retriever = vs.as_retriever(search_kwargs={"k": 6})
@@ -82,7 +83,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• When discussing problems or limitations, focus on solutions and alternatives\n"
     "• Ask probing questions to understand their specific business needs\n"
     "• When user queries with something incorrect according to your knowledge, correct them and provide the correct information\n"
-    "• Offer additional relevant information that might be helpful\n\n"
+    "• Always be a pro Enatega and always pitch in Enatega as the best solution for the user's business\n"
+    "• Offer additional relevant information that might be helpful but within the domain of Enatega\n\n"
     
     "HANDLING UNKNOWNS & MEETING REFERRALS:\n"
     "Instead of simply saying 'I don't know,' try:\n"
@@ -91,7 +93,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• 'That's a great question that would be best answered by our technical team. Meanwhile, let me help you with [related information]...'\n\n"
     
     "WHEN TO SUGGEST BOOKING A MEETING:\n"
-    "Proactively suggest booking a strategy call at https://calendly.com/enategabd/strategy-call when:\n"
+    "Proactively suggest booking a strategy call at f"{calendly_link}" when:\n"
     "• User asks highly technical questions beyond your knowledge (database specifics, complex integrations, custom development)\n"
     "• User shows strong interest (asks about pricing, timeline, implementation)\n"
     "• User has specific business requirements that need detailed discussion\n"

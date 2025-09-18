@@ -1,7 +1,8 @@
 # Enatega API Overview
 
 ## Case Studies
-- Use Cases
+- Case studies
+- Use cases
 - Documentation
 - Blog
 - Features
@@ -9,14 +10,34 @@
 - Get A Quote
 
 ## Getting Started
-
 ### Introduction
-Enatega’s API follows a monolithic architecture, meaning the entire software application is developed as a single, unified codebase. Modifications made to one section of the code will impact the entire application. Various functionalities like logging, caching, and performance monitoring are encompassed within a single application. This approach simplifies management and facilitates connections with other components and applications.
+- High Level Architecture
+- Overview of the API
+- FAQs
+- License
+- Patch Notes
 
-### High-Level Architecture
-Enatega uses the Express JS framework and GraphQL for building the API. You can view the full GraphQL diagram below.
+### Installation
+- Prerequisites
+- How to setup locally
+- How to setup/deploy for production
+
+### Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server
 
 ## Overview of the API
+### About Our API
+Enatega’s API follows a monolithic architecture, meaning the entire software application is developed as a single, unified codebase. Modifications made to one section of the code will impact the entire application. Various functionalities like logging, caching, and performance monitoring are encompassed within a single application. This approach simplifies management and facilitates connections with other components and applications. Enatega uses the Express JS framework and GraphQL for building the API. 
 
 ### Resolvers
 In GraphQL, resolvers are functions that define how to retrieve or mutate data for a specific field in a GraphQL schema. When a client sends a query or mutation to a GraphQL API, the server uses resolvers to determine how to fetch or manipulate the requested data. Each field in the schema has a corresponding resolver function that knows how to resolve that specific field.
@@ -26,8 +47,6 @@ Dockerization is the process of packaging and deploying software applications wi
 
 ### Database
 Enatega uses MongoDB to manage its database instead of SQL for database management. You can view MongoDB’s documentation by clicking here.
-
-## Frequently Asked Questions
 
 ## Resources
 - Blog
@@ -58,8 +77,8 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999  
 
-## Privacy Policy
-## Terms & Conditions
+## Legal
+- Privacy Policy
+- Terms & Conditions  
 
-©2024 Enatega · All rights reserved.  
-Powered by:
+©2024 Enatega · All rights reserved. Powered by:

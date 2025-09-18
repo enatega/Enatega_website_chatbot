@@ -6,7 +6,7 @@ Enatega is not just a food delivery service; it is a flexible and scalable solut
 ## A Complete Medicine Delivery Experience
 The milk industry is evolving, and customers now expect more than just a simple checkout page. They desire a smooth, personalized, and reliable experience from browsing to delivery. Enatega addresses these expectations with:
 
-- Urgent or scheduled delivery options.
+- Options for urgent or scheduled deliveries.
 - A customizable online medicine delivery system.
 - Real-time order tracking.
 - Delivery scheduling options.
@@ -16,7 +16,7 @@ The milk industry is evolving, and customers now expect more than just a simple 
 Enatega offers:
 
 - A wide selection of milk.
-- Immediate or scheduled delivery.
+- Immediate or scheduled delivery options.
 - In-app order personalization.
 - Real-time updates throughout the delivery process.
 

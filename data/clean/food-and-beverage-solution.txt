@@ -20,12 +20,12 @@ Enatega offers:
 - In-app order personalization.
 - Real-time updates throughout the delivery process.
 
-This complete, on-demand delivery solution helps businesses respond to customer needs efficiently.
+People don’t want to wait, and Enatega provides a complete, on-demand delivery solution.
 
 ## Features of Enatega’s Food Delivery Platform
 
 ### Customer App
-The customer app provides an easy-to-use food ordering experience, featuring:
+The customer app offers an easy-to-use food ordering experience with:
 
 - A clean product browsing and checkout interface.
 - Real-time delivery tracking.
@@ -41,7 +41,7 @@ The store app is designed for store owners and partners to manage daily operatio
 - Access store-level analytics.
 
 ### Rider App
-The rider app focuses on delivery efficiency, offering:
+The rider app focuses on delivery efficiency, featuring:
 
 - Instant order alerts.
 - Map integration for accurate delivery.
@@ -49,7 +49,7 @@ The rider app focuses on delivery efficiency, offering:
 - Real-time delivery updates.
 
 ### Admin Dashboard
-The admin dashboard serves as a central hub for business management, featuring:
+The admin dashboard serves as a central hub for business management, including:
 
 - Zone management and delivery scheduling.
 - Order tracking and status updates.
@@ -83,16 +83,16 @@ The Premium Plan includes:
 - Free 2 hours of technical consultation with Enatega developers.
 
 ### Enterprise Plan
-The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
+The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support, including:
 
+- Everything in the Premium Plan.
 - Custom deployment and development.
-- Tailored pricing with installment options.
-- Feature integration specific to business needs.
+- Tailored feature integration.
 - Continuous collaboration with Enatega developers.
 - Advanced support and personalized technical guidance.
 
 ## Get in Touch
-For inquiries, contact us at:
+For inquiries, please contact:
 
 **Address:**  
 1021 E Lincolnway Suite #6581,  

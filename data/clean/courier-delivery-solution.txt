@@ -73,7 +73,7 @@ Enatega offers transparent and flexible pricing with a straightforward model:
 The Premium Plan includes:
 
 - A feature-rich delivery suite ideal for growing businesses.
-- Modern and beautifully designed user interfaces across all apps.
+- A modern and beautifully designed user interface across all apps.
 - A comprehensive technology stack.
 - Full source code provided upon purchase.
 - No hidden charges or subscription fees.
