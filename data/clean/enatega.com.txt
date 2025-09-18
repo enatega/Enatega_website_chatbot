@@ -13,7 +13,7 @@ Enatega offers a comprehensive open source solution for grocery stores, providin
 - **Borku:** Saved $100,000 USD in commissions.
 - **Vinifynd:** The first wine delivery solution in the region.
 
-## Live Demos
+## Live Demo
 Explore the complete delivery experience through live demos:
 1. Customer App
 2. Rider App

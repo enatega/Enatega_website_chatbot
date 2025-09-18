@@ -18,6 +18,7 @@ from langchain.prompts import PromptTemplate
 
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, Response
+
 # ---------- env ----------
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
