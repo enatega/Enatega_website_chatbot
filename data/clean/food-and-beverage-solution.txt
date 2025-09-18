@@ -20,12 +20,12 @@ Enatega offers:
 - In-app order personalization.
 - Real-time updates throughout the delivery process.
 
-People don’t want to wait, and Enatega provides a complete, on-demand delivery solution.
+This complete, on-demand delivery solution helps businesses respond to customer needs efficiently.
 
 ## Features of Enatega’s Food Delivery Platform
 
 ### Customer App
-The customer app offers an easy-to-use food ordering experience with:
+The customer app provides an easy-to-use food ordering experience with:
 
 - A clean product browsing and checkout interface.
 - Real-time delivery tracking.
@@ -83,11 +83,11 @@ The Premium Plan includes:
 - Free 2 hours of technical consultation with Enatega developers.
 
 ### Enterprise Plan
-The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support, including:
+The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
 
-- Everything in the Premium Plan.
 - Custom deployment and development.
-- Tailored feature integration.
+- Tailored pricing with installment options.
+- Feature integration specific to business needs.
 - Continuous collaboration with Enatega developers.
 - Advanced support and personalized technical guidance.
 

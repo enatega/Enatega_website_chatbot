@@ -1,5 +1,35 @@
 # Enatega Overview
 
+## Navigation
+- Case Studies
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+## Page Not Found
+Sorry, the page you are looking for doesn’t exist or has been moved. 
+
+### Suggestions
+- Try searching our site.
+- Go back to the previous page.
+
+## Resources
+- Blog
+- Documentation
+- Features
+- Compare:
+  - Blink
+  - Deonde
+  - GloriaFood
+  - Ordering.Co
+  - Shipday
+  - SpotNeats
+  - Yelo
+  - Zeew
+
 ## Case Studies
 - Yalla Delivery
 - Stylizenow
@@ -8,48 +38,7 @@
 - Snap Delivered
 - Borku Delivery
 
-## Use Cases
-
-## Documentation
-
-## Blog
-
-## Features
-
-## Pricing
-
-## Get A Quote
-
----
-
-# Page Not Found
-Sorry, the page you are looking for doesn’t exist or has been moved. 
-
-## Suggestions
-- Try searching our site.
-- Go back to the previous page.
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-
-## Supported Platforms
-- Blink
-- Deonde
-- GloriaFood
-- Ordering.Co
-- Shipday
-- SpotNeats
-- Yelo
-- Zeew
-
----
-
-# Get In Touch
+## Get In Touch
 **Address:**  
 1021 E Lincolnway Suite #6581,  
 Cheyenne, Wyoming 82001,  
@@ -61,11 +50,9 @@ sales@enatega.com
 **Phone:**  
 +1 (307) 776-8999  
 
----
-
-# Legal
+## Legal
 - Privacy Policy
-- Terms & Conditions  
+- Terms & Conditions
 
 ©2024 Enatega · All rights reserved.  
 Powered by:
