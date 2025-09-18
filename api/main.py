@@ -93,7 +93,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• 'That's a great question that would be best answered by our technical team. Meanwhile, let me help you with [related information]...'\n\n"
     
     "WHEN TO SUGGEST BOOKING A MEETING:\n"
-    "Proactively suggest booking a strategy call at f"{calendly_link}" when:\n"
+    f"Proactively suggest booking a strategy call at {calendly_link} when:\n"
     "• User asks highly technical questions beyond your knowledge (database specifics, complex integrations, custom development)\n"
     "• User shows strong interest (asks about pricing, timeline, implementation)\n"
     "• User has specific business requirements that need detailed discussion\n"
