@@ -46,6 +46,8 @@ Yalla required flexible, regionally compliant payment solutions. The Enatega tea
 
 ### Phase IV: Payment Gateway Customization
 
+## Launch & Results
+
 With a laser-focused agile approach, Yalla’s minimum viable product (MVP) was launched within just a few months. The results were immediate and impressive:
 
 - 60,000+ active monthly users.
@@ -79,18 +81,25 @@ Yalla’s success is a testament to what’s possible with a clear vision, stron
 
 Are you ready to take your delivery business to the next level? Schedule a meeting with us today to discuss your future!
 
-### Contact Information
+## Contact Information
 
-- **Address**: 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States
-- **Email**: sales@enatega.com
-- **Phone**: +1 (307) 776-8999
+**Address**:  
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
 
-### Resources
+**Email**: sales@enatega.com  
+**Phone**: +1 (307) 776-8999  
+
+## Resources
 
 - Blog
 - Documentation
 - Features
 - Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
-- Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery
+- Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery  
+
+**Privacy Policy**  
+**Terms & Conditions**  
 
 ©2024 Enatega · All rights reserved.

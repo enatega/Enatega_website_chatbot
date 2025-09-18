@@ -52,39 +52,48 @@ For those without a development team or technical skills, Enatega partners with 
 Enatega provides free lifetime updates, with a fully open-source frontend allowing users to track real-time updates. The proprietary backend is shared during new releases to ensure systems remain updated.
 
 ## Getting Started
-To begin using Enatega:
-1. **Purchase & Download:** Buy the solution and download the .zip file to set up your Android and iOS app development.
-2. **Free Technical Consultation:** Receive two hours of free technical consultation for deployment or configuration support.
-3. **Support:** Contact Enatega via email for immediate assistance.
+To begin, users can purchase and download the Enatega solution, receiving expert assistance for a quick launch. 
+
+### Purchase & Download
+Users can download the .zip file from the purchase page to set up their Android and iOS app development process.
+
+### Free Technical Consultation
+Receive two hours of free technical consultation for deployment or configuration support.
+
+### Support
+For immediate questions, users can contact Enatega via email for assistance with configuring the delivery management software or guidance on food delivery app solutions.
 
 ## Features
 ### What's Included?
 - **Full Source Code:** Complete access for future updates and customizations.
-- **No Additional Charges:** One-time payment with no hidden fees.
-- **Essential Apps:** Access to customer, rider, and restaurant apps for iOS and Android.
-- **Powerful Admin Dashboard:** Manage everything from a single dashboard.
-- **Lifetime Updates:** Free updates to keep your solution current.
-- **Technical Consultation:** Two hours of expert guidance.
+- **No Additional Charges:** What you pay upfront is final, with no hidden fees.
+- **All Essential Apps Included:** Access to customer, rider, and restaurant apps for iOS and Android.
+- **Powerful Admin Dashboard:** Manage everything from restaurants to riders and food items.
+- **Lifetime Updates:** Free updates to keep the delivery solution current.
+- **2 Hours Free Technical Consultation:** Expert guidance for technical needs.
 
 ## Testimonials
 Hear from satisfied customers about their experiences with Enatega.
 
 ## Pricing
 ### Transparent, Flexible Pricing
-Enatega offers a straightforward pricing model with no recurring subscriptions or additional delivery charges.
+Enatega offers a simple pricing model with no recurring subscriptions or additional delivery charges. 
 
 ### Most Popular Premium Plan
 - Feature-rich delivery suite ideal for growing businesses.
 - Modern UI across all apps.
+- Built with the latest technology stack.
 - Full source code provided upon purchase.
 - No hidden charges or subscription fees.
 - Lifetime access to future updates.
-- Free technical consultation.
+- Free 2 hours of technical consultation.
 
 ### Enterprise Plan
-- Custom plan tailored for enterprises needing advanced features and support.
-- Includes everything in the Premium Plan plus custom deployment and development.
-- Custom pricing with installment options available.
+Custom plans tailored for enterprises needing advanced features and deployment support, including:
+- Everything in the Premium Plan.
+- Custom deployment and development.
+- Feature integration tailored to business needs.
+- Continuous collaboration with Enatega developers.
 
 ## Frequently Asked Questions
 1. Is your solution completely open-source?
@@ -92,11 +101,11 @@ Enatega offers a straightforward pricing model with no recurring subscriptions o
 3. Does your solution offer customization?
 4. Where can I find tutorials & demo guides?
 5. Can the software be used for any location?
-6. What payment methods are supported?
-7. Can I make changes to the app myself?
-8. What kind of support do you offer after purchase?
-9. Are there ongoing updates or maintenance plans?
-10. Does Enatega have any claims to ownership after purchase?
+6. Does the software support cash payments? What payment methods are supported?
+7. Can I make changes to the app myself using the provided frontend and backend code?
+8. What kind of support do you offer after the purchase?
+9. Are there any ongoing updates or maintenance plans available for the software?
+10. Once I purchase the backend license, does Enatega have any claims to the ownership?
 11. Can I own my own food delivery marketplace platform with Enatega?
 
 ## Resources

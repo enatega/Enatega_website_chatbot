@@ -20,7 +20,7 @@ Offering a flat rate of $2 per delivery was a bold strategy that pressured Snap 
 ## Overcoming The Challenges
 
 ### Built Strategic Partnerships
-Snap Delivered established strategic partnerships with local restaurants, providing a unique value proposition. Collaborating with small and medium-sized businesses allowed Snap Delivered to differentiate itself from larger competitors and create a more inclusive platform.
+Snap Delivered established strategic partnerships with local restaurants, providing them with a unique value proposition. Collaborating with small and medium-sized businesses allowed Snap Delivered to differentiate itself from larger competitors and create a more inclusive platform.
 
 ### Introduced Customer Incentives
 To tackle user acquisition and retention challenges, Snap Delivered implemented customer incentives and loyalty programs. Discounts, exclusive deals, and a user-friendly rewards system helped attract and retain both individual customers and restaurants.
@@ -35,7 +35,7 @@ While maintaining an affordable flat rate, Snap Delivered introduced referral pr
 The development of Snap Delivered's first version was a race against time. The Ninjas Code team adopted an agile development approach, prioritizing features and making adjustments as needed. Regular feedback sessions with the Snap team ensured the project remained aligned with the initial vision.
 
 ## The Future For Snap Delivered
-Snap Delivered’s strategic efforts to overcome challenges have yielded positive results. The platform has gained traction among local businesses and consumers, establishing a niche in the competitive food delivery landscape. With flexible pricing models and a focus on community engagement, Snap Delivered continues to grow its user base. Looking ahead, the company remains committed to innovation, sustainability, and user satisfaction. By staying abreast of technological trends and fostering collaboration with partners, Snap Delivered aims to further disrupt the industry and position itself as a viable alternative to established players.
+Snap Delivered’s strategic efforts to overcome challenges have yielded positive results. The platform has gained traction among local businesses and consumers, establishing a niche in the competitive food delivery landscape. With flexible pricing models and a focus on community engagement, Snap Delivered continues to grow its user base. Looking ahead, the company remains committed to innovation, sustainability, and user satisfaction. By keeping pace with technological trends and fostering collaboration with partners, Snap Delivered aims to further disrupt the industry and position itself as a viable alternative to established players.
 
 ## Get In Touch
 **Address:**  

@@ -80,7 +80,7 @@ The Premium Plan includes:
 - No hidden charges or subscription fees.
 - Lifetime access to all future updates.
 - Openly available documentation and tutorials.
-- Free 2 hours of technical consultation with Enatega developers.
+- A free 2-hour technical consultation with Enatega developers.
 
 ### Enterprise Plan
 The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
