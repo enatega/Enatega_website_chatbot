@@ -5,23 +5,25 @@ on:
     - cron: "0 5 1 1,3,5,7,9,11 *"
   workflow_dispatch: {}
 
+permissions:
+  contents: write   # 👈 allow pushes from this workflow
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      QDRANT_URL: ${{ secrets.QDRANT_URL }}
+      QDRANT_URL:     ${{ secrets.QDRANT_URL }}
       QDRANT_API_KEY: ${{ secrets.QDRANT_API_KEY }}
       COLLECTION_NAME: ${{ secrets.COLLECTION_NAME }}
     steps:
       - uses: actions/checkout@v4
+        # persist-credentials is true by default; keep it that way so pushes work
 
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+        with: { python-version: "3.11" }
 
-      - name: Install Python deps
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -32,9 +34,10 @@ jobs:
 
       - name: Commit and push updated data
         run: |
-          git config --global user.name "github-actions[bot]"
+          git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/clean/*.txt data/clean/*.jsonl data/raw/*.html
+          git add data/clean/*.txt data/clean/*.jsonl data/raw/*.html || true
           git commit -m "Auto-update data from pipeline [skip ci]" || echo "No changes to commit"
-          git push
-
+          # Rebase just in case new commits landed while the job ran
+          git pull --rebase origin main || true
+          git push origin HEAD:main
