@@ -17,7 +17,18 @@ URLS = [
     # Features
     "https://enatega.com/multi-vendor-features/",
     "https://enatega.com/multi-vendor-doc/overview-of-the-api/",
+    "https://enatega.com/multi-vendor-doc/prerequisites/",
    
+
+   # Competitors
+    "https://enatega.com/enatega-vs-blink/",
+    "https://enatega.com/enatega-vs-deonde/",
+    "https://enatega.com/enatega-vs-gloriafood/",
+    "https://enatega.com/enatega-vs-ordering-co/",
+    "https://enatega.com/enatega-vs-shipday/",
+    "https://enatega.com/enatega-vs-spotneats/",
+    "https://enatega.com/enatega-vs-yelo/",
+    "https://enatega.com/enatega-vs-zeew/",
 
     # Use cases
     "https://enatega.com/gift-delivery-solution/",
