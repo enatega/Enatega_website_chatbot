@@ -23,13 +23,14 @@ closeBtn.addEventListener("click", () => {
   launcherEl.classList.remove("hidden");
 });
 
+
 function addMessage(role, text, sources, latency) {
   const wrap = document.createElement("div");
   wrap.className = "msg " + (role === "user" ? "me" : "bot");
 
   const bubble = document.createElement("div");
   bubble.className = "bubble";
-  bubble.textContent = text;
+  bubble.innerHTML = sanitizeBasicHTML(text);
   wrap.appendChild(bubble);
 
   if (role !== "user" && sources && sources.length) {
@@ -59,6 +60,25 @@ function addMessage(role, text, sources, latency) {
     latencyEl.textContent = `Latency: ${latency} ms`;
   }
 }
+
+function sanitizeBasicHTML(html) {
+    // 1) Remove script/style/noscript/iframe objects entirely
+    const blocked = /<\/?(script|style|noscript|iframe|object|embed|form|link|meta)[\s\S]*?>/gi;
+    let safe = html.replace(blocked, "");
+  
+    // 2) Strip on* handlers and javascript: urls
+    safe = safe
+      .replace(/\son\w+="[^"]*"/gi, "")
+      .replace(/\son\w+='[^']*'/gi, "")
+      .replace(/javascript:/gi, "");
+  
+    // 3) Whitelist-only tags by removing everything else (optional—comment out if too strict)
+    const allowed = /<(\/?(h1|h2|h3|h4|p|ul|ol|li|b|strong|i|em|br|hr|code|pre|a))(\s+[^>]*)?>/gi;
+    safe = safe.replace(/<[^>]+>/g, m => m.match(allowed) ? m : "");
+  
+    return safe;
+  }
+  
 
 async function ask(question) {
   addMessage("user", question);
