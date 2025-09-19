@@ -30,7 +30,8 @@ function addMessage(role, text, sources, latency) {
 
   const bubble = document.createElement("div");
   bubble.className = "bubble";
-  bubble.innerHTML = sanitizeBasicHTML(text);
+  bubble.innerHTML = normalizeHTML(sanitizeBasicHTML(text));
+
   wrap.appendChild(bubble);
 
   if (role !== "user" && sources && sources.length) {
@@ -79,6 +80,25 @@ function sanitizeBasicHTML(html) {
     return safe;
   }
   
+  function normalizeHTML(html) {
+    let out = html;
+  
+    // Collapse multiple blank lines
+    out = out.replace(/(\n\s*){2,}/g, "\n");
+  
+    // Trim whitespace inside <p> and <li>
+    out = out.replace(/<p>\s+/g, "<p>").replace(/\s+<\/p>/g, "</p>");
+    out = out.replace(/<li>\s+/g, "<li>").replace(/\s+<\/li>/g, "</li>");
+  
+    // 🚨 Remove empty <p> tags
+    out = out.replace(/<p>\s*<\/p>/g, "");
+  
+    return out;
+  }
+  
+
+
+    
 
 async function ask(question) {
   addMessage("user", question);
