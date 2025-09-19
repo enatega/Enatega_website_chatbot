@@ -72,4 +72,29 @@
   @media (max-width: 480px) {
     .chat-widget { right: 10px; bottom: 10px; width: calc(100% - 20px); height: 68vh; }
   }
+
+  /* Make HTML inside chat bubbles pretty */
+.bubble h1, .bubble h2, .bubble h3 { 
+    margin: 6px 0 6px; 
+    font-weight: 800; 
+    line-height: 1.25;
+  }
+  .bubble h1 { font-size: 20px; }
+  .bubble h2 { font-size: 18px; }
+  .bubble h3 { font-size: 16px; }
+  
+  .bubble p { margin: 6px 0; }
+  
+  .bubble ul, .bubble ol { 
+    margin: 6px 0 6px 18px; 
+    padding: 0; 
+  }
+  .bubble li { 
+    margin: 4px 0; 
+  }
+  
+  /* Optional: style links shown in answers */
+  .bubble a { color: var(--accent2); text-decoration: underline; }
+  .bubble a:hover { filter: brightness(.95); }
+  
   
