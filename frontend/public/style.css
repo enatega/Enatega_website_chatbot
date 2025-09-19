@@ -88,15 +88,19 @@
   .bubble h2 { font-size: 18px; }
   .bubble h3 { font-size: 16px; }
   
-  .bubble p { margin: 6px 0; }
+  .bubble p {
+    margin: 4px 0;   /* was 6px 0, reduce vertical gap */
+  }
   
-  .bubble ul, .bubble ol { 
-    margin: 6px 0 6px 18px; 
-    padding: 0; 
+  .bubble ul, .bubble ol {
+    margin: 4px 0 4px 16px; /* tighter spacing around lists */
+    padding: 0;
   }
-  .bubble li { 
-    margin: 4px 0; 
+  
+  .bubble li {
+    margin: 2px 0;   /* was 4px 0 */
   }
+  
   
   /* Optional: style links shown in answers */
   .bubble a { color: var(--accent2); text-decoration: underline; }
