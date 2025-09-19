@@ -1,0 +1,183 @@
+# Enatega Features
+
+## Customer Web/Mobile Application
+
+### User Authentication & Security
+**Email Verification**
+Ensures authentic user registrations to reduce fake orders and improves downstream communications on order updates and delivery details.
+
+**Multi-Platform Authentication**
+Simplifies onboarding by allowing sign in with Google, Apple, or Facebook—no separate account creation required.
+
+### User Interface & Experience
+**Geolocation Restaurant Display**
+Shows nearby restaurants on the home screen and on a map for quick discovery.
+
+**Comprehensive Restaurant Information**
+Surfaces reviews/ratings, operating hours, delivery schedules, menu details, and minimum order requirements to support informed decisions.
+
+**Address Integration**
+Uses Maps + Google Places suggestions so users add accurate addresses; helps route orders to the right delivery locations.
+
+**Localization & Theming**
+Multi-language UI and theming so customers can pick preferred language and style aligned to brand identity.
+
+**Search Functionality**
+Lets users search both restaurants and specific menu items for faster discovery.
+
+### Communication Features
+**Push Notifications**
+Sends updates for account creation, order status, announcements; supports global pushes to reach all users simultaneously.
+
+**Real-Time Tracking**
+Customers can follow live driver location and delivery progress with up-to-the-minute accuracy.
+
+**Error Tracking**
+Real-time monitoring integrated with Sentry to catch and resolve issues quickly.
+
+### Analytics & Reporting
+**Performance Analytics**
+Amplitude-powered insights into user behavior, responsiveness, and efficiency to tune performance and UX.
+
+### Order Management System
+**Order Rating & Reviews**
+Collects feedback after each order to improve operations.
+
+**Payment Integration**
+Out-of-the-box PayPal and Stripe for secure, convenient checkout.
+
+**Order History**
+Gives businesses visibility into past orders for better decisions and personalization.
+
+**Favorites Management**
+Lets customers mark and manage favorite restaurants for quicker re-ordering.
+
+**Food Customization**
+Supports item variations and special notes to tailor each order.
+
+**Flexible Ordering**
+Offers pickup and delivery with different timing options (e.g., quick lunch pickup vs. scheduled dinner delivery).
+
+### Promotion & Loyalty Programs
+**Vouchers**
+Run discounts/loyalty campaigns (e.g., first-time discounts, rewards for repeat users).
+
+**Tipping**
+Lets users add a tip at checkout to appreciate great service.
+
+## Restaurant Application
+
+### Order Management Operations
+**Order Notification**
+Real-time alerts for new orders so teams can respond quickly and improve delivery speed.
+
+**Time Limiter**
+Configure order acceptance windows and prep times that match kitchen pace to optimize workflow.
+
+**Real-Time Order Receiving**
+Coordinates the handoff from preparation to delivery so orders move smoothly and on time.
+
+**Restaurant Status Updates**
+Toggle online/offline to reflect operational availability and set customer expectations.
+
+**Invoice Print Option**
+Generate and print invoices directly from the app.
+
+**Delivered Orders History**
+Access a detailed history of fulfilled orders (date, items, status, special instructions).
+
+**Customer Order Details**
+Drill into current/past orders: items, pricing, delivery status, timestamps, etc.
+
+## Rider Application
+
+### Order Management for Riders
+**Real-Time Order Status Change**
+Instant updates when an order is accepted, out for delivery, or completed.
+
+**Instant Dual-Alert System**
+New orders trigger both push notifications and audible ringers to avoid missed jobs.
+
+**Time Limiter**
+Set time limits for fulfillment stages; get alerts if a stage exceeds its threshold to address delays quickly.
+
+### Location Services
+**Address Mapping**
+Google Maps integration to precisely map customer and restaurant addresses and visualize routes.
+
+**Distance & Travel Time Display**
+Calculates and shows optimal routes with distance/time to support allocation and scheduling decisions.
+
+### Communication Tools
+**Instant Customer Chat**
+Riders can chat with customers to answer questions and share live updates, smoothing the delivery experience.
+
+### Order History & Records
+**Order History & Progress**
+Historical records with progress and status so operators can review routes and performance.
+
+### Financial Management for Riders
+**Online Delivery Fee Access**
+Set/modify/optimize delivery charges aligned to business strategy.
+
+**Quick Money Withdrawal**
+Fast, secure withdrawals to access earnings immediately.
+
+**Wallet History**
+View transactions, withdrawals, and customer payments for transparency and accuracy.
+
+### Status Management
+**Rider Status**
+Monitor rider availability and activity in real time to keep operations on track.
+
+## Admin Dashboard
+
+### User & Role Management
+**Role-Based Administration**
+Granular role and permission management giving admins access to all needed platform controls.
+
+**User Management**
+Capture/organize customer data, track order history, and run customized promotions to build loyalty.
+
+**Ratings & Coupon Management**
+Respond to reviews and manage ratings/coupons to attract and retain customers.
+
+**Tipping Option Management**
+Configure tipping experience to motivate and reward delivery teams.
+
+### Establishment Management
+**Restaurant Management & Selection**
+Browse and manage the restaurant list, selecting partners via the admin tools.
+
+**Vendor Management**
+Onboard/manage vendors and equip them to present offerings effectively.
+
+**Withdrawal Requests from Riders**
+Process and approve rider withdrawals promptly and securely.
+
+### Financial & Commission Control
+**Commission Rate Management**
+Adjust commission structures to fit business strategy.
+
+**Stripe Commission Integration**
+Receive commissions directly into Stripe for secure transfer and reconciliation.
+
+### Operational Configuration
+**Geographical Zones Management**
+Organize delivery zones to minimize delivery times and raise customer satisfaction.
+
+**Application Configuration**
+Customize brand identity, pricing, and features to fit your operating model.
+
+**Order Status Control**
+Maintain visibility and control from placement through delivery for a holistic operational view.
+
+**Restaurant Time Management**
+Manage opening hours, prep times, and delivery schedules to keep orders timely and fresh.
+
+**Delivery Area Definition**
+Define/adjust coverage areas to match demand and market growth.
+
+### Menu & Analytics
+**Menu Showcase**
+Present menus effectively to elevate restaurant presence (admin-side configuration support).

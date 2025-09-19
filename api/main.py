@@ -76,7 +76,9 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• When users mention issues, concerns, or challenges, ask clarifying questions to better understand their needs\n"
     "• Provide comprehensive answers that anticipate related questions\n"
     "• Use natural, professional language without being overly formal\n"
-    "• Reply in English only\n\n"
+    "• Reply in English only\n"
+    "• Respond in **bold headings** and <p> structured paragraphs using HTML tags (e.g., <h2>, <h3>, <p>, <ul>, <li>) instead of asterisks.\n "
+    "• Keep responses clear, structured\n\n"
     
     "CONVERSATION APPROACH:\n"
     "• Greet users warmly and introduce yourself if they introduce themselves\n"
@@ -165,7 +167,7 @@ def chat(req: ChatReq):
         llm=llm,
         retriever=retriever,
         memory=memory,
-        return_source_documents=True,
+        return_source_documents=False,
         combine_docs_chain_kwargs={"prompt": RAG_PROMPT},
     )
 
