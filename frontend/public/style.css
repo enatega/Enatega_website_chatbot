@@ -41,10 +41,15 @@
   .msg { display: grid; gap: 6px; }
   .msg.me { justify-items: end; }
   .bubble {
-    max-width: 86%; padding: 10px 12px; border-radius: 14px;
-    background: #0f172a; border: 1px solid rgba(255,255,255,.06);
-    white-space: pre-wrap;
+    max-width: 86%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: #0f172a;
+    border: 1px solid rgba(255,255,255,.06);
+    white-space: normal;   /* instead of pre-wrap */
+    line-height: 1.5;      /* keep it readable */
   }
+  
   .msg.me .bubble { background: #1e293b; }
   .msg .meta { color: var(--muted); font-size: 12px; }
   
