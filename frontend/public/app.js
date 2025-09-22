@@ -1,6 +1,6 @@
-// const API_BASE = (localStorage.getItem("chat_api_base") || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API_BASE = (localStorage.getItem("chat_api_base") || "http://127.0.0.1:8000").replace(/\/$/, "");
 //const API_BASE = "https://enatega-bot.onrender.com";
-const API_BASE = "https://enategawebsitechatbot-production.up.railway.app"
+//const API_BASE = "https://enategawebsitechatbot-production.up.railway.app"
 const SESSION_ID = localStorage.getItem("chat_session_id") || crypto.randomUUID();
 localStorage.setItem("chat_session_id", SESSION_ID);
 
@@ -22,6 +22,14 @@ closeBtn.addEventListener("click", () => {
   widgetEl.classList.add("hidden");
   launcherEl.classList.remove("hidden");
 });
+
+// Smooth streaming config (override at runtime via localStorage if you like)
+const STREAM_SMOOTHING = {
+    tickMs: parseInt(localStorage.getItem("chat_tick_ms") || "35", 15),   // render every N ms
+    maxCharsPerTick: parseInt(localStorage.getItem("chat_chars_per_tick") || "60", 15), // add up to N chars per tick
+    minMerge: 10, // merge tiny chunks to avoid stutter
+  };
+  
 
 
 function addMessage(role, text, sources, latency) {
@@ -99,7 +107,7 @@ function sanitizeBasicHTML(html) {
   async function askStreaming(question) {
     addMessage("user", question);
   
-    // Prepare an empty assistant bubble to fill as chunks arrive
+    // Prepare an empty assistant bubble
     const wrap = document.createElement("div");
     wrap.className = "msg bot";
     const bubble = document.createElement("div");
@@ -108,11 +116,47 @@ function sanitizeBasicHTML(html) {
     messagesEl.appendChild(wrap);
     messagesEl.scrollTop = messagesEl.scrollHeight;
   
-    // optional spinner while first bytes arrive
+    // spinner while first bytes arrive
     const thinking = document.createElement("span");
     thinking.className = "spinner";
     latencyEl.innerHTML = "";
     latencyEl.appendChild(thinking);
+  
+    // --- Smooth rendering queue ---
+    const queue = [];
+    let displayBuf = "";
+    let streamDone = false;
+    let intervalId = null;
+  
+    function startFlusher() {
+      if (intervalId) return;
+      const { tickMs, maxCharsPerTick, minMerge } = STREAM_SMOOTHING;
+  
+      intervalId = setInterval(() => {
+        if (!queue.length && streamDone) {
+          clearInterval(intervalId);
+          intervalId = null;
+          return;
+        }
+        if (!queue.length) return;
+  
+        // merge small pieces to reduce jitter
+        let chunk = queue.shift();
+        while (queue.length && (chunk.length < maxCharsPerTick || chunk.length < minMerge)) {
+          chunk += queue.shift();
+        }
+  
+        // limit how much we add per tick
+        const piece = chunk.slice(0, maxCharsPerTick);
+        const rest  = chunk.slice(maxCharsPerTick);
+        if (rest) queue.unshift(rest);
+  
+        displayBuf += piece;
+        bubble.innerHTML = normalizeHTML(sanitizeBasicHTML(displayBuf));
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }, tickMs);
+    }
+    // --- end smoothing ---
   
     try {
       const res = await fetch(`${API_BASE}/chat_stream`, {
@@ -128,21 +172,23 @@ function sanitizeBasicHTML(html) {
   
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
-      let buf = "";
   
+      // read chunks fast, but reveal slowly via the flusher
       while (true) {
         const { value, done } = await reader.read();
         if (done) break;
-        buf += decoder.decode(value, { stream: true });
-        bubble.innerHTML = normalizeHTML(sanitizeBasicHTML(buf));
-        messagesEl.scrollTop = messagesEl.scrollHeight;
+        const text = decoder.decode(value, { stream: true });
+        queue.push(text);
+        startFlusher();
       }
+      streamDone = true;
     } catch (e) {
       bubble.textContent = `Network error: ${e.message}`;
     } finally {
       latencyEl.textContent = "";
     }
   }
+  
   
   
 

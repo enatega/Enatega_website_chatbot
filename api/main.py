@@ -19,6 +19,12 @@ from langchain.prompts import PromptTemplate
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, Response
 
+
+# --- streaming helpers ---
+from fastapi.responses import StreamingResponse
+from langchain_core.messages import SystemMessage
+from typing import AsyncGenerator
+
 # ---------- env ----------
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -45,7 +51,7 @@ vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
 calendly_link= "https://calendly.com/enategabd/strategy-call"
 
 
-retriever = vs.as_retriever(search_kwargs={"k": 6})
+retriever = vs.as_retriever(search_kwargs={"k": 4})
 
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, api_key=OPENAI_API_KEY)
 
@@ -153,8 +159,8 @@ def chat(req: ChatReq):
     if hasattr(memory, "buffer") and isinstance(memory.buffer, list):
         memory.buffer[:] = memory.buffer[-(2 * MAX_TURNS):]
 
-    # 2) PRE-CHECK: pull docs directly from retriever
-    seed_docs = retriever.get_relevant_documents(req.message)
+    # NEW: invoke instead of get_relevant_documents
+    seed_docs = retriever.invoke(req.message)
     if not seed_docs:
         return ChatResp(
             answer="I don’t have that in my current knowledge yet. Please rephrase or check the site.",
@@ -163,16 +169,16 @@ def chat(req: ChatReq):
             latency_ms=int((time.time() - t0) * 1000),
         )
 
-    # 3) Build the chain and run (now that we know there is context)
     chain = ConversationalRetrievalChain.from_llm(
         llm=llm,
         retriever=retriever,
         memory=memory,
-        return_source_documents=False,
+        return_source_documents=True,   # turn on so sources work
         combine_docs_chain_kwargs={"prompt": RAG_PROMPT},
     )
 
-    result = chain({"question": req.message})
+    # NEW: invoke instead of __call__
+    result = chain.invoke({"question": req.message})
     answer = result["answer"]
     docs = result.get("source_documents", []) or []
     sources = list({d.metadata.get("url") for d in docs if d.metadata.get("url")})[:5]
@@ -183,6 +189,7 @@ def chat(req: ChatReq):
         used_chunks=len(docs),
         latency_ms=int((time.time() - t0) * 1000),
     )
+
 
 
 app.mount("/static", StaticFiles(directory="frontend/public"), name="static")
@@ -200,6 +207,73 @@ def favicon():
 def clear(session_id: str):
     SESSION_MEM.pop(session_id, None)
     return {"ok": True}
+
+
+def format_docs(docs):
+    # You can keep it short; top 3-4 chunks is usually enough for snappy answers
+    return "\n\n".join(d.page_content.strip() for d in docs)
+
+def format_history(chat_messages) -> str:
+    # memory returns a list[BaseMessage]; serialize to plain text for your prompt
+    if not chat_messages:
+        return ""
+    lines = []
+    for m in chat_messages:
+        role = "User" if m.type == "human" else "Assistant"
+        lines.append(f"{role}: {m.content}")
+    return "\n".join(lines)
+
+
+@app.post("/chat_stream")
+async def chat_stream(req: ChatReq):
+    if not req.message.strip():
+        raise HTTPException(status_code=400, detail="Empty message")
+
+    memory = get_memory(req.session_id)
+    if hasattr(memory, "buffer") and isinstance(memory.buffer, list):
+        memory.buffer[:] = memory.buffer[-(2 * MAX_TURNS):]
+
+    # Use the new retriever API (no deprecation)
+    docs = retriever.invoke(req.message)
+    if not docs:
+        async def _empty() -> AsyncGenerator[bytes, None]:
+            # ✅ encode to utf-8 so curly quotes are fine
+            yield "I don’t have that in my current knowledge yet. Please rephrase or check the site.".encode("utf-8")
+        return StreamingResponse(_empty(), media_type="text/plain; charset=utf-8")
+
+    context = "\n\n".join(d.page_content.strip() for d in docs[:4])
+    hist = memory.load_memory_variables({}).get("chat_history") or []
+    # flatten history to text
+    if hist:
+        try:
+            hist_text = "\n".join(
+                (("User: " if m.type == "human" else "Assistant: ") + (m.content or ""))
+                for m in hist
+            )
+        except Exception:
+            hist_text = ""
+    else:
+        hist_text = ""
+
+    prompt_text = RAG_PROMPT.format(context=context, chat_history=hist_text, question=req.message)
+
+    async def token_gen() -> AsyncGenerator[bytes, None]:
+        pieces = []
+        async for chunk in llm.astream([SystemMessage(content=prompt_text)]):
+            text = getattr(chunk, "content", "") or ""
+            if not text:
+                continue
+            pieces.append(text)
+            # ✅ Always send bytes, explicitly UTF-8
+            yield text.encode("utf-8")
+        # Save to memory after stream completes
+        try:
+            final = "".join(pieces)
+            memory.save_context({"question": req.message}, {"answer": final})
+        except Exception:
+            pass
+
+    return StreamingResponse(token_gen(), media_type="text/plain; charset=utf-8")
 
 
 
