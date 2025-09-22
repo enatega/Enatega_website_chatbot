@@ -1,7 +1,7 @@
 # chunks from https://enatega.com/ and related pages
 # splitter = token | size=700 | overlap=150
 
------ chunk 1/59 -----
+----- chunk 1/63 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution for Salons | Enatega
 slug: beauty-services-scheduling-solution | chars: 3575
 
@@ -100,7 +100,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get In Touch
 For inquiries, please contact us at:
 
------ chunk 2/59 -----
+----- chunk 2/63 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution for Salons | Enatega
 slug: beauty-services-scheduling-solution | chars: 668
 
@@ -132,7 +132,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 3/59 -----
+----- chunk 3/63 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 3426
 
@@ -179,7 +179,7 @@ Borku’s commitment to cultural authenticity and convenience reflects the versa
 ## Get Started Today
 Schedule a meeting and get a quote to learn more about Borku.
 
------ chunk 4/59 -----
+----- chunk 4/63 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 887
 
@@ -207,7 +207,7 @@ sales@enatega.com
 ## Terms & Conditions
 ©2024 Enatega · All rights reserved.
 
------ chunk 5/59 -----
+----- chunk 5/63 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Customizable Online Courier Delivery Solution | Enatega
 slug: courier-delivery-solution | chars: 3667
 
@@ -310,7 +310,7 @@ For inquiries, please contact:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 6/59 -----
+----- chunk 6/63 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Customizable Online Courier Delivery Solution | Enatega
 slug: courier-delivery-solution | chars: 724
 
@@ -345,7 +345,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 7/59 -----
+----- chunk 7/63 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution | Enatega
 slug: document-delivery-solution | chars: 3692
 
@@ -446,7 +446,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 8/59 -----
+----- chunk 8/63 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution | Enatega
 slug: document-delivery-solution | chars: 740
 
@@ -478,7 +478,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 9/59 -----
+----- chunk 9/63 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 3672
 
@@ -508,7 +508,7 @@ The development team implemented a wallet feature for riders and restaurants, au
 ## Launching The App
 Once all requested features for version 1.0 were completed, the app was ready for launch. The Easy Eats founders participated in the Greenlight Maine competition, where they presented their app to the judges. After showcasing the app's unique features, the Easy Eats team won the competition, receiving $25,000 to expand their operations. Subsequently, they launched the app at their college in Maine and extended operations to nearby universities.
 
------ chunk 10/59 -----
+----- chunk 10/63 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 1762
 
@@ -543,7 +543,7 @@ Phone: +1 (307) 776-8999
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 11/59 -----
+----- chunk 11/63 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 3628
 
@@ -592,7 +592,7 @@ With multiple payment integrations, including Stripe, Enatega enables businesses
 
 ## Choosing the Best Alternative for Blink
 
------ chunk 12/59 -----
+----- chunk 12/63 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 1619
 
@@ -630,7 +630,7 @@ Phone: +1 (307) 776-8999
 ©2024 Enatega · All rights reserved.  
 Privacy Policy | Terms & Conditions
 
------ chunk 13/59 -----
+----- chunk 13/63 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 3514
 
@@ -674,7 +674,7 @@ Enatega provides complete UI control, enabling the creation of an app that align
 ### Comprehensive Payment Options
 Enatega supports multiple payment gateways, including Stripe, facilitating a smooth payment experience tailored to various market needs. DeOnDe offers basic payment features, which may be less flexible for businesses with specific integration requirements.
 
------ chunk 14/59 -----
+----- chunk 14/63 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 1934
 
@@ -722,7 +722,7 @@ Phone: +1 (307) 776-8999
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 15/59 -----
+----- chunk 15/63 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 3558
 
@@ -788,7 +788,7 @@ Enatega equips businesses with the tools to create a unique user interface that 
 ### Payment Flexibility
 Enatega integrates various payment gateways, including Stripe, to facilitate transactions for diverse market needs. GloriaFood’s limited payment setup may not suffice for more complex operations, making Enatega a superior white-label solution.
 
------ chunk 16/59 -----
+----- chunk 16/63 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 1915
 
@@ -837,7 +837,7 @@ Terms & Conditions
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 17/59 -----
+----- chunk 17/63 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 3675
 
@@ -910,7 +910,7 @@ With dedicated support and a scalable architecture, Enatega adapts to your busin
 
 ---
 
------ chunk 18/59 -----
+----- chunk 18/63 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 1445
 
@@ -978,7 +978,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 19/59 -----
+----- chunk 19/63 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 3397
 
@@ -1044,7 +1044,7 @@ Enatega’s extensive customization options and wide-ranging service application
 3. **Enhanced Payment and Tracking Options**  
    While Shipday provides real-time tracking, Enatega offers more adaptable tracking features and multiple payment gateways, allowing businesses to create a streamlined customer experience that fits their specific market needs. This payment flexibility makes Enatega a top alternative with additional benefits.
 
------ chunk 20/59 -----
+----- chunk 20/63 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 1826
 
@@ -1097,7 +1097,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 21/59 -----
+----- chunk 21/63 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 3335
 
@@ -1168,7 +1168,7 @@ Enatega offers tailored support for onboarding and scaling, ideal for companies 
 
 ## Why Enatega Stands Out Among SpotNeats Competitors?
 
------ chunk 22/59 -----
+----- chunk 22/63 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 1568
 
@@ -1220,7 +1220,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 23/59 -----
+----- chunk 23/63 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 3696
 
@@ -1268,7 +1268,7 @@ Enatega is designed to scale alongside your business, with personalized support 
 ## Conclusion
 For companies that want a marketplace app with expansive customization options, Enatega provides a strong alternative to Yelo. Its extensive feature set and full control over design and branding make Enatega a top choice for businesses ready to innovate in the on-demand delivery market.
 
------ chunk 24/59 -----
+----- chunk 24/63 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 1130
 
@@ -1299,7 +1299,7 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 25/59 -----
+----- chunk 25/63 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 3461
 
@@ -1362,7 +1362,7 @@ Enatega provides a range of payment gateways and API compatibility options to fi
 
 ---
 
------ chunk 26/59 -----
+----- chunk 26/63 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 1473
 
@@ -1396,7 +1396,7 @@ Schedule a meeting and get started with Enatega.
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 27/59 -----
+----- chunk 27/63 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 3270
 
@@ -1477,7 +1477,7 @@ For immediate questions, users can contact Enatega via email for assistance with
 ## Testimonials
 Hear from satisfied customers about their experiences with Enatega.
 
------ chunk 28/59 -----
+----- chunk 28/63 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 2408
 
@@ -1542,220 +1542,242 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 29/59 -----
+----- chunk 29/63 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
-slug: features | chars: 3636
+slug: features | chars: 4101
 
-# Enatega Features
+# Enatega Multi-Vendor Features
 
-## Customer Web/Mobile Application
+## Customer Web/Mobile Application Features
 
-### User Authentication & Security
-**Email Verification**
-Ensures authentic user registrations to reduce fake orders and improves downstream communications on order updates and delivery details.
+### Email Verification
+With the email verification feature in the custom web/mobile application, we guarantee the authenticity of user registrations to lower the risk of fake orders and create a reliable customer base. As you can quickly secure the confirmation process via the email verification feature, there's an enhancement in the delivery information that enables streamlined communication on order updates and delivery details.
 
-**Multi-Platform Authentication**
-Simplifies onboarding by allowing sign in with Google, Apple, or Facebook—no separate account creation required.
+### Multi-Platform Authentication
+It is time to simplify the on-boarding process with the multi-platform authentication feature in the custom web/mobile application. We enable our customers to use their existing Google, Apple, or Facebook credentials, eliminating the need for a separate account creation.
 
-### User Interface & Experience
-**Geolocation Restaurant Display**
-Shows nearby restaurants on the home screen and on a map for quick discovery.
+### Geolocation Restaurant Display
+Enhance the overall user experience by incorporating the geolocation restaurant display feature into your interface. We display restaurants on both the map and home screen to create a visually intuitive experience for users to discover nearby dining options.
 
-**Comprehensive Restaurant Information**
-Surfaces reviews/ratings, operating hours, delivery schedules, menu details, and minimum order requirements to support informed decisions.
+### Comprehensive Restaurant Information
+Deliver an immersive restaurant experience through the comprehensive restaurant information feature. Users gain access to reviews, ratings, operational hours, delivery schedules, menu details, and the minimum order requirements to make informed decisions.
 
-**Address Integration**
-Uses Maps + Google Places suggestions so users add accurate addresses; helps route orders to the right delivery locations.
+### Address Integration
+Simplify the process of adding and verifying addresses with our integrated Maps and Google Places functionality for address integration feature. Users can easily add their address by leveraging mapping technology and suggestions from Google Places to ensure order placement at the right delivery locations and optimize the overall ordering process.
 
-**Localization & Theming**
-Multi-language UI and theming so customers can pick preferred language and style aligned to brand identity.
+### Localization And Theming
+Personalize the delivery app solution according to your brand image with our multi-language localization and theming feature. Users can enjoy a customized experience by opting for their preferred language and theme to create a more engaging and user-friendly interface.
 
-**Search Functionality**
-Lets users search both restaurants and specific menu items for faster discovery.
+### Search Functionality
+Empower users to find exactly what they crave with our robust search functionality feature present in the custom web/mobile application. Whether they are looking for specific restaurants or particular menu items, our platform ensures a smooth exploration experience.
 
-### Communication Features
-**Push Notifications**
-Sends updates for account creation, order status, announcements; supports global pushes to reach all users simultaneously.
+### Push Notifications
+Boost customer engagement with our push notification feature. Our push notifications and emails provide constant updates about account creation, order status, and important announcements to keep customers informed. It enables businesses to send global push notifications to ensure that all customers gain access to important information simultaneously.
 
-**Real-Time Tracking**
-Customers can follow live driver location and delivery progress with up-to-the-minute accuracy.
+### Real-Time Tracking
+Experience unparalleled transparency in your delivery process with the real-time tracking feature present in the custom web/mobile application. Your customers can track the exact location and progress of their delivery in real-time to stay updated with accurate and up-to-the-minute information.
 
-**Error Tracking**
-Real-time monitoring integrated with Sentry to catch and resolve issues quickly.
+### Error Tracking
+Improve the robustness of your system with our error tracking feature present in the custom web/mobile application. You can promptly resolve the errors by leveraging real-time monitoring and reporting capabilities. Our system integrates seamlessly with Sentry to provide you with an insight into errors as they occur.
 
-### Analytics & Reporting
-**Performance Analytics**
-Amplitude-powered insights into user behavior, responsiveness, and efficiency to tune performance and UX.
+### Performance Analytics
+You get to optimize your web app's performance with our comprehensive performance analytics feature powered by Amplitude in the custom web/mobile application. Gain valuable insights into user behavior, system responsiveness, and overall application efficiency. With Amplitude, you have the tools to fine-tune your application's performance and deliver an exceptional user experience.
 
-### Order Management System
-**Order Rating & Reviews**
-Collects feedback after each order to improve operations.
+### Order Rating And Reviews
+Get your customer's feedback and gain an insight into their experience with our order rating and reviews feature. After each order, users can provide ratings and reviews to help you improve your delivery business to enable continuous operations.
 
-**Payment Integration**
-Out-of-the-box PayPal and Stripe for secure, convenient checkout.
-
-**Order History**
-Gives businesses visibility into past orders for better decisions and personalization.
-
-**Favorites Management**
-Lets customers mark and manage favorite restaurants for quicker re-ordering.
-
-**Food Customization**
-Supports item variations and special notes to tailor each order.
-
-**Flexible Ordering**
-Offers pickup and delivery with different timing options (e.g., quick lunch pickup vs. scheduled dinner delivery).
-
-### Promotion & Loyalty Programs
-**Vouchers**
-Run discounts/loyalty campaigns (e.g., first-time discounts, rewards for repeat users).
-
-**Tipping**
-Lets users add a tip at checkout to appreciate great service.
-
-## Restaurant Application
-
-### Order Management Operations
-**Order Notification**
-Real-time alerts for new orders so teams can respond quickly and improve delivery speed.
-
-**Time Limiter**
-Configure order acceptance windows and prep times that match kitchen pace to optimize workflow.
-
-**Real-Time Order Receiving**
-Coordinates the handoff from preparation to delivery so orders move smoothly and on time.
-
-**Restaurant Status Updates**
-Toggle online/offline to reflect operational availability and set customer expectations.
-
-**Invoice Print Option**
-Generate and print invoices directly from the app.
-
-**Delivered Orders History**
-Access a detailed history of fulfilled orders (date, items, status, special instructions).
-
-**Customer Order Details**
-Drill into current/past orders: items, pricing, delivery status, timestamps, etc.
-
-## Rider Application
-
-### Order Management for Riders
-**Real-Time Order Status Change**
-Instant updates when an order is accepted, out for delivery, or completed.
-
-**Instant Dual-Alert System**
-New orders trigger both push notifications and audible ringers to avoid missed jobs.
-
------ chunk 30/59 -----
+----- chunk 30/63 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
-slug: features | chars: 3684
+slug: features | chars: 3785
 
-**Restaurant Status Updates**
-Toggle online/offline to reflect operational availability and set customer expectations.
+### Performance Analytics
+You get to optimize your web app's performance with our comprehensive performance analytics feature powered by Amplitude in the custom web/mobile application. Gain valuable insights into user behavior, system responsiveness, and overall application efficiency. With Amplitude, you have the tools to fine-tune your application's performance and deliver an exceptional user experience.
 
-**Invoice Print Option**
-Generate and print invoices directly from the app.
+### Order Rating And Reviews
+Get your customer's feedback and gain an insight into their experience with our order rating and reviews feature. After each order, users can provide ratings and reviews to help you improve your delivery business to enable continuous operations.
 
-**Delivered Orders History**
-Access a detailed history of fulfilled orders (date, items, status, special instructions).
+### Payment Integration
+Streamline transactions effortlessly with the payment integration feature. We support both PayPal and Stripe payment integrations to equip your customers with secure and convenient payment options.
 
-**Customer Order Details**
-Drill into current/past orders: items, pricing, delivery status, timestamps, etc.
+### Order History
+With the order history feature in the custom web/mobile application, you gain access to detailed insights into customer interactions. Business owners can track and analyze past orders to enable smarter decision-making and personalized customer interactions.
 
-## Rider Application
+### Favorites Management
+Enhance customer loyalty with the favorites management feature in the custom web/mobile application. Your customers can easily mark and manage their favorite restaurants to simplify and speed up the ordering process.
 
-### Order Management for Riders
-**Real-Time Order Status Change**
-Instant updates when an order is accepted, out for delivery, or completed.
+### Food Customization
+Cater to individual tastes with our food customization feature. Our platform allows users to add different variations of food items and include specific notes for restaurant preferences. Give a personalized touch to each order to ensure complete customer satisfaction and build loyalty.
 
-**Instant Dual-Alert System**
-New orders trigger both push notifications and audible ringers to avoid missed jobs.
+### Flexible Ordering
+Meet the diverse needs of your customers with the flexible ordering feature. By offering pick-up and delivery options with different timings, you provide users with the freedom to choose what suits them best. Whether it's a quick pick-up during lunch at home or a scheduled delivery for an official dinner, you can easily adapt to customer preferences to boost overall customer satisfaction with the flexible ordering feature.
 
-**Time Limiter**
-Set time limits for fulfillment stages; get alerts if a stage exceeds its threshold to address delays quickly.
+### Vouchers
+Seamlessly run promotions and loyalty campaigns with our vouchers and promotions feature. Whether it's a special discount for first-time users or a loyalty reward for your loyal customer base, our voucher system can boost customer engagement and build loyal customer relationships.
 
-### Location Services
-**Address Mapping**
-Google Maps integration to precisely map customer and restaurant addresses and visualize routes.
+### Tipping
+Add a personal touch to the customer experience with the tipping feature in the custom web/mobile application. Providing users with the option to add tips during the checkout process allows them to express appreciation for excellent service or delivery.
 
-**Distance & Travel Time Display**
-Calculates and shows optimal routes with distance/time to support allocation and scheduling decisions.
+## Restaurant Application Features
 
-### Communication Tools
-**Instant Customer Chat**
-Riders can chat with customers to answer questions and share live updates, smoothing the delivery experience.
+### Order Notification
+We redefine the way your business handles orders with our advanced order notification feature. Stay ahead in real-time and empower your team to respond promptly to new orders and provide customers with the quickest delivery to boost customer satisfaction in no time with our restaurant application features.
 
-### Order History & Records
-**Order History & Progress**
-Historical records with progress and status so operators can review routes and performance.
+### Time Limiter
+With our restaurant application features, you get to take complete control of your order processing with Enatega's time limiter feature. Set the pace with our intuitive time limiter feature to tailor the acceptance periods for orders. Customize meal preparation times according to your kitchen's rhythm to optimize workflows for enhanced efficiency.
 
-### Financial Management for Riders
-**Online Delivery Fee Access**
-Set/modify/optimize delivery charges aligned to business strategy.
+### Real-Time Order Receiving
+Delight your customers with a revolutionary real-time order receiving feature. As orders move seamlessly through preparation and delivery stages, your team stays coordinated to ensure your orders get delivered on time and create an unparalleled customer experience.
 
-**Quick Money Withdrawal**
-Fast, secure withdrawals to access earnings immediately.
+----- chunk 31/63 -----
+url: https://enatega.com/features/ | title: Page not found - Enatega
+slug: features | chars: 3781
 
-**Wallet History**
-View transactions, withdrawals, and customer payments for transparency and accuracy.
+### Time Limiter
+With our restaurant application features, you get to take complete control of your order processing with Enatega's time limiter feature. Set the pace with our intuitive time limiter feature to tailor the acceptance periods for orders. Customize meal preparation times according to your kitchen's rhythm to optimize workflows for enhanced efficiency.
 
-### Status Management
-**Rider Status**
-Monitor rider availability and activity in real time to keep operations on track.
+### Real-Time Order Receiving
+Delight your customers with a revolutionary real-time order receiving feature. As orders move seamlessly through preparation and delivery stages, your team stays coordinated to ensure your orders get delivered on time and create an unparalleled customer experience.
 
-## Admin Dashboard
+### Restaurant Status Updates
+We enable Enatega's partner restaurants to seamlessly manage their online presence. It empowers restaurants to switch their status between online and offline based on their operational availability. By keeping the status up-to-date, the restaurant can effectively inform customers about its current operational state.
 
-### User & Role Management
-**Role-Based Administration**
-Granular role and permission management giving admins access to all needed platform controls.
+### Invoice Print Option
+Empowers partner restaurants with the capability to generate and print invoices directly from the Enatega delivery solution app.
 
-**User Management**
-Capture/organize customer data, track order history, and run customized promotions to build loyalty.
+### Delivered Orders History
+The delivered orders history feature provides a comprehensive history of all delivered orders through Enatega's delivery solution app. As a business you can easily access a detailed record of past orders, consisting of information such as order date, items ordered, delivery status, and any special instructions provided by the customer.
 
-**Ratings & Coupon Management**
-Respond to reviews and manage ratings/coupons to attract and retain customers.
+### Customer Order Details
+Enatega's delivery solution app offers a robust customer order details feature that provides users with in-depth insights into their current and past orders. We allow business to view specific order details which consist of the list of items ordered, pricing, delivery status, and timestamps.
 
-**Tipping Option Management**
-Configure tipping experience to motivate and reward delivery teams.
+## Rider Application Features
 
-### Establishment Management
-**Restaurant Management & Selection**
-Browse and manage the restaurant list, selecting partners via the admin tools.
+### Real-Time Order Status Change
+Enatega's rider application features provide business owners with instantaneous updates on the status changes of their delivery orders. The moment an order is accepted, out for delivery, or completed, the real-time order status change system updates in real-time.
 
-**Vendor Management**
-Onboard/manage vendors and equip them to present offerings effectively.
+### Instant Dual-Alert System
+Never miss a beat with Enatega's rider application features. Business owners receive instant notifications through a combination of push notifications and audible ringers as soon as an order is placed. The instant dual-alert system ensures that owners are immediately informed about incoming orders.
 
-**Withdrawal Requests from Riders**
-Process and approve rider withdrawals promptly and securely.
+### Time Limiter
+Enatega's rider application features consist of a time limiter as well, which allows business owners to set predefined time limits for different stages of the order fulfilment process. If any stage in the ordering process exceeds the designated time limit, the application will send an alert to enable owners to identify and address potential delays swiftly.
 
-### Financial & Commission Control
-**Commission Rate Management**
-Adjust commission structures to fit business strategy.
+### Address Mapping
+Incorporate advanced mapping feature capabilities using Google Maps and precisely map the delivery addresses of customers and restaurants. With seamless integration, the application provides a visual representation of the delivery route to ensure efficient navigation for the delivery team.
 
-**Stripe Commission Integration**
-Receive commissions directly into Stripe for secure transfer and reconciliation.
+### Distance And Travel Time Display
+Enatega's rider application empowers business owners with real-time insights into the distance and travel time display feature. The application calculates and displays the optimal route, enabling owners to make informed decisions about resource allocation and delivery scheduling.
 
-### Operational Configuration
-**Geographical Zones Management**
-Organize delivery zones to minimize delivery times and raise customer satisfaction.
+### Instant Customer Chat
+Enhance your customer service with the instant customer chat feature present in the Enatega's rider application features. Riders can instantly address customer inquiries, provide updates, and ensure a smooth delivery experience.
 
-**Application Configuration**
-Customize brand identity, pricing, and features to fit your operating model.
+----- chunk 32/63 -----
+url: https://enatega.com/features/ | title: Page not found - Enatega
+slug: features | chars: 3822
 
-**Order Status Control**
-Maintain visibility and control from placement through delivery for a holistic operational view.
+### Address Mapping
+Incorporate advanced mapping feature capabilities using Google Maps and precisely map the delivery addresses of customers and restaurants. With seamless integration, the application provides a visual representation of the delivery route to ensure efficient navigation for the delivery team.
 
-**Restaurant Time Management**
-Manage opening hours, prep times, and delivery schedules to keep orders timely and fresh.
+### Distance And Travel Time Display
+Enatega's rider application empowers business owners with real-time insights into the distance and travel time display feature. The application calculates and displays the optimal route, enabling owners to make informed decisions about resource allocation and delivery scheduling.
 
-**Delivery Area Definition**
-Define/adjust coverage areas to match demand and market growth.
+### Instant Customer Chat
+Enhance your customer service with the instant customer chat feature present in the Enatega's rider application features. Riders can instantly address customer inquiries, provide updates, and ensure a smooth delivery experience.
 
-### Menu & Analytics
-**Menu Showcase**
-Present menus effectively to elevate restaurant presence (admin-side configuration support).
+### Order History And Order Progress
+Gain valuable insights into your delivery operations with the comprehensive order history and progress feature in Enatega's rider application. You get a detailed record of the previous orders including order progress and delivery status. Business owners can review completed orders, track delivery routes, and assess overall performance.
 
------ chunk 31/59 -----
+### Online Delivery Fee Access
+Gain control over online delivery fees with Enatega's comprehensive solution. Set, modify, and optimize delivery charges tailored to your business strategy.
+
+### Quick Money Withdrawal
+Empower your business with the freedom to withdraw earnings seamlessly with our quick money withdrawal feature. With the quick money withdrawal feature, you get quick and secure money withdrawal, giving you immediate access to your hard-earned money.
+
+### Wallet History
+Dive into the financial journey of your business with our wallet history feature. You get to gain insights into transactions, withdrawals, and customer payments. To ensure accuracy and transparency in every aspect of the delivery journey, this rider application feature equips you with valuable data to make informed decisions.
+
+### Rider Status
+Stay in control of your delivery operations with Enatega's rider status feature from the rider application feature toolkit. Monitor the real-time status of your delivery fleet to ensure optimal performance and customer satisfaction.
+
+## Admin Dashboard Features
+
+### Role-Based Administration
+Experience seamless control and precision with our role-based administration feature. Tailored for efficient user and role management in the admin dashboard features, this functionality ensures that administrators gain unrestricted access to all platform features.
+
+### User Management
+The user management feature is designed to elevate your customer engagement strategy. Seamlessly capture and organize customer data to have personalized interactions with your customers. From order history tracking to customized promotions, this feature present in the list of admin panel features enables you to build lasting relationships and enhance customer loyalty.
+
+### Ratings And Coupon Management
+Take control of your online reputation with the ratings and coupon management feature present in the admin dashboard features toolkit. We help you respond to customer feedback and reviews through the restaurant dashboard to highlight your commitment to customer satisfaction. The integrated rating and coupon management feature not only attracts new customers but also retains existing ones to create a win-win scenario for your business.
+
+### Tipping Option Management
+The tipping option management feature is not just a feature; it's a way to appreciate and motivate your delivery team. Enable your customers to show their gratitude and satisfaction with your service through a seamless tipping process present in the admin panel features.
+
+----- chunk 33/63 -----
+url: https://enatega.com/features/ | title: Page not found - Enatega
+slug: features | chars: 4168
+
+### Ratings And Coupon Management
+Take control of your online reputation with the ratings and coupon management feature present in the admin dashboard features toolkit. We help you respond to customer feedback and reviews through the restaurant dashboard to highlight your commitment to customer satisfaction. The integrated rating and coupon management feature not only attracts new customers but also retains existing ones to create a win-win scenario for your business.
+
+### Tipping Option Management
+The tipping option management feature is not just a feature; it's a way to appreciate and motivate your delivery team. Enable your customers to show their gratitude and satisfaction with your service through a seamless tipping process present in the admin panel features.
+
+### Restaurant Management And Selection
+With the restaurant management and selection feature, you get access to a vast range of tools to manage your restaurant business through the admin dashboard features. You can easily explore the restaurant list and select the right ones by leveraging the food delivery app admin dashboard features.
+
+### Vendor Management
+We offer robust capabilities to help businesses manage their vendors with our vendor management feature. With our restaurant dashboard for admins, you can seamlessly onboard and manage your network of vendors to ensure a streamlined and efficient collaboration. We help create partnerships to provide vendors with the tools they need to highlight their offerings effectively with the food delivery app admin dashboard features.
+
+### Withdrawal Requests From Riders Management
+We put you in the driver's seat when it comes to managing withdrawal requests from riders with the withdrawal requests from riders management feature. Seamlessly handle financial transactions with our intuitive interface which ensures prompt and secure transactions with the admin dashboard features.
+
+### Commission Rate Management
+Take charge of your business's financial health with the commission rate management feature. By leveraging the admin dashboard features, you get to customize and adjust the commission rates effortlessly to align them with your business strategy.
+
+### Stripe Commission Integration
+Elevate your financial operations with the Stripe commission integration feature. With the Stripe commission integration feature, you can receive commissions directly in your Stripe account to ensure a secure transfer process.
+
+### Geographical Zones Management
+Elevate your delivery service precision with the geographical zones management feature. As a business, you can ensure accurate and efficient deliveries by strategically organizing and managing geographical zones. Minimize delivery times and increase customer satisfaction with this cutting-edge geographical zones management feature.
+
+### Application Configuration
+Tailor your delivery app to meet your specific business needs with Enatega's Application Configuration. Enjoy unparalleled flexibility as you customize the app to reflect your brand identity, set pricing structures, and configure features that align with your unique business model.
+
+### Order Status Control
+Maintain complete control over your delivery process with the order status control feature. From order placement to delivery, you can always access a holistic overall view of all the operations in this admin dashboard feature.
+
+### Restaurant Time Management
+Optimize your restaurant's efficiency with the restaurant time management feature. Seamlessly manage opening hours, order preparation times, and delivery schedules. Ensure timely and fresh deliveries with the restaurant time management feature to increase customer loyalty and positive reviews.
+
+### Delivery Area Definition
+Increase your brand's reach strategically with our delivery area definition feature. You can define and adjust your delivery areas as per the demand to ensure you cover the maximum target market.
+
+### Menu Showcase
+Elevate your restaurant's presence with the menu showcase feature. Catch your customers' eye with enticing images, detailed descriptions, and a seamless browsing experience using the menu showcase feature.
+
+----- chunk 34/63 -----
+url: https://enatega.com/features/ | title: Page not found - Enatega
+slug: features | chars: 1895
+
+### Restaurant Time Management
+Optimize your restaurant's efficiency with the restaurant time management feature. Seamlessly manage opening hours, order preparation times, and delivery schedules. Ensure timely and fresh deliveries with the restaurant time management feature to increase customer loyalty and positive reviews.
+
+### Delivery Area Definition
+Increase your brand's reach strategically with our delivery area definition feature. You can define and adjust your delivery areas as per the demand to ensure you cover the maximum target market.
+
+### Menu Showcase
+Elevate your restaurant's presence with the menu showcase feature. Catch your customers' eye with enticing images, detailed descriptions, and a seamless browsing experience using the menu showcase feature.
+
+### Versatile Food Option Module
+The versatile food option module feature empowers you to show your culinary creativity to your potential customers. With the versatile food option module feature, you can add any variety of food effortlessly, from daily specials to seasonal delights. Enjoy the flexibility to modify, customize, and expand your menu offerings to cater to evolving customer tastes.
+
+### Discounted Fare
+Attract and retain customers with the discounted fare feature. Implement strategic discounts on food items to attract potential customers to opt for your offerings in the competitive culinary landscape. Make every dining experience unforgettable and affordable for your customers with the discount fare feature.
+
+### Order And Performance Analytics
+The order and performance analytics feature provide you with invaluable insights into your business operations. You get to stay updated with the current order trends, analyze customer preferences, and optimize your menu based on analytics. Enhance your operational overall performance and reduce your business costs with this admin dashboard feature.
+
+----- chunk 35/63 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Custom-Made Saas Based Flower Delivery Solution | Enatega
 slug: flower-delivery-solution | chars: 3681
 
@@ -1846,7 +1868,7 @@ A custom plan tailored for enterprises needing advanced features and deployment 
 - Continuous collaboration with Enatega developers.
 - Advanced support and personalized technical guidance.
 
------ chunk 32/59 -----
+----- chunk 36/63 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Custom-Made Saas Based Flower Delivery Solution | Enatega
 slug: flower-delivery-solution | chars: 764
 
@@ -1874,7 +1896,7 @@ For inquiries, please contact:
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 33/59 -----
+----- chunk 37/63 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
 slug: food-and-beverage-solution | chars: 3497
 
@@ -1979,7 +2001,7 @@ For inquiries, please contact:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 34/59 -----
+----- chunk 38/63 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
 slug: food-and-beverage-solution | chars: 754
 
@@ -2011,7 +2033,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 35/59 -----
+----- chunk 39/63 -----
 url: https://enatega.com/gift-delivery-solution/ | title: Page not found - Enatega
 slug: gift-delivery-solution | chars: 822
 
@@ -2087,7 +2109,7 @@ sales@enatega.com
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 36/59 -----
+----- chunk 40/63 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: Online Grocery Delivery & Ordering Solution | Enatega
 slug: grocery-delivery-solution | chars: 3542
 
@@ -2185,7 +2207,7 @@ For inquiries, contact us at:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 37/59 -----
+----- chunk 41/63 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: Online Grocery Delivery & Ordering Solution | Enatega
 slug: grocery-delivery-solution | chars: 673
 
@@ -2216,7 +2238,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 38/59 -----
+----- chunk 42/63 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Online Laundry On-Demand Services Solution | Enatega
 slug: laundry-on-demand-services-solution | chars: 3477
 
@@ -2307,7 +2329,7 @@ The Premium Plan features a rich delivery suite ideal for growing businesses, in
 ### Enterprise Plan
 The Enterprise Plan is a custom solution tailored for enterprises needing advanced features and deployment support, including:
 
------ chunk 39/59 -----
+----- chunk 43/63 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Online Laundry On-Demand Services Solution | Enatega
 slug: laundry-on-demand-services-solution | chars: 1371
 
@@ -2355,7 +2377,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 40/59 -----
+----- chunk 44/63 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: On-Demand White Label Liquor Delivery Solution | Enatega
 slug: liquor-delivery-solution | chars: 3559
 
@@ -2456,7 +2478,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 41/59 -----
+----- chunk 45/63 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: On-Demand White Label Liquor Delivery Solution | Enatega
 slug: liquor-delivery-solution | chars: 1132
 
@@ -2500,7 +2522,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 42/59 -----
+----- chunk 46/63 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Feature-Rich On-Demand Medicine Delivery Solution | Enatega
 slug: medicine-delivery-solution | chars: 3420
 
@@ -2592,7 +2614,7 @@ The Premium Plan includes:
 ### Enterprise Plan
 The Enterprise Plan is a custom solution tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 43/59 -----
+----- chunk 47/63 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Feature-Rich On-Demand Medicine Delivery Solution | Enatega
 slug: medicine-delivery-solution | chars: 1369
 
@@ -2640,7 +2662,7 @@ United States
 
 ©2024 Enatega. All rights reserved.
 
------ chunk 44/59 -----
+----- chunk 48/63 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Launch Your Feature-Rich Milk Delivery App with Enatega
 slug: milk-delivery-solution | chars: 3529
 
@@ -2744,7 +2766,7 @@ United States
 **Email:** sales@enatega.com  
 **Phone:** +1 (307) 776-8999
 
------ chunk 45/59 -----
+----- chunk 49/63 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Launch Your Feature-Rich Milk Delivery App with Enatega
 slug: milk-delivery-solution | chars: 758
 
@@ -2776,7 +2798,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 46/59 -----
+----- chunk 50/63 -----
 url: https://enatega.com/multi-vendor-features/ | title: Enatega Features for Food Delivery Solution | Enatega
 slug: multi-vendor-features | chars: 1589
 
@@ -2839,7 +2861,7 @@ Phone: +1 (307) 776-8999
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 47/59 -----
+----- chunk 51/63 -----
 url: https://enatega.com/overview-of-the-api/ | title: Overview of the API - Multi-Vendor Doc - Enatega
 slug: overview-of-the-api | chars: 2617
 
@@ -2928,7 +2950,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 48/59 -----
+----- chunk 52/63 -----
 url: https://enatega.com/prerequisites/ | title: Multi Vendor App Server Configurations | Enatega
 slug: prerequisites | chars: 1302
 
@@ -3016,7 +3038,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 49/59 -----
+----- chunk 53/63 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Customizable Roadside Assistance Services Solution | Enatega
 slug: roadside-assistance-services-solution | chars: 3621
 
@@ -3116,7 +3138,7 @@ The Enterprise Plan is a custom option tailored for businesses needing advanced 
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 50/59 -----
+----- chunk 54/63 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Customizable Roadside Assistance Services Solution | Enatega
 slug: roadside-assistance-services-solution | chars: 750
 
@@ -3149,7 +3171,7 @@ United States
 
 ©2024 Enatega. All rights reserved.
 
------ chunk 51/59 -----
+----- chunk 55/63 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 3867
 
@@ -3192,7 +3214,7 @@ The development of Snap Delivered's first version was a race against time. The N
 ## The Future For Snap Delivered
 Snap Delivered’s strategic efforts to overcome challenges have yielded positive results. The platform has gained traction among local businesses and consumers, establishing a niche in the competitive food delivery landscape. With flexible pricing models and a focus on community engagement, Snap Delivered continues to grow its user base. Looking ahead, the company remains committed to innovation, sustainability, and user satisfaction. By keeping pace with technological trends and fostering collaboration with partners, Snap Delivered aims to further disrupt the industry and position itself as a viable alternative to established players.
 
------ chunk 52/59 -----
+----- chunk 56/63 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 1159
 
@@ -3220,7 +3242,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 53/59 -----
+----- chunk 57/63 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 3295
 
@@ -3261,7 +3283,7 @@ By leveraging Enatega’s capabilities, StylizeNOW eliminated the need for custo
 
 Enatega’s ready-made solution has proven to be an excellent resource for StylizeNOW. By utilizing Enatega, StylizeNOW can deliver top-notch services to its customers, saving time and enhancing team productivity. The pre-built platform is fully customizable, allowing StylizeNOW to brand it as their own and tailor the user experience to their specific audience. This has helped establish StylizeNOW as a distinct and recognizable brand in the competitive online salon industry.
 
------ chunk 54/59 -----
+----- chunk 58/63 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 1465
 
@@ -3293,7 +3315,7 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 55/59 -----
+----- chunk 59/63 -----
 url: https://enatega.com/tech_stack/ | title: Enatega — Tech Stack
 slug: tech_stack | chars: 2770
 
@@ -3329,7 +3351,7 @@ Enatega's technology stack enables the delivery of complete food delivery soluti
 
 The architecture maintains the scalability necessary to support multiple restaurants and thousands of concurrent users across various geographic locations. This makes it an ideal white-label solution for entrepreneurs and established businesses looking to launch their own branded food delivery platforms without incurring the substantial development costs typically associated with building such complex systems from scratch.
 
------ chunk 56/59 -----
+----- chunk 60/63 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 3409
 
@@ -3372,7 +3394,7 @@ United States
 Email: sales@enatega.com  
 Phone: +1 (307) 776-8999
 
------ chunk 57/59 -----
+----- chunk 61/63 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 971
 
@@ -3400,7 +3422,7 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 58/59 -----
+----- chunk 62/63 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 3481
 
@@ -3463,7 +3485,7 @@ With a laser-focused agile approach, Yalla’s minimum viable product (MVP) was 
 
 Yalla has quickly cemented its reputation as a go-to app in the food and grocery delivery space, and it’s only getting started.
 
------ chunk 59/59 -----
+----- chunk 63/63 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 1892
 

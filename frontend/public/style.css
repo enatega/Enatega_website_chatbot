@@ -106,7 +106,34 @@ margin: 4px 0 4px 16px;
 padding: 0;
 }
 
-
+/* Quick suggestions (chips) inside assistant bubble */
+.sugg-title {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .sugg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .sugg-chip {
+    border: 0;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    color: #00111a;
+  }
+  
+  .sugg-chip:hover {
+    filter: brightness(.95);
+  }
+  
 
 /* Optional: style links shown in answers */
 .bubble a { color: var(--accent2); text-decoration: underline; }

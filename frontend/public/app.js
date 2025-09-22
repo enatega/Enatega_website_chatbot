@@ -1,6 +1,6 @@
-//const API_BASE = (localStorage.getItem("chat_api_base") || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API_BASE = (localStorage.getItem("chat_api_base") || "http://127.0.0.1:8000").replace(/\/$/, "");
 //const API_BASE = "https://enatega-bot.onrender.com";
-const API_BASE = "https://enategawebsitechatbot-production.up.railway.app"
+//const API_BASE = "https://enategawebsitechatbot-production.up.railway.app"
 const SESSION_ID = localStorage.getItem("chat_session_id") || crypto.randomUUID();
 localStorage.setItem("chat_session_id", SESSION_ID);
 
@@ -12,6 +12,16 @@ const latencyEl = $("#latency");
 const widgetEl = $("#widget");
 const launcherEl = $("#launcher");
 const closeBtn = $("#closeBtn");
+
+// Default quick questions shown on load
+const DEFAULT_SUGGESTIONS = [
+    "What is Enatega?",
+    "Give me demos",
+    "Features of Enatega",
+    "Pricing options",
+    "How do you deploy?"
+  ];
+  
 
 launcherEl.addEventListener("click", () => {
   widgetEl.classList.toggle("hidden");
@@ -221,7 +231,60 @@ async function ask(question) {
     latencyEl.textContent = "";
   }
 }
-
+function renderSuggestions(items) {
+    // Row that looks like a normal assistant message with chips inside
+    const wrap = document.createElement("div");
+    wrap.className = "msg bot";
+    wrap.id = "sugg-row";
+  
+    const bubble = document.createElement("div");
+    bubble.className = "bubble";
+  
+    const title = document.createElement("div");
+    title.className = "sugg-title";
+    title.textContent = "Quick questions";
+  
+    const list = document.createElement("div");
+    list.className = "sugg";
+  
+    items.forEach(q => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "sugg-chip";
+      btn.setAttribute("data-suggest", q);
+      btn.textContent = q;
+      list.appendChild(btn);
+    });
+  
+    bubble.appendChild(title);
+    bubble.appendChild(list);
+    wrap.appendChild(bubble);
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+  
+  // Welcome message + suggestions on load
+  function showWelcome() {
+    const html = `
+      <h2><strong>Welcome to Enatega Assistant</strong></h2>
+      <p>Ask me about features, demos, pricing, deployment, or integrations. You can also tap a quick question below to get started.</p>
+    `;
+    addMessage("assistant", html);
+    renderSuggestions(DEFAULT_SUGGESTIONS);
+  }
+  
+  // Click a suggestion → auto-send as user
+  messagesEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".sugg-chip");
+    if (!btn) return;
+    const q = btn.getAttribute("data-suggest") || btn.textContent || "";
+    // remove the suggestions row once a chip is used (optional)
+    const row = document.getElementById("sugg-row");
+    if (row) row.remove();
+    // stream the selected question
+    askStreaming(q);
+  });
+  
 sendBtn.addEventListener("click", () => {
     const q = inputEl.value.trim();
     if (!q) return;
@@ -235,4 +298,5 @@ sendBtn.addEventListener("click", () => {
   
 
 // optional greeting
-addMessage("assistant", "Hi! I’m the Enatega assistant. Ask me about features, pricing, or deployment.");
+//addMessage("assistant", "Hi! I’m the Enatega assistant. Ask me about features, pricing, or deployment.");
+showWelcome();

@@ -104,6 +104,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     
     "WHEN TO SUGGEST BOOKING A MEETING:\n"
     f"Proactively suggest booking a strategy call at {calendly_link} when:\n"
+    "• CRUCIAL:- Anything related to Enatega, technical or non-technical that is not in your context\n"
     "• User asks highly technical questions beyond your knowledge (database specifics, complex integrations, custom development)\n"
     "• User shows strong interest (asks about pricing, timeline, implementation)\n"
     "• User has specific business requirements that need detailed discussion\n"
