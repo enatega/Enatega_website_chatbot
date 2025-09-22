@@ -95,6 +95,55 @@ function sanitizeBasicHTML(html) {
   
     return out;
   }
+
+  async function askStreaming(question) {
+    addMessage("user", question);
+  
+    // Prepare an empty assistant bubble to fill as chunks arrive
+    const wrap = document.createElement("div");
+    wrap.className = "msg bot";
+    const bubble = document.createElement("div");
+    bubble.className = "bubble";
+    wrap.appendChild(bubble);
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  
+    // optional spinner while first bytes arrive
+    const thinking = document.createElement("span");
+    thinking.className = "spinner";
+    latencyEl.innerHTML = "";
+    latencyEl.appendChild(thinking);
+  
+    try {
+      const res = await fetch(`${API_BASE}/chat_stream`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ session_id: SESSION_ID, message: question }),
+      });
+      if (!res.ok || !res.body) {
+        const t = await res.text();
+        bubble.textContent = `Server error: ${res.status} ${t}`;
+        return;
+      }
+  
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buf = "";
+  
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream: true });
+        bubble.innerHTML = normalizeHTML(sanitizeBasicHTML(buf));
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }
+    } catch (e) {
+      bubble.textContent = `Network error: ${e.message}`;
+    } finally {
+      latencyEl.textContent = "";
+    }
+  }
+  
   
 
 
@@ -128,14 +177,16 @@ async function ask(question) {
 }
 
 sendBtn.addEventListener("click", () => {
-  const q = inputEl.value.trim();
-  if (!q) return;
-  inputEl.value = "";
-  ask(q);
-});
-inputEl.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") sendBtn.click();
-});
+    const q = inputEl.value.trim();
+    if (!q) return;
+    inputEl.value = "";
+    askStreaming(q);  // ⬅ stream instead of ask()
+  });
+  
+  inputEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") sendBtn.click();
+  });
+  
 
 // optional greeting
 addMessage("assistant", "Hi! I’m the Enatega assistant. Ask me about features, pricing, or deployment.");
