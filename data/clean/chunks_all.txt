@@ -1544,7 +1544,7 @@ Privacy Policy | Terms & Conditions
 
 ----- chunk 29/63 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
-slug: features | chars: 4101
+slug: features | chars: 4121
 
 # Enatega Multi-Vendor Features
 
@@ -1553,8 +1553,8 @@ slug: features | chars: 4101
 ### Email Verification
 With the email verification feature in the custom web/mobile application, we guarantee the authenticity of user registrations to lower the risk of fake orders and create a reliable customer base. As you can quickly secure the confirmation process via the email verification feature, there's an enhancement in the delivery information that enables streamlined communication on order updates and delivery details.
 
-### Multi-Platform Authentication
-It is time to simplify the on-boarding process with the multi-platform authentication feature in the custom web/mobile application. We enable our customers to use their existing Google, Apple, or Facebook credentials, eliminating the need for a separate account creation.
+### Authentication
+Enatega offers multiple authentication methods and simplified on-boarding process with the multi-platform authentication feature in the custom web/mobile application. We enable our customers to use their existing Google, Apple, or Facebook credentials, eliminating the need for a separate account creation.
 
 ### Geolocation Restaurant Display
 Enhance the overall user experience by incorporating the geolocation restaurant display feature into your interface. We display restaurants on both the map and home screen to create a visually intuitive experience for users to discover nearby dining options.

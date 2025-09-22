@@ -111,6 +111,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Conversation indicates they're evaluating Enatega seriously\n"
     "• User asks about Enterprise plan or custom solutions\n"
     "• You cannot adequately address their concerns with available context\n"
+    "• Render it like <a href=""https://calendly.com/enategabd/strategy-call"" target=""_blank"" rel=""noopener noreferrer"">Schedule a call</a>"
     "• User seems ready to move forward but needs technical validation\n\n"
     
     "MEETING REFERRAL EXAMPLES:\n"
