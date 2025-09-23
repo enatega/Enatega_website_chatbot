@@ -1,5 +1,5 @@
 # api/main.py
-import os, time
+import os, time, re, json
 from typing import List, Dict
 from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException
@@ -22,8 +22,15 @@ from fastapi.responses import FileResponse, Response
 
 # --- streaming helpers ---
 from fastapi.responses import StreamingResponse
-from langchain_core.messages import SystemMessage
-from typing import AsyncGenerator
+from typing import AsyncGenerator, Optional, Dict
+from difflib import get_close_matches
+from langchain_core.tools import tool
+from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableLambda, RunnableMap, RunnablePassthrough
+
+
 
 # ---------- env ----------
 load_dotenv()
@@ -111,6 +118,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Conversation indicates they're evaluating Enatega seriously\n"
     "• User asks about Enterprise plan or custom solutions\n"
     "• You cannot adequately address their concerns with available context\n"
+
     "• User seems ready to move forward but needs technical validation\n\n"
     
     "MEETING REFERRAL EXAMPLES:\n"
@@ -192,6 +200,133 @@ class ChatResp(BaseModel):
     used_chunks: int
     latency_ms: int
 
+
+# ---- Demo catalog (canonical keys are lowercase) ----
+DEMO_LINKS = {
+    "customer app": {
+        "ios": "https://apps.apple.com/us/app/enatega-multivendor/id1526488093",
+        "android": "https://play.google.com/store/apps/details?id=com.enatega.multivendor",
+        "prototype": "https://embed.figma.com/proto/LSolukFLwl0bAzMUd6Pmg4/Customer-Mobile-App?page-id=275%E2%80%A6esponsive&starting-point-node-id=5502%3A4571&embed-host=share",
+    },
+    "rider app": {
+        "ios": "https://apps.apple.com/pk/app/enatega-mulitvendor-rider/id1526674511",
+        "android": "https://play.google.com/store/apps/details?id=com.enatega.multirider",
+        "prototype": "https://www.figma.com/proto/YSwFI6jvKEfppvumDfZ5GT/Rider-App?content-scaling=respon%E2%80%A6age-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A587",
+    },
+    "restaurant app": {
+        "ios": "https://apps.apple.com/pk/app/enatega-store/id1526672537",
+        "android": "https://play.google.com/store/apps/details?id=multivendor.enatega.restaurant",
+        "prototype": "https://www.figma.com/proto/KnBNgwoio8zujFKSEzXTZ4/Restaurant-App?content-scaling=r%E2%80%A6age-id=0%3A1&scaling=scale-down&starting-point-node-id=0%3A731",
+    },
+    "customer web": {
+        "web": "https://multivendor.enatega.com/?_gl=1*13cpnd2*_gcl_au*MTIwMzg0NDY0NS4xNzU3NDg0OTA2",
+        "prototype": "https://embed.figma.com/proto/bdA2QOM79DtIGJAQMa4LEv/Customer-Web-App?page-id=0%3A1&%E2%80%A6caling=fixed&starting-point-node-id=1%3A6328&embed-host=share",
+    },
+    "admin dashboard": {
+        "web": "https://multivendor-admin.enatega.com/?_gl=1*3lj6s*_gcl_au*MTIwMzg0NDY0NS4xNzU3NDg0OTA2",
+        "prototype": "https://www.figma.com/proto/D7HeChxKZo45MWEEVGQ1mK/Admin-Web-App?content-scaling=fi%E2%80%A6page-id=0%3A1&scaling=contain&starting-point-node-id=1%3A13258",
+    },
+    "server": {
+        "web": "https://v1-api-enatega-multivendor-stage.up.railway.app/graphql",
+    },
+}
+
+# Aliases (no regex). You can add more colloquialisms here.
+APP_ALIASES = {
+    "customer": "customer app",
+    "customer app": "customer app",
+    "rider": "rider app",
+    "rider app": "rider app",
+    "restaurant": "restaurant app",
+    "restaurant app": "restaurant app",
+    "web": "customer web",
+    "customer web": "customer web",
+    "admin": "admin dashboard",
+    "admin dashboard": "admin dashboard",
+    "dashboard": "admin dashboard",
+    "server": "server",
+}
+
+TYPE_ALIASES = {
+    "ios": "ios", "iphone": "ios", "ipad": "ios",
+    "android": "android", "apk": "android",
+    "web": "web", "website": "web",
+    "prototype": "prototype", "figma": "prototype", "proto": "prototype",
+    "docs": "docs", "documentation": "docs",
+}
+
+def _norm_app(s: Optional[str]) -> Optional[str]:
+    if not s: return None
+    key = s.strip().lower()
+    if key in APP_ALIASES:
+        return APP_ALIASES[key]
+    # fuzzy match to canonical keys
+    canon = list(DEMO_LINKS.keys())
+    match = get_close_matches(key, canon, n=1, cutoff=0.75)
+    return match[0] if match else key
+
+def _norm_type(s: Optional[str]) -> Optional[str]:
+    if not s: return None
+    key = s.strip().lower()
+    return TYPE_ALIASES.get(key, key)
+
+def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
+    app = _norm_app(app)
+    demo_type = _norm_type(demo_type)
+
+    def pill(label, url):
+        # Frontend already forces target=_blank safely
+        return f'<a href="{url}">{label}</a>'
+
+    blocks = []
+    items = DEMO_LINKS.items()
+    if app and app in DEMO_LINKS:
+        items = [(app, DEMO_LINKS[app])]
+    for app_name, targets in items:
+        pills = []
+        for tlabel, url in targets.items():
+            if demo_type and tlabel != demo_type:
+                continue
+            pills.append(pill(tlabel.capitalize(), url))
+        if not pills:  # if filter removed all, show all for that app
+            pills = [pill(t.capitalize(), u) for t, u in targets.items()]
+        title = app_name.title() if app_name != "admin dashboard" else "Admin Dashboard"
+        blocks.append(f"<h3><strong>{title}</strong></h3><p>Demo Links: {' '.join(pills)}</p>")
+
+    if not blocks:
+        return "<p>No demo links configured yet.</p>"
+    return "<h2><strong>Explore Our Live Demos</strong></h2>" + "".join(blocks)
+
+@tool("get_demo_links", return_direct=False)
+def get_demo_links(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
+    """Return HTML with demo links. app ∈ {customer app, rider app, restaurant app, customer web, admin dashboard, server}. demo_type ∈ {ios, android, web, prototype, docs}. Omit args to show all."""
+    return _render_demo_html(app, demo_type)
+
+
+# Small, deterministic router that only decides whether to call the tool
+router_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.0, api_key=OPENAI_API_KEY).bind_tools([get_demo_links])
+
+ROUTER_SYS = (
+    "You can call get_demo_links when the user asks for a demo or demo links. "
+    "If they specify an app (customer app, rider app, restaurant app, customer web, admin dashboard, server) "
+    "and/or a demo type (ios, android, web, prototype, docs), pass them. "
+    "If unspecified, omit the arg to show all. "
+    "If the request is not about demos, do not call any tool."
+)
+
+def maybe_answer_with_demos(user_msg: str) -> Optional[str]:
+    ai = router_llm.invoke([SystemMessage(content=ROUTER_SYS), HumanMessage(content=user_msg)])
+    calls = ai.additional_kwargs.get("tool_calls") or []
+    for c in calls:
+        fn = (c.get("function") or {}).get("name")
+        if fn == "get_demo_links":
+            raw = (c.get("function") or {}).get("arguments") or "{}"
+            args = json.loads(raw)
+            # Execute tool
+            return get_demo_links.invoke(args)
+    return None
+
+
 # ---------- endpoints ----------
 @app.get("/healthz")
 def healthz():
@@ -211,6 +346,15 @@ def chat(req: ChatReq):
     if hasattr(memory, "buffer") and isinstance(memory.buffer, list):
         memory.buffer[:] = memory.buffer[-(2 * MAX_TURNS):]
 
+    demo_html = maybe_answer_with_demos(req.message)
+    if demo_html:
+        return ChatResp(
+            answer=demo_html,
+            sources=[],
+            used_chunks=0,
+            latency_ms=int((time.time() - t0) * 1000),
+        )
+    
     # NEW: invoke instead of get_relevant_documents
     seed_docs = retriever.invoke(req.message)
     if not seed_docs:
@@ -280,6 +424,10 @@ def format_history(chat_messages) -> str:
 async def chat_stream(req: ChatReq):
     if not req.message.strip():
         raise HTTPException(status_code=400, detail="Empty message")
+
+    demo_html = maybe_answer_with_demos(req.message)
+    if demo_html:
+        return StreamingResponse(iter([demo_html.encode("utf-8")]), media_type="text/plain")
 
     memory = get_memory(req.session_id)
     if hasattr(memory, "buffer") and isinstance(memory.buffer, list):
