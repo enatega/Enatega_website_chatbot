@@ -1,10 +1,10 @@
-# Borku: Bringing African Cuisine to Food Delivery
+# Borku: Bringing African Cuisine To Food Delivery
 
 ## Introduction
 Borku is an emerging food delivery app centered on African cuisine, developed on Enatega and customized by Ninjas Code. With a focus on cultural authenticity and user convenience, Borku aims to create a seamless experience for users craving African flavors. Although Borku remains a work in progress, this case study highlights the significant steps taken to establish a unique and culturally focused platform.
 
 ## The Vision: Showcasing African Cuisine
-Borku was created to celebrate the diversity of African cuisine through a specialized food delivery platform. To achieve this, the team focused on several key areas:
+Borku was created to celebrate the diversity of African cuisine through a specialized food delivery platform. To achieve this, the team focused on a few key areas:
 
 ### Customized Menu Items
 Borku required menu options that reflected various African cuisines, showcasing the rich culinary heritage across the continent.
@@ -20,33 +20,23 @@ Stripe was integrated to enable smooth, secure transactions.
 
 ## Key Development Highlights
 
-### Customizing the Menu for African Cuisine
+### Customizing The Menu For African Cuisine
 To emphasize the diversity of African food, Borku’s team created unique menu options that cater to regional tastes. This customization allows restaurants to highlight popular dishes, from West African Jollof rice to North African tagines, providing users with a variety of options they won’t find on typical food delivery platforms.
 
-### User Interface and Experience Overhaul
+### User Interface And Experience Overhaul
 Given the goal of creating a culturally resonant and user-friendly platform, Borku received a comprehensive UI and UX revamp. The design incorporates vibrant, authentic African elements, making the app visually appealing while offering smooth navigation for users.
 
-### Simplified Onboarding with Rider and Restaurant Forms
+### Simplified Onboarding With Rider And Restaurant Forms
 To encourage engagement with the platform, Borku introduced custom forms to help new riders and restaurants join the network. These forms collect essential information and guide each party through the onboarding process, making it easier for vendors and drivers to start operating on Borku.
 
-### Secure and Convenient Stripe Payment Integration
+### Secure And Convenient Stripe Payment Integration
 For reliable and versatile payment handling, Borku integrated Stripe, providing users with a secure, familiar method for completing transactions. This setup also ensures that payments are processed quickly and efficiently, enhancing the overall user experience.
 
-## Moving Forward with Borku
+## Moving Forward With Borku
 Borku’s journey is just beginning. With the foundational features now in place, the team is focusing on fine-tuning the user experience and exploring potential enhancements to expand Borku’s appeal. Future updates will continue to celebrate African cuisine, expanding options and improving usability.
 
-## What’s Next for Borku?
+## What’s Next For Borku?
 Borku’s commitment to cultural authenticity and convenience reflects the versatility of Enatega’s platform and the creative expertise of Ninjas Code. By catering to African cuisine enthusiasts with a customized menu, engaging UI, and user-friendly features, Borku is poised to make a meaningful impact in the food delivery market as development progresses.
-
-## Get Started Today
-Schedule a meeting and get a quote to learn more about Borku.
-
-## Resources
-- Blog
-- Documentation
-- Features
-- Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
-- Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered
 
 ## Get In Touch
 1021 E Lincolnway Suite #6581,  
@@ -55,6 +45,13 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999  
 
+## Resources
+- Blog
+- Documentation
+- Features
+- Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
+- Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery  
+
 ## Privacy Policy
-## Terms & Conditions
+Terms & Conditions  
 ©2024 Enatega · All rights reserved.

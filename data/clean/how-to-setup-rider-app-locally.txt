@@ -1,0 +1,143 @@
+# Case Studies
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+---
+
+# Getting Started
+## Introduction
+## High Level Architecture
+## Overview of the API
+## FAQs
+## License
+## Patch Notes
+
+---
+
+# Installation
+## Prerequisites
+## How to Setup Locally
+### NodeJS Setup
+### Git and GitHub Setup
+### Setup Backend API
+### Web Dashboard Setup
+### Admin Dashboard Setup
+### Customer App Setup
+### Rider App Setup
+### Restaurant App Setup
+
+---
+
+# How to Setup/Deploy for Production
+## Configuration
+### Google Maps API Keys
+### Nodemailer Setup
+### Configuring Payment Gateways
+### Twilio Setup
+### Sentry Dashboard
+### Configuring Cloudinary
+### Amplitude Dashboard
+### Firebase Setup
+### Push Notification Keys
+### Social Login
+### Configuring Database Server Configurations
+
+---
+
+# Installation
+## How To Setup Rider App
+1. Clone or download source code from GitHub.
+   - To download the Multivendor Rider App, click here on Download Enatega Multivendor.
+   
+   ⚠ Note: Ensure you have Node.js installed on your computer to launch the module.
+
+2. After installing Node.js:
+   - Open the Enatega MultiVendor code in a code editor.
+   - To run the enatega-multivendor-rider, open it in the integrated terminal by:
+     - Right-clicking on the enatega-multivendor-rider folder and selecting “Open in Integrated Terminal”
+     - Or by using the following command in the terminal: 
+       ```
+       cd <Project directory>
+       ```
+       For example: 
+       ```
+       cd enatega-multivendor-rider
+       ```
+
+3. To test the Rider App (if you don’t have your own server URL) and check the look and feel, no changes are needed.
+
+4. To run the Rider App against your own server URL:
+   - Go to the environment.js file.
+   - Replace the following in environment.js:
+     - GRAPHQL_URL
+     - WS_GRAPHQL_URL
+
+5. After completing all the configurations, it’s time to run the Rider App. To run the Enatega Rider App, open the terminal and run the following commands:
+   ```
+   npm install (or yarn install)
+   npm start
+   ```
+
+6. When you run the commands, you have two options to run your app:
+   - Development build
+   - Using Expo Go
+
+### To run the app using Expo Go:
+- If you are in development build, press S to switch to Expo Go from the development build. You can either:
+  - Use the Expo Go app to scan the QR code to run the app.
+  - Use an iOS or Android simulator to run the app.
+
+---
+
+# Previous
+- How to Setup Customer App
+
+# Next
+- How to Setup Restaurant App
+
+---
+
+# Resources
+- Blog
+- Documentation
+- Features
+- Compare
+  - Blink
+  - Deonde
+  - GloriaFood
+  - Ordering.Co
+  - Shipday
+  - SpotNeats
+  - Yelo
+  - Zeew
+
+---
+
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+---
+
+# Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved.  
+Powered by:

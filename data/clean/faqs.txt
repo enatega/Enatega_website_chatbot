@@ -1,0 +1,120 @@
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+# Use Cases
+
+# Documentation
+
+# Blog
+
+# Features
+
+# Pricing
+
+# Get A Quote
+
+---
+
+## Getting Started
+
+### Introduction
+
+### High Level Architecture
+
+### Overview of the API
+
+### FAQs
+
+#### License
+
+#### Patch Notes
+
+### Installation
+
+#### Prerequisites
+
+#### How to Setup Locally
+
+#### How to Setup/Deploy for Production
+
+### Configuration
+
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server
+
+### Configurations
+
+---
+
+## Frequently Asked Questions
+
+- Can You Explain The Tech Stack In More Detail, Including The Front End And Back End Technologies Used, As Well As Any Libraries Or Packages?
+- How Can We Add Other Payment Methods?
+- Can This Project Be Used For Other Similar Solutions?
+- Does It Support Language Localization?
+- How Is The Order Tracked?
+- Can You Provide More Details About The Modules Included In The Solution, Such As The Web Admin Dashboard, Super Admin, And Vendor Portal?
+- How Customizable Are These Modules?
+- Is Everything Up To Date?
+- Do We Need To Update Anything Soon?
+- Is There Additional Documentation That Is Not Available Online?
+
+---
+
+## Previous
+
+### Overview of the API
+
+## Next
+
+### License
+
+---
+
+## Resources
+
+- Blog
+- Documentation
+- Features
+- Compare
+  - Blink
+  - Deonde
+  - GloriaFood
+  - Ordering.Co
+  - Shipday
+  - SpotNeats
+  - Yelo
+  - Zeew
+
+---
+
+## Get In Touch
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+## Privacy Policy
+
+## Terms & Conditions
+
+©2024 Enatega · All rights reserved.  
+Powered by:

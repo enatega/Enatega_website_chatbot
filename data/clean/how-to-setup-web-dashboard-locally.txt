@@ -1,0 +1,184 @@
+# Case Studies
+
+## Use Cases
+
+## Documentation
+
+## Blog
+
+## Features
+
+## Pricing
+
+## Get A Quote
+
+---
+
+# Getting Started
+
+## Introduction
+
+## High Level Architecture
+
+## Overview of the API
+
+## FAQs
+
+## License
+
+## Patch Notes
+
+---
+
+# Installation
+
+## Prerequisites
+
+## How to Setup Locally
+
+### NodeJS Setup
+
+### Git and GitHub Setup
+
+### Setup Backend API
+
+### Setup Web Dashboard
+
+### Setup Admin Dashboard
+
+### Setup Customer App
+
+### Setup Rider App
+
+### Setup Restaurant App
+
+---
+
+# How to Setup/Deploy for Production
+
+## Configuration
+
+### Google Maps API Keys
+
+### Nodemailer Setup
+
+### Configuring Payment Gateways
+
+### Twilio Setup
+
+### Sentry Dashboard
+
+### Configuring Cloudinary
+
+### Amplitude Dashboard
+
+### Firebase Setup
+
+### Push Notification Keys
+
+### Social Login
+
+### Configuring Database Server Configurations
+
+---
+
+# Installation
+
+## How To Setup Web Dashboard
+
+1. Clone or download source code from GitHub.
+   - To download the Enatega Web, click here on Download Enatega Multivendor.
+   - Enatega Multivendor | Web and Mobile Project Clone
+
+⚠️ Note: Ensure you have Node.js installed on your computer to launch the module.
+
+2. After installing Node.js:
+   - Open the Enatega MultiVendor code in a code editor.
+   - To run the enatega-multivendor-web, open it in the integrated terminal by:
+     - Right-clicking on the enatega-multivendor-web folder and selecting “Open in Integrated Terminal”
+     - Or by using the following command in the terminal: 
+       ```
+       cd <Project directory>
+       ```
+       For example: 
+       ```
+       cd enatega-multivendor-web
+       ```
+
+3. To test the Web (if you don’t have your own server URL) and check the look and feel, no changes are needed.
+
+4. To run the Web against your own server URL:
+   - Go to the `src` folder.
+   - Inside the `src` folder, go to the `config` folder.
+   - In the `config` folder, open `constants.js`.
+   - Replace the following in `constants.js`:
+     - `SERVER_URL`
+     - `WS_SERVER_URL`
+     - `GOOGLE_MAPS_KEY`
+
+5. After completing all the configurations, it’s time to run the Enatega Web. To run the Enatega Web, open the terminal and run the following commands:
+   ```
+   npm install (or yarn install)
+   npm start
+   ```
+
+---
+
+## Previous
+
+### How to Setup Backend API
+
+## Next
+
+### How to Setup Admin Dashboard
+
+---
+
+# Resources
+
+## Blog
+
+## Documentation
+
+## Features
+
+## Compare
+
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+---
+
+# Case Studies
+
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+---
+
+# Get In Touch
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved.  
+Powered by:

@@ -1,0 +1,151 @@
+# Enatega Multivendor Overview
+
+## Introduction
+Enatega Multivendor is a comprehensive food delivery solution designed for iOS, Android, and the Web. It offers a well-designed mobile and dashboard application, enabling quick integration and white labeling for any meal delivery service.
+
+## Getting Started
+### Enatega Multivendor Delivery Tutorial
+- **End-to-End Setup**: A detailed video on the admin section of Enatega showcases all functionalities available in the solution.
+- **Customer App Guide**: A video guide is available to understand the features accessible to customers.
+
+### Technical Overview
+- **Mobile Application**: Built using React Native and Expo.
+- **Dashboard Panel**: Developed with React.
+- **API Development**: Utilizes Node with MongoDB, GraphQL for web and mobile, and Apollo Client for endpoint querying and state management.
+
+## Features
+### Customer Mobile/Web Application
+- Email and phone number verification.
+- Authentication via Google, Apple, and Facebook.
+- Restaurant display based on location with detailed information (reviews, ratings, hours, menu, etc.).
+- Address addition using Maps integration and Google Places suggestions.
+- Analytics and error reporting with Amplitude and Sentry.
+- Push notifications for account creation and order status updates.
+- Real-time tracking of riders and chat options.
+- Multi-language support and theme customization.
+- Rating and review features for orders.
+- Payment integration with PayPal and Stripe.
+- Previous order history and favorite restaurant options.
+- Variations of food items and notes for restaurants.
+- Pick-up and delivery options with timing flexibility.
+- Vouchers and tipping options.
+- Restaurant and item search functionality.
+
+### Restaurant Application
+- Ringer and push notifications for new orders.
+- Time limits for order acceptance and meal preparation.
+- Invoice printing option.
+- History of delivered orders.
+- Online/offline status management.
+- Order details with customer information.
+
+### Rider Application
+- Real-time order status updates.
+- Push notifications and ringer for new orders.
+- Map integration for delivery and restaurant addresses.
+- Time limits for order acceptance and meal preparation.
+- Display of distance and anticipated travel time.
+- Real-time chat with customers.
+- Order history tracking.
+- Online delivery fees management and wallet history.
+- Online/offline status management.
+
+### Admin Dashboard
+- Role-based administration access.
+- Management of restaurants and vendors.
+- Zone definition for riders.
+- Management of withdrawal requests and commission rates.
+- Application configuration and global order status management.
+- Restaurant order statistics and Stripe account management.
+- Menu management with discount options.
+- User, ratings, coupon, and tipping management.
+
+## Development Experience
+To enhance the developer experience, the code is organized, and unnecessary screens have been removed. The following tools are integrated:
+- **ESLint**: For JavaScript linting.
+- **Prettier**: For code formatting.
+- **Jest**: For unit testing.
+- **Husky**: To prevent bad commits.
+
+## What Will You Have in the Enatega Full App?
+- Enatega Multivendor Mobile App (iOS and Android).
+- Enatega Multivendor Rider App (iOS and Android).
+- Enatega Multivendor Restaurant App (iOS and Android).
+- Enatega Multivendor Web App.
+- Admin Web Dashboard.
+- API server.
+- Analytics Dashboard with Expo.
+- Error reporting with Sentry.
+
+## Enatega Technology Stack
+### Application Program Interface (API) Server
+- NodeJS
+- MongoDB
+- ExpressJS
+- Stripe
+- PayPal
+- Nodemailer
+- Firebase (for web push notifications)
+- Express
+- GraphQL
+- Mongoose (for MongoDB)
+
+### Web Dashboard
+- React
+- GraphQL
+- Bootstrap
+- Firebase (for web push notifications)
+
+### Mobile App
+- React Native
+- Expo
+- GraphQL
+- Sentry
+- Amplitude
+
+### Rider App
+- React Native
+- Expo
+- GraphQL
+- Sentry
+
+### Restaurant App
+- React Native
+- Expo
+- GraphQL
+- Sentry
+
+### Customer Web App
+- React
+- Material UI
+- GraphQL
+- Amplitude
+- Sentry
+- Firebase (for web push notifications)
+
+## Resources
+- **Blog**
+- **Documentation**
+- **Features**
+- **Compare**: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
+
+## Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+## Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+Email: sales@enatega.com  
+Phone: +1 (307) 776-8999  
+
+## Legal
+- **Privacy Policy**
+- **Terms & Conditions**
+
+©2024 Enatega · All rights reserved.

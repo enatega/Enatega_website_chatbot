@@ -61,6 +61,7 @@ Enatega is more than just a food delivery platform. It offers:
 - Real-time logistics and tracking tools.
 
 ## Pricing
+
 ### Transparent, Flexible Pricing
 Enatega features a straightforward pricing model with no recurring subscriptions or additional delivery charges. Customers pay once for the complete solution, with no hidden fees.
 

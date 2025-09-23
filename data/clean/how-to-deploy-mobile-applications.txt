@@ -1,0 +1,319 @@
+# Case Studies
+
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+---
+
+# Getting Started
+
+## Introduction
+
+## High Level Architecture
+
+## Overview of the API
+
+## FAQs
+
+## License
+
+## Patch Notes
+
+## Installation
+
+### Prerequisites
+
+### How to Setup Locally
+
+### How to Setup/Deploy for Production
+
+- Deploy Backend API Server
+- Deploy Admin Dashboard
+- Deploy Web Dashboard
+- Deploy Mobile Applications
+
+---
+
+# Configuration
+
+## Google Maps API Keys
+
+## Nodemailer Setup
+
+## Configuring Payment Gateways
+
+## Twilio Setup
+
+## Sentry Dashboard
+
+## Configuring Cloudinary
+
+## Amplitude Dashboard
+
+## Firebase Setup
+
+## Push Notification Keys
+
+## Social Login
+
+## Configuring Database Server
+
+## Configurations
+
+---
+
+# Installation
+
+## How To Deploy Mobile Applications
+
+### Enatega Multivendor | Mobile Apps Complete Setup
+
+1. Clone or download the source code from GitHub. To download, click on download source code.
+2. Navigate to the project directory: `cd <Project directory>` (e.g., `cd enatega-multivendor-app`).
+3. Update the environment file (`/environment.js` files). 
+
+#### Credentials to Change
+
+You need to update ‘value#1’, ‘value#2’, and ‘value#3’. The remaining values will be automatically retrieved from the configuration (database) once added through the admin panel. If these values are not obtained from the configuration, kindly hardcode them in the ‘environment.js’ file.
+
+#### Variables in the environment.js File
+
+- **GRAPHQL_URL**: This variable contains the URL of the GraphQL endpoint for your API. It is essential for making GraphQL queries and mutations from your mobile app.
+  
+- **WS_GRAPHQL_URL**: Specifies the WebSocket URL for the GraphQL API, suitable for real-time communication.
+
+- **SERVER_URL**: The base URL of your server, serving as the root address for various API requests made by your mobile app.
+
+---
+
+## What is SERVER_URL?
+
+This variable specifies the base URL of your server, which is the root URL where your backend API is hosted.
+
+---
+
+## So What is an API?
+
+An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. A backend API handles data and requests on the server side of a software application. The backend code of this project is the API for this project. To make your API accessible to the internet, you need a hosting service.
+
+---
+
+## How to Deploy to Backend API?
+
+Deploying means making your API server available and functional on the hosting service. This typically involves uploading your code, configuring the server, and ensuring it’s up and running. 
+
+### Railway Cloud Deployment Video
+
+---
+
+## IOS_CLIENT_ID_GOOGLE
+
+This is a Google OAuth client ID specifically intended for iOS applications, used for authenticating users and granting access to Google services.
+
+## ANDROID_CLIENT_ID_GOOGLE
+
+This is a Google OAuth client ID designed for Android applications, serving the same purpose as the iOS client ID.
+
+### Creating IOS and Android Google Client ID
+
+#### Demonstration of IOS and Android Google Client ID Video
+
+---
+
+## AMPLITUDE_API_KEY
+
+This API key is essential for integrating Amplitude, an analytics and product intelligence service, into a React application.
+
+### Creating an Amplitude API Key for This Project
+
+#### Configuring Amplitude Video
+
+---
+
+## GOOGLE_MAPS_KEY
+
+The Google Maps API key is crucial for integrating Google Maps and related location and mapping services into the application.
+
+### Creating Google Maps Key for This Project
+
+#### Demonstration of Google Map API Setup Video
+
+---
+
+## EXPO_CLIENT_ID
+
+This variable represents a Google OAuth client ID specifically intended for use within the Expo development environment.
+
+### Steps to Create an Expo Client ID
+
+1. Create a Google Cloud Project: Visit the Google Cloud Console (https://console.cloud.google.com/).
+2. Enable the Google+ API.
+3. Create OAuth 2.0 Client ID.
+4. Set Up in Expo Project.
+
+---
+
+## SENTRY_DSN
+
+Sentry DSN is used for error tracking and monitoring, reporting and logging errors that occur in your mobile app.
+
+### Configuring Sentry and Creating SENTRY_DSN_LINK for This Project
+
+#### Configuring Sentry Video
+
+---
+
+## TERMS_AND_CONDITIONS and PRIVACY_POLICY
+
+These are URLs to your app’s terms and conditions and privacy policy pages, typically used for legal and compliance purposes.
+
+## TEST_OTP
+
+A test OTP (One-Time Password) that might be used during development and testing for authentication purposes.
+
+## GOOGLE_PACES_API_BASE_URL
+
+This variable contains the base URL for the Google Places API, essential for applications that rely on Google’s location data and services.
+
+### Configuring Google Places API and Creating API_LINK for This Project
+
+#### Configuring Google APIs Video
+
+---
+
+These variables are essential for configuring and customizing your mobile app, enabling integration with third-party services, and ensuring proper communication with your backend. Make sure to keep them secure and handle sensitive information, like API keys and authentication credentials, with care.
+
+### After Setting the (.env) File
+
+Run the following commands:
+
+```bash
+npm install
+npm start
+```
+
+---
+
+# How to Submit Your Mobile Apps in the App and Play Store?
+
+## Creation of Builds
+
+To create the builds for both Android and iOS, enter the following commands in your terminal:
+
+```bash
+npm install -g eas-cli
+```
+
+1. Create your account in Expo (https://expo.dev/).
+2. In your terminal, type the following command: `eas login` (Login with your Expo credentials).
+3. Create a new project in your Expo account.
+
+### Building Your Project
+
+After creating a new project in Expo and pasting its ID into app.json, your project is ready to be built. In your terminal, run the following commands:
+
+```bash
+eas build:configure
+eas build --profile production --platform android
+eas build --profile production --platform ios
+eas submit --platform ios (to submit your app in App Store)
+eas submit --platform android (to submit your app in Play Store)
+```
+
+## For OTA Updates
+
+```bash
+npx expo install expo-updates
+eas update:configure
+eas update --branch production --message "Example update"
+```
+
+---
+
+## Enroll In The Apple’s Developer Program
+
+Once everything is finished and your app has been tested, you are ready to publish. You must first have the Apple Developer Program.
+
+### Bundle Identification
+
+Every app has a special Bundle identification to identify it, which is also used as the app store URL. The bundle identification can be changed from within the app.json.
+
+### Publishing Document for Apple
+
+To see the publishing document for Apple in detail, click on this link.
+
+---
+
+## Enroll In The Google’s Developer Program
+
+Once everything is finished and your app has been tested, you are ready to publish. You must first have a Google Developer account.
+
+### Publishing Document for Google
+
+To see the publishing document for Google in detail, see this link.
+
+---
+
+## Buy Hosting Service and Domain Name
+
+You can get a domain name from any domain name service, for example, GoDaddy. You will need a hosting service to deploy your API; you can use any hosting service, for example, Digital Ocean.
+
+---
+
+# Previous
+
+- How to Deploy Web Dashboard
+
+# Next
+
+- Configuration Google Maps API Keys
+
+---
+
+# Resources
+
+- Blog
+- Documentation
+- Features
+- Compare
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+---
+
+# Case Studies
+
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+---
+
+# Get In Touch
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved. Powered by:

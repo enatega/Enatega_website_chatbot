@@ -1,0 +1,2772 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Nodemailer Setup - Multi-Vendor Doc - Enatega</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7C6CE4">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Italianno&amp;family=Jacques+Francois+Shadow&amp;display=swap" rel="stylesheet">
+    <!-- Add Swiper CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+   
+		.home-banner-sec .sub-text{
+			font-family: Inter, Sans-serif;
+			font-display:swap;
+		}
+		.reviews-sec .testimonial-slider .swiper-pagination.swiper-pagination-horizontal {
+    		bottom: 48px;
+			width:100%;
+		}
+
+		.reviews-sec .testimonial-slider .swiper-pagination-bullet {
+    		height: 7px;
+   			 width: 50px;
+    		border-radius: 9px;
+    		background-color: #aaa;
+			margin:0 4px;
+			cursor:pointer;
+		}
+
+		.reviews-sec .testimonial-slider .swiper-pagination-bullet-active {
+    		background-color: #624de3
+			}
+		.home .iti--container, .page-template-template-usecase-updated .iti--container{
+    position: absolute !important; 
+}
+		.caseStudy-hero-title span {
+    background: linear-gradient(90deg, rgba(41,36,78,.5) 0%, rgba(83,65,191,.5) 25.38%, rgba(83,65,191,.5) 58.44%, rgba(41,36,78,.5) 100%);
+    padding: 2px 6px;
+    border-radius: 8px;
+  }
+
+		 .gtranslate_wrapper { display: none !important; }    </style>
+    <script async="" src="https://scripts.clarity.ms/0.8.30/clarity.js"></script><script async="" src="https://ddwl4m2hdecbv.cloudfront.net/b/5NRP9HQ5E8O1/5NRP9HQ5E8O1.js.gz"></script><script type="text/javascript" async="" src="https://www.clarity.ms/tag/m7sq3zappb?ref=gtm"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-624903501&amp;cx=c&amp;gtm=4e59j1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-DTSL4MVB5L&amp;cx=c&amp;gtm=4e59j1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-M54HLTSL"></script><script>
+    ! function(e) {
+        "function" == typeof define && define.amd ? define(e) : e()
+    }(function() {
+        var e, t = ["scroll", "wheel", "touchstart", "touchmove", "touchenter", "touchend", "touchleave",
+            "mouseout", "mouseleave", "mouseup", "mousedown", "mousemove", "mouseenter", "mousewheel",
+            "mouseover"
+        ];
+        if (function() {
+                var e = !1;
+                try {
+                    var t = Object.defineProperty({}, "passive", {
+                        get: function() {
+                            e = !0
+                        }
+                    });
+                    window.addEventListener("test", null, t), window.removeEventListener("test", null, t)
+                } catch (e) {}
+                return e
+            }()) {
+            var n = EventTarget.prototype.addEventListener;
+            e = n, EventTarget.prototype.addEventListener = function(n, o, r) {
+                var i, s = "object" == typeof r && null !== r,
+                    u = s ? r.capture : r;
+                (r = s ? function(e) {
+                    var t = Object.getOwnPropertyDescriptor(e, "passive");
+                    return t && !0 !== t.writable && void 0 === t.set ? Object.assign({}, e) : e
+                }(r) : {}).passive = void 0 !== (i = r.passive) ? i : -1 !== t.indexOf(n) && !0, r.capture =
+                    void 0 !== u && u, e.call(this, n, o, r)
+            }, EventTarget.prototype.addEventListener._original = e
+        }
+    });
+    </script>
+
+<!-- Preload CSS but don’t block render -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/css/intlTelInput.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/css/intlTelInput.css">
+</noscript>
+
+<!-- Defer JS so it runs after HTML is parsed -->
+<script defer="" src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/js/intlTelInput.min.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/js/utils.js"></script>
+
+
+
+    <meta name="robots" content="noindex, follow">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v25.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Nodemailer Setup - Multi-Vendor Doc - Enatega">
+	<meta property="og:description" content="Enatega Multivendor | Nodemailer Setup">
+	<meta property="og:url" content="https://enatega.com/multi-vendor-doc/nodemailer-setup/">
+	<meta property="og:site_name" content="Enatega">
+	<meta property="article:modified_time" content="2024-09-20T10:01:35+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="1 minute">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://enatega.com/multi-vendor-doc/nodemailer-setup/","url":"https://enatega.com/multi-vendor-doc/nodemailer-setup/","name":"Nodemailer Setup - Multi-Vendor Doc - Enatega","isPartOf":{"@id":"https://enatega.com/#website"},"datePublished":"2023-11-03T11:12:44+00:00","dateModified":"2024-09-20T10:01:35+00:00","breadcrumb":{"@id":"https://enatega.com/multi-vendor-doc/nodemailer-setup/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://enatega.com/multi-vendor-doc/nodemailer-setup/"]}]},{"@type":"BreadcrumbList","@id":"https://enatega.com/multi-vendor-doc/nodemailer-setup/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://enatega.com/"},{"@type":"ListItem","position":2,"name":"Multi-Vendor Docs","item":"https://enatega.com/multi-vendor-doc/"},{"@type":"ListItem","position":3,"name":"Nodemailer Setup"}]},{"@type":"WebSite","@id":"https://enatega.com/#website","url":"https://enatega.com/","name":"Enatega","description":"Food Delivery Solutions","publisher":{"@id":"https://enatega.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://enatega.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://enatega.com/#organization","name":"Enatega","url":"https://enatega.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://enatega.com/#/schema/logo/image/","url":"https://enatega.com/wp-content/uploads/2023/10/Enatega-Logo-.webp","contentUrl":"https://enatega.com/wp-content/uploads/2023/10/Enatega-Logo-.webp","width":500,"height":108,"caption":"Enatega"},"image":{"@id":"https://enatega.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/enatega.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://enatega.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="main-styles-css" href="https://enatega.com/wp-content/themes/Enatega/assets/css/style.css?ver=6.8.2" type="text/css" media="all">
+<script type="text/javascript" src="https://enatega.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://enatega.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://enatega.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://enatega.com/wp-json/wp/v2/multi-vendor-doc/21234"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://enatega.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.2">
+<link rel="shortlink" href="https://enatega.com/?p=21234">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://enatega.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fenatega.com%2Fmulti-vendor-doc%2Fnodemailer-setup%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://enatega.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fenatega.com%2Fmulti-vendor-doc%2Fnodemailer-setup%2F&amp;format=xml">
+	<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-624903501">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-624903501');
+</script>
+	<!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DTSL4MVB5L"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DTSL4MVB5L');
+    </script>
+   <!-- Google Tag Manager -->
+   <script async="">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+   })(window,document,'script','dataLayer','GTM-M54HLTSL');</script>
+   <!-- End Google Tag Manager -->
+<script id="nitro-telemetry-meta" nitro-exclude="">window.NPTelemetryMetadata={missReason: (!window.NITROPACK_STATE ? 'cache not found' : 'hit'),pageType: 'multi-vendor-doc',isEligibleForOptimization: true,}</script><script id="nitro-generic" nitro-exclude="">(()=>{window.NitroPack=window.NitroPack||{coreVersion:"na",isCounted:!1};let e=document.createElement("script");if(e.src="https://nitroscripts.com/jdKghPovkzWfRohbpgAZaZYRcFhYiZiI",e.async=!0,e.id="nitro-script",document.head.appendChild(e),!window.NitroPack.isCounted){window.NitroPack.isCounted=!0;let t=()=>{navigator.sendBeacon("https://to.getnitropack.com/p",JSON.stringify({siteId:"jdKghPovkzWfRohbpgAZaZYRcFhYiZiI",url:window.location.href,isOptimized:!!window.IS_NITROPACK,coreVersion:"na",missReason:window.NPTelemetryMetadata?.missReason||"",pageType:window.NPTelemetryMetadata?.pageType||"",isEligibleForOptimization:!!window.NPTelemetryMetadata?.isEligibleForOptimization}))};(()=>{let e=()=>new Promise(e=>{"complete"===document.readyState?e():window.addEventListener("load",e)}),i=()=>new Promise(e=>{document.prerendering?document.addEventListener("prerenderingchange",e,{once:!0}):e()}),a=async()=>{await i(),await e(),t()};a()})(),window.addEventListener("pageshow",e=>{if(e.persisted){let i=document.prerendering||self.performance?.getEntriesByType?.("navigation")[0]?.activationStart>0;"visible"!==document.visibilityState||i||t()}})}})();</script><script src="https://nitroscripts.com/jdKghPovkzWfRohbpgAZaZYRcFhYiZiI" async="" id="nitro-script"></script><link rel="icon" href="https://enatega.com/wp-content/uploads/2023/10/cropped-cropped-Mask-group-2-32x32.webp" sizes="32x32">
+<link rel="icon" href="https://enatega.com/wp-content/uploads/2023/10/cropped-cropped-Mask-group-2-192x192.webp" sizes="192x192">
+<link rel="apple-touch-icon" href="https://enatega.com/wp-content/uploads/2023/10/cropped-cropped-Mask-group-2-180x180.webp">
+<meta name="msapplication-TileImage" content="https://enatega.com/wp-content/uploads/2023/10/cropped-cropped-Mask-group-2-270x270.webp">
+<style class="gtranslate_css">div.skiptranslate,#google_translate_element2{display:none!important}body{top:0!important}font font{background-color:transparent!important;box-shadow:none!important;position:initial!important}.gt_float_switcher{font-family:Arial;font-size:20px;border-radius:2px;color:#555;display:inline-block;line-height:20px;box-shadow:rgba(0,0,0,0.15) 0 5px 15px;background:#fff;overflow:hidden;transition:all .5s cubic-bezier(0.4, 0, 1, 1)}.gt_float_switcher img{vertical-align:middle;display:inline-block;width:33px;height:auto;margin:0 5px 0 0;border-radius:3px}.gt_float_switcher .gt_options{position:relative;z-index:777;max-height:250px;overflow-y:auto;transform:translateY(-30px);opacity:0;cursor:pointer;transition:all .8s cubic-bezier(.3,1.1,.4,1.1)}.gt_float_switcher .gt_options a{display:block;text-decoration:none;padding:6px 15px;color:#444;transition:color .4s linear}.gt_float_switcher .gt-selected{position:relative;z-index:888;background-color:#fff;cursor:pointer;text-transform:uppercase;overflow:hidden;text-align:right}.gt_float_switcher .gt_options.gt-open{opacity:1;transform:translateX(0px)}.gt_float_switcher .gt_options::-webkit-scrollbar-track{background-color:#f5f5f5}.gt_float_switcher .gt_options::-webkit-scrollbar{width:5px}.gt_float_switcher .gt_options::-webkit-scrollbar-thumb{background-color:#888}.gt_float_switcher .gt_options a:hover{background:#6070a0;color:#fff}.gt_float_switcher .gt_options a.gt-current{display:none}.gt_float_switcher .gt-selected .gt-current-lang{padding:6px 15px;color:#333;font-weight:bold}.gt_float_switcher .gt-selected .gt-current-lang span.gt-lang-code{position:relative;top:2px}.gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow{display:inline-block;height:24px;width:15px;vertical-align:middle;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 285 285'><path d='M282 76.5l-14.2-14.3a9 9 0 0 0-13.1 0L142.5 174.4 30.3 62.2a9 9 0 0 0-13.2 0L3 76.5a9 9 0 0 0 0 13.1l133 133a9 9 0 0 0 13.1 0l133-133a9 9 0 0 0 0-13z' style='fill:%23666'/></svg>");background-position:50%;background-size:11px;background-repeat:no-repeat;transition:all .3s;transform:rotate(-180deg)}.gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow.gt_arrow_rotate{transform:rotate(0deg)}</style><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/624903501/?random=1758611241261&amp;cv=11&amp;fst=1758611241261&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be59j1v875838255z89180034586za200zb9180034586zd9180034586xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480710&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fenatega.com%2Fmulti-vendor-doc%2Fnodemailer-setup%2F&amp;frm=0&amp;tiba=Nodemailer%20Setup%20-%20Multi-Vendor%20Doc%20-%20Enatega&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1906159199.1758611241&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.16%7CNot%253DA%253FBrand%3B24.0.0.0%7CHeadlessChrome%3B140.0.7339.16&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=10_15_7&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/624903501/?random=1758611241296&amp;cv=11&amp;fst=1758611241296&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be59j1v875838255z89180034586za200zb9180034586zd9180034586xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480710&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fenatega.com%2Fmulti-vendor-doc%2Fnodemailer-setup%2F&amp;frm=0&amp;tiba=Nodemailer%20Setup%20-%20Multi-Vendor%20Doc%20-%20Enatega&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1906159199.1758611241&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.16%7CNot%253DA%253FBrand%3B24.0.0.0%7CHeadlessChrome%3B140.0.7339.16&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=10_15_7&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/624903501/?random=1758611241303&amp;cv=11&amp;fst=1758611241303&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be59j1v875838255za200zb9180034586zd9180034586xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480710&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fenatega.com%2Fmulti-vendor-doc%2Fnodemailer-setup%2F&amp;frm=0&amp;tiba=Nodemailer%20Setup%20-%20Multi-Vendor%20Doc%20-%20Enatega&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1906159199.1758611241&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.16%7CNot%253DA%253FBrand%3B24.0.0.0%7CHeadlessChrome%3B140.0.7339.16&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=10_15_7&amp;uaw=0&amp;_tu=CA&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script></head>
+
+<body class="wp-singular multi-vendor-doc-template-default single single-multi-vendor-doc postid-21234 wp-custom-logo wp-theme-Enatega">
+    <!-- Preloader -->
+    <!--     <div id="preloader">
+        <div class="spinner"></div>
+    </div> -->
+    <div class="site-main-header">
+		
+		<div class="promo-banner" style="display:none">
+    <div class="promo-content-left">
+      <div class="promo-title">GET <span>20% OFF</span></div>
+      <div class="promo-highlight">ENATEGA</div>
+<!--       <div class="promo-subtitle">For Enatega</div> -->
+		<div class="promo-offer-box promo-offer-box-mobile"> 
+		<fieldset>
+  <legend class="offer-label">LIMITED TIME OFFER</legend> 
+ <div class="offer-main">OFFER VALID TILL <span>JULY</span></div>
+</fieldset>
+</div>
+    </div>
+
+    <div class="promo-offer-box"> 
+		<fieldset>
+  <legend class="offer-label">LIMITED TIME OFFER</legend> 
+ <div class="offer-main">OFFER VALID TILL <span>JULY</span></div>
+</fieldset>
+</div>
+
+    <div class="promo-cta">
+      <a href="/contact/" class="promo-button">Get This Offer Now!</a>
+    </div>
+  </div>
+		 <div class="discount-banner" style="display:none">
+            <div class="container">
+<div class="discount-offer">
+                    <div class="happy-christmas-text">
+                        <p class="happy-text">
+                            Happy
+                        </p>
+                        <div>
+                            <p class="christmas-text">
+                            christmas
+                            
+                        </p>
+                      
+                        </div>
+                        
+                    </div>
+						<div class="discount-details-wrapper">
+		
+	
+                    <div class="discount-details">
+						<p>
+							get 60% off
+						</p>
+						  </div>
+                <div class="sale-text-img">
+                            <img src="https://enatega.com/wp-content/uploads/2024/12/Sale-text.webp" alt="sale" width="175" height="97">
+                        </div>
+              </div>
+                    
+                </div>
+                
+                <div class="countdown-wrapper">
+                    [countdown_timer]                    <div class="discount-banner__cta-2">
+                        <a href="https://checkout.enatega.com/buy/aaa7db46-a20e-4a41-8752-c991194cf554">Get this Offer</a>
+                    </div>
+                </div>
+                <div class="discount-banner__cta-1">
+                    <a href="https://checkout.enatega.com/buy/aaa7db46-a20e-4a41-8752-c991194cf554">Get this Offer</a>
+                </div>
+            </div>
+        </div>
+		
+		
+        <div class="site-header">
+            <div class="site-logo">
+
+                <a href="https://enatega.com"><img src="/wp-content/uploads/2023/10/Enatega-Logo-.webp" width="500" height="108" alt="site-logo"></a>
+
+            </div>
+            <nav class="site-navigation">
+
+                <ul id="menu-site-main-menu" class="desktop-menu"><li class="menu-1 parent-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a><div class="menu-item-text"><span class="menu-item-title">Case Studies</span><span class="chevron-icon"><img src="https://enatega.com/wp-content/uploads/2024/08/down.png" alt="down" width="15" height="15"></span></div></a><div class="sub-menu-wrapper"><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/yalla-delivery/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/03/Vector.webp" alt="Yalla Delivery"></div><div class="menu-item-text"><span class="menu-item-title">Yalla Delivery</span><p class="menu-item-description">Food and Grocery, in One Place</p></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/stylizenow/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/03/Vector.webp" alt="StylizeNOW"></div><div class="menu-item-text"><span class="menu-item-title">StylizeNOW</span><p class="menu-item-description">Platform that provides on-demand mobile hair</p></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/easy-eats/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/03/Vector.webp" alt="Easy Eats"></div><div class="menu-item-text"><span class="menu-item-title">Easy Eats</span><p class="menu-item-description">Campus food delivery company</p></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/vinifynd/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/03/Vector.webp" alt="Vinifynd"></div><div class="menu-item-text"><span class="menu-item-title">Vinifynd</span><p class="menu-item-description">Wine retail and delivery business</p></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/snap-delivered/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/03/Vector.webp" alt="Snap Delivered"></div><div class="menu-item-text"><span class="menu-item-title">Snap Delivered</span><p class="menu-item-description">Snap Delivered is a food delivery platform powered by Enatega</p></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/borku-delivery/"><div class="menu-item-image"><img src="https://enatega.com/wp-content/uploads/2024/03/Vector.webp" alt="Borku Delivery"></div><div class="menu-item-text"><span class="menu-item-title">Borku Delivery</span><p class="menu-item-description">Bringing African Cuisine to Food Delivery</p></div></a></li></ul></div></li><li class="menu-2 parent-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a><div class="menu-item-text"><span class="menu-item-title">Use cases</span><span class="chevron-icon"><img src="https://enatega.com/wp-content/uploads/2024/08/down.png" alt="down" width="15" height="15"></span></div></a><div class="sub-menu-wrapper"><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/milk-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/milk-delivery.webp" alt="Milk Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Milk Delivery Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/grocery-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/grocery-icon.webp" alt="Grocery Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Grocery Delivery Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/liquor-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/liquor-icon.webp" alt="Liquor Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Liquor Delivery Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/flower-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/flower.webp" alt="Flower Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Flower Delivery Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/medicine-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/medicine.webp" alt="Medicine Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Medicine Delivery Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/food-and-beverage-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/food.webp" alt="Food And Beverage solution"></div><div class="menu-item-text"><span class="menu-item-title">Food And Beverage solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/courier-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/courier.webp" alt="Courier Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Courier Delivery Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/beauty-services-scheduling-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/beauty.webp" alt="Beauty Services Scheduling Solution"></div><div class="menu-item-text"><span class="menu-item-title">Beauty Services Scheduling Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/laundry-on-demand-services-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/laundary.webp" alt="Laundry On-Demand Services Solution"></div><div class="menu-item-text"><span class="menu-item-title">Laundry On-Demand Services Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/roadside-assistance-services-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/roadside.webp" alt="Roadside Assistance Services Solution"></div><div class="menu-item-text"><span class="menu-item-title">Roadside Assistance Services Solution</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/document-delivery-solution/"><div class="menu-item-image"><img src="/wp-content/uploads/2024/10/document.webp" alt="Document Delivery Solution"></div><div class="menu-item-text"><span class="menu-item-title">Document Delivery Solution</span></div></a></li></ul></div></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/multi-vendor-doc/introduction/"><div class="menu-item-text"><span class="menu-item-title">Documentation</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="https://enatega.com/blog/"><div class="menu-item-text"><span class="menu-item-title">Blog</span></div></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://enatega.com/multi-vendor-features/"><div class="menu-item-text"><span class="menu-item-title">Features</span></div></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/#pricing"><div class="menu-item-text"><span class="menu-item-title">Pricing</span></div></a></li></ul>
+            </nav>
+            <div class="header-cta">
+<!--                 <div class="github-repo-info">
+                    <a href="https://github.com/enatega/food-delivery-multivendor" target="_blank" class="repo-info-link">
+                        <div class="repo-info-item-inner">
+                            <img src="https://enatega.com/wp-content/uploads/2024/08/github-1.webp" alt="github"
+                                width="20" height="20">
+                            <p>STAR US</p>
+                            <div class="vertical-line">
+                                <p>|</p>
+                            </div>
+							<div class="repo-info-figure">
+                                <p><div class="repo-info-figure"><p>1017</p></div></p>
+                            </div>
+							
+							
+                        </div>
+                    </a>
+                </div> -->
+<!-- 				<div class="get-started_cta">
+					<a href="https://checkout.enatega.com/buy/aaa7db46-a20e-4a41-8752-c991194cf554">Get Started Now</a>			
+				</div> -->
+<!--                 <p id="scheduleCall" class="schedule-cta" style="cursor:pointer">Schedule a Call</p> -->
+				 <a href="/contact/" class="schedule-cta">
+        Get A Quote
+    </a>
+
+            </div>
+            <div class="hamburger-icon" id="hamburgerIcon" onclick="toggleMenu()">
+                <svg aria-hidden="true" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Mobile Menu---------- -->
+
+    <div class="mobile-menu-popup">
+        <div class="mobile-menu-container" id="mobileMenu">
+
+            <div>
+                <div class="site-logo">
+                    <a href="https://enatega.com"><img src="https://enatega.com/wp-content/uploads/2023/10/Enatega-Logo-.webp" width="500" height="108" alt="Enatega"></a>
+                    <div class="close-icon" onclick="toggleMenu()">
+                        ✖
+                    </div>
+                </div>
+                <nav class="mobile-navigation">
+                    <ul id="menu-site-mobile-menu" class="mobile-menu"><li id="menu-item-22674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22674"><p class="mobile-menu-item-toggle">Case studies<span class="sub-arrow"><svg class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></span></p>
+<ul class="sub-menu">
+	<li id="menu-item-22679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22679"><a href="https://enatega.com/yalla-delivery/">Yalla Delivery</a></li>
+	<li id="menu-item-22677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22677"><a href="https://enatega.com/stylizenow/">StylizeNOW</a></li>
+	<li id="menu-item-22675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22675"><a href="https://enatega.com/easy-eats/">Easy Eats</a></li>
+	<li id="menu-item-22678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22678"><a href="https://enatega.com/vinifynd/">Vinifynd</a></li>
+	<li id="menu-item-22676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22676"><a href="https://enatega.com/snap-delivered/">Snap Delivered</a></li>
+	<li id="menu-item-23733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23733"><a href="https://enatega.com/borku-delivery/">Borku Delivery</a></li>
+</ul>
+</li>
+<li id="menu-item-22680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22680"><p class="mobile-menu-item-toggle">Use cases <span class="sub-arrow"><svg class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></span></p>
+<ul class="sub-menu">
+	<li id="menu-item-22689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22689"><a href="https://enatega.com/liquor-delivery-solution/">Liquor Delivery Solution</a></li>
+	<li id="menu-item-22685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22685"><a href="https://enatega.com/food-and-beverage-solution/">Food And Beverage solution</a></li>
+	<li id="menu-item-22688" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22688"><a href="https://enatega.com/laundry-on-demand-services-solution/">Laundry On-Demand Services Solution</a></li>
+	<li id="menu-item-22691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22691"><a href="https://enatega.com/milk-delivery-solution/">Milk Delivery Solution</a></li>
+	<li id="menu-item-22684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22684"><a href="https://enatega.com/flower-delivery-solution/">Flower Delivery Solution</a></li>
+	<li id="menu-item-22682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22682"><a href="https://enatega.com/courier-delivery-solution/">Courier Delivery Solution</a></li>
+	<li id="menu-item-22692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22692"><a href="https://enatega.com/roadside-assistance-services-solution/">Roadside Assistance Services Solution</a></li>
+	<li id="menu-item-22687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22687"><a href="https://enatega.com/grocery-delivery-solution/">Grocery Delivery Solution</a></li>
+	<li id="menu-item-22690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22690"><a href="https://enatega.com/medicine-delivery-solution/">Medicine Delivery Solution</a></li>
+	<li id="menu-item-22681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22681"><a href="https://enatega.com/beauty-services-scheduling-solution/">Beauty Services Scheduling Solution</a></li>
+	<li id="menu-item-22683" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22683"><a href="https://enatega.com/document-delivery-solution/">Document Delivery Solution</a></li>
+</ul>
+</li>
+<li id="menu-item-22693" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22693"><a href="/multi-vendor-doc/introduction/">Documentation</a></li>
+<li id="menu-item-22694" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-22694"><a href="https://enatega.com/blog/">Blog</a></li>
+<li id="menu-item-22695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22695"><a href="https://enatega.com/multi-vendor-features/">Features</a></li>
+<li id="menu-item-22696" class="pricing-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-22696"><a href="/#pricing">Pricing</a></li>
+</ul>                </nav>
+            </div>
+            <div>
+<!-- 
+              	<div class="get-started_cta">
+					<a href="https://checkout.enatega.com/buy/aaa7db46-a20e-4a41-8752-c991194cf554">Get Started Now</a>			
+				</div> -->
+
+                <div class="header-cta">
+<!--                     <a href="#" class="schedule-cta" id="scheduleCall">Schedule a Call</a> -->
+				 <a href="/contact/" class="schedule-cta">
+        Get A Quote
+    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <main><section class="multi-vendor-doc-section">
+    <div class="container">
+        <div class="mobile-doc-toogle">
+            <p>Documentation</p>
+            <span class="mobile-doc-toggle-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </span>
+        </div>
+        <div class="doc-right-sidebar-link">
+            <div class="category-docs catgory-1-docs">
+                <h6>Getting Started</h6>
+                <a href="/multi-vendor-doc/introduction/">Introduction </a>
+                <a href="/multi-vendor-doc/high-level-architecture/">High Level Architecture </a>
+
+                <a href="/multi-vendor-doc/overview-of-the-api/">Overview of the API </a>
+
+                <a href="/multi-vendor-doc/faqs/">FAQs </a>
+
+                <a href="/multi-vendor-doc/license/">License </a>
+
+                <a href="/multi-vendor-doc/patch-notes/">Patch Notes </a>
+
+
+            </div>
+            <div class="category-docs catgory-2-docs">
+                <h6>Installation</h6>
+                <a href="/multi-vendor-doc/prerequisites/">Prerequisites</a>
+                <div class="toggle-doc-title">
+                    <p>How to setup locally</p>
+                    <span class="toggle-doc-icon">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+
+
+                <ul class="toggle-doc-list">
+                    <li><a href="/multi-vendor-doc/nodejs-setup/">NodeJS Setup</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/git-and-github-setup/">Git and GitHub Setup</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-setup-backend-api-locally/">Setup Backend API</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-setup-web-dashboard-locally/">Setup Web Dashboard</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-setup-admin-dashboard-locally/">Setup Admin Dashboard</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-setup-customer-app-locally/">Setup Customer App</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-setup-rider-app-locally/">Setup Rider App</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-setup-restaurant-app-locally/">Setup Restaurant App</a>
+                    </li>
+                </ul>
+                <div class="toggle-doc-title">
+                    <p>How to setup/deploy for production</p>
+                    <span class="toggle-doc-icon">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <ul class="toggle-doc-list">
+                    <li><a href="/multi-vendor-doc/how-to-deploy-backend-api-server/">Deploy Backend API server</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-deploy-admin-dashboard/">Deploy Admin Dashboard</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-deploy-web-dashboard/">Deploy Web Dashboard</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/how-to-deploy-mobile-applications/">Deploy Mobile Applications</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="category-docs catgory-3-docs">
+                <h6>Configuration</h6>
+                <a href="/multi-vendor-doc/configuration-google-maps-api-keys/">Google Maps API Keys</a>
+                <a href="/multi-vendor-doc/nodemailer-setup/" class="doc-nav-link-active">Nodemailer Setup</a>
+                <a href="/multi-vendor-doc/configuring-payment-gateways/">Configuring Payment Gateways</a>
+                <a href="/multi-vendor-doc/twillio-setup/">Twillio Setup</a>
+                <div class="toggle-doc-title">
+                    <p>Sentry Dashboard</p>
+                    <span class="toggle-doc-icon">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+
+
+                <ul class="toggle-doc-list">
+                    <li><a href="/multi-vendor-doc/sentry-introduction/">Sentry Introduction</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/sentry-integration/">Sentry Error Reporting</a>
+                    </li>
+                </ul>
+
+                <a href="/multi-vendor-doc/configuring-cloudinary/">Configuring Cloudinary</a>
+                <div class="toggle-doc-title">
+                    <p>Amplitude Dashboard</p>
+                    <span class="toggle-doc-icon">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+
+
+                <ul class="toggle-doc-list">
+                    <li><a href="/multi-vendor-doc/amplitude-introduction/">Amplitude Introduction</a>
+                    </li>
+                    <li><a href="/multi-vendor-doc/amplitude-integration/">Amplitude Integration</a>
+                    </li>
+                </ul>
+
+                <a href="/multi-vendor-doc/firebase-setup/">Firebase Setup</a>
+
+                <a href="/multi-vendor-doc/configuration-push-notification-keys/">Push Notification Keys</a>
+
+                <a href="/multi-vendor-doc/configuration-social-login/">Social Login</a>
+
+                <a href="/multi-vendor-doc/configuring-database/">Configuring Database</a>
+
+                <a href="/multi-vendor-doc/server-configurations/">Server Configurations</a>
+
+            </div>
+        </div>
+        <div class="doc-main-content" id="doc-main-content">
+            <div class="doc-main-content-inner">
+                <p class="doc-category-label">Configuration</p>
+                <h1 class="doc-title">Nodemailer Setup</h1>
+                <p class="doc-description">
+            
+                    
+</p><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Keys Tutorial | Nodemailer | Part 12 | Enatega Multivendor Delivery Tutorial" width="500" height="281" src="https://www.youtube.com/embed/T5sBTxc1QtM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div></figure>
+
+
+
+<p class="doc-video-label">Enatega Multivendor | Nodemailer Setup</p>
+                <p></p>
+              
+            </div>
+            <hr>
+            <div class="post-navigation">
+                <div class="previous-post">
+                                        <a href="https://enatega.com/multi-vendor-doc/configuration-google-maps-api-keys/" class="nav-link">
+
+                        <img src="https://enatega.com/wp-content/uploads/2023/10/Vector.webp" alt="arrow" width="15">
+                        <span>Previous</span>
+
+                    </a>
+                    <a href="https://enatega.com/multi-vendor-doc/configuration-google-maps-api-keys/" class="nav-link">
+                        <p>Configuration Google Maps API Keys</p>
+                    </a>
+                                    </div>
+                <div class="next-post">
+                                        <a href="https://enatega.com/multi-vendor-doc/configuring-payment-gateways/" class="nav-link">
+                        <span>Next</span>
+                        <img src="https://enatega.com/wp-content/uploads/2023/10/Vector.webp" alt="arrow" width="15">
+                    </a>
+                    <a href="https://enatega.com/multi-vendor-doc/configuring-payment-gateways/" class="nav-link">
+                        <p>Configuring Payment Gateways</p>
+                    </a>
+                                    </div>
+            </div>
+
+        </div>
+        <div class="on-page-navigation">
+            <div class="on-page-navigation-heading">On this page</div>
+            <ul id="dynamic-navigation"></ul>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+// Select the toggle title and the list
+// Select all toggle titles, lists, and icons
+const toggleTitles = document.querySelectorAll('.toggle-doc-title');
+const toggleLists = document.querySelectorAll('.toggle-doc-list');
+const toggleIcons = document.querySelectorAll('.toggle-doc-icon');
+
+// Loop through each toggle title and add the event listener
+toggleTitles.forEach(function(title, index) {
+    // Add click event listener to each toggle title
+    title.addEventListener('click', function() {
+        const toggleList = toggleLists[index]; // Get the corresponding toggle list
+        const toggleIcon = toggleIcons[index]; // Get the corresponding toggle icon
+        
+        // Toggle the display property of the list and icon rotation
+        if (toggleList.style.display === "none" || toggleList.style.display === "") {
+            toggleList.style.display = "block";
+            toggleIcon.style.transform = "rotate(0deg)";
+        } else {
+            toggleList.style.display = "none";
+            toggleIcon.style.transform = "rotate(-90deg)";
+        }
+    });
+});
+
+
+// -----------------------------on page navigation-----------------------------
+document.addEventListener("DOMContentLoaded", function() {
+    var docContent = document.getElementById('doc-main-content');
+    var headings = docContent.querySelectorAll('h2, h3, h4, h5, h6');
+    var headerOffset = 180; // Height of your sticky header
+
+    if (headings.length) {
+        var navigationList = document.getElementById('dynamic-navigation');
+        headings.forEach(function(heading, index) {
+            var headingText = heading.textContent;
+            var headingID = 'heading-' + index;
+            heading.setAttribute('id', headingID);
+
+            var listItem = document.createElement('li');
+            var verticalLine = document.createElement('div');
+            verticalLine.className = 'vertical-line';
+            verticalLine.style.display = 'none'; // Initially hidden
+            var anchor = document.createElement('a');
+            anchor.className = 'smooth-scroll';
+            anchor.href = '#' + headingID;
+            anchor.textContent = headingText;
+
+            listItem.appendChild(verticalLine);
+            listItem.appendChild(anchor);
+            navigationList.appendChild(listItem);
+        });
+    }
+
+    // Smooth scroll functionality
+    document.querySelectorAll('.smooth-scroll').forEach(function(anchor) {
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
+            var targetID = this.getAttribute('href').substring(1);
+            var target = document.getElementById(targetID);
+
+            if (target) {
+                // Get target position and apply header offset
+                var targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Remove 'active' class from all links and hide all vertical lines
+                document.querySelectorAll('.smooth-scroll').forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                document.querySelectorAll('.vertical-line').forEach(function(line) {
+                    line.style.display = 'none';
+                });
+
+                // Add 'active' class and show vertical line for the clicked link
+                this.classList.add('active');
+                var verticalLine = this.previousElementSibling; // Correctly target the vertical line
+                if (verticalLine && verticalLine.classList.contains('vertical-line')) {
+                    verticalLine.style.display = 'block';
+                }
+            }
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector(".mobile-doc-toogle");
+    const sidebar = document.querySelector(".doc-right-sidebar-link");
+
+    // Check for mobile screen
+    if (window.innerWidth <= 768) {
+        toggleButton.addEventListener("click", function() {
+            // Toggle sidebar visibility on click
+            sidebar.style.display = (sidebar.style.display === "block") ? "none" : "block";
+        });
+    }
+
+    // Optional: Handle window resize if you want dynamic behavior across resizing
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            sidebar.style.display = 'block'; // Show sidebar on larger screens
+        } else {
+            sidebar.style.display = 'none'; // Hide sidebar on mobile
+        }
+    });
+});
+	 document.addEventListener("DOMContentLoaded", function() {
+    // Get the current page URL and strip the domain part
+    const currentPageUrl = new URL(window.location.href).pathname;
+
+    // Select all anchor tags within .doc-right-sidebar-link
+    const links = document.querySelectorAll('.doc-right-sidebar-link a');
+
+    links.forEach(function(link) {
+        // Strip the domain part from each link's href before comparing
+        const linkUrlPath = new URL(link.href).pathname;
+
+        // Compare the pathname of the link with the current page pathname
+        if (linkUrlPath === currentPageUrl) {
+            // Add the 'doc-nav-link-active' class to the matched anchor tag
+            link.classList.add('doc-nav-link-active');
+
+            // Check if this link is inside a toggle (e.g., inside .toggle-doc-list)
+            const toggleContainer = link.closest('.toggle-doc-list');
+            if (toggleContainer) {
+                // Open the toggle by adding an 'open' class to its parent or title container
+                const toggleTitle = toggleContainer.previousElementSibling; // Get the toggle title
+                if (toggleTitle && toggleTitle.classList.contains('toggle-doc-title')) {
+                    toggleTitle.classList.add('open');  // Add 'open' class to title (to open it)
+                    toggleContainer.style.display = 'block'; // Ensure the toggle content is displayed
+                }
+            }
+        }
+    });
+
+    // Toggle functionality for other sections
+    const toggleTitles = document.querySelectorAll('.toggle-doc-title');
+    toggleTitles.forEach(function(title) {
+        title.addEventListener('click', function() {
+            const toggleList = this.nextElementSibling; // The next sibling should be the toggle list (.toggle-doc-list)
+            if (toggleList && toggleList.classList.contains('toggle-doc-list')) {
+                // Toggle the 'open' class on the title
+                this.classList.toggle('open');
+
+                // Toggle the visibility of the associated toggle list
+                if (this.classList.contains('open')) {
+                    toggleList.style.display = 'block';
+                } else {
+                    toggleList.style.display = 'none';
+                }
+            }
+        });
+    });
+});
+
+
+</script>
+
+<script nitro-exclude="">
+    document.cookie = 'nitroCachedPage=' + (!window.NITROPACK_STATE ? '0' : '1') + '; path=/; SameSite=Lax';
+</script>
+<script nitro-exclude="">
+    if (!window.NITROPACK_STATE || window.NITROPACK_STATE != 'FRESH') {
+        var proxyPurgeOnly = 0;
+        if (typeof navigator.sendBeacon !== 'undefined') {
+            var nitroData = new FormData(); nitroData.append('nitroBeaconUrl', 'aHR0cHM6Ly9lbmF0ZWdhLmNvbS9tdWx0aS12ZW5kb3ItZG9jL25vZGVtYWlsZXItc2V0dXAv'); nitroData.append('nitroBeaconCookies', 'W10='); nitroData.append('nitroBeaconHash', 'f7ef59a844b4692844e9b34b8640e29e41fcd55f2cd27e403a783f761144246f284b899a33bf38c1d9239b31249a08d288eaed8c9518c8354dc2d27da6d6d408'); nitroData.append('proxyPurgeOnly', ''); nitroData.append('layout', 'multi-vendor-doc'); navigator.sendBeacon(location.href, nitroData);
+        } else {
+            var xhr = new XMLHttpRequest(); xhr.open('POST', location.href, true); xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); xhr.send('nitroBeaconUrl=aHR0cHM6Ly9lbmF0ZWdhLmNvbS9tdWx0aS12ZW5kb3ItZG9jL25vZGVtYWlsZXItc2V0dXAv&nitroBeaconCookies=W10=&nitroBeaconHash=f7ef59a844b4692844e9b34b8640e29e41fcd55f2cd27e403a783f761144246f284b899a33bf38c1d9239b31249a08d288eaed8c9518c8354dc2d27da6d6d408&proxyPurgeOnly=&layout=multi-vendor-doc');
+        }
+    }
+</script><section class="site-footer">
+    <div class="footer-logo-mobile">
+        <a href="https://enatega.com"><img src="https://enatega.com/wp-content/uploads/2023/10/Enatega-Logo-.webp" width="500" height="108" alt="Enatega"></a>
+    </div>
+    <div class="container">
+        <div class="footer-logo">
+            <a href="https://enatega.com"><img src="https://enatega.com/wp-content/uploads/2023/10/Enatega-Logo-.webp" width="500" height="108" alt="Enatega"></a>
+        </div>
+        <div class="site-footer__menu-1">
+            <h6>
+                Resources
+            </h6>
+            <a href="/blog/">Blog</a>
+            <a href="/multi-vendor-doc/introduction/">Documentation</a>
+            <a href="/multi-vendor-features/">Features</a>
+        </div>
+       
+        <div class="site-footer__menu-2">
+            <h6>
+                Compare
+            </h6>
+            <a href="/enatega-vs-blink/">Blink</a>
+            <a href="/enatega-vs-deonde/">Deonde</a>
+            <a href="/enatega-vs-gloriafood/">GloriaFood</a>
+            <a href="/enatega-vs-ordering-co/">Ordering.Co</a>
+            <a href="/enatega-vs-shipday/">Shipday</a>
+            <a href="/enatega-vs-spotneats/">SpotNeats</a>
+            <a href="/enatega-vs-yelo/">Yelo</a>
+            <a href="/enatega-vs-zeew/">Zeew</a>
+
+        </div>
+        <div class="site-footer__menu-3">
+            <h6>
+                Case Studies
+            </h6>
+            <a href="/yalla-delivery/">Yalla Delivery</a>
+            <a href="/stylizenow/">Stylizenow</a>
+            <a href="/easy-eats/">Easy Eats</a>
+            <a href="/vinifynd/">Vinifynd</a>
+            <a href="/snap-delivered/">Snap Delivered</a>
+			<a href="/borku-delivery/">Borku Delivery</a>
+        </div>
+         <div class="site-footer__menu-4">
+            <h6>
+                Get in Touch
+            </h6>
+            <a href="#">1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States</a>
+            <a href="mailto:sales@enatega.com">sales@enatega.com</a>
+			 <a href="tel:+13077768999">+1 (307) 776-8999</a>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/enategam" target="_blank" aria-label="Enatega Facebook Profile"><svg class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+                <a href="https://www.linkedin.com/company/14583783/" target="_blank" aria-label="Enatega LinkedIn Profile"><svg class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
+                <a href="https://www.instagram.com/enategam/" target="_blank" aria-label="Enatega Instagram Profile"><svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="footer-bottom horizental-line">
+    <div class="container">
+		<div class="trusted-badges-wrapper">
+			<div class="trusted-badge">
+				<img src="/wp-content/uploads/2025/07/iso-27001.webp" alt="ISO-27001" width="70px" height="70px">
+			</div>
+			<div class="trusted-badge">
+				<img src="/wp-content/uploads/2025/07/iso-27002.webp" alt="ISO-27001" width="70px" height="70px">
+			</div>
+			<div class="trusted-badge">
+				<img src="/wp-content/uploads/2025/07/gdpr.webp" alt="ISO-27001" width="55px" height="55px">
+			</div>
+			<div class="trusted-badge">
+				<img src="/wp-content/uploads/2025/07/iso-9001.webp" alt="ISO-27001" width="70px" height="70px">
+			</div>
+			
+		</div>
+        <hr>
+        <div class="footer-bottom__content">
+            <div class="privacy-conditions">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-conditions/">Terms &amp; Conditions</a>
+            </div>
+            <div class="rights-reserved">
+                ©2024 Enatega · All rights reserved.
+            </div>
+            <div class="powerd-by">
+                <div>Powered by:</div>
+                <a href="https://ninjascode.com" target="_blank"><img loading="lazy" width="374" height="60" src="https://enatega.com/wp-content/uploads/2024/07/NinjasCode-logo-1.webp" alt="NinjasCode" srcset="https://enatega.com/wp-content/uploads/2024/07/NinjasCode-logo-1.webp 374w, https://enatega.com/wp-content/uploads/2024/07/NinjasCode-logo-1-300x48.webp 300w" sizes="(max-width: 374px) 100vw, 374px"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Video Modal -->
+<div class="product-video-popup">
+	<span class="close">×</span>
+  <div class="popup-content">
+    
+<div style="padding:56.25% 0 0 0;">
+  <iframe src="https://player.vimeo.com/video/1073827016?h=e48d5132cc&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:50%;left:0;width:100%;height:89.4%; transform: translate(0, -50%)" data-ready="true">
+  </iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+  </div>
+</div>
+
+<!--  Updated Home Demo Section Modal-->
+<div id="homeDemoModal" class="homeDemoModal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImage" src="" alt="App Demo" width="122" height="106">
+    <h5 id="modalTitle">App Title</h5>
+    <p id="modalDescription">App description will go here.</p>
+	  <p style="color: #334155; font-weight: 600">
+		  Demo Links
+	  </p>
+    <div class="demo-links">
+      <a id="demoIosLink" href="#" target="_blank"><img src="https://enatega.com/wp-content/uploads/2025/06/Apple_logo_black.webp" alt="iOS" width="80">IOS</a>
+      <a id="demoAndroidLink" href="#" target="_blank"><img src="https://enatega.com/wp-content/uploads/2025/06/Android_robot.webp" alt="Android" width="80">Android</a>
+		 <a id="demoWebLink" href="#" target="_blank"><img src="/wp-content/uploads/2025/07/world-wide-web.webp" alt="web" width="80">Web</a>
+		<button id="prototype-btn" class="prototype-btn"><img src="/wp-content/uploads/2025/07/demo.webp" alt="demo" width="80">Prototype</button>
+    </div>
+  </div>
+</div>
+
+<!-- Demos Modal structure -->
+<div id="demos-popup-modal" class="modal demos-popup">
+    <div class="popup-modal-inner">
+        <div class="modal-content">
+            <span class="close">×</span> 
+           <div class="demo-tabs">
+    <ul class="demo-tab-list" role="tablist">
+        <li class="demo-tab-item" role="presentation">
+            <a href="#demo-tab1" class="demo-tab-link active" role="tab" aria-controls="demo-tab1" aria-selected="true">Customer App</a>
+        </li>
+        <li class="demo-tab-item" role="presentation">
+            <a href="#demo-tab2" class="demo-tab-link" role="tab" aria-controls="demo-tab2" aria-selected="false">Rider App</a>
+        </li>
+        <li class="demo-tab-item" role="presentation">
+            <a href="#demo-tab3" class="demo-tab-link" role="tab" aria-controls="demo-tab3" aria-selected="false">Restaurant App</a>
+        </li>
+        <li class="demo-tab-item" role="presentation">
+            <a href="#demo-tab4" class="demo-tab-link" role="tab" aria-controls="demo-tab4" aria-selected="false">Website</a>
+        </li>
+        <li class="demo-tab-item" role="presentation">
+            <a href="#demo-tab5" class="demo-tab-link" role="tab" aria-controls="demo-tab5" aria-selected="false">Dashboard</a>
+        </li>
+        <li class="demo-tab-item" role="presentation">
+            <a href="#demo-tab6" class="demo-tab-link" role="tab" aria-controls="demo-tab6" aria-selected="false">Server</a>
+        </li>
+
+    </ul>
+
+    <div id="demo-tab1" class="demo-tab-content" role="tabpanel" aria-labelledby="demo-tab1" tabindex="0">
+        <div class="demo-tab-content-inner">
+            <div class="demo-tab-text">
+                <h2 class="animated" data-animation="fadeInUp">Customer App</h2>
+                <p class="animated" data-animation="fadeInUp">Provide users with a user friendly and intuitive experience with our customer app. With a quick and simple onboarding process, users can sign up and start ordering their favourite meals and groceries in no time</p>
+                <div class="demo-buttons animated" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://play.google.com/store/apps/details?id=com.enatega.multivendor" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-android" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                    <a class="demo-button" href="https://apps.apple.com/us/app/enatega-multivendor/id1526488093" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-apple" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="demo-tab-image">
+                <div class="demo-image-wrapper">
+                   <img loading="lazy" decoding="async" width="1029" height="896" src="https://enatega.com/wp-content/uploads/2025/01/enatega-customer-app.webp" alt="Customer App">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-tab2" class="demo-tab-content hidden" role="tabpanel" aria-labelledby="demo-tab2" tabindex="0">
+        <div class="demo-tab-content-inner">
+            <div class="demo-tab-text">
+                <h2 class="animated" data-animation="fadeInUp">Rider App</h2>
+                <p class="animated" data-animation="fadeInUp">Empower your delivery riders with our efficient and user-friendly Rider App. Streamline order assignments, route optimization, and real-time tracking to ensure timely deliveries and customer satisfaction.</p>
+                <div class="demo-buttons animated" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://play.google.com/store/apps/details?id=com.enatega.multirider" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-android" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                    <a class="demo-button" href="https://apps.apple.com/pk/app/enatega-mulitvendor-rider/id1526674511" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-apple" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="demo-tab-image">
+                <div class="demo-image-wrapper">
+                  <img loading="lazy" decoding="async" width="1029" height="896" src="https://enatega.com/wp-content/uploads/2024/11/rider-app.webp" alt="Rider App">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-tab3" class="demo-tab-content hidden" role="tabpanel" aria-labelledby="demo-tab3" tabindex="0">
+        <div class="demo-tab-content-inner">
+            <div class="demo-tab-text">
+                <h2 class="animated" data-animation="fadeInUp">Restaurant App</h2>
+                <p class="animated" data-animation="fadeInUp">Enhance restaurant operations with our feature-rich Restaurant App. Manage orders, update menus, and track performance all in one place. Boost efficiency and provide a seamless experience for your restaurant partners.</p>
+                <div class="demo-buttons animated" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://play.google.com/store/apps/details?id=multivendor.enatega.restaurant" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-android" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                    <a class="demo-button" href="https://apps.apple.com/pk/app/enatega-multivendor-restaurant/id1526672537" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-apple" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="demo-tab-image">
+                <div class="demo-image-wrapper">
+                    <img loading="lazy" decoding="async" width="1029" height="896" src="https://enatega.com/wp-content/uploads/2024/11/restaurant-app.webp" alt="Restaurant App">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-tab4" class="demo-tab-content hidden" role="tabpanel" aria-labelledby="demo-tab4" tabindex="0">
+        <div class="demo-tab-content-inner">
+            <div class="demo-tab-text">
+                <h2 class="animated" data-animation="fadeInUp">Website</h2>
+                <p class="animated" data-animation="fadeInUp">Showcase your food delivery service with our responsive and attractive website. Highlight your offerings, partner restaurants, and make online ordering a breeze for your customers across all devices.</p>
+                <div class="demo-buttons animated" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://multivendor.enatega.com/" target="_blank">
+                        <span>Visit Website</span>
+                    </a>
+                </div>
+            </div>
+            <div class="demo-tab-image">
+                <div class="demo-image-wrapper">
+                  <img loading="lazy" decoding="async" width="1076" height="896" src="https://enatega.com/wp-content/uploads/2024/11/web-app.webp" alt="Customer Web">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-tab5" class="demo-tab-content hidden" role="tabpanel" aria-labelledby="demo-tab5" tabindex="0">
+        <div class="demo-tab-content-inner">
+            <div class="demo-tab-text">
+                <h2 class="animated" data-animation="fadeInUp">Admin Web Dashboard</h2>
+                <p class="animated" data-animation="fadeInUp">Take control of your food delivery business with our comprehensive Admin Web Dashboard. Manage users, restaurants, orders, and gain valuable insights with advanced analytics and reporting tools.</p>
+                <div class="demo-buttons animated" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://multivendor-admin.enatega.com/" target="_blank">     
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="demo-tab-image">
+                <div class="demo-image-wrapper">
+                   <img loading="lazy" decoding="async" width="1699" height="1194" src="https://enatega.com/wp-content/uploads/2024/11/Group-2147223496.webp" alt="dashboard">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo-tab6" class="demo-tab-content hidden" role="tabpanel" aria-labelledby="demo-tab6" tabindex="0">
+        <div class="demo-tab-content-inner">
+            <div class="demo-tab-text">
+                <h2 class="animated" data-animation="fadeInUp">Server</h2>
+                <p class="animated" data-animation="fadeInUp">Power your food delivery ecosystem with our robust and scalable server infrastructure. Ensure smooth operations, real-time data synchronization, and seamless integration across all platforms.</p>
+                <div class="demo-buttons animated" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://v1-api-enatega-multivendor-stage.up.railway.app/graphql" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-code" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="demo-tab-image">
+                <div class="demo-image-wrapper">
+                 <img loading="lazy" decoding="async" width="1076" height="896" src="https://enatega.com/wp-content/uploads/2024/11/server.webp" alt="server">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Calendly Modal structure -->
+<!-- <div id="calendly-popup-modal" class="modal calendly-popup">
+    <div class="popup-modal-inner">
+        <div class="modal-content">
+            <div class="modal-topbar">
+                <span class="close">&times;</span>
+                <div class="site-logo">
+                    <a href="https://enatega.com"><img src="" width="180" height="32" alt="site-logo"></a>
+                </div>
+            </div>
+            
+            Loader
+            <div id="calendly-loader" class="loader"></div>
+            
+            Calendly inline widget
+            <div id="calendly-widget-container" class="calendly-inline-widget" data-url="https://calendly.com/d/cm54-knr-d8s/enatega-sales-call?hide_gdpr_banner=1"
+                style="min-width:300px;height:520px;display:none;"></div>
+        </div>
+    </div>
+</div> -->
+
+  <div class="view-demo-overlay" id="view-demo-overlay"></div>
+    <div class="view-demo-popup" id="view-demo-popup">
+		<div class="view-demo-popup-content">
+			<span class="close" id="view-demo-close">×</span>
+       <div class="demo-tab-text">
+                <h2 class="animated fadeInUp" data-animation="fadeInUp">DeliverXpress Customer</h2>
+                <div class="demo-buttons animated fadeInUp" data-animation="fadeInUp">
+                    <a class="demo-button" href="http://play.google.com/store/apps/details?id=com.cannabrand.multivendorapp" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-android" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                    <a class="demo-button" href="https://apps.apple.com/us/app/deliverxpress/id6740040059" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-apple" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+		 <div class="demo-tab-text">
+                <h2 class="animated fadeInUp" data-animation="fadeInUp">DeliverXpress Restaurant</h2>
+                <div class="demo-buttons animated fadeInUp" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://play.google.com/store/apps/details?id=multivendor.cannabrands.restaurant" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-android" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                    <a class="demo-button" href="https://apps.apple.com/us/app/deliverxpress-restaurant/id6740040147" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-apple" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+		 <div class="demo-tab-text">
+                <h2 class="animated fadeInUp" data-animation="fadeInUp">DeliverXpress Rider</h2>
+                <div class="demo-buttons animated fadeInUp" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://play.google.com/store/apps/details?id=com.cannabrands.multirider" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-android" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                    <a class="demo-button" href="https://apps.apple.com/us/app/deliverxpress-rider/id6740040032" target="_blank">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-apple" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                        </svg>
+                        <span>View Demo</span>
+                    </a>
+                </div>
+            </div>
+		 <div class="demo-tab-text">
+                <h2 class="animated fadeInUp" data-animation="fadeInUp">DeliverXpress Web</h2>
+                <div class="demo-buttons animated fadeInUp" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://deliverxpress.netlify.app/" target="_blank">
+           
+                        <span>View Demo</span>
+                    </a>
+                   
+                </div>
+            </div>
+		 <div class="demo-tab-text">
+                <h2 class="animated fadeInUp" data-animation="fadeInUp">DeliverXpress Admin</h2>
+                <div class="demo-buttons animated fadeInUp" data-animation="fadeInUp">
+                    <a class="demo-button" href="https://deliverxpress-admin.netlify.app/" target="_blank">
+                       
+                        <span>View Demo</span>
+                    </a>
+                   
+                </div>
+            </div>
+				</div>
+    </div>
+
+<!--  Prototypes Modal--------->
+
+<div class="prototype-modal-1-container prototype-modals" style="display:none;">
+	<span class="close-prototype-modal">×</span>
+    <div class="prototypes-modal-inner">
+		 <!-- Loader -->
+        <div class="prototype-loader" style="display:none; ">
+            <div class="spinner" style="margin-top: 10px;">
+            </div>
+        </div>
+        <iframe data-src="https://embed.figma.com/proto/LSolukFLwl0bAzMUd6Pmg4/Customer-Mobile-App?page-id=2751%3A10941&amp;node-id=5502-4571&amp;p=f&amp;viewport=537%2C341%2C0.02&amp;scaling=scale-down&amp;content-scaling=responsive&amp;starting-point-node-id=5502%3A4571&amp;embed-host=share" width="800" height="450" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+<div class="prototype-modal-2-container prototype-modals" style="display:none;">
+	<span class="close-prototype-modal">×</span>
+    <div class="prototypes-modal-inner">
+		 <!-- Loader -->
+        <div class="prototype-loader" style="display:none; ">
+            <div class="spinner" style="margin-top: 10px;">
+            </div>
+        </div>
+<iframe data-src="https://embed.figma.com/proto/YSwFI6jvKEfppvumDfZ5GT/Rider-App?page-id=0%3A1&amp;node-id=1-507&amp;p=f&amp;viewport=533%2C73%2C0.08&amp;scaling=scale-down&amp;content-scaling=responsive&amp;starting-point-node-id=1%3A587&amp;embed-host=share" width="800" height="450" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+<div class="prototype-modal-3-container prototype-modals" style="display:none;">
+	<span class="close-prototype-modal">×</span>
+    <div class="prototypes-modal-inner">
+		 <!-- Loader -->
+        <div class="prototype-loader" style="display:none; ">
+            <div class="spinner" style="margin-top: 10px;">
+            </div>
+        </div>
+<iframe data-src="https://embed.figma.com/proto/KnBNgwoio8zujFKSEzXTZ4/Restaurant-App?page-id=0%3A1&amp;node-id=0-651&amp;p=f&amp;viewport=343%2C25%2C0.12&amp;scaling=scale-down&amp;content-scaling=responsive&amp;starting-point-node-id=0%3A731&amp;embed-host=share" width="800" height="450" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+<div class="prototype-modal-4-container prototype-modals" style="display:none;">
+	<span class="close-prototype-modal">×</span>
+    <div class="prototypes-modal-inner">
+		 <!-- Loader -->
+        <div class="prototype-loader" style="display:none; ">
+            <div class="spinner" style="margin-top: 10px;">
+            </div>
+        </div>
+<iframe data-src="https://embed.figma.com/proto/bdA2QOM79DtIGJAQMa4LEv/Customer-Web-App?page-id=0%3A1&amp;node-id=1-6328&amp;p=f&amp;viewport=560%2C25%2C0.02&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A6328&amp;embed-host=share" width="100%" height="100%" allowfullscreen=""></iframe>
+    </div>
+</div>
+<div class="prototype-modal-5-container prototype-modals" style="display:none;">
+	<span class="close-prototype-modal">×</span>
+    <div class="prototypes-modal-inner">
+		 <!-- Loader -->
+        <div class="prototype-loader" style="display:none; ">        
+            <div class="spinner" style="margin-top: 10px;">
+            </div>
+        </div>
+       <iframe data-src="https://embed.figma.com/proto/D7HeChxKZo45MWEEVGQ1mK/Admin-Web-App?page-id=0%3A1&amp;node-id=1-13258&amp;p=f&amp;viewport=336%2C25%2C0.03&amp;scaling=contain&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A13258&amp;embed-host=share" width="800" height="450" allowfullscreen=""></iframe>
+    </div>
+</div> 
+
+
+
+<!-- ------------CALL counter widget--------- -->
+<!-- <div class="call-counter-widget" id="callCounter">
+  <div class="phone-icon"><img src="https://enatega.com/wp-content/uploads/2025/06/call-icon-1.webp" alt="Call Icon"/></div>
+	<div class="call-counter-number">
+		  <p>
+			  <span id="callText">--</span> Calls Booked This Month
+		</p>
+  <span class="call-counter-close-btn" onclick="document.getElementById('callCounter').style.display='none'">✕</span>
+	</div>
+
+</div> -->
+
+<!--  Meet Founder Modal--------->
+<!--  <div class="founder-modal-container" id="founder-modal" style="display:none;">
+    <div class="founder-modal-inner">
+        <div class="founder-modal-top">
+            <span class="founder-modal-close" id="founder-modal-close">&times;</span>
+            <div class="founder-img">
+                <img src="https://enatega.com/wp-content/uploads/2024/12/sharan-gohar.webp" alt="Sharan Gohar Khan" width="70%" height="70%" loading="lazy">
+            </div>
+            <div>
+                <h4>Sharan Gohar Khan</h4>
+                <p>Founder of Enatega</p>
+            </div>
+        </div>
+        <div class="founder-about">
+            <h5>About</h5>
+            <p>
+                Hi there! 👋  I’m Sharan, your point of contact for this call. With over 8 years of experience in designing and implementing delivery management systems globally.<br>
+                To make the most of our time together, please ensure the following before the call:<br>
+                1. You’ll attend the meeting as scheduled. ✅<br>
+                2. You’ve reviewed the demos and documentation to familiarize yourself with our solutions. ✅<br>
+                3. The decision-maker will be present on the call. ✅<br>
+            </p>
+        </div>
+        <div class="founder-modal-cta">
+			<a id="whatsappCta" href="https://api.whatsapp.com/send?phone=+13077768999&text=Hello, I am interested in buying Enatega and my name is ...." target="_blank">
+            <img src="/wp-content/uploads/2025/01/whatsapp-icon.webp" width="20" height="20" alt="WhatsApp Chat">
+				Connect on WhatsApp
+        </a> -->
+<!--             <a href="https://linkedin.com/in/sharan-gohar-khan" style="cursor:pointer">
+                <img src="https://enatega.com/wp-content/uploads/2024/12/Logo.webp" alt="LinkedIn" width="20" height="20">
+                Connect on LinkedIn
+            </a> -->
+<!--             <p id="scheduleCall" class="schedule-cta" style="cursor:pointer">Schedule a Call</p> -->
+<!--         </div>
+    </div>
+</div>  -->
+
+<!-- <div class="issues-info-banner" id="issuesInfoBanner" style="position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid;
+    box-shadow: 0 -1px 10px 0 #acabab4d;
+    border-color: #f4f4f4;
+    display: flex;
+    justify-content: center;">
+  <div style="
+      padding: 40px 30px;
+      position: relative;">
+    <p style="font-size: 18px; font-weight: 600; ">
+      We're releasing a new and exciting major update. During the update, the product may have some stability issues. Your patience is much appreciated.
+    </p>
+   
+  </div>
+	 <button id="closeBannerButton" style="font-size: 27px; background: #fff;
+      border: none;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;">
+      ×
+    </button>
+</div> -->
+<!-- 
+<script>
+  // Select the button and the banner
+  const closeButton = document.getElementById('closeBannerButton');
+  const banner = document.getElementById('issuesInfoBanner');
+
+  // Add a click event listener to the button
+  closeButton.addEventListener('click', () => {
+    // Hide the banner by setting its display to none
+    banner.style.display = 'none';
+  });
+</script> -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const animationClass = entry.target.getAttribute('data-animation');
+                    entry.target.classList.add(animationClass);
+                    observer.unobserve(entry.target); // Stop observing after animation
+                }
+            });
+        }, {
+            threshold: 0.1, // Trigger when 10% of the element is visible
+        }
+    );
+
+    // Observe each element with the 'animated' class
+    const elements = document.querySelectorAll(".animated");
+    elements.forEach((element) => {
+        observer.observe(element);
+    });
+	
+		// 	-----------home banner heading animation
+    const titles = document.querySelector(".animate-text").children;
+    const txtsLen = titles.length;
+    let index = 0;
+    const textInTimer = 3000;
+    const textOutTimer = 2800;
+
+    function animateText() {
+      for (let i = 0; i < txtsLen; i++) {
+        titles[i].classList.remove("text-in", "text-out");
+        titles[i].style.display = "none";
+      }
+
+      titles[index].style.display = "block";
+      titles[index].classList.add("text-in");
+
+      setTimeout(function () {
+        titles[index].classList.add("text-out");
+      }, textOutTimer);
+
+      setTimeout(function () {
+        index = (index + 1) % txtsLen;
+        animateText();
+      }, textInTimer);
+    }
+
+   animateText();
+});
+	
+
+</script>
+<!-- ---------------------VSL VIDEO--------- -->
+<script>
+  function playVideo(thumb) {
+    const wrapper = thumb.parentNode;
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('src', 'https://player.vimeo.com/video/1103420364?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    wrapper.innerHTML = '';
+    wrapper.appendChild(iframe);
+  }
+</script>
+
+<!--  --------------	Updated Home Demos Section Modal---------- -->
+<script>
+	const modalData = {
+  customer: {
+    title: "Customer App",
+    description: "An intuitive and modern interface for customers to browse menus, place orders, track deliveries, and make secure payments in real-time.",
+    image: "/wp-content/uploads/2025/07/customer-app-1.webp",
+    ios: "https://apps.apple.com/us/app/enatega-multivendor/id1526488093",
+    android: "https://play.google.com/store/apps/details?id=com.enatega.multivendor",
+	   prototypeId: "prototype-1"
+  },
+  rider: {
+    title: "Rider App",
+    description: "Designed for fast, efficient deliveries. Real-time order notifications, map-based navigation, route optimization, and delivery status updates.",
+    image: "/wp-content/uploads/2025/07/rider-app.webp",
+    ios: "https://apps.apple.com/pk/app/enatega-mulitvendor-rider/id1526674511",
+    android: "https://play.google.com/store/apps/details?id=com.enatega.multirider",
+	   prototypeId: "prototype-2"
+  },
+  restaurant: {
+    title: "Restaurant App",
+    description: "Empowers restaurants to manage orders, update menus, track earnings, and communicate with delivery agents—all in one place.",
+    image: "/wp-content/uploads/2025/07/restaurant-app.webp",
+    ios: "https://apps.apple.com/pk/app/enatega-multivendor-restaurant/id1526672537",
+    android: "https://play.google.com/store/apps/details?id=multivendor.enatega.restaurant",
+	   prototypeId: "prototype-3"
+  },
+		  webapp: {
+    title: "Web App",
+    description: "A responsive and fast storefront for customers to explore local vendors and place orders from desktop or mobile browsers.",
+    image: "/wp-content/uploads/2025/07/Web-app.webp",
+			  web:"https://multivendor.enatega.com/",
+	   prototypeId: "prototype-4"
+  },
+		admindashboard: {
+    title: "Admin Web Dashboard",
+    description: "Full control at your fingertips. Manage vendors, customers, orders, zones, payouts, notifications, and system settings from a single dashboard.",
+    image: "/wp-content/uploads/2025/07/admin-web-dashborad.webp",
+			web: "https://multivendor-admin.enatega.com/",
+	   prototypeId: "prototype-5"
+  },
+};
+
+function openModal(appType) {
+  const data = modalData[appType];
+  document.getElementById("modalImage").src = data.image;
+  document.getElementById("modalTitle").textContent = data.title;
+  document.getElementById("modalDescription").textContent = data.description;
+// Handle iOS link visibility
+  const iosLink = document.getElementById("demoIosLink");
+  if (data.ios) {
+    iosLink.href = data.ios;
+    iosLink.style.display = "inline-flex";
+  } else {
+    iosLink.style.display = "none";
+  }
+
+  // Handle Android link visibility
+  const androidLink = document.getElementById("demoAndroidLink");
+  if (data.android) {
+    androidLink.href = data.android;
+    androidLink.style.display = "inline-flex";
+  } else {
+    androidLink.style.display = "none";
+  }
+	
+	// Handle Web link visibility
+  const webLink = document.getElementById("demoWebLink");
+  if (data.web) {
+    webLink.href = data.web;
+    webLink.style.display = "inline-flex";
+  } else {
+    webLink.style.display = "none";
+  }
+	
+ // Update the prototype button ID
+  const prototypeButton = document.querySelector("[id^='prototype-']");
+  if (prototypeButton) {
+    prototypeButton.id = data.prototypeId;
+  } 
+	
+  document.getElementById("homeDemoModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("homeDemoModal").style.display = "none";
+}
+	// Close modal on outside click
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("homeDemoModal");
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});
+
+</script>
+<!-- ----------CONTACT FORM OTHER SELECTION HANDLING------ -->
+<script>
+  function handleOtherInput(selectId, containerId, inputId) {
+    const selectEl = document.getElementById(selectId);
+    const containerEl = document.getElementById(containerId);
+    const inputEl = document.getElementById(inputId);
+
+    selectEl.addEventListener('change', function () {
+      if (selectEl.value === 'other') {
+        containerEl.style.display = 'flex';
+        inputEl.setAttribute('required', 'required');
+      } else {
+        containerEl.style.display = 'none';
+        inputEl.removeAttribute('required');
+        inputEl.value = '';
+      }
+    });
+  }
+
+  // Attach handlers for both dropdowns
+  handleOtherInput('industry', 'other-industry-container', 'other-industry');
+  handleOtherInput('referral-source', 'other-referral-container', 'other-referral');
+</script>
+
+
+<!-- <script>
+// ----------------------------Meet Founder CTA------------
+// Get all buttons with the class 'founder-cta'
+const founderButtons = document.querySelectorAll('.founder-cta');
+
+// Add click event listener to each button
+founderButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        document.getElementById('founder-modal').style.display = 'flex';
+    });
+});
+
+// Close the modal when the close icon is clicked
+document.getElementById('founder-modal-close').addEventListener('click', function () {
+    document.getElementById('founder-modal').style.display = 'none';
+});
+
+// Close the modal when clicking outside of it
+window.addEventListener('click', function (event) {
+    const modal = document.getElementById('founder-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+</script> -->
+
+
+
+
+<!-- Add Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer=""></script>
+
+<script>
+  //-----PreLoader 	
+// 	window.addEventListener('load', function() {
+//     var preloader = document.getElementById('preloader');
+//     if (preloader) {
+//         preloader.style.transition = 'opacity 0.5s'; // Optional: smooth transition effect
+//         preloader.style.opacity = 0; // Fade out effect
+
+//         setTimeout(function() {
+//             preloader.remove(); // Remove the element after fade out
+//         }, 500); // Match the duration of the transition
+//     }
+// });
+
+//--------------Main Menu------------
+function toggleMenu() {
+    const menu = document.querySelector('.mobile-menu-popup');
+    menu.classList.toggle('active');
+
+    // Add event listeners only if the menu is opened
+    if (menu.classList.contains('active')) {
+        const onPageLinks = document.getElementsByClassName('pricing-menu');
+
+        // Loop through all elements with the class 'pricing-menu'
+        Array.from(onPageLinks).forEach((onPageLink) => {
+            onPageLink.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+    }
+}
+	
+	// ---------------Mobile Menu--------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuItems = document.querySelectorAll('.mobile-navigation .menu-item-has-children > a');
+
+  mobileMenuItems.forEach(link => {
+      const p = document.createElement('p');
+      p.innerHTML = link.innerHTML;
+      p.className = 'mobile-menu-item-toggle';
+
+      // Replace <a> with <p>
+      link.parentNode.replaceChild(p, link);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all menu items with submenus
+    var menuItems = document.querySelectorAll('.mobile-navigation .menu-item-has-children');
+
+    menuItems.forEach(function(menuItem) {
+        menuItem.addEventListener('click', function(e) {
+            e.preventDefault();
+
+//             var parent = this.parentElement;
+
+            menuItem.classList.toggle('open');
+        });
+    });
+});
+	
+
+	
+// ---------Video and demo cta modals etc
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleModal = (modal, isOpen, iframe = null, videoUrl = '', player = null) => {
+    modal.style.display = isOpen ? 'block' : 'none';
+    if (iframe && videoUrl) {
+      if (isOpen) {
+        iframe.src = videoUrl;
+      } else {
+        if (player && typeof player.pause === 'function') {
+          player.pause();
+        } else {
+          iframe.src = '';
+        }
+      }
+    }
+  };
+
+  const handleModalEvents = (event, modalConfig) => {
+    const { triggerSelector, modal, closeSelectors, iframe, videoUrl, player } = modalConfig;
+
+    if (event.target.matches(triggerSelector)) {
+      toggleModal(modal, true, iframe, videoUrl, player);
+    } else if (closeSelectors.some(sel => event.target.matches(sel))) {
+      toggleModal(modal, false, iframe, videoUrl, player);
+    }
+  };
+
+  const handleEscapeKey = (event, modals) => {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      modals.forEach(({ modal, iframe, player }) => toggleModal(modal, false, iframe, '', player));
+    }
+  };
+
+  // ✅ Conditionally initialize Vimeo only if iframe is found
+  const vimeoIframe = document.querySelector('.product-video-popup iframe');
+  let vimeoPlayer = null;
+  if (vimeoIframe && typeof Vimeo !== 'undefined') {
+    try {
+      vimeoPlayer = new Vimeo.Player(vimeoIframe);
+    } catch (e) {
+      console.warn('Vimeo player failed to init', e);
+    }
+  }
+
+  const modals = [
+    ...(vimeoIframe ? [{
+      triggerSelector: '.product-video',
+      modal: document.querySelector('.product-video-popup'),
+      closeSelectors: ['.product-video-popup .close', '.product-video-popup .popup-content'],
+      iframe: vimeoIframe,
+      videoUrl: 'https://player.vimeo.com/video/1073827016?h=e48d5132cc&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479',
+      player: vimeoPlayer,
+    }] : []),
+    {
+      triggerSelector: '.schedule-cta',
+      modal: document.querySelector('.calendly-popup'),
+      closeSelectors: ['.calendly-popup .close', '.calendly-popup .popup-modal-inner'],
+    },
+    {
+      triggerSelector: '.demo-cta',
+      modal: document.getElementById('demos-popup-modal'),
+      closeSelectors: ['#demos-popup-modal .close', '#demos-popup-modal .popup-modal-inner'],
+    },
+  ];
+
+  document.addEventListener('click', (event) => {
+    modals.forEach((modalConfig) => handleModalEvents(event, modalConfig));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    handleEscapeKey(event, modals);
+  });
+});
+	
+	
+    // -------------Home Demo tabs---------
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabs = document.querySelectorAll('.home-demo-tabs .home-demo-tab-link');
+        const tabContents = document.querySelectorAll('.home-demo-tabs .home-demo-tab-content');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Deactivate all tabs and hide all content
+                tabs.forEach(t => {
+                    t.setAttribute('aria-selected', 'false');
+                    t.classList.remove('active');
+                });
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+
+                // Activate clicked tab and show corresponding content
+                this.setAttribute('aria-selected', 'true');
+                this.classList.add('active');
+                const contentId = this.getAttribute('href').substring(1);
+                document.getElementById(contentId).classList.remove('hidden');
+            });
+        });
+
+        // Activate the first tab by default
+        if (tabs.length > 0) {
+            tabs[0].click();
+        }
+    });
+	
+// --------- Prototypes Modal 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("button[id^='prototype-']").forEach(button => {
+        button.addEventListener("click", function () {
+            let prototypeNumber = this.id.split("-")[1];
+
+            // Hide all modals and reset iframe src
+            document.querySelectorAll(".prototype-modals").forEach(modal => {
+                modal.style.display = "none";
+                const iframe = modal.querySelector("iframe");
+                if (iframe) iframe.src = ""; // unload iframe when closing
+            });
+
+            // Show the relevant modal
+            let modal = document.querySelector(`.prototype-modal-${prototypeNumber}-container`);
+            if (modal) {
+                modal.style.display = "flex";
+
+                const iframe = modal.querySelector("iframe");
+                const src = iframe.getAttribute("data-src"); // use data-src to delay load
+                const loader = modal.querySelector(".prototype-loader");
+
+                if (loader) loader.style.display = "flex";
+                iframe.style.display = "none";
+
+                iframe.onload = function () {
+                    if (loader) loader.style.display = "none";
+                    iframe.style.display = "block";
+                };
+
+                iframe.src = src; // only now set the src
+            }
+        });
+    });
+
+    // Close modals
+    document.querySelectorAll(".close-prototype-modal").forEach(closeButton => {
+        closeButton.addEventListener("click", function () {
+            const modal = this.closest(".prototype-modals");
+            const iframe = modal.querySelector("iframe");
+            modal.style.display = "none";
+            iframe.src = ""; // unload iframe
+        });
+    });
+
+    // Close on click outside
+    window.addEventListener("click", function (event) {
+        document.querySelectorAll(".prototype-modals").forEach(modal => {
+            if (event.target === modal) {
+                const iframe = modal.querySelector("iframe");
+                modal.style.display = "none";
+                iframe.src = ""; // unload iframe
+            }
+        });
+    });
+});
+
+
+
+// --------Thankyou meeting page and order page video
+
+function createIframe(videoId) {
+    return `<iframe width="90%" height="100%" src="https://player.vimeo.com/video/${videoId}&autoplay=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen></iframe>`;
+}
+
+// Fix selector issue and ensure slider stops when video plays
+document.querySelectorAll('.video-thumbnail img, .video-thumbnail .play-button').forEach(element => {
+    element.addEventListener('click', function() {
+        const videoId = this.closest('.video-thumbnail').querySelector('img').getAttribute(
+            'data-video-id');
+        const videoWrapper = this.closest('.video-thumbnail');
+        videoWrapper.innerHTML = createIframe(videoId);
+    });
+});
+
+// --------------Module Tabs----------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.modules-tabs .tab-link');
+    const tabContents = document.querySelectorAll('.modules-tabs .tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Deactivate all tabs and hide all content
+            tabs.forEach(t => {
+                t.setAttribute('aria-selected', 'false');
+                t.classList.remove('active');
+            });
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Activate clicked tab and show corresponding content
+            this.setAttribute('aria-selected', 'true');
+            this.classList.add('active');
+            const contentId = this.getAttribute('href').substring(1);
+            document.getElementById(contentId).classList.remove('hidden');
+            
+        });
+    });
+});
+// ------------------ Reviews Slider---------------------------------
+document.addEventListener('DOMContentLoaded', function () {
+  const swiperSlides = document.querySelectorAll('.swiper-slide');
+  let activeSlideIndex = null;
+  const thumbnailHTML = {}; // Store original thumbnail HTML for each slide
+
+  function createIframe(vimeoSrc, index) {
+    return `<iframe id="player-${index}" width="90%" height="100%" src="https://player.vimeo.com/video/${vimeoSrc}&autoplay=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen></iframe>`;
+  }
+
+  document.querySelectorAll('.testimonial-thumbnail').forEach((thumbnail, index) => {
+    const videoWrapper = thumbnail.parentElement;
+    thumbnailHTML[index] = videoWrapper.innerHTML;
+
+    thumbnail.addEventListener('click', function () {
+      const videoId = this.getAttribute('data-vimeo-src');
+      videoWrapper.innerHTML = createIframe(videoId, index);
+      activeSlideIndex = index;
+    });
+  });
+
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        if (activeSlideIndex !== null) {
+          const activeSlide = swiperSlides[activeSlideIndex];
+          const videoWrapper = activeSlide.querySelector('.video-wrapper');
+
+          if (videoWrapper && videoWrapper.querySelector('iframe')) {
+            videoWrapper.innerHTML = thumbnailHTML[activeSlideIndex];
+
+            const restoredThumbnail = videoWrapper.querySelector('.testimonial-thumbnail');
+            if (restoredThumbnail) {
+              restoredThumbnail.addEventListener('click', function () {
+                const videoId = this.getAttribute('data-vimeo-src');
+                videoWrapper.innerHTML = createIframe(videoId, activeSlideIndex);
+                activeSlideIndex = index;
+              });
+            }
+          }
+        }
+      },
+
+      slideChangeTransitionEnd: function () {
+        activeSlideIndex = null;
+      }
+    }
+  });
+});
+
+// --------------	DeliverXpress popup
+document.addEventListener('DOMContentLoaded', function () {
+    function closeDeliverXpressPopup() {
+        document.getElementById('view-demo-popup').style.display = 'none';
+        document.getElementById('view-demo-overlay').style.display = 'none';
+    }
+
+    function openDeliverXpressPopup() {
+        document.getElementById('view-demo-popup').style.display = 'block';
+        document.getElementById('view-demo-overlay').style.display = 'block';
+    }
+
+    const viewDemoCTA = document.querySelector('.view-demo-cta');
+    const viewDemoClose = document.getElementById('view-demo-close');
+
+    if (viewDemoCTA) {
+        viewDemoCTA.addEventListener('click', openDeliverXpressPopup);
+    }
+    if (viewDemoClose) {
+        viewDemoClose.addEventListener('click', closeDeliverXpressPopup);
+    }
+});
+
+
+
+// -----------------------------------FAQ-------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionTitles = document.querySelectorAll('.accordion-title');
+
+    accordionTitles.forEach(function(title) {
+        title.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('.faq-icon');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+';
+                icon.classList.remove('minus-icon');
+                icon.classList.add('plus-icon');
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '−';
+                icon.classList.remove('plus-icon');
+                icon.classList.add('minus-icon');
+            }
+        });
+    });
+});
+
+// --------------------Header JS--------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var closeMenu = document.getElementById('closeMenu');
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('open');
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        });
+    }
+
+    if (closeMenu && hamburger && mobileMenu) {
+        closeMenu.addEventListener('click', function() {
+            hamburger.classList.remove('open');
+            mobileMenu.style.display = 'none';
+        });
+    }
+
+    if (mobileMenu) {
+        var menuLinks = mobileMenu.getElementsByTagName('a');
+        Array.prototype.forEach.call(menuLinks, function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                hamburger && hamburger.classList.remove('open');
+                mobileMenu.style.display = 'none';
+
+                var href = this.getAttribute('href');
+                window.location.href = href;
+            });
+        });
+    }
+});
+
+//---------------------------BLOG TABS-----------
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.blog-tabs .tab');
+    const panels = document.querySelectorAll('.blog-tabs .tab-panel');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(t => {
+                t.setAttribute('aria-expanded', 'false');
+            });
+
+            panels.forEach(panel => {
+                panel.hidden = true;
+            });
+
+            this.setAttribute('aria-expanded', 'true');
+            document.getElementById(this.getAttribute('aria-controls')).hidden = false;
+        });
+    });
+
+    // Initialize the first tab as active
+  
+	const blogFirstTab = document.getElementById('blog-tab1');
+if (blogFirstTab) {
+    blogFirstTab.click();
+}
+
+});
+
+// ---------------------------Features TABS-----------
+document.addEventListener('DOMContentLoaded', function() {
+    const parentTabs = document.querySelectorAll('.parent-tab');
+    const parentPanels = document.querySelectorAll('.parent-tab-panel');
+
+    // Parent Tabs functionality
+    parentTabs.forEach(parentTab => {
+        parentTab.addEventListener('click', function() {
+            parentTabs.forEach(tab => tab.setAttribute('aria-expanded', 'false'));
+            parentPanels.forEach(panel => panel.hidden = true);
+
+            this.setAttribute('aria-expanded', 'true');
+            document.getElementById(this.getAttribute('aria-controls')).hidden = false;
+        });
+    });
+
+    // Initialize first parent tab
+    const featuresFirstTab = document.getElementById('feature-tab-1');
+    if (featuresFirstTab) {
+        featuresFirstTab.click();
+    }
+
+    // Inner Tabs functionality
+    const initializeInnerTabs = (panelId) => {
+        const innerTabs = document.querySelectorAll(`#${panelId} .inner-tab`);
+        const innerPanels = document.querySelectorAll(`#${panelId} .inner-tab-panel`);
+
+        // Only initialize if inner tabs exist
+        if (innerTabs.length > 0) {
+            innerTabs.forEach(innerTab => {
+                innerTab.addEventListener('click', function() {
+                    innerTabs.forEach(tab => tab.setAttribute('aria-expanded', 'false'));
+                    innerPanels.forEach(panel => panel.hidden = true);
+
+                    this.setAttribute('aria-expanded', 'true');
+                    document.getElementById(this.getAttribute('aria-controls')).hidden = false;
+                });
+            });
+
+            // Initialize the first inner tab for each panel
+            if (innerTabs[0]) {
+                innerTabs[0].click();
+            }
+        }
+    };
+
+    // Initialize inner tabs for all parent panels
+    initializeInnerTabs('feature-panel1');
+    initializeInnerTabs('feature-panel2');
+    initializeInnerTabs('feature-panel3');
+    initializeInnerTabs('feature-panel4');
+});
+
+
+//------------ Remove leading spaces from the input value
+function removeLeadingSpaces(input) {
+    input.value = input.value.replace(/^\s+/, '');
+}
+
+
+// -------Meeting Booked page Details
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Get parameters from the URL
+    const eventStartTime = getUrlParameter('event_start_time');
+    const eventEndTime = getUrlParameter('event_end_time');
+    const assignedTo = getUrlParameter('assigned_to');
+    const inviteeName = getUrlParameter('invitee_full_name');
+    const inviteeEmail = getUrlParameter('invitee_email');
+    const inviteePhone = getUrlParameter('text_reminder_number');
+
+    // Function to format date and time
+    function formatDateTime(dateTimeStr) {
+        if (!dateTimeStr) return 'N/A';
+        const dateTimeParts = dateTimeStr.split('T');
+        const datePart = dateTimeParts[0];
+        const timePart = dateTimeParts[1];
+        return `${datePart}, ${timePart}`;
+    }
+
+    // Update HTML with retrieved values
+    const eventStartTimeElement = document.getElementById('event-start-time');
+    if (eventStartTimeElement) {
+        eventStartTimeElement.textContent = formatDateTime(eventStartTime);
+    }
+
+    const eventEndTimeElement = document.getElementById('event-end-time');
+    if (eventEndTimeElement) {
+        eventEndTimeElement.textContent = formatDateTime(eventEndTime);
+    }
+
+    const assignedToElement = document.getElementById('assigned-to');
+    if (assignedToElement) {
+        assignedToElement.textContent = assignedTo;
+    }
+
+    const inviteeNameElement = document.getElementById('invitee-name');
+    if (inviteeNameElement) {
+        inviteeNameElement.textContent = inviteeName;
+    }
+
+    const inviteeEmailElement = document.getElementById('invitee-email');
+    if (inviteeEmailElement) {
+        inviteeEmailElement.textContent = inviteeEmail;
+    }
+
+    const inviteePhoneElement = document.getElementById('invitee-phone');
+    if (inviteePhoneElement) {
+        inviteePhoneElement.textContent = inviteePhone;
+    }
+});
+
+
+// -----------New Home tabs
+function openTab(evt, tabName) {
+    var i, tabPanel, tabLink;
+    
+    // Hide all tab content
+    tabPanel = document.getElementsByClassName("tab-panel");
+    for (i = 0; i < tabPanel.length; i++) {
+        tabPanel[i].style.display = "none";
+    }
+    
+    // Remove active class from all tab links
+    tabLink = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tabLink.length; i++) {
+        tabLink[i].className = tabLink[i].className.replace(" active", "");
+    }
+    
+    // Show the current tab and add "active" class to the clicked tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+<!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" defer></script> -->
+
+<!-- JavaScript to manage loader visibility -->
+<!-- <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById('calendly-loader');
+        const calendlyWidget = document.getElementById('calendly-widget-container');
+
+        // Show the loader initially
+        loader.style.display = 'block';
+        calendlyWidget.style.display = 'none';
+
+        // Wait for the iframe to load inside the Calendly widget
+        const checkCalendlyLoaded = setInterval(function() {
+            const iframe = calendlyWidget.querySelector("iframe");
+            if (iframe) {
+                iframe.onload = function() {
+                    // Hide the loader and show the widget when the iframe loads
+                    loader.style.display = 'none';
+                    calendlyWidget.style.display = 'block';
+                    clearInterval(checkCalendlyLoaded); // Stop checking after iframe is loaded
+                };
+            }
+        }, 100); // Check every 100ms if the iframe is loaded
+    });
+</script> -->
+
+
+
+<script>
+    // -------------Popup Module tabs---------
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.demo-tabs .demo-tab-link');
+    const tabContents = document.querySelectorAll('.demo-tabs .demo-tab-content');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Deactivate all tabs and hide all content
+            tabs.forEach(t => {
+                t.setAttribute('aria-selected', 'false');
+                t.classList.remove('active');
+            });
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Activate clicked tab and show corresponding content
+            this.setAttribute('aria-selected', 'true');
+            this.classList.add('active');
+            const contentId = this.getAttribute('href').substring(1);
+            document.getElementById(contentId).classList.remove('hidden');
+        });
+    });
+
+    // Activate the first tab by default
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
+});
+	
+	
+
+</script>
+<!--     <script>window.lemonSqueezyAffiliateConfig = { store: "enatega1" };</script>
+<script src="https://lmsqueezy.com/affiliate.js" defer></script> -->
+
+<script async=""> 
+document.addEventListener("DOMContentLoaded", function() {
+    let divc = document.querySelectorAll('div[style]');
+    for (let i = 0, len = divc.length; i < len; i++) {
+        let actdisplay = window.getComputedStyle(divc[i]).display;
+        let actclear = window.getComputedStyle(divc[i]).clear;
+
+        if (actdisplay === 'block' && actclear === 'both') {
+            divc[i].remove();
+        }
+    }
+});
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sharedSettings = {
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+    };
+
+    const animations = [
+        { container: document.getElementById('demo-animation'), path: 'https://enatega.com/wp-content/themes/Enatega/js/demo-animation.json' },
+        { container: document.getElementById('tech-animation'), path: 'https://enatega.com/wp-content/themes/Enatega/js/tech-animation.json' },
+		{ container: document.getElementById('home-banner-animation'), path: 'https://enatega.com/wp-content/themes/Enatega/js/Enatega-animation.json' },
+        // Add more animations here as needed
+    ];
+
+    animations.forEach(animation => {
+        lottie.loadAnimation(Object.assign({}, sharedSettings, animation));
+    });
+});
+
+</script>
+
+
+
+<!-- Include intl-tel-input CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/css/intlTelInput.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/css/intlTelInput.css">
+</noscript>
+<script defer="" src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/js/intlTelInput.min.js"></script>
+
+<script>
+// ================== CONFIG ==================
+const AJAX_URL = (window.LeadFormAjax && LeadFormAjax.ajaxUrl) || '/wp-admin/admin-ajax.php';
+
+// ================== HELPERS ==================
+function on(el, ev, cb) { if (el) el.addEventListener(ev, cb); }
+
+function disableAndHideStep1() {
+  const step1 = document.querySelector('.step-1');
+  if (!step1) return;
+  // Disable only visible controls; keep hidden inputs enabled (so they submit)
+  step1.querySelectorAll('input:not([type="hidden"]), select, textarea, button').forEach(el => {
+    el.required = false;
+    el.disabled = true;
+  });
+  step1.classList.add('hidden');
+
+  const fullPhoneHidden = document.querySelector('input[name="full_phone"]');
+  if (fullPhoneHidden) fullPhoneHidden.disabled = false;
+}
+
+function ensureHiddenField(form, name, value) {
+  let h = form.querySelector(`input[name="${name}"]`);
+  if (!h || h.disabled) {
+    h = document.createElement('input');
+    h.type = 'hidden';
+    h.name = name;
+    form.appendChild(h);
+  }
+  h.disabled = false;
+  h.value = value || '';
+}
+
+function setStep1Submitting(isSubmitting) {
+  const btn = document.getElementById('form-next-btn');
+  if (!btn) return;
+  if (isSubmitting) {
+    if (!btn.dataset.label) btn.dataset.label = btn.textContent;
+    btn.textContent = 'Submitting…';
+    btn.disabled = true;
+    btn.classList.add('is-loading');
+    btn.setAttribute('aria-busy', 'true');
+    btn.setAttribute('aria-disabled', 'true');
+  } else {
+    btn.textContent = btn.dataset.label || 'Next Step →';
+    btn.disabled = false;
+    btn.classList.remove('is-loading');
+    btn.removeAttribute('aria-busy');
+    btn.removeAttribute('aria-disabled');
+  }
+}
+
+function lockStep2(lock = true) {
+  const btn = document.getElementById('strategyFormSubmit');
+  if (!btn) return;
+
+  if (lock) {
+    if (!btn.dataset.label) btn.dataset.label = btn.textContent; // remember original
+    // If you want to keep the text unchanged, comment out the next line
+    btn.textContent = btn.dataset.loadingText || 'Saving…';
+    btn.disabled = true;
+    btn.setAttribute('aria-disabled', 'true');
+  } else {
+    btn.textContent = btn.dataset.label || 'Submit';
+    btn.disabled = false;
+    btn.setAttribute('aria-disabled', 'false');
+  }
+}
+
+
+
+// ================== INIT ==================
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById('strategyForm');
+
+document.querySelectorAll(".lead-form-phone").forEach(function (phoneInput) {
+    if (!window.intlTelInput) return;
+
+    const itiInstance = window.intlTelInput(phoneInput, {
+      separateDialCode: true,
+      initialCountry: "auto", // auto detect
+      dropdownContainer: document.body,
+geoIpLookup: callback => {
+  fetch("https://ipwho.is/")
+    .then(res => res.json())
+    .then(data => {
+      if (data && data.country_code) {
+        callback(data.country_code.toLowerCase());
+      } else {
+        callback("us");
+      }
+    })
+    .catch(() => callback("us"));
+},
+
+      loadUtils: () =>
+        import("https://cdn.jsdelivr.net/npm/intl-tel-input@20.2.0/build/js/utils.js"),
+    });
+
+    phoneInput.iti = itiInstance;
+
+    // When country changes, auto insert dial code if empty
+    phoneInput.addEventListener("countrychange", function () {
+      const dialCode = itiInstance.getSelectedCountryData().dialCode;
+      if (!phoneInput.value || phoneInput.value.trim() === "") {
+        phoneInput.value = "+" + dialCode + " ";
+      }
+    });
+
+    // Prefill once utils loaded
+    itiInstance.promise.then(() => {
+      const dialCode = itiInstance.getSelectedCountryData().dialCode;
+      if (!phoneInput.value || phoneInput.value.trim() === "") {
+        phoneInput.value = "+" + dialCode + " ";
+      }
+    });
+  });
+
+  // 2) Name live validation
+  const nameInput = document.querySelector('input[name="lead_name"]');
+  const nameError = document.querySelector("#name-error");
+  if (nameInput && nameError) {
+    on(nameInput, "input", function () {
+      if (/\d/.test(this.value)) {
+        nameError.style.display = "block";
+        this.classList.add("input-error");
+      } else {
+        nameError.style.display = "none";
+        this.classList.remove("input-error");
+      }
+    });
+  }
+
+  // 3) If landing on ?step=2, prep the UI
+  const params = new URLSearchParams(window.location.search);
+  const isStep2 = params.get('step') === '2';
+  if (isStep2) {
+    document.querySelector(".step-1")?.classList.add("hidden");
+    document.querySelector(".step-2")?.classList.remove("hidden");
+    document.getElementById("indicator-1")?.classList?.remove?.("active");
+    document.getElementById("indicator-2")?.classList?.add?.("active");
+
+    const formStep = document.getElementById('form_step');
+    if (formStep) formStep.value = '2';
+    const leadIdInput = document.getElementById('lead_id');
+    if (leadIdInput && params.get('lead_id')) leadIdInput.value = params.get('lead_id');
+
+    disableAndHideStep1();
+  }
+
+// 4. ================== STEP 2 (Optimistic Thank You with fallback) ==================
+if (form) {
+  on(form, 'submit', function (e) {
+    const stepVal = document.getElementById('form_step')?.value;
+    if (stepVal !== '2') return; // Step 1 handled by nextStep()
+    e.preventDefault();
+
+    disableAndHideStep1();
+
+    const fd = new FormData(form);
+    fd.set('form_step', '2');
+    fd.set('custom_lead_submit', '1');
+    fd.set('action', 'submit_lead_step');
+
+    // Force include phone even if disabled
+    const fullPhoneVal =
+      form.querySelector('input[name="full_phone"]')?.value || '';
+    fd.set('full_phone', fullPhoneVal);
+
+    // 🔹 Optimistic UI: instantly show thank-you
+    document.getElementById('form-wrapper').style.display = 'none';
+    const ty = document.getElementById('thankyou-wrapper');
+	if (ty) {
+ 	 // reset the inline styles we used to hide it
+  	ty.style.visibility = 'visible';
+  	ty.style.position = 'static';
+ 	 ty.style.left = 'auto';
+ 	 ty.style.width = 'auto';
+  	ty.style.height = 'auto';
+  	ty.style.overflow = 'visible';
+
+  ty.setAttribute('aria-hidden', 'false');
+}
+
+    history.pushState({}, '', '/thankyou');
+
+    // 🔹 Fire AJAX request in background
+    fetch(AJAX_URL, {
+      method: 'POST',
+      credentials: 'same-origin',
+      body: fd,
+    })
+      .then((r) => r.json())
+      .then((resp) => {
+        if (!resp.success) {
+          showToast("We couldn’t fully process your submission. Please try again.");
+          // OPTIONAL: redisplay form for retry
+          // ty.style.display = 'none';
+          // document.getElementById('form-wrapper').style.display = 'block';
+        }
+      })
+      .catch((err) => {
+        console.error("Background submission failed:", err);
+        showToast("Something went wrong saving your details. Please try again.");
+        // OPTIONAL: redisplay form for retry
+        // ty.style.display = 'none';
+        // document.getElementById('form-wrapper').style.display = 'block';
+      });
+  });
+}
+
+// ================== Simple Toast Helper ==================
+function showToast(msg) {
+  let toast = document.createElement("div");
+  toast.textContent = msg;
+  toast.style.position = "fixed";
+  toast.style.bottom = "20px";
+  toast.style.right = "20px";
+  toast.style.background = "#f44336";
+  toast.style.color = "#fff";
+  toast.style.padding = "12px 18px";
+  toast.style.borderRadius = "6px";
+  toast.style.zIndex = 9999;
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 5000);
+}
+
+
+
+});
+
+// ================== STEP 1 (Optimistic) ==================
+function nextStep() {
+  const form = document.getElementById("strategyForm");
+  const step1 = document.querySelector(".step-1");
+  if (!form || !step1) return;
+
+  // Required fields
+  const requiredInputs = step1.querySelectorAll("input[required]");
+  let allValid = true;
+  requiredInputs.forEach(input => {
+    if (!input.value.trim()) {
+      input.classList.add("input-error");
+      allValid = false;
+    } else {
+      input.classList.remove("input-error");
+    }
+  });
+
+  // Name check
+  const nameInput = step1.querySelector('input[name="lead_name"]');
+  const nameError = document.querySelector("#name-error");
+  if (nameInput && /\d/.test(nameInput.value.trim())) {
+    if (nameError) nameError.style.display = "block";
+    nameInput.classList.add("input-error");
+    return;
+  } else if (nameError) {
+    nameError.style.display = "none";
+    nameInput?.classList.remove("input-error");
+  }
+
+  if (!allValid) { alert("Please fill in all required fields"); return; }
+
+  // Email check
+  const emailInput = step1.querySelector('input[name="lead_email"]');
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test((emailInput?.value || '').trim())) {
+    emailInput?.classList.add("input-error");
+    alert("Please enter a valid email address.");
+    emailInput?.focus();
+    return;
+  } else {
+    emailInput?.classList.remove("input-error");
+  }
+
+  // Phone check + set hidden full_phone
+  const phoneInput = document.querySelector("#phone");
+  const fullPhoneInput = document.querySelector("#full_phone");
+  const phoneError = document.querySelector("#phone-error");
+  if (!phoneInput?.iti || !phoneInput.iti.isValidNumber()) {
+    if (phoneError) phoneError.style.display = "block";
+    phoneInput?.classList.add("input-error");
+    return;
+  } else {
+    if (phoneError) phoneError.style.display = "none";
+    phoneInput.classList.remove("input-error");
+    if (fullPhoneInput) fullPhoneInput.value = phoneInput.iti.getNumber();
+  }
+
+  // Build payload
+  const fd = new FormData(form);
+  fd.set('form_step', '1');
+  fd.set('custom_lead_submit', '1');
+  fd.set('action', 'submit_lead_step');
+
+  // Optimistic UI: show Step 2 immediately while Step 1 saves in background
+  disableAndHideStep1();
+  document.querySelector(".step-2")?.classList.remove("hidden");
+  document.getElementById("indicator-1")?.classList?.remove?.("active");
+  document.getElementById("indicator-2")?.classList?.add?.("active");
+  document.getElementById('form_step').value = '2';
+
+  const basePath = window.location.pathname.replace(/\/+$/, '');
+  history.pushState(null, '', `${basePath}?step=2`);
+  lockStep2(true);
+  setStep1Submitting(true);
+
+  fetch(AJAX_URL, { method: 'POST', credentials: 'same-origin', body: fd })
+    .then(r => r.json())
+    .then(resp => {
+      if (!resp.success) throw new Error(resp.data?.message || 'Failed submitting Step 1');
+
+      const { lead_id, next_url, prefill } = resp.data || {};
+
+      // Mirror Step-1 values into enabled hidden fields for Step 2
+      ensureHiddenField(form, 'lead_name',  prefill?.lead_name  ?? (nameInput?.value || ''));
+      ensureHiddenField(form, 'lead_email', prefill?.lead_email ?? (emailInput?.value || ''));
+      ensureHiddenField(form, 'full_phone', prefill?.full_phone ?? (document.getElementById('full_phone')?.value || ''));
+
+      // Set lead_id and update URL (replace)
+      document.getElementById('lead_id').value = lead_id;
+      if (next_url) {
+        history.replaceState(null, '', next_url);
+      } else {
+        history.replaceState(null, '', `${basePath}?step=2&lead_id=${encodeURIComponent(lead_id)}`);
+      }
+
+      // Unlock Step 2
+      lockStep2(false);
+    })
+    .catch(err => {
+      lockStep2(false, '');
+      alert(err.message || 'Could not save your contact. Please try again.');
+      // Optionally navigate back to Step 1 on failure:
+      // const base = window.location.href.split('?')[0]; window.location.href = base;
+    })
+    .finally(() => {
+      setStep1Submitting(false);
+    });
+}
+</script>
+
+
+
+<!-- <div id="exitIntentModal" class="exit-modal-backdrop">
+  <div class="exit-modal">
+    <span class="exit-close">&times;</span>
+    <img src="/wp-content/uploads/2025/05/enter-password-2-1.png" alt="Exit Illustration" class="exit-img" />
+    
+    <h3>Don’t Miss Out! <span class="highlight-purple">Get 10% Off</span> <span class="highlight-yellow">Enatega Today</span></h3>
+	  <p style="margin-bottom: 5px; text-align: center;">
+		  Unlock your custom delivery platform now. Offer ends soon!
+	  </p>
+    <form class="exit-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+ -->
+<!-- <script>
+  var ajaxurl = "https://enatega.com/wp-admin/admin-ajax.php";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let hasShownModal = false;
+    const modal = document.getElementById("exitIntentModal");
+    const closeBtn = document.querySelector(".exit-close");
+    const form = document.querySelector(".exit-form");
+
+    // Don't show modal if user already subscribed
+    if (localStorage.getItem("exitModalSubscribed")) return;
+
+    // Detect exit intent
+    document.addEventListener("mouseout", function (e) {
+      if (!hasShownModal && e.clientY < 10) {
+        modal.style.display = "flex";
+        hasShownModal = true;
+      }
+    });
+
+    // Close modal on close button click
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    // Close modal on backdrop click
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    // Handle form submission
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+
+      // Save subscription flag in localStorage
+      localStorage.setItem("exitModalSubscribed", "true");
+
+      // Show thank you message
+      modal.querySelector(".exit-modal").innerHTML = `
+        <span class="exit-close">&times;</span>
+        <img src="/wp-content/uploads/2025/05/welcome-3-1.webp" alt="Exit Illustration" class="welcome-img" />
+  <h3>Now that we have you here,<br/><span class="highlight-yellow">let’s talk</span></h3>
+        <a href="/contact/" class="schedule-cta">
+          Schedule a Call
+          <span>
+              <img src="https://enatega.com/wp-content/uploads/2023/10/Vector.webp" width="34" height="29" alt="arrow">
+          </span>
+        </a>		
+      `;
+
+      // Re-attach close button to new content
+      modal.querySelector(".exit-close").addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      // Send email via Ajax to WP backend
+      fetch(ajaxurl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams({
+          action: "send_exit_modal_email",
+          email: email
+        })
+      })
+      .then(response => response.text())
+      .then(response => {
+        console.log("Email sent successfully:", response);
+      })
+      .catch(error => {
+        console.error("Error sending email:", error);
+      });
+    });
+  });
+</script> -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const showcase = document.querySelector('.casestudy-showcase-tabs');
+  if (!showcase) return;
+
+  const tabButtons = showcase.querySelectorAll('.casestudy-showcase-tab-buttons button');
+  const tabs = showcase.querySelectorAll('.casestudy-showcase-tab-content .tab');
+
+  function loadVideoIfNeeded(tab) {
+    const video = tab.querySelector('video');
+    if (video && !video.querySelector('source')) {
+      const src = video.getAttribute('data-src');
+      const source = document.createElement('source');
+      source.src = src;
+      source.type = 'video/webm';
+      video.appendChild(source);
+      video.load();
+    }
+  }
+
+  if (tabButtons.length && tabs.length) {
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        button.classList.add('active');
+        const targetTab = showcase.querySelector(`#${button.dataset.tab}`);
+        targetTab.classList.add('active');
+
+        loadVideoIfNeeded(targetTab);
+      });
+    });
+
+    // Initial tab video lazy load
+    const activeTab = showcase.querySelector('.casestudy-showcase-tabs .tab.active');
+    if (activeTab) loadVideoIfNeeded(activeTab);
+  }
+});
+</script>
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const defaultStartCount = 90;
+    const maxCallCount = 153; // Set your realistic maximum here
+
+    // Monthly reset logic
+    const now = new Date();
+    const thisMonthKey = `${now.getFullYear()}-${now.getMonth()}`;
+    const storedMonth = localStorage.getItem("callMonth");
+
+    if (storedMonth !== thisMonthKey) {
+      localStorage.setItem("callMonth", thisMonthKey);
+      localStorage.setItem("callCount", defaultStartCount);
+    }
+
+    let callCount = parseInt(localStorage.getItem("callCount")) || defaultStartCount;
+
+    function updateCounterUI() {
+      document.getElementById("callText").textContent = callCount;
+    }
+
+    function incrementCalls() {
+      if (callCount >= maxCallCount) return;
+
+      const delay = Math.random() * (20000 - 3000) + 3000;
+      setTimeout(() => {
+        callCount++;
+        localStorage.setItem("callCount", callCount);
+        updateCounterUI();
+        incrementCalls();
+      }, delay);
+    }
+
+    updateCounterUI();
+    incrementCalls();
+  });
+</script> -->
+
+<!-- <script>
+function updateCallCounterFromAjax() {
+  fetch(ajaxurl + '?action=get_monthly_lead_count')
+    .then(response => response.json())
+    .then(data => {
+      if (data.success && data.data.count !== undefined) {
+        const callTextEl = document.getElementById("callText");
+        if (callTextEl) {
+          callTextEl.textContent = (data.data.count + 20);
+        }
+      }
+    })
+    .catch(error => console.error('Error updating call counter:', error));
+}
+
+// Only run this on the "thank you" page
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.pathname.includes("/thankyou")) {
+    updateCallCounterFromAjax();
+  }
+});
+</script> -->
+
+<script>
+(function() {
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    var utms = ['utm_source', 'utm_medium'];
+    utms.forEach(function(utm) {
+        var value = getParameterByName(utm);
+        if(value) {
+            localStorage.setItem(utm, value); // Store in localStorage
+        }
+    });
+})();
+</script>
+
+
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/Enatega\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div class="gtranslate_wrapper gt_container--n4mmih" id="gt-wrapper-32948057"><!-- GTranslate: https://gtranslate.com --><div id="google_translate_element2"></div><div id="gt_float_wrapper" style="position:fixed;bottom:20px;right:20px;z-index:999999;"><div class="gt_float_switcher notranslate" style="opacity: 1;"><div class="gt_options" style="display:none"><a href="#" class="nturl gt-current" data-gt-lang="en"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/32/en.png" alt="en"> English</a><a href="#" class="nturl" data-gt-lang="es"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/32/es.png" alt="es"> Español</a></div><div class="gt-selected"><div class="gt-current-lang"><img src="https://cdn.gtranslate.net/flags/32/en.png" alt="en"> <span class="gt-lang-code">en</span> <span class="gt_float_switcher-arrow"></span></div></div></div></div></div><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js" id="lottie-js"></script>
+<script type="text/javascript" id="gt_widget_script_32948057-js-before">
+/* <![CDATA[ */
+window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['32948057'] = {"default_language":"en","languages":["en","es"],"url_structure":"none","native_language_names":1,"detect_browser_language":1,"flag_style":"3d","wrapper_selector":"#gt-wrapper-32948057","alt_flags":[],"float_switcher_open_direction":"top","switcher_horizontal_position":"right","switcher_vertical_position":"bottom"};
+/* ]]> */
+</script><script src="https://cdn.gtranslate.net/widgets/latest/float.js?ver=6.8.2" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/multi-vendor-doc/nodemailer-setup/" data-gt-orig-domain="enatega.com" data-gt-widget-id="32948057" defer=""></script>
+
+
+</main><script type="text/javascript" id="" charset="">window.dataLayer=window.dataLayer||[];window.addEventListener("message",function(a){a.data.event&&a.data.event.indexOf("calendly")===0&&window.dataLayer.push({event:"calendly",calendly_event:a.data.event.split(".")[1]})});</script><script type="text/javascript" id="" charset="">!function(b){if(!window.reb2b){window.reb2b={loaded:!0};var a=document.createElement("script");a.async=!0;a.src="https://ddwl4m2hdecbv.cloudfront.net/b/"+b+"/"+b+".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(a,document.getElementsByTagName("script")[0])}}("5NRP9HQ5E8O1");</script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe> </body></html>

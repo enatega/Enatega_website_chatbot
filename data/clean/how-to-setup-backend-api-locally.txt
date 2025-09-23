@@ -1,0 +1,164 @@
+# Enatega Backend API Setup Guide
+
+## Table of Contents
+- Case Studies
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+- Getting Started
+  - Introduction
+  - High Level Architecture
+  - Overview of the API
+  - FAQs
+  - License
+  - Patch Notes
+- Installation
+  - Prerequisites
+  - How to Setup Locally
+    - NodeJS Setup
+    - Git and GitHub Setup
+    - Setup Backend API
+    - Setup Web Dashboard
+    - Setup Admin Dashboard
+    - Setup Customer App
+    - Setup Rider App
+    - Setup Restaurant App
+  - How to Setup/Deploy for Production
+    - Configuration
+    - Google Maps API Keys
+    - Nodemailer Setup
+    - Configuring Payment Gateways
+    - Twilio Setup
+    - Sentry Dashboard
+    - Configuring Cloudinary
+    - Amplitude Dashboard
+    - Firebase Setup
+    - Push Notification Keys
+    - Social Login
+    - Configuring Database Server
+
+## Installation
+
+### How To Setup Backend API
+
+#### Prerequisite Knowledge For Running The App:
+- Node
+- Express
+- React
+- React-Native
+- NPM
+- Git
+- expo-cli
+
+#### Pre-Installed Software:
+- Latest or Stable version of Node
+- Latest or Stable version of NPM
+
+#### Backend API:
+Access to the backend and API requires a license that must be purchased. Please get in touch with us using the methods listed below for more information:  
+Email: ✉ sales@enatega.com  
+To buy Backend Visit Enatega
+
+### Setup Instructions:
+1. Make sure Node.js is installed on your machine.
+2. Open the backend API code in the code editor.
+3. Follow the setup instructions provided in the video.
+
+⚠ Note: Ensure that you have Node.js installed before proceeding with the setup.
+
+### Enatega Multivendor Setup
+- Enatega Multivendor | Backend Project Clone
+- Enatega Multivendor | MongoDB Setup
+- Enatega Multivendor | Firebase Setup
+- Enatega Multivendor | Backend API
+- Enatega Multivendor | Setup Redis
+
+#### Step 1: Docker Setup
+- **Check Docker Installation:** Ensure Docker is installed on your machine. If not, download it here.
+- **Navigate to Project Directory:** After installing Docker, go to the project directory in your terminal.  
+  Enatega Multivendor | Setup Docker
+
+#### Step 2: Environment Variables
+After setting up Docker, you’ll need to configure the environment variables. Follow these steps to modify or create the .env file with your credentials:  
+⚠ Note: If you do not find a .env file, create one in the root directory and paste the following contents into the .env file.
+
+**Contents Of .Env File:**
+```
+PORT=8001
+CONNECTION_STRING=
+RESET_PASSWORD_LINK=auth/reset/?reset=
+SERVER_URL=https://enatega-multivendor.up.railway.app/
+STRIPE_WEBHOOK_ENDPOINT_SECRET=
+DASHBOARD_URL=https://practical-minsky-95a652.netlify.app/#/
+WEB_URL=https://pensive-liskov-5320d4.netlify.app/
+ORDER_DETAIL_WEB_URL=order-detail/
+NODE_DEV=production
+NODE_ENV=production
+SENDGRID_API_KEY=
+```
+
+### Environment Variables Explanation:
+Make sure to understand the purpose of each environment variable before modifying them.
+
+- **PORT:** The port number on which the server will run.
+- **CONNECTION_STRING:** This variable contains the connection string for your MongoDB database. It includes the username and password needed to connect to the database, as well as the cluster URL and some connection options.
+- **RESET_PASSWORD_LINK:** Link for resetting passwords.
+- **SERVER_URL:** This variable specifies the base URL of your server. It’s the root URL where your backend API is hosted.
+- **STRIPE_WEBHOOK_ENDPOINT_SECRET:** This variable is used for Stripe webhook verification. It’s a secret key that Stripe uses to sign webhook events, ensuring their authenticity.
+- **DASHBOARD_URL:** URL for the dashboard.
+- **WEB_URL:** URL for the web application.
+- **ORDER_DETAIL_WEB_URL:** This variable might be a partial URL used to construct links to specific order details in your application.
+- **NODE_DEV:** Node development environment.
+- **NODE_ENV:** Node environment.
+- **SENDGRID_API_KEY:** Please enter your SendGrid API key if you intend to use SendGrid for sending emails; otherwise, leave this field empty.
+
+#### Step 3: Adding ServiceAccountKey.Json
+Lastly, you need to add your own serviceAccountKey.json. This file is typically used for Firebase Admin SDK. Follow these steps to obtain and add the file:
+1. Go to the Firebase Console.
+2. Select your project.
+3. Navigate to Project Settings > Service accounts.
+4. Click on “Generate new private key” to download the JSON file.
+5. Replace the downloaded serviceAccountKey.json file in the project directory.
+
+### Running The Backend:
+After completing the setup steps, you can start using your backend API.  
+⚙️ Tip: Simply run Docker and your API will be up and running, ready to serve your application. To build and start the Docker containers, run the following command:  
+`docker compose up --build`
+
+## Resources
+- Blog
+- Documentation
+- Features
+- Compare
+  - Blink
+  - Deonde
+  - GloriaFood
+  - Ordering.Co
+  - Shipday
+  - SpotNeats
+  - Yelo
+  - Zeew
+
+## Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+## Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+Email: sales@enatega.com  
+Phone: +1 (307) 776-8999  
+
+## Legal
+- Privacy Policy
+- Terms & Conditions
+
+©2024 Enatega · All rights reserved.

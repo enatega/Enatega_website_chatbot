@@ -1,0 +1,149 @@
+# Case Studies
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+---
+
+# Getting Started
+## Introduction
+## High Level Architecture
+## Overview of the API
+## FAQs
+## License
+## Patch Notes
+
+---
+
+# Installation
+## Prerequisites
+## How to Setup Locally
+### NodeJS Setup
+### Git and GitHub Setup
+### Setup Backend API
+### Web Dashboard Setup
+### Admin Dashboard Setup
+### Customer App Setup
+### Rider App Setup
+### Restaurant App Setup
+
+## How to Setup/Deploy for Production
+### Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server Configurations
+
+---
+
+# Installation
+## How To Setup Customer App
+1. Clone or download source code from GitHub.
+   - To download the Customer App, click here on Download Enatega Multivendor.
+
+   ⚠ Note: Ensure you have Node.js installed on your computer to launch the module.
+
+2. After installing Node.js:
+   - Open the Enatega MultiVendor code in a code editor.
+   - To run the enatega-multivendor-app, open it in the integrated terminal by:
+     - Right-clicking on the enatega-multivendor-app folder and selecting “Open in Integrated Terminal” 
+     - Or by using the following command in the terminal: 
+       ```
+       cd <Project directory>
+       ```
+       For example: 
+       ```
+       cd enatega-multivendor-app
+       ```
+
+3. To test the Customer App (if you don’t have your own server URL) and check the look and feel, no changes are needed.
+
+4. To run the customer app against your own server URL:
+   - Go to the `environment.js` file.
+   - Replace the following in `environment.js`:
+     - `GRAPHQL_URL`
+     - `WS_GRAPHQL_URL`
+     - `SERVER_URL`
+     - `Google_MAPS_KEY`
+
+5. After completing all the configurations, it’s time to run the Customer App. 
+   - To run the Enatega Customer App, open the terminal and run the following commands:
+     ```
+     npm install (or yarn install)
+     npm start
+     ```
+
+6. When you run the commands, you have two options to run your app:
+   - Development build
+   - Using Expo Go
+
+### To run the app using Expo Go:
+- Press S to switch to Expo Go from the development build.
+- You can either:
+  - Use the Expo Go app to scan the QR code to run the app.
+  - Use an iOS or Android simulator to run the app.
+
+⚠ Note: The “Continue with Google” feature may not work in the Expo Go app due to certain limitations. The package `react-native-google-signin` used for Google login does not work on Expo managed projects. For a seamless experience, and to easily run the app in the Expo Go app and Expo simulator, we have removed it. “Continue with Google” is available in production.
+
+Reference: [React Native Google Signin Documentation](https://react-native-google-signin.github.io/docs/setting-up/expo)
+
+---
+
+# Previous
+- How to Setup Admin Dashboard
+
+# Next
+- How to Setup Rider App
+
+---
+
+# Resources
+- Blog
+- Documentation
+- Features
+- Compare
+  - Blink
+  - Deonde
+  - GloriaFood
+  - Ordering.Co
+  - Shipday
+  - SpotNeats
+  - Yelo
+  - Zeew
+
+---
+
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+---
+
+# Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved.  
+Powered by:

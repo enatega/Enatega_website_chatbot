@@ -1,4 +1,4 @@
-# Enatega Multi-Vendor Features
+# Features
 
 ## Customer Web/Mobile Application Features
 

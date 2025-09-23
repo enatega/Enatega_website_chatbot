@@ -1,0 +1,174 @@
+# Case Studies
+
+## Use Cases
+
+## Documentation
+
+## Blog
+
+## Features
+
+## Pricing
+
+## Get A Quote
+
+---
+
+# Getting Started
+
+## Introduction
+
+## High Level Architecture
+
+## Overview of the API
+
+## FAQs
+
+## License
+
+## Patch Notes
+
+## Installation
+
+### Prerequisites
+
+### How to Setup Locally
+
+### How to Setup/Deploy for Production
+
+---
+
+# Configuration
+
+## Google Maps API Keys
+
+### Video Walkthrough
+
+### Enatega Multivendor | Configuring Google Maps API Key Setup
+
+1. Log in with your Google Account or establish an account at [Google Cloud Console](https://console.cloud.google.com).
+2. On the Google Cloud Console, create a project.
+3. Activate the following APIs in your project:
+   - Geocoding API
+   - Maps Javascript API
+   - Places API
+   - Maps Elevation API
+   - Maps Static API
+   - Geolocation API
+   - Distance Matrix API
+   - Maps SDK for Android
+   - Maps SDK for iOS
+
+4. Set up the Google Billing account.
+
+5. Go to API & Services > Credentials from the left menu and select “Create Credentials.”
+6. Create a key called HTTP Key, and then add your website URL as follows under the website restrictions tab. If your website is my-domain.com, add these:
+   - https://my-domain.com/*
+   - https://www.my-domain.com/*
+
+   Make sure to add an asterisk (*) at the end of the URL.
+
+7. Create another key named IP Key and under the IP Addresses section, paste your website/server IP address.
+
+### Very Important
+
+The IP address of your website might not always be sufficient to configure the IP limited key in a shared hosting environment. A pop-up notification will appear, looking somewhat like this: 
+
+"Geocoding failed because `This IP, site or mobile application is not authorized to use this API Key. Request received from IP address *.*.*.* with empty referer."
+
+The *.*.*.* is your server’s IP address, which needs to be set on the IP Restricted key. Go back to the Google Cloud Console and set this IP Address provided in the popup.
+
+Modifications should be made to all modules that require GOOGLE_MAPS_KEY or googleMapsAPIkey, and all modifications should be saved. It takes Google APIs 5 to 10 minutes to update your website.
+
+---
+
+# Important Links
+
+- [Google Cloud](https://cloud.google.com)
+- [Google Map Platform](https://developers.google.com/maps)
+
+---
+
+## Find Website IP
+
+---
+
+## Previous
+
+### How to Deploy Mobile Applications
+
+---
+
+## Next
+
+### Nodemailer Setup
+
+---
+
+# On this Page
+
+## Video Walkthrough
+
+---
+
+# Very Important
+
+---
+
+# Important Links
+
+## Resources
+
+- Blog
+- Documentation
+- Features
+- Compare
+
+## Blink
+
+## Deonde
+
+## GloriaFood Ordering.Co
+
+## Shipday
+
+## SpotNeats
+
+## Yelo
+
+## Zeew
+
+---
+
+# Case Studies
+
+## Yalla Delivery
+
+## Stylizenow
+
+## Easy Eats
+
+## Vinifynd
+
+## Snap Delivered
+
+## Borku Delivery
+
+---
+
+# Get In Touch
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved.  
+Powered by:

@@ -1,0 +1,187 @@
+# Case Studies
+
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+---
+
+# Getting Started
+
+## Introduction
+
+## High Level Architecture
+
+## Overview of the API
+
+## FAQs
+
+## License
+
+## Patch Notes
+
+## Installation
+
+### Prerequisites
+
+### How to Setup Locally
+
+### How to Setup/Deploy for Production
+
+---
+
+# Deploy Backend API Server
+
+## Deploy Admin Dashboard
+
+## Deploy Web Dashboard
+
+## Deploy Mobile Applications
+
+---
+
+# Configuration
+
+## Google Maps API Keys
+
+## Nodemailer Setup
+
+## Configuring Payment Gateways
+
+## Twilio Setup
+
+## Sentry Dashboard
+
+## Configuring Cloudinary
+
+## Amplitude Dashboard
+
+## Firebase Setup
+
+## Push Notification Keys
+
+## Social Login
+
+## Configuring Database Server
+
+## Configurations Installation
+
+---
+
+# How To Deploy Backend API Server
+
+1. **Download or Clone the Source Code**  
+   Extract it and open the extracted folder in a terminal. You must have Node.js installed on your computer to launch the module. After installing Node.js, open the directory and type the following commands:  
+   `cd <Project directory>` (e.g., `cd enatega-multivendor-api`)
+
+2. **Setup Instructions**  
+   Follow the setup instructions for Enatega Multivendor | Backend API Deployment.
+
+### Step 1: Docker Setup
+
+Make sure you have Docker installed on your machine. If not, you can download it [here](#). Once Docker is installed, navigate to the project directory in your terminal.
+
+### Step 2: Environment Variables
+
+After Docker setup, configure the environment variables. Modify the `.env` file with your credentials. If you do not find a `.env` file, create one in the root directory and paste the following contents into the `.env` file:
+
+```
+PORT=8001
+CONNECTION_STRING=
+RESET_PASSWORD_LINK=auth/reset/?reset=
+SERVER_URL=https://enatega-multivendor.up.railway.app/
+STRIPE_WEBHOOK_ENDPOINT_SECRET=
+DASHBOARD_URL=https://practical-minsky-95a652.netlify.app/#/
+WEB_URL=https://pensive-liskov-5320d4.netlify.app/
+ORDER_DETAIL_WEB_URL=order-detail/
+NODE_DEV=production
+NODE_ENV=production
+SENDGRID_API_KEY=
+```
+
+#### Environment Variables Explanation
+
+- **PORT**: The port number on which the server will run.
+- **CONNECTION_STRING**: This variable contains the connection string for your MongoDB database, including the username, password, cluster URL, and connection options. MongoDB is a flexible NoSQL database known for storing data as JSON-like documents.
+- **RESET_PASSWORD_LINK**: Link for resetting passwords.
+- **SERVER_URL**: Specifies the base URL of your server. Initially, paste your local server URL, and later replace it with your live server link when deployed.
+- **STRIPE_WEBHOOK_ENDPOINT_SECRET**: Used for Stripe webhook verification.
+- **DASHBOARD_URL**: URL for the dashboard.
+- **WEB_URL**: URL for the web application.
+- **ORDER_DETAIL_WEB_URL**: A partial URL used to construct links to specific order details in your application.
+- **NODE_DEV**: Node development environment.
+- **NODE_ENV**: Node environment.
+- **SENDGRID_API_KEY**: Enter your SendGrid API key if you intend to use SendGrid for sending emails; otherwise, leave this field empty.
+
+### Step 3: Adding serviceAccountKey.json
+
+You need to add your own `serviceAccountKey.json`. This file is typically used for Firebase Admin SDK. Follow these steps to obtain and add the file:
+
+1. Go to the Firebase Console.
+2. Select your project.
+3. Navigate to Project Settings > Service accounts.
+4. Click on “Generate new private key” to download the JSON file.
+5. Replace the downloaded `serviceAccountKey.json` file in the project directory.
+
+---
+
+# Running the Backend
+
+After completing the setup steps, you can start using your backend API. Simply run Docker, and your API will be up and running, ready to serve your application. Run the following command to build and start the Docker containers:
+
+```
+docker compose up --build
+```
+
+For any issues or further assistance, please contact support.
+
+---
+
+# Previous
+
+- How to Setup Restaurant App
+
+# Next
+
+- How to Deploy Admin Dashboard
+
+---
+
+# Resources
+
+- Blog
+- Documentation
+- Features
+- Compare
+
+---
+
+# Case Studies
+
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+---
+
+# Get In Touch
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved. Powered by:

@@ -1,0 +1,225 @@
+# Case Studies
+
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+---
+
+# Getting Started
+
+## Introduction
+
+## High Level Architecture
+
+## Overview of the API
+
+## FAQs
+
+## License
+
+## Patch Notes
+
+## Installation
+
+### Prerequisites
+
+### How to Setup Locally
+
+### How to Setup/Deploy for Production
+
+- Deploy Backend API Server
+- Deploy Admin Dashboard
+- Deploy Web Dashboard
+- Deploy Mobile Applications
+
+## Configuration
+
+### Google Maps API Keys
+
+### Nodemailer Setup
+
+### Configuring Payment Gateways
+
+### Twilio Setup
+
+### Sentry Dashboard
+
+### Configuring Cloudinary
+
+### Amplitude Dashboard
+
+### Firebase Setup
+
+### Push Notification Keys
+
+### Social Login
+
+### Configuring Database Server Configurations
+
+---
+
+# How To Deploy Admin Dashboard
+
+## Enatega Multivendor | Admin Web Deployment
+
+Initially, we must launch the admin panel and store all the keys using the administrative interface.
+
+### Clone or Download Source Code from GitHub
+
+To download Admin Dashboard, click here on Download Admin Dashboard. Node.js must be set up on your computer to run the module. The following commands should be entered in the directory after Node.js has been installed:
+
+```bash
+cd <Project directory> 
+# e.g. cd enatega-multivendor-admin
+```
+
+### Change constants.js File
+
+You need to change the following credentials in the constants.js file. To change the constants.js file, go to the `src` folder, then go to the `config` folder, where you will find `constants.js`.
+
+You are required to incorporate the following values into this file:
+
+- `value#1` (SERVER_URL)
+- `value#2` (WS_SERVER_URL)
+- `value#3` (GOOGLE_MAPS_KEY)
+
+Subsequently, all other values will be retrieved from the database once saved through the configuration in the admin panel. Initially, if the values are not yet available from the configuration (database), please hardcode them into the `constants.js` file.
+
+The configuration provided below is where you should append the values after executing the admin panel. These values are utilized across the entire project, including mobile apps, the web, and the admin interface.
+
+In the admin panel under the configuration, you need to add all the values. As we have numbered each variable in the `constants.js` file, the explanation against each number is provided below:
+
+- **REACT_APP_SERVER_URL**: This variable specifies the base URL of your backend server that the web application will communicate with. It’s essential for making API requests to your server.
+  
+- **REACT_APP_WS_SERVER_URL**: This variable defines the WebSocket server URL. WebSockets are used for real-time communication, and this URL is crucial for establishing WebSocket connections with your server.
+
+### What is SERVER_URL?
+
+This variable specifies the base URL of your server. It’s the root URL where your backend API is hosted.
+
+### So What is an API?
+
+An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. A backend API is responsible for handling data and requests on the server-side of a software application. The backend code of this project is the API for this project.
+
+To make your API accessible to the internet, you need a hosting service. A hosting service provides the infrastructure and resources to run your server, making it available 24/7. Hosting services can be cloud platforms (like Heroku, AWS, or Digital Ocean) or specialized services like Railway Cloud.
+
+---
+
+# How to Deploy to Backend API?
+
+Deploying means making your API server available and functional on the hosting service. This typically involves uploading your code, configuring the server, and ensuring it’s up and running. Here is how you can deploy your API server and get the SERVER_URL for adding in the .env file.
+
+### Railway Cloud Deployment Video
+
+- **REACT_APP_GOOGLE_API_KEY**: This is the API key for Google services. It’s used for integrating various Google services such as Maps, Geolocation, or other Google APIs in your application. This key serves as a unique identifier, granting your application access to Google’s mapping and geolocation features.
+
+### Here’s how you can create a Google API key for this project
+
+- **Demonstration of Google Map API Setup Video**
+
+- **REACT_APP_FIREBASE_KEY**: This is the Firebase API Key, used to securely connect your application to Firebase services such as the Realtime Database, Authentication, and Cloud Storage.
+
+- **REACT_APP_APP_ID**: The Firebase App ID uniquely associates your application with your Firebase project, helping Firebase identify your specific app.
+
+- **REACT_APP_AUTH_DOMAIN**: This is the Firebase Authentication Domain, required for implementing user authentication within your application using Firebase Authentication services.
+
+- **REACT_APP_STORAGE_BUCKET**: Specifies the Firebase Storage Bucket, indicating where your application will store files and assets securely in the cloud.
+
+- **REACT_APP_MSG_SENDER_ID**: This ID is related to Firebase Cloud Messaging (FCM), used for sending push notifications within your app, helping you keep users informed in real-time.
+
+- **REACT_APP_MEASUREMENT_ID**: The Google Analytics Measurement ID helps track and analyze user behavior and application performance using Google Analytics, providing insights into how users interact with your app.
+
+- **REACT_APP_PROJECT_ID**: The Firebase Project ID uniquely identifies your Firebase project, allowing you to manage and configure it within the Firebase console.
+
+- **REACT_APP_SENTRY_DSN**: Sentry DSN for error tracking and monitoring. It reports and logs errors that occur in your Admin Panel. This variable contains the Data Source Name (DSN) that Sentry uses to report errors and exceptions from your application.
+
+### Read more about Sentry
+
+- **Here is how you can configure Sentry and create SENTRY_DSN_LINK for this project**
+
+- **Configuring Sentry Video**
+
+- **REACT_APP_CLOUDINARY_UPLOAD_URL**: It represents the URL endpoint that your application uses to upload images to Cloudinary. It specifies the location where your application sends image files for storage and management on the Cloudinary platform.
+
+- **REACT_APP_CLOUDINARY_FOOD**: It is a product environment provided by Cloudinary, suggesting that it’s a predefined or configured setting for using Cloudinary’s services in a manner optimized for your project-related content within your application.
+
+### So What is Cloudinary?
+
+Cloudinary is a cloud-based media management platform that helps developers and businesses manage, store, and manipulate images and other media files in their applications. It offers features like image and video hosting, dynamic image transformations, and seamless delivery across different devices.
+
+### To get more information click read more about Cloudinary
+
+- **Here is how you can configure Cloudinary and create CLOUDINARY_URL for this project**
+
+- **Demonstration of Cloudinary Video**
+
+- **REACT_APP_FIREBASE_VAPID_KEY**: This variable represents a Firebase VAPID (Voluntary Application Server Identification) key, which is used in the context of Firebase Cloud Messaging (FCM) and web push notifications.
+
+### Here is how you can configure Push Notification for this project
+
+- **Push Notification Configuring Video**
+
+After setting the `constants.js` file, run the following commands:
+
+```bash
+npm install
+npm run build
+```
+
+---
+
+# How to Deploy a React Application?
+
+To deploy these applications, you can use hosting platforms like Netlify and Vercel, which specialize in hosting web applications. These platforms provide an easy and streamlined deployment process. One of the simplest is to use Netlify. By looking through this documentation, you can browse through its user manual.
+
+## Deployment Steps
+
+### Netlify
+
+For Netlify, you would typically connect your code repository (e.g., on GitHub or GitLab) to your Netlify account. Specify the build settings and configurations for your dashboard and web app. Netlify will automatically build and deploy your applications when you push changes to your repository. You can set custom domains or subdomains for your applications, which will become the URLs for your dashboard and web app.
+
+### Vercel
+
+Vercel offers a similar process. You connect your code repository, configure your settings, and Vercel handles the build and deployment. Custom domains can be set up on Vercel to determine the URLs for your dashboard and web app.
+
+---
+
+# Previous
+
+- How to Deploy Backend API Server
+
+# Next
+
+- How to Deploy Web Dashboard
+
+---
+
+# On this page
+
+- Resources
+- Blog
+- Documentation
+- Features
+- Compare
+
+---
+
+# Get In Touch
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+---
+
+# Privacy Policy
+
+# Terms & Conditions
+
+©2024 Enatega · All rights reserved. Powered by:

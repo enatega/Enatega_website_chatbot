@@ -1,0 +1,114 @@
+# Enatega Documentation
+
+## Navigation
+- Case Studies
+- Use Cases
+- Documentation
+- Blog
+- Features
+- Pricing
+- Get A Quote
+
+## Getting Started
+### Introduction
+### High Level Architecture
+### Overview of the API
+### FAQs
+### License
+### Patch Notes
+### Installation
+- Prerequisites
+- How to Setup Locally
+- How to Setup/Deploy for Production
+### Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server
+
+## Patch Notes
+
+### Enatega React Native Food Delivery V4.0.0
+
+#### New Backend Features
+- **Cancel Order Feature**: Our cancel order feature allows for easy modification or cancellation of orders, providing flexibility and convenience.
+- **Popular Items by Restaurant**: Discover the hottest items at your favorite restaurants with our new popular items feature, making ordering a breeze.
+- **Top Rated Shops and Restaurants**: Find the best of the best with our top-rated shops and restaurants, ensuring quality and satisfaction every time.
+- **Verification Toggle for Email and Phone**: Take control of your account security with verification toggles for email and phone, providing added peace of mind.
+- **Cuisines Added to Restaurants**: Explore a world of flavors with our new cuisine categories for restaurants, making it easier to find your favorite dishes.
+- **Demo Configuration Toggles**: Test and configure with ease using our demo configuration toggles, allowing for seamless setup and customization.
+- **Schedule Review Order Notification**: Never miss a beat with our new review order notification scheduler, ensuring you’re always informed and up-to-date.
+- **ID in Order Delivery Address Fixed**: Rest easy knowing your order is going to the right place with our fixed ID in the order delivery address.
+- **Stripe Integration Fixed**: Enjoy smooth and secure transactions with our fixed Stripe integration, providing a hassle-free payment experience.
+
+#### New Frontend Features
+- **Different Shop Types**: Discover a variety of shop types including Restaurants and Groceries, offering you more choices to suit your preferences.
+- **Onboarding Flow using Maps**: Seamlessly onboard with Enatega using our new map-based onboarding flow, making your experience even more intuitive.
+- **Popular Items Section**: Explore our new section showcasing the most ordered items, helping you discover crowd-favorites effortlessly.
+- **Top Brands and Restaurants**: Find top-rated brands and restaurants easily, ensuring quality and satisfaction with every order.
+- **Item Search Functionality**: Search for specific items with ease, making your shopping experience more efficient than ever before.
+- **New Checkout Flow**: Experience a smoother checkout process with our redesigned flow, making transactions hassle-free.
+- **Cancel Order Functionality**: Now you can cancel orders with our new cancel order feature, providing flexibility and convenience.
+- **Rate and Review Functionality**: Share your feedback easily with our new rating and review feature, helping us improve and serve you better.
+- **Easy Search through Filters**: Find exactly what you’re looking for through our enhanced search filters, tailored to your preferences.
+- **Rider Tracking Feature**: Track your delivery in real-time with our new rider tracking feature, ensuring you’re always in the loop.
+- **UI/UX Improvements**: Enjoy a more visually appealing and user-friendly interface, making your Enatega experience even more enjoyable.
+- **Upgraded Packages**: We’ve upgraded to the latest version to ensure you have access to the most advanced features and technologies.
+
+### Enatega React Native Food Delivery With Backend V3.0.0
+#### New Features
+- Added a web version of the App.
+
+### Enatega React Native Food Delivery With Backend V2.0.0
+#### New Features
+- Added rider tracking feature.
+- Added restaurant timings feature.
+- UI/UX improved.
+- Upgraded packages.
+- Added Taxation and Tipping.
+- Added sections.
+- Added favourites.
+- Added global notification.
+
+## Resources
+- Blog
+- Documentation
+- Features
+- Compare
+  - Blink
+  - Deonde
+  - GloriaFood
+  - Ordering.Co
+  - Shipday
+  - SpotNeats
+  - Yelo
+  - Zeew
+
+## Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+## Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+## Legal
+- Privacy Policy
+- Terms & Conditions  
+
+©2024 Enatega · All rights reserved.  
+Powered by:

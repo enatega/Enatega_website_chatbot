@@ -19,7 +19,7 @@ Choosing the right delivery platform is critical for a successful on-demand serv
 ---
 
 ## Introducing Enatega and Zeew
-Enatega is a fully customizable, multi-industry platform adaptable for food, grocery, courier, and other on-demand services. With an emphasis on white-label solutions, it allows businesses to tailor every element of their brand and service offering. 
+Enatega is a fully customizable, multi-industry platform adaptable for food, grocery, courier, and other on-demand services. With an emphasis on white-label solutions, it allows businesses to tailor every element of their brand and service offering.
 
 In contrast, Zeew is primarily focused on turnkey solutions for food and grocery delivery. It offers a straightforward setup but less flexibility in customization, making it a practical choice for simpler operations without the need for extensive branding control.
 
