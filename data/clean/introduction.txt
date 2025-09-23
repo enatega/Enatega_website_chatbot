@@ -13,7 +13,7 @@ Enatega Multivendor is a comprehensive food delivery solution designed for iOS, 
 - **Dashboard Panel**: Developed with React.
 - **API Development**: Utilizes Node with MongoDB, GraphQL for web and mobile, and Apollo Client for endpoint querying and state management.
 
-## Features
+## Enatega's Features
 ### Customer Mobile/Web Application
 - Email and phone number verification.
 - Authentication via Google, Apple, and Facebook.
@@ -67,16 +67,6 @@ To enhance the developer experience, the code is organized, and unnecessary scre
 - **Jest**: For unit testing.
 - **Husky**: To prevent bad commits.
 
-## What Will You Have in the Enatega Full App?
-- Enatega Multivendor Mobile App (iOS and Android).
-- Enatega Multivendor Rider App (iOS and Android).
-- Enatega Multivendor Restaurant App (iOS and Android).
-- Enatega Multivendor Web App.
-- Admin Web Dashboard.
-- API server.
-- Analytics Dashboard with Expo.
-- Error reporting with Sentry.
-
 ## Enatega Technology Stack
 ### Application Program Interface (API) Server
 - NodeJS
@@ -129,7 +119,7 @@ To enhance the developer experience, the code is organized, and unnecessary scre
 - **Features**
 - **Compare**: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
 
-## Case Studies
+## Case Studies (Products of Enatega)
 - Yalla Delivery
 - Stylizenow
 - Easy Eats
@@ -143,9 +133,3 @@ Cheyenne, Wyoming 82001,
 United States  
 Email: sales@enatega.com  
 Phone: +1 (307) 776-8999  
-
-## Legal
-- **Privacy Policy**
-- **Terms & Conditions**
-
-©2024 Enatega · All rights reserved.

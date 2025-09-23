@@ -58,7 +58,7 @@ vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
 calendly_link= "https://calendly.com/enategabd/strategy-call"
 
 
-retriever = vs.as_retriever(search_kwargs={"k": 4})
+retriever = vs.as_retriever(search_kwargs={"k": 6})
 
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, api_key=OPENAI_API_KEY)
 
@@ -295,7 +295,7 @@ def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None
 
     if not blocks:
         return "<p>No demo links configured yet.</p>"
-    return "<h2>Explore Our Live Demos<br><br></h2>" + "".join(blocks)
+    return "<h2>Explore Our Live Demos<br></h2>" + "".join(blocks)
 
 @tool("get_demo_links", return_direct=False)
 def get_demo_links(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
@@ -477,3 +477,42 @@ async def chat_stream(req: ChatReq):
 
 
 
+from pydantic import BaseModel
+
+import os, re, json, time
+# ... your other imports ...
+
+CHAT_DEBUG = os.getenv("CHAT_DEBUG", "0") == "1"
+
+_ctrl_re = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]")
+def clean_text(s: str) -> str:
+    if not isinstance(s, str):
+        try:
+            s = s.decode("utf-8", "replace")  # if bytes sneaked in
+        except Exception:
+            s = str(s)
+    s = s.replace("\u0000", " ").replace("\uffff", " ")
+    s = _ctrl_re.sub(" ", s)                  # strip control chars
+    return s
+
+class DiagReq(BaseModel):
+    message: str
+    k: int | None = None  # override k if you want
+
+
+@app.post("/diag/retrieval")
+def diag_retrieval(req: DiagReq):
+    r = vs.as_retriever(search_kwargs={"k": req.k or 6})
+    docs = r.invoke(req.message)
+    payload = []
+    for i, d in enumerate(docs):
+        txt = d.page_content or ""
+        payload.append({
+            "idx": i,
+            "chars": len(txt),
+            "has_null": "\x00" in txt,
+            "url": d.metadata.get("url"),
+            "id": d.metadata.get("id") or d.metadata.get("point_id"),
+            "sample": clean_text(txt[:220]).replace("\n", " "),
+        })
+    return {"k": len(docs), "chunks": payload}
