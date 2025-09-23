@@ -291,11 +291,11 @@ def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None
         if not pills:  # if filter removed all, show all for that app
             pills = [pill(t.capitalize(), u) for t, u in targets.items()]
         title = app_name.title() if app_name != "admin dashboard" else "Admin Dashboard"
-        blocks.append(f"<h3><strong>{title}</strong></h3><p>Links: {' '.join(pills)}</p>")
+        blocks.append(f"<h3>{title}</h3><p>Links: {' '.join(pills)}</p>")
 
     if not blocks:
         return "<p>No demo links configured yet.</p>"
-    return "<h2><strong>Explore Our Live Demos</strong><br><br></h2>" + "".join(blocks)
+    return "<h2>Explore Our Live Demos<br><br></h2>" + "".join(blocks)
 
 @tool("get_demo_links", return_direct=False)
 def get_demo_links(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
