@@ -206,25 +206,25 @@ DEMO_LINKS = {
     "customer app": {
         "ios": "https://apps.apple.com/us/app/enatega-multivendor/id1526488093",
         "android": "https://play.google.com/store/apps/details?id=com.enatega.multivendor",
-        "prototype": "https://embed.figma.com/proto/LSolukFLwl0bAzMUd6Pmg4/Customer-Mobile-App?page-id=275%E2%80%A6esponsive&starting-point-node-id=5502%3A4571&embed-host=share",
+        "prototype": "https://embed.figma.com/proto/LSolukFLwl0bAzMUd6Pmg4/Customer-Mobile-App?page-id=2751%3A10941&node-id=5502-4571&p=f&viewport=537%2C341%2C0.02&scaling=scale-down&content-scaling=responsive&starting-point-node-id=5502%3A4571&embed-host=share",
     },
     "rider app": {
         "ios": "https://apps.apple.com/pk/app/enatega-mulitvendor-rider/id1526674511",
         "android": "https://play.google.com/store/apps/details?id=com.enatega.multirider",
-        "prototype": "https://www.figma.com/proto/YSwFI6jvKEfppvumDfZ5GT/Rider-App?content-scaling=respon%E2%80%A6age-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A587",
+        "prototype": "https://www.figma.com/proto/YSwFI6jvKEfppvumDfZ5GT/Rider-App?content-scaling=responsive&kind=proto&node-id=1-507&page-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A587",
     },
     "restaurant app": {
         "ios": "https://apps.apple.com/pk/app/enatega-store/id1526672537",
         "android": "https://play.google.com/store/apps/details?id=multivendor.enatega.restaurant",
-        "prototype": "https://www.figma.com/proto/KnBNgwoio8zujFKSEzXTZ4/Restaurant-App?content-scaling=r%E2%80%A6age-id=0%3A1&scaling=scale-down&starting-point-node-id=0%3A731",
+        "prototype": "https://www.figma.com/proto/KnBNgwoio8zujFKSEzXTZ4/Restaurant-App?content-scaling=responsive&kind=proto&node-id=0-651&page-id=0%3A1&scaling=scale-down&starting-point-node-id=0%3A731",
     },
     "customer web": {
         "web": "https://multivendor.enatega.com/?_gl=1*13cpnd2*_gcl_au*MTIwMzg0NDY0NS4xNzU3NDg0OTA2",
-        "prototype": "https://embed.figma.com/proto/bdA2QOM79DtIGJAQMa4LEv/Customer-Web-App?page-id=0%3A1&%E2%80%A6caling=fixed&starting-point-node-id=1%3A6328&embed-host=share",
+        "prototype": "https://embed.figma.com/proto/bdA2QOM79DtIGJAQMa4LEv/Customer-Web-App?page-id=0%3A1&node-id=1-6328&p=f&viewport=560%2C25%2C0.02&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A6328&embed-host=share",
     },
     "admin dashboard": {
         "web": "https://multivendor-admin.enatega.com/?_gl=1*3lj6s*_gcl_au*MTIwMzg0NDY0NS4xNzU3NDg0OTA2",
-        "prototype": "https://www.figma.com/proto/D7HeChxKZo45MWEEVGQ1mK/Admin-Web-App?content-scaling=fi%E2%80%A6page-id=0%3A1&scaling=contain&starting-point-node-id=1%3A13258",
+        "prototype": "https://www.figma.com/proto/D7HeChxKZo45MWEEVGQ1mK/Admin-Web-App?content-scaling=fixed&kind=proto&node-id=1-3496&page-id=0%3A1&scaling=contain&starting-point-node-id=1%3A13258",
     },
     "server": {
         "web": "https://v1-api-enatega-multivendor-stage.up.railway.app/graphql",
@@ -291,11 +291,11 @@ def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None
         if not pills:  # if filter removed all, show all for that app
             pills = [pill(t.capitalize(), u) for t, u in targets.items()]
         title = app_name.title() if app_name != "admin dashboard" else "Admin Dashboard"
-        blocks.append(f"<h3><strong>{title}</strong></h3><p>Demo Links: {' '.join(pills)}</p>")
+        blocks.append(f"<h3><strong>{title}</strong></h3><p>Links: {' '.join(pills)}</p>")
 
     if not blocks:
         return "<p>No demo links configured yet.</p>"
-    return "<h2><strong>Explore Our Live Demos</strong></h2>" + "".join(blocks)
+    return "<h2><strong>Explore Our Live Demos</strong><br><br></h2>" + "".join(blocks)
 
 @tool("get_demo_links", return_direct=False)
 def get_demo_links(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
