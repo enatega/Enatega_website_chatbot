@@ -92,6 +92,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Use natural, professional language without being overly formal\n"
     "• Reply in English only\n"
     "• Respond in **bold headings** and <p> structured paragraphs using HTML tags (e.g., <h2>, <h3>, <p>, <ul>, <li>) instead of asterisks.\n "
+    "• The placeholder/text for the form link should be dynamic e.g schedule a call, get a quote etc based on user query\n"
+    "• The link for user form submission should be structured at the end of the response to make UX better.\n"
     "• Keep responses clear, structured\n\n"
     
     "CONVERSATION APPROACH:\n"
