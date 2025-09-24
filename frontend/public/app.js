@@ -17,9 +17,9 @@ const closeBtn = $("#closeBtn");
 const DEFAULT_SUGGESTIONS = [
     "What is Enatega?",
     "Give me demos",
-    "Features of Enatega",
+    "Use cases of Enatega",
     "Pricing options",
-    "How do you deploy?"
+    "Get a Quote"
   ];
   
 

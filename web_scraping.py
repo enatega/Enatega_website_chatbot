@@ -4,31 +4,31 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
 URLS = [
-    "https://enatega.com/",
+#     "https://enatega.com/",
 
-    # Case studies
-    "https://enatega.com/yalla-delivery/",
-    "https://enatega.com/stylizenow/",
-    "https://enatega.com/easy-eats/",
-    "https://enatega.com/vinifynd/",
-    "https://enatega.com/snap-delivered/",
-    "https://enatega.com/borku-delivery/",
+#     # Case studies
+#     "https://enatega.com/yalla-delivery/",
+#     "https://enatega.com/stylizenow/",
+#     "https://enatega.com/easy-eats/",
+#     "https://enatega.com/vinifynd/",
+#     "https://enatega.com/snap-delivered/",
+#     "https://enatega.com/borku-delivery/",
 
-    # Features
-    "https://enatega.com/multi-vendor-features/",
-    "https://enatega.com/multi-vendor-doc/overview-of-the-api/",
-    "https://enatega.com/multi-vendor-doc/prerequisites/",
+#     # Features
+#     "https://enatega.com/multi-vendor-features/",
+#     "https://enatega.com/multi-vendor-doc/overview-of-the-api/",
+#     "https://enatega.com/multi-vendor-doc/prerequisites/",
    
 
-   # Competitors
-    "https://enatega.com/enatega-vs-blink/",
-    "https://enatega.com/enatega-vs-deonde/",
-    "https://enatega.com/enatega-vs-gloriafood/",
-    "https://enatega.com/enatega-vs-ordering-co/",
-    "https://enatega.com/enatega-vs-shipday/",
-    "https://enatega.com/enatega-vs-spotneats/",
-    "https://enatega.com/enatega-vs-yelo/",
-    "https://enatega.com/enatega-vs-zeew/",
+#    # Competitors
+#     "https://enatega.com/enatega-vs-blink/",
+#     "https://enatega.com/enatega-vs-deonde/",
+#     "https://enatega.com/enatega-vs-gloriafood/",
+#     "https://enatega.com/enatega-vs-ordering-co/",
+#     "https://enatega.com/enatega-vs-shipday/",
+#     "https://enatega.com/enatega-vs-spotneats/",
+#     "https://enatega.com/enatega-vs-yelo/",
+#     "https://enatega.com/enatega-vs-zeew/",
 
     # Use cases
     "https://enatega.com/gift-delivery-solution/",

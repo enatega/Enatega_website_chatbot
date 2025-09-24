@@ -15,13 +15,13 @@ OUT_JSONL = CLEAN_DIR / "chunks_all.jsonl"
 
 USE_TOKENS = True
 TOKEN_CHUNK_SIZE = 700
-TOKEN_CHUNK_OVERLAP = 250
+TOKEN_CHUNK_OVERLAP = 150
 
 CHAR_CHUNK_SIZE = 4000
 CHAR_CHUNK_OVERLAP = 500
 
 # optional: skip empty or tiny pages
-MIN_WORDS = 40
+MIN_WORDS = 20
 
 
 def slug_to_url(slug: str) -> str:

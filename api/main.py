@@ -55,7 +55,7 @@ app.add_middleware(
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
 emb = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
 vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
-calendly_link= "https://calendly.com/enategabd/strategy-call"
+form_link= "https://enatega.com/contact/?utm_source=AI&utm_medium=Chatbot&utm_campaign=leads"
 
 
 retriever = vs.as_retriever(search_kwargs={"k": 6})
@@ -109,8 +109,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• 'While I can't provide exact information on that, what I can share is... Would you like me to help you explore [alternative]?'\n"
     "• 'That's a great question that would be best answered by our technical team. Meanwhile, let me help you with [related information]...'\n\n"
     
-    "WHEN TO SUGGEST BOOKING A MEETING:\n"
-    f"Proactively suggest booking a strategy call at {calendly_link} when:\n"
+    "WHEN TO SUGGEST BOOKING A MEETING THROUGH FILLING OF THE FORM:\n"
+    f"Proactively suggest booking a strategy call by filling out the form at {form_link} when:\n"
     "• CRUCIAL:- Anything related to Enatega, technical or non-technical that is not in your context\n"
     "• User asks highly technical questions beyond your knowledge (database specifics, complex integrations, custom development)\n"
     "• User shows strong interest (asks about pricing, timeline, implementation)\n"
@@ -121,10 +121,10 @@ RAG_PROMPT = PromptTemplate.from_template(
 
     "• User seems ready to move forward but needs technical validation\n\n"
     
-    "MEETING REFERRAL EXAMPLES:\n"
-    "• 'This sounds like something our technical team should discuss with you directly. Would you like to book a free strategy call to get detailed answers? You can schedule one at https://calendly.com/enategabd/strategy-call'\n"
-    "• 'Based on your requirements, I'd recommend speaking with our team directly. They can provide specific technical details and discuss your customization needs. Book a call here: https://calendly.com/enategabd/strategy-call'\n"
-    "• 'It sounds like you're seriously considering Enatega for your business. Our team can provide a personalized consultation to address all your questions. Schedule a strategy call: https://calendly.com/enategabd/strategy-call'\n\n"
+    "MEETING REFERRAL EXAMPLES BY MAKING CUSTOMER FILL OUT FORM:\n"
+    f"• 'This sounds like something our technical team should discuss with you directly. Would you like to book a free strategy call to get detailed answers? You can schedule one after filling the form at {form_link}\n"
+    f"• 'Based on your requirements, I'd recommend speaking with our team directly. They can provide specific technical details and discuss your customization needs. Fill out the form here: {form_link}\n"
+    f"• 'It sounds like you're seriously considering Enatega for your business. Our team can provide a personalized consultation to address all your questions. Fill out the form: {form_link}\n\n"
     
     "ENGAGEMENT STRATEGIES:\n"
     "• Ask about their business type, size, or specific needs\n"
@@ -291,7 +291,7 @@ def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None
         if not pills:  # if filter removed all, show all for that app
             pills = [pill(t.capitalize(), u) for t, u in targets.items()]
         title = app_name.title() if app_name != "admin dashboard" else "Admin Dashboard"
-        blocks.append(f"<h3>{title}</h3><p>Links: {' '.join(pills)}</p>")
+        blocks.append(f"<h3>{title}</h3><p>{' '.join(pills)}</p>")
 
     if not blocks:
         return "<p>No demo links configured yet.</p>"
