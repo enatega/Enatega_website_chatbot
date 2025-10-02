@@ -24,10 +24,7 @@ Preview the complete delivery experience through our comprehensive demo suite:
 5. Admin Web Dashboard View Demo
 6. Server View Demo
 
-## Versatile Use Cases
-
-### Beyond Delivery: A Smarter Way To Serve
-
+## Use Cases of Enatega
 Enatega is more than just a food delivery platform. It supports various delivery services, including:
 
 - Food Delivery

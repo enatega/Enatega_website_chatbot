@@ -1,47 +1,9 @@
 # chunks from https://enatega.com/ and related pages
 # splitter = token | size=700 | overlap=150
 
------ chunk 1/108 -----
+----- chunk 1/94 -----
 url: https://enatega.com/amplitude-introduction/ | title: Multi Vendor Amplitude Introduction | Enatega
-slug: amplitude-introduction | chars: 1385
-
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
-## License
-## Patch Notes
-
----
-
-# Installation
-## Prerequisites
-## How to Setup Locally
-## How to Setup/Deploy for Production
-
----
-
-# Configuration
-## Google Maps API Keys
-## Nodemailer Setup
-## Configuring Payment Gateways
-## Twilio Setup
-## Sentry Dashboard
-## Configuring Cloudinary
-## Amplitude Dashboard
-
----
+slug: amplitude-introduction | chars: 388
 
 # Amplitude Introduction
 ## Amplitude Integration
@@ -55,50 +17,7 @@ slug: amplitude-introduction | chars: 1385
 # Amplitude Product Demo
 Amplitude is a very effective tool for observing the results of your data analytics. With this in mind, we have tightly incorporated Amplitude into our solution so you don’t have to start from scratch.
 
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 2/108 -----
+----- chunk 2/94 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution for Salons | Enatega
 slug: beauty-services-scheduling-solution | chars: 3575
 
@@ -197,7 +116,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get In Touch
 For inquiries, please contact us at:
 
------ chunk 3/108 -----
+----- chunk 3/94 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution for Salons | Enatega
 slug: beauty-services-scheduling-solution | chars: 668
 
@@ -229,7 +148,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 4/108 -----
+----- chunk 4/94 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 3471
 
@@ -280,7 +199,7 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999
 
------ chunk 5/108 -----
+----- chunk 5/94 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 820
 
@@ -305,49 +224,9 @@ sales@enatega.com
 Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 6/108 -----
+----- chunk 6/94 -----
 url: https://enatega.com/configuration-google-maps-api-keys/ | title: Multi-Vendor Configuration Google Maps API Keys | Enatega
-slug: configuration-google-maps-api-keys | chars: 2771
-
-# Case Studies
-
-## Use Cases
-
-## Documentation
-
-## Blog
-
-## Features
-
-## Pricing
-
-## Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
-## Installation
-
-### Prerequisites
-
-### How to Setup Locally
-
-### How to Setup/Deploy for Production
-
----
+slug: configuration-google-maps-api-keys | chars: 1936
 
 # Configuration
 
@@ -398,510 +277,7 @@ Modifications should be made to all modules that require GOOGLE_MAPS_KEY or goog
 - [Google Cloud](https://cloud.google.com)
 - [Google Map Platform](https://developers.google.com/maps)
 
----
-
-## Find Website IP
-
----
-
-## Previous
-
-### How to Deploy Mobile Applications
-
----
-
-## Next
-
-### Nodemailer Setup
-
----
-
-# On this Page
-
-## Video Walkthrough
-
----
-
-# Very Important
-
----
-
-# Important Links
-
-## Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-
-## Blink
-
-## Deonde
-
-## GloriaFood Ordering.Co
-
-## Shipday
-
-## SpotNeats
-
-## Yelo
-
-## Zeew
-
----
-
-# Case Studies
-
-## Yalla Delivery
-
-## Stylizenow
-
-## Easy Eats
-
-## Vinifynd
-
-## Snap Delivered
-
-## Borku Delivery
-
----
-
-# Get In Touch
-
------ chunk 7/108 -----
-url: https://enatega.com/configuration-google-maps-api-keys/ | title: Multi-Vendor Configuration Google Maps API Keys | Enatega
-slug: configuration-google-maps-api-keys | chars: 712
-
----
-
-## Find Website IP
-
----
-
-## Previous
-
-### How to Deploy Mobile Applications
-
----
-
-## Next
-
-### Nodemailer Setup
-
----
-
-# On this Page
-
-## Video Walkthrough
-
----
-
-# Very Important
-
----
-
-# Important Links
-
-## Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-
-## Blink
-
-## Deonde
-
-## GloriaFood Ordering.Co
-
-## Shipday
-
-## SpotNeats
-
-## Yelo
-
-## Zeew
-
----
-
-# Case Studies
-
-## Yalla Delivery
-
-## Stylizenow
-
-## Easy Eats
-
-## Vinifynd
-
-## Snap Delivered
-
-## Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 8/108 -----
-url: https://enatega.com/configuration-social-login/ | title: Multi Vendor Configuration Social Login | Enatega
-slug: configuration-social-login | chars: 1288
-
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-# Getting Started
-- Introduction
-- High Level Architecture
-- Overview of the API
-- FAQs
-- License
-- Patch Notes
-- Installation
-  - Prerequisites
-  - How to Setup Locally
-  - How to Setup/Deploy for Production
-
-# Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-  - Configuring Database
-  - Server Configurations
-  - Configuration
-  - Social Login
-    - Google Login
-    - Video Walkthrough
-    - Enatega Multivendor | Configuring Google Authentication
-
-# Previous Configuration
-- Push Notification Keys
-
-# Next Configuration
-- Configuring Database
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 9/108 -----
-url: https://enatega.com/configuring-cloudinary/ | title: Multi Vendor Configuring Cloudinary | Enatega
-slug: configuring-cloudinary | chars: 1352
-
-# Case Studies
-
-## Use Cases
-
-## Documentation
-
-## Blog
-
-## Features
-
-## Pricing
-
-## Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
-## Installation
-
-### Prerequisites
-
-### How to Setup Locally
-
-### How to Setup/Deploy for Production
-
----
-
-# Configuration
-
-## Google Maps API Keys
-
-## Nodemailer Setup
-
-## Configuring Payment Gateways
-
-## Twilio Setup
-
-## Sentry Dashboard
-
-## Configuring Cloudinary
-
-## Amplitude Dashboard
-
-## Firebase Setup
-
-## Push Notification Keys
-
-## Social Login
-
-## Configuring Database Server Configurations
-
----
-
-# Configuring Cloudinary
-
-## Cloudinary Overview
-
-## Cloudinary Configuration
-
-## Enatega Multivendor | Configuring Cloudinary
-
----
-
-# Previous
-
-## Sentry Error Reporting
-
-# Next
-
-## Amplitude Integration
-
----
-
-# On This Page
-
-## Resources
-
-## Blog
-
-## Documentation
-
-## Features
-
-## Compare
-
-- Blink
-- Deonde
-- GloriaFood
-- Ordering.Co
-- Shipday
-- SpotNeats
-- Yelo
-- Zeew
-
----
-
-# Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 10/108 -----
-url: https://enatega.com/configuring-database/ | title: Multi Vendor Configuring Database | Enatega
-slug: configuring-database | chars: 1228
-
-# Case Studies
-
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
-## Installation
-
-### Prerequisites
-
-### How to Setup Locally
-
-### How to Setup/Deploy for Production
-
----
-
-# Configuration
-
-## Google Maps API Keys
-
-## Nodemailer Setup
-
-## Configuring Payment Gateways
-
-## Twilio Setup
-
-## Sentry Dashboard
-
-## Configuring Cloudinary
-
-## Amplitude Dashboard
-
-## Firebase Setup
-
-## Push Notification Keys
-
-## Social Login
-
-## Configuring Database
-
-### Server Configurations
-
-### Configuration Walkthrough Video for Configuring MongoDB Atlas
-
-### Enatega Multivendor | Configuring MongoDB Database
-
----
-
-# Previous Configuration
-
-- Social Login
-
-# Next
-
-- Server Configurations
-
----
-
-# Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-
-## Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 11/108 -----
+----- chunk 7/94 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Customizable Online Courier Delivery Solution | Enatega
 slug: courier-delivery-solution | chars: 3667
 
@@ -1004,7 +380,7 @@ For inquiries, please contact:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 12/108 -----
+----- chunk 8/94 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Customizable Online Courier Delivery Solution | Enatega
 slug: courier-delivery-solution | chars: 724
 
@@ -1039,7 +415,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 13/108 -----
+----- chunk 9/94 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution | Enatega
 slug: document-delivery-solution | chars: 3692
 
@@ -1140,7 +516,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 14/108 -----
+----- chunk 10/94 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution | Enatega
 slug: document-delivery-solution | chars: 740
 
@@ -1172,7 +548,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 15/108 -----
+----- chunk 11/94 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 3660
 
@@ -1202,7 +578,7 @@ The development team implemented a wallet feature for riders and restaurants, au
 ## Launching The App
 Once all requested features for version 1.0 were completed, the app was ready for launch. The Easy Eats founders participated in the Greenlight Maine competition, where they presented their app to the judges. After showcasing the app's unique features, the Easy Eats team won the competition, receiving $25,000 to expand their operations. Subsequently, they launched the app at their college in Maine and expanded to other nearby universities.
 
------ chunk 16/108 -----
+----- chunk 12/94 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 1661
 
@@ -1247,7 +623,7 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999
 
------ chunk 17/108 -----
+----- chunk 13/94 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 3669
 
@@ -1298,7 +674,7 @@ With multiple payment integrations, including Stripe, Enatega allows businesses 
 
 ## Choosing The Best Alternative For Blink
 
------ chunk 18/108 -----
+----- chunk 14/94 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 1771
 
@@ -1357,7 +733,7 @@ sales@enatega.com
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 19/108 -----
+----- chunk 15/94 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 3362
 
@@ -1396,7 +772,7 @@ Enatega’s platform caters to businesses beyond just food delivery, allowing yo
 ### Branding and User Experience
 Enatega offers complete UI control, giving you the freedom to create an app that aligns with your brand’s look and feel. For companies looking for apps like DeOnDe but with greater customization potential, Enatega is an excellent white-label DeOnDe alternative app that allows for distinct brand identity.
 
------ chunk 20/108 -----
+----- chunk 16/94 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 2348
 
@@ -1456,7 +832,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 21/108 -----
+----- chunk 17/94 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 3551
 
@@ -1527,7 +903,7 @@ Enatega integrates various payment gateways, including Stripe, to streamline tra
 
 ### Scalability for Multiple Services
 
------ chunk 22/108 -----
+----- chunk 18/94 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 1923
 
@@ -1600,7 +976,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 23/108 -----
+----- chunk 19/94 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 3682
 
@@ -1677,7 +1053,7 @@ With dedicated support and a scalable architecture, Enatega adapts to your busin
 
 ## Why Enatega Stands Out Among Ordering.Co Competitors?
 
------ chunk 24/108 -----
+----- chunk 20/94 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 1470
 
@@ -1747,7 +1123,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 25/108 -----
+----- chunk 21/94 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 3478
 
@@ -1809,7 +1185,7 @@ Enatega’s extensive customization options and wide-ranging service application
 - **Enhanced Payment and Tracking Options**  
   While Shipday provides real-time tracking, Enatega offers more adaptable tracking features and multiple payment gateways, allowing businesses to create a streamlined customer experience that fits their specific market needs. This payment flexibility makes Enatega a top Shipday similar solution with additional benefits.
 
------ chunk 26/108 -----
+----- chunk 22/94 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 1903
 
@@ -1878,7 +1254,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 27/108 -----
+----- chunk 23/94 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 3335
 
@@ -1949,7 +1325,7 @@ Enatega offers tailored support for onboarding and scaling, ideal for companies 
 
 ## Why Enatega Stands Out Among SpotNeats Competitors?
 
------ chunk 28/108 -----
+----- chunk 24/94 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 1568
 
@@ -2001,7 +1377,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 29/108 -----
+----- chunk 25/94 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 3696
 
@@ -2049,7 +1425,7 @@ Enatega is designed to scale alongside your business, with personalized support 
 ## Conclusion
 For companies that want a marketplace app with expansive customization options, Enatega provides a strong alternative to Yelo. Its extensive feature set and full control over design and branding make Enatega a top choice for businesses ready to innovate in the on-demand delivery market.
 
------ chunk 30/108 -----
+----- chunk 26/94 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 1130
 
@@ -2080,7 +1456,7 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 31/108 -----
+----- chunk 27/94 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 3460
 
@@ -2143,7 +1519,7 @@ Enatega provides a range of payment gateways and API compatibility options to fi
 
 ---
 
------ chunk 32/108 -----
+----- chunk 28/94 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 1473
 
@@ -2177,9 +1553,9 @@ Schedule a meeting and get started with Enatega.
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 33/108 -----
+----- chunk 29/94 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
-slug: enatega.com | chars: 3272
+slug: enatega.com | chars: 3404
 
 # Enatega: The Leading Open Source Food Delivery Management Solution
 
@@ -2207,10 +1583,7 @@ Preview the complete delivery experience through our comprehensive demo suite:
 5. Admin Web Dashboard View Demo
 6. Server View Demo
 
-## Versatile Use Cases
-
-### Beyond Delivery: A Smarter Way To Serve
-
+## Use Cases of Enatega
 Enatega is more than just a food delivery platform. It supports various delivery services, including:
 
 - Food Delivery
@@ -2258,7 +1631,10 @@ Built using the latest technologies, Enatega is a future-proof solution for any 
 ### Purchase & Download
 Purchase the Enatega solution and download the .zip file from the purchase page to begin setting up your Android and iOS app development process.
 
------ chunk 34/108 -----
+### Free Technical Consultation
+Receive 2 hours of free technical consultation for deployment or configuration support. Our team is here to help ensure smooth app development.
+
+----- chunk 30/94 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 3352
 
@@ -2339,7 +1715,7 @@ Best for enterprises that need advanced features and deployment support. Include
 
 ## Available Resources
 
------ chunk 35/108 -----
+----- chunk 31/94 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 423
 
@@ -2369,71 +1745,9 @@ United States
 **Email**: sales@enatega.com  
 **Phone**: +1 (307) 776-8999
 
------ chunk 36/108 -----
+----- chunk 32/94 -----
 url: https://enatega.com/faqs/ | title: Multi Vendor Marketplace Platform Faqs | Enatega
-slug: faqs | chars: 1821
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
-# Use Cases
-
-# Documentation
-
-# Blog
-
-# Features
-
-# Pricing
-
-# Get A Quote
-
----
-
-## Getting Started
-
-### Introduction
-
-### High Level Architecture
-
-### Overview of the API
-
-### FAQs
-
-#### License
-
-#### Patch Notes
-
-### Installation
-
-#### Prerequisites
-
-#### How to Setup Locally
-
-#### How to Setup/Deploy for Production
-
-### Configuration
-
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server
-
-### Configurations
-
----
+slug: faqs | chars: 648
 
 ## Frequently Asked Questions
 
@@ -2448,57 +1762,11 @@ slug: faqs | chars: 1821
 - Do We Need To Update Anything Soon?
 - Is There Additional Documentation That Is Not Available Online?
 
----
-
-## Previous
-
-### Overview of the API
-
-## Next
-
-### License
-
----
-
-## Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-## Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-## Privacy Policy
-
-## Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 37/108 -----
+----- chunk 33/94 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
-slug: features | chars: 4100
+slug: features | chars: 4111
 
-# Features
+# Features of Enatega
 
 ## Customer Web/Mobile Application Features
 
@@ -2538,7 +1806,7 @@ You get to optimize your web app's performance with our comprehensive performanc
 ### Order Rating And Reviews
 Get your customer's feedback and gain an insight into their experience with our order rating and reviews feature. After each order, users can provide ratings and reviews to help you improve your delivery business to enable continuous operations.
 
------ chunk 38/108 -----
+----- chunk 34/94 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 3785
 
@@ -2580,7 +1848,7 @@ With our restaurant application features, you get to take complete control of yo
 ### Real-Time Order Receiving
 Delight your customers with a revolutionary real-time order receiving feature. As orders move seamlessly through preparation and delivery stages, your team stays coordinated to ensure your orders get delivered on time and create an unparalleled customer experience.
 
------ chunk 39/108 -----
+----- chunk 35/94 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 3781
 
@@ -2622,7 +1890,7 @@ Enatega's rider application empowers business owners with real-time insights int
 ### Instant Customer Chat
 Enhance your customer service with the instant customer chat feature present in the Enatega's rider application features. Riders can instantly address customer inquiries, provide updates, and ensure a smooth delivery experience.
 
------ chunk 40/108 -----
+----- chunk 36/94 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 3822
 
@@ -2664,7 +1932,7 @@ Take control of your online reputation with the ratings and coupon management fe
 ### Tipping Option Management
 The tipping option management feature is not just a feature; it's a way to appreciate and motivate your delivery team. Enable your customers to show their gratitude and satisfaction with your service through a seamless tipping process present in the admin panel features.
 
------ chunk 41/108 -----
+----- chunk 37/94 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 4168
 
@@ -2707,7 +1975,7 @@ Increase your brand's reach strategically with our delivery area definition feat
 ### Menu Showcase
 Elevate your restaurant's presence with the menu showcase feature. Catch your customers' eye with enticing images, detailed descriptions, and a seamless browsing experience using the menu showcase feature.
 
------ chunk 42/108 -----
+----- chunk 38/94 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 1895
 
@@ -2729,7 +1997,7 @@ Attract and retain customers with the discounted fare feature. Implement strateg
 ### Order And Performance Analytics
 The order and performance analytics feature provide you with invaluable insights into your business operations. You get to stay updated with the current order trends, analyze customer preferences, and optimize your menu based on analytics. Enhance your operational overall performance and reduce your business costs with this admin dashboard feature.
 
------ chunk 43/108 -----
+----- chunk 39/94 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Custom-Made Saas Based Flower Delivery Solution | Enatega
 slug: flower-delivery-solution | chars: 3682
 
@@ -2821,7 +2089,7 @@ A custom plan tailored for enterprises needing advanced features and deployment 
 - Continuous collaboration with Enatega developers.
 - Advanced support and personalized technical guidance.
 
------ chunk 44/108 -----
+----- chunk 40/94 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Custom-Made Saas Based Flower Delivery Solution | Enatega
 slug: flower-delivery-solution | chars: 764
 
@@ -2849,144 +2117,169 @@ For inquiries, please contact:
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 45/108 -----
+----- chunk 41/94 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
-slug: food-and-beverage-solution | chars: 3497
+slug: food-and-beverage-solution | chars: 3970
 
-# Enatega: A Comprehensive Food Delivery Solution
+# Enatega Food Delivery Application
 
-## Overview
-Enatega is a flexible and scalable solution designed to power your online food delivery business, whether you operate a single food store or manage a marketplace of vendors.
+## Food Delivery Platform Overview
 
-## The Modern Food Delivery Experience
-The food industry is evolving, and customers now expect more than just a checkout page. They seek a smooth, personalized, and dependable experience from browsing to delivery. Enatega supports this with:
+### Core Concept
 
-- Urgent or scheduled delivery options.
-- A customizable online food delivery system.
-- Real-time order tracking.
-- Delivery scheduling options.
-- Personalized features such as food notes and tipping.
+Enatega is a flexible and scalable solution that can power online food delivery businesses with ease. The platform is suitable for single food stores or managing a marketplace of vendors. The solution delivers a complete food delivery experience designed for modern customers.
 
-## On-Demand Food Delivery
-Enatega offers:
+### Industry Evolution Context
 
-- A wide selection of food.
-- Immediate or scheduled delivery.
-- In-app order personalization.
-- Real-time updates throughout the delivery process.
+The food industry is evolving beyond simple checkout pages. Customers now expect smooth, personalized, and dependable experiences from the moment they browse to the moment the food is delivered. Modern expectations include comprehensive service journey management that goes beyond basic transaction processing.
 
-This complete, on-demand delivery solution helps businesses respond to customer needs efficiently.
+## Food Delivery Customer Experience
 
-## Features of Enatega’s Food Delivery Platform
+### Core Features for Customers
 
-### Customer App
-The customer app provides an easy-to-use food ordering experience with:
+The platform supports both urgent and scheduled delivery options, allowing food selection and sending in just a few steps. Users have access to a customizable online food delivery system with real-time order tracking, delivery scheduling options, and personalized features including food notes and tipping capabilities.
 
-- A clean product browsing and checkout interface.
-- Real-time delivery tracking.
-- Options for tipping, discounts, and feedback.
-- Personalized food note capabilities.
+### On-Demand Food Delivery Capabilities
 
-### Store App
-The store app is designed for store owners and partners to manage daily operations, allowing them to:
+The system provides a wide selection of food services with immediate or scheduled delivery options. Customers can access in-app order personalization and receive real-time updates throughout the delivery process. This creates a complete on-demand delivery solution for businesses that need to respond quickly to customer demands without delays.
 
-- Accept and process new orders.
-- Update product availability.
-- Monitor delivery progress.
-- Access store-level analytics.
+## Food Delivery Platform Components
 
-### Rider App
-The rider app focuses on delivery efficiency, featuring:
+### Customer App Features
 
-- Instant order alerts.
-- Map integration for accurate delivery.
-- Access to order history.
-- Real-time delivery updates.
+The Customer App delivers an easy-to-use food ordering experience. It includes a clean product browsing and checkout interface, real-time delivery tracking, and options for tipping, discounts, and feedback. Users can also access personalized food note capabilities for customized delivery instructions.
 
-### Admin Dashboard
-The admin dashboard serves as a central hub for business management, including:
+### Store App Features
 
-- Zone management and delivery scheduling.
-- Order tracking and status updates.
-- Store onboarding and vendor control.
-- Reporting and performance insights.
+The Store App serves as a tool for store owners and partners to manage daily operations. Store operators can accept and process new orders, update product availability, monitor delivery progress, and access store-level analytics for business insights and operational optimization.
 
-## Why Choose Enatega for Food Delivery?
-Enatega is more than just a food delivery platform. It is:
+### Rider App Features
 
-- Fully white-label and customizable.
-- Suitable for individual vendors or marketplace operators.
-- Equipped with multiple apps designed for every user type.
-- Enhanced with real-time logistics and tracking tools.
+The Rider App is a delivery-focused mobile application designed to help delivery teams maintain efficiency. Features include instant order alerts, map integration for accurate delivery, order history access, and real-time delivery updates for seamless food delivery operations.
 
-## Pricing
-Enatega offers transparent and flexible pricing with a simple model:
+### Admin Dashboard Features
 
-- No recurring subscriptions or additional delivery charges.
-- One-time payment for the complete solution.
+The Admin Dashboard functions as a central hub for running food delivery businesses. Features include zone management and delivery scheduling, order tracking and status updates, store onboarding and vendor control, plus reporting and performance insights for comprehensive business management.
 
-### Most Popular Premium Plan
-The Premium Plan includes:
+## Food Delivery Platform Advantages
 
-- A feature-rich delivery suite ideal for growing businesses.
-- A modern and beautifully designed UI across all apps.
-- A comprehensive technology stack.
-- Full source code provided upon purchase.
-- No hidden charges or subscription fees.
-- Lifetime access to all future updates.
-- Openly available documentation and tutorials.
-- A free 2-hour technical consultation with Enatega developers.
+### Key Benefits
 
-### Enterprise Plan
-The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
+The platform is fully white-label and customizable, working effectively for individual vendors or marketplace operators. It includes multiple apps designed for every user type with real-time logistics and tracking tools. The solution represents more than just a standard food delivery platform—it's specifically designed for comprehensive food delivery operations.
 
-- Custom deployment and development.
-- Tailored pricing with installment options.
-- Feature integration specific to business needs.
-- Continuous collaboration with Enatega developers.
-- Advanced support and personalized technical guidance.
+## Food Delivery Pricing Plans
 
-## Get in Touch
-For inquiries, please contact:
+### Basic Plan - Budget-Friendly
 
-**Address:**  
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States
+The Basic Plan targets startups and small businesses seeking powerful yet affordable solutions. It includes the Classic Enatega UI, which is proven, stable, and fully functional. Users receive full source code upon purchase with a one-time payment structure that includes no recurring fees or hidden charges. There are no additional setup fees, and users maintain complete control over deployment and modification. The plan includes data security, unlimited users and listings, Customer App, Rider App, Store App, Admin Panel, and Website. This option is ideal for developers or teams wanting full ownership and customization flexibility.
 
------ chunk 46/108 -----
+### Premium Plan - Feature-Rich Delivery Suite
+
+----- chunk 42/94 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
-slug: food-and-beverage-solution | chars: 754
+slug: food-and-beverage-solution | chars: 3407
 
-### Enterprise Plan
-The Enterprise Plan is a custom plan tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
+## Food Delivery Pricing Plans
 
-- Custom deployment and development.
-- Tailored pricing with installment options.
-- Feature integration specific to business needs.
-- Continuous collaboration with Enatega developers.
-- Advanced support and personalized technical guidance.
+### Basic Plan - Budget-Friendly
 
-## Get in Touch
-For inquiries, please contact:
+The Basic Plan targets startups and small businesses seeking powerful yet affordable solutions. It includes the Classic Enatega UI, which is proven, stable, and fully functional. Users receive full source code upon purchase with a one-time payment structure that includes no recurring fees or hidden charges. There are no additional setup fees, and users maintain complete control over deployment and modification. The plan includes data security, unlimited users and listings, Customer App, Rider App, Store App, Admin Panel, and Website. This option is ideal for developers or teams wanting full ownership and customization flexibility.
 
-**Address:**  
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
+### Premium Plan - Feature-Rich Delivery Suite
 
-**Email:** sales@enatega.com  
-**Phone:** +1 (307) 776-8999  
+The Premium Plan is marked as "Most Popular" and targets growing businesses seeking advanced features, scalability, and long-term value. It includes modern and beautifully designed UI across all apps, rich features for smooth and scalable operations, and is built using the latest and most efficient technology stack. The plan includes Admin, Rider, Restaurant, Web and Customer apps with full source code provided upon purchase. There are no hidden charges, subscription fees, or delivery-based costs, and no additional charges per delivery. Users receive lifetime access to all future updates, openly available documentation and tutorials, and free 2 hours technical consultation with Enatega developers.
 
-## Additional Resources
-- Blog
-- Documentation
-- Features
-- Comparison with other services
+### Enterprise Plan - Custom Plan
 
-©2024 Enatega · All rights reserved.
+The Enterprise Plan is designed for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus custom deployment and development. Custom pricing is available with installments, where users pay only for deployment and modifications upfront. The plan includes feature integration tailored to business needs, full system modification as per requirements, continuous collaboration with Enatega developers, advanced support and personalized technical guidance, with development handled by Ninjas Code.
 
------ chunk 47/108 -----
+## Food Delivery Quote Form
+
+### Personal Information Requirements
+
+The quote form requires name (cannot contain numbers), email, and phone number (Pakistan +92 format shown as example).
+
+### Development Stage Options
+
+Development stage options include: just exploring/gathering information, having a clear idea and ready to start, already having a design/prototype, or being ready to launch ASAP and wanting access to pre-built app.
+
+### Budget Allocation Options
+
+Budget options include: Yes – Less than $3,000, Yes – $3,000–$10,000, Yes – $10,000–$15,000, Yes – Over $15,000, or Not yet, but exploring option.
+
+### Industry Selection Options
+
+Industry options include Food Delivery, Grocery Delivery, Liquor Delivery, Pharmacy Delivery, Courier/Logistics, Laundry Services, Beauty & Wellness, Pet Supplies, Flower Delivery, Landscaping/Gardening, or Other (with specification field).
+
+### Decision Making Process Options
+
+Decision making options include: just me (sole decision maker), me and a business partner, executive team/company leadership, gathering info for someone else, or not sure yet.
+
+### Form Submission Process
+
+The submission process includes form submitted confirmation, schedule call step, choosing convenient time to speak with team, and proceeding ahead with consultation.
+
+## Food Delivery Resources and Support
+
+### Available Resources
+
+----- chunk 43/94 -----
+url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
+slug: food-and-beverage-solution | chars: 3050
+
+### Industry Selection Options
+
+Industry options include Food Delivery, Grocery Delivery, Liquor Delivery, Pharmacy Delivery, Courier/Logistics, Laundry Services, Beauty & Wellness, Pet Supplies, Flower Delivery, Landscaping/Gardening, or Other (with specification field).
+
+### Decision Making Process Options
+
+Decision making options include: just me (sole decision maker), me and a business partner, executive team/company leadership, gathering info for someone else, or not sure yet.
+
+### Form Submission Process
+
+The submission process includes form submitted confirmation, schedule call step, choosing convenient time to speak with team, and proceeding ahead with consultation.
+
+## Food Delivery Resources and Support
+
+### Available Resources
+
+Live demos and documentation are available for all platform components. Users have access to blog and documentation, feature comparisons with competitors including Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew, and case studies including Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, and Borku Delivery.
+
+### Contact Information
+
+The business address is 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States. Contact can be made via email at sales@enatega.com or phone at +1 (307) 776-8999.
+
+### Legal and Support Information
+
+Privacy Policy and Terms & Conditions are available. Content is copyrighted 2024 Enatega with all rights reserved. Multi-language support is available in English and Español.
+
+## Application Descriptions for Food Delivery Context
+
+### Customer App for Food Services
+
+The Customer App provides a user-friendly and intuitive experience with quick and simple onboarding process. Users can sign up and start ordering their favorite meals and groceries immediately through the streamlined interface.
+
+### Rider App for Food Services
+
+The Rider App is efficient and user-friendly for delivery riders, streamlining order assignments, route optimization, and real-time tracking to ensure timely deliveries and customer satisfaction for food services.
+
+### Restaurant App for Food Services
+
+The Restaurant App is feature-rich for food service operations, allowing management of orders, updating menus, performance tracking, boosting efficiency and providing seamless experience for restaurant partners.
+
+### Website for Food Services
+
+The website provides responsive and attractive design to showcase food delivery service. It highlights offerings and partner restaurants while making online ordering accessible for customers across all devices.
+
+### Admin Web Dashboard for Food Services
+
+The Admin Dashboard provides comprehensive control of food delivery business, managing users, restaurants, orders, and offering advanced analytics and reporting tools for valuable business insights.
+
+### Server Infrastructure for Food Services
+
+The server infrastructure is robust and scalable, ensuring smooth operations and real-time data synchronization with seamless integration across all platforms for food delivery operations.
+
+----- chunk 44/94 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: Online Grocery Delivery & Ordering Solution | Enatega
 slug: grocery-delivery-solution | chars: 3542
 
@@ -3084,7 +2377,7 @@ For inquiries, contact us at:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 48/108 -----
+----- chunk 45/94 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: Online Grocery Delivery & Ordering Solution | Enatega
 slug: grocery-delivery-solution | chars: 673
 
@@ -3115,47 +2408,11 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 49/108 -----
+----- chunk 46/94 -----
 url: https://enatega.com/high-level-architecture/ | title: Multi Vendor High Level Architecture | Enatega
-slug: high-level-architecture | chars: 2627
+slug: high-level-architecture | chars: 2054
 
 # Enatega Platform Documentation
-
-## Case Studies
-- Case studies
-- Use cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-## Getting Started
-
-### Introduction
-- High-Level Architecture
-- Overview of the API
-- FAQs
-- License
-- Patch Notes
-
-### Installation
-- Prerequisites
-- How to setup locally
-- How to setup/deploy for production
-
-### Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server
 
 ## High-Level Architecture
 
@@ -3203,73 +2460,9 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 50/108 -----
+----- chunk 47/94 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-admin-dashboard | chars: 3185
-
-# Case Studies
-
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
-## Installation
-
-### Prerequisites
-
-### How to Setup Locally
-
-### How to Setup/Deploy for Production
-
-- Deploy Backend API Server
-- Deploy Admin Dashboard
-- Deploy Web Dashboard
-- Deploy Mobile Applications
-
-## Configuration
-
-### Google Maps API Keys
-
-### Nodemailer Setup
-
-### Configuring Payment Gateways
-
-### Twilio Setup
-
-### Sentry Dashboard
-
-### Configuring Cloudinary
-
-### Amplitude Dashboard
-
-### Firebase Setup
-
-### Push Notification Keys
-
-### Social Login
-
-### Configuring Database Server Configurations
-
----
+slug: how-to-deploy-admin-dashboard | chars: 3110
 
 # How To Deploy Admin Dashboard
 
@@ -3314,17 +2507,19 @@ This variable specifies the base URL of your server. It’s the root URL where y
 
 An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. A backend API is responsible for handling data and requests on the server-side of a software application. The backend code of this project is the API for this project.
 
------ chunk 51/108 -----
+To make your API accessible to the internet, you need a hosting service. A hosting service provides the infrastructure and resources to run your server, making it available 24/7. Hosting services can be cloud platforms (like Heroku, AWS, or Digital Ocean) or specialized services like Railway Cloud.
+
+---
+
+# How to Deploy to Backend API?
+
+Deploying means making your API server available and functional on the hosting service. This typically involves uploading your code, configuring the server, and ensuring it’s up and running. Here is how you can deploy your API server and get the SERVER_URL for adding in the .env file.
+
+### Railway Cloud Deployment Video
+
+----- chunk 48/94 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-admin-dashboard | chars: 3472
-
-### What is SERVER_URL?
-
-This variable specifies the base URL of your server. It’s the root URL where your backend API is hosted.
-
-### So What is an API?
-
-An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. A backend API is responsible for handling data and requests on the server-side of a software application. The backend code of this project is the API for this project.
+slug: how-to-deploy-admin-dashboard | chars: 3279
 
 To make your API accessible to the internet, you need a hosting service. A hosting service provides the infrastructure and resources to run your server, making it available 24/7. Hosting services can be cloud platforms (like Heroku, AWS, or Digital Ocean) or specialized services like Railway Cloud.
 
@@ -3366,11 +2561,13 @@ Deploying means making your API server available and functional on the hosting s
 
 - **REACT_APP_CLOUDINARY_UPLOAD_URL**: It represents the URL endpoint that your application uses to upload images to Cloudinary. It specifies the location where your application sends image files for storage and management on the Cloudinary platform.
 
------ chunk 52/108 -----
-url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-admin-dashboard | chars: 3238
+- **REACT_APP_CLOUDINARY_FOOD**: It is a product environment provided by Cloudinary, suggesting that it’s a predefined or configured setting for using Cloudinary’s services in a manner optimized for your project-related content within your application.
 
-- **REACT_APP_SENTRY_DSN**: Sentry DSN for error tracking and monitoring. It reports and logs errors that occur in your Admin Panel. This variable contains the Data Source Name (DSN) that Sentry uses to report errors and exceptions from your application.
+### So What is Cloudinary?
+
+----- chunk 49/94 -----
+url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
+slug: how-to-deploy-admin-dashboard | chars: 3079
 
 ### Read more about Sentry
 
@@ -3449,44 +2646,6 @@ Vercel offers a similar process. You connect your code repository, configure you
 Cheyenne, Wyoming 82001,  
 United States  
 sales@enatega.com  
-+1 (307) 776-8999
-
------ chunk 53/108 -----
-url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-admin-dashboard | chars: 644
-
-### Vercel
-
-Vercel offers a similar process. You connect your code repository, configure your settings, and Vercel handles the build and deployment. Custom domains can be set up on Vercel to determine the URLs for your dashboard and web app.
-
----
-
-# Previous
-
-- How to Deploy Backend API Server
-
-# Next
-
-- How to Deploy Web Dashboard
-
----
-
-# On this page
-
-- Resources
-- Blog
-- Documentation
-- Features
-- Compare
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
 +1 (307) 776-8999  
 
 ---
@@ -3497,82 +2656,9 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 54/108 -----
+----- chunk 50/94 -----
 url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-backend-api-server | chars: 2090
-
-# Case Studies
-
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
-## Installation
-
-### Prerequisites
-
-### How to Setup Locally
-
-### How to Setup/Deploy for Production
-
----
-
-# Deploy Backend API Server
-
-## Deploy Admin Dashboard
-
-## Deploy Web Dashboard
-
-## Deploy Mobile Applications
-
----
-
-# Configuration
-
-## Google Maps API Keys
-
-## Nodemailer Setup
-
-## Configuring Payment Gateways
-
-## Twilio Setup
-
-## Sentry Dashboard
-
-## Configuring Cloudinary
-
-## Amplitude Dashboard
-
-## Firebase Setup
-
-## Push Notification Keys
-
-## Social Login
-
-## Configuring Database Server
-
-## Configurations Installation
-
----
+slug: how-to-deploy-backend-api-server | chars: 3097
 
 # How To Deploy Backend API Server
 
@@ -3590,26 +2676,6 @@ Make sure you have Docker installed on your machine. If not, you can download it
 ### Step 2: Environment Variables
 
 After Docker setup, configure the environment variables. Modify the `.env` file with your credentials. If you do not find a `.env` file, create one in the root directory and paste the following contents into the `.env` file:
-
-```
-PORT=8001
-CONNECTION_STRING=
-RESET_PASSWORD_LINK=auth/reset/?reset=
-SERVER_URL=https://enatega-multivendor.up.railway.app/
-STRIPE_WEBHOOK_ENDPOINT_SECRET=
-DASHBOARD_URL=https://practical-minsky-95a652.netlify.app/#/
-WEB_URL=https://pensive-liskov-5320d4.netlify.app/
-ORDER_DETAIL_WEB_URL=order-detail/
-NODE_DEV=production
-NODE_ENV=production
-SENDGRID_API_KEY=
-```
-
-#### Environment Variables Explanation
-
------ chunk 55/108 -----
-url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-backend-api-server | chars: 2729
 
 ```
 PORT=8001
@@ -3659,129 +2725,31 @@ After completing the setup steps, you can start using your backend API. Simply r
 docker compose up --build
 ```
 
+----- chunk 51/94 -----
+url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
+slug: how-to-deploy-backend-api-server | chars: 610
+
+1. Go to the Firebase Console.
+2. Select your project.
+3. Navigate to Project Settings > Service accounts.
+4. Click on “Generate new private key” to download the JSON file.
+5. Replace the downloaded `serviceAccountKey.json` file in the project directory.
+
+---
+
+# Running the Backend
+
+After completing the setup steps, you can start using your backend API. Simply run Docker, and your API will be up and running, ready to serve your application. Run the following command to build and start the Docker containers:
+
+```
+docker compose up --build
+```
+
 For any issues or further assistance, please contact support.
 
----
-
-# Previous
-
-- How to Setup Restaurant App
-
-# Next
-
-- How to Deploy Admin Dashboard
-
----
-
-# Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-
----
-
-# Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved. Powered by:
-
------ chunk 56/108 -----
+----- chunk 52/94 -----
 url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-mobile-applications | chars: 3254
-
-# Case Studies
-
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
-## Installation
-
-### Prerequisites
-
-### How to Setup Locally
-
-### How to Setup/Deploy for Production
-
-- Deploy Backend API Server
-- Deploy Admin Dashboard
-- Deploy Web Dashboard
-- Deploy Mobile Applications
-
----
-
-# Configuration
-
-## Google Maps API Keys
-
-## Nodemailer Setup
-
-## Configuring Payment Gateways
-
-## Twilio Setup
-
-## Sentry Dashboard
-
-## Configuring Cloudinary
-
-## Amplitude Dashboard
-
-## Firebase Setup
-
-## Push Notification Keys
-
-## Social Login
-
-## Configuring Database Server
-
-## Configurations
-
----
-
-# Installation
+slug: how-to-deploy-mobile-applications | chars: 3233
 
 ## How To Deploy Mobile Applications
 
@@ -3843,33 +2811,40 @@ This is a Google OAuth client ID designed for Android applications, serving the 
 
 This API key is essential for integrating Amplitude, an analytics and product intelligence service, into a React application.
 
------ chunk 57/108 -----
-url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-mobile-applications | chars: 3148
-
-### Railway Cloud Deployment Video
-
----
-
-## IOS_CLIENT_ID_GOOGLE
-
-This is a Google OAuth client ID specifically intended for iOS applications, used for authenticating users and granting access to Google services.
-
-## ANDROID_CLIENT_ID_GOOGLE
-
-This is a Google OAuth client ID designed for Android applications, serving the same purpose as the iOS client ID.
-
-### Creating IOS and Android Google Client ID
-
-#### Demonstration of IOS and Android Google Client ID Video
-
----
-
-## AMPLITUDE_API_KEY
-
-This API key is essential for integrating Amplitude, an analytics and product intelligence service, into a React application.
-
 ### Creating an Amplitude API Key for This Project
+
+#### Configuring Amplitude Video
+
+---
+
+## GOOGLE_MAPS_KEY
+
+The Google Maps API key is crucial for integrating Google Maps and related location and mapping services into the application.
+
+### Creating Google Maps Key for This Project
+
+#### Demonstration of Google Map API Setup Video
+
+---
+
+## EXPO_CLIENT_ID
+
+This variable represents a Google OAuth client ID specifically intended for use within the Expo development environment.
+
+### Steps to Create an Expo Client ID
+
+1. Create a Google Cloud Project: Visit the Google Cloud Console (https://console.cloud.google.com/).
+2. Enable the Google+ API.
+3. Create OAuth 2.0 Client ID.
+4. Set Up in Expo Project.
+
+---
+
+## SENTRY_DSN
+
+----- chunk 53/94 -----
+url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
+slug: how-to-deploy-mobile-applications | chars: 3080
 
 #### Configuring Amplitude Video
 
@@ -3957,29 +2932,33 @@ npm install -g eas-cli
 
 After creating a new project in Expo and pasting its ID into app.json, your project is ready to be built. In your terminal, run the following commands:
 
------ chunk 58/108 -----
-url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-mobile-applications | chars: 2583
+```bash
+eas build:configure
+eas build --profile production --platform android
+eas build --profile production --platform ios
+eas submit --platform ios (to submit your app in App Store)
+eas submit --platform android (to submit your app in Play Store)
+```
+
+## For OTA Updates
+
+```bash
+npx expo install expo-updates
+eas update:configure
+eas update --branch production --message "Example update"
+```
 
 ---
 
-# How to Submit Your Mobile Apps in the App and Play Store?
+## Enroll In The Apple’s Developer Program
 
-## Creation of Builds
+Once everything is finished and your app has been tested, you are ready to publish. You must first have the Apple Developer Program.
 
-To create the builds for both Android and iOS, enter the following commands in your terminal:
+### Bundle Identification
 
-```bash
-npm install -g eas-cli
-```
-
-1. Create your account in Expo (https://expo.dev/).
-2. In your terminal, type the following command: `eas login` (Login with your Expo credentials).
-3. Create a new project in your Expo account.
-
-### Building Your Project
-
-After creating a new project in Expo and pasting its ID into app.json, your project is ready to be built. In your terminal, run the following commands:
+----- chunk 54/94 -----
+url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
+slug: how-to-deploy-mobile-applications | chars: 1413
 
 ```bash
 eas build:configure
@@ -4029,103 +3008,9 @@ You can get a domain name from any domain name service, for example, GoDaddy. Yo
 
 ---
 
-# Previous
-
-- How to Deploy Web Dashboard
-
-# Next
-
-- Configuration Google Maps API Keys
-
----
-
-# Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-- Blink
-- Deonde
-- GloriaFood
-- Ordering.Co
-- Shipday
-- SpotNeats
-- Yelo
-- Zeew
-
----
-
-# Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved. Powered by:
-
------ chunk 59/108 -----
+----- chunk 55/94 -----
 url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-web-dashboard | chars: 3262
-
-# Enatega Multivendor Documentation
-
-## Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-## Getting Started
-### Introduction
-### High Level Architecture
-### Overview of the API
-### FAQs
-### License
-### Patch Notes
-
-## Installation
-### Prerequisites
-### How to Setup Locally
-### How to Setup/Deploy for Production
-- Deploy Backend API Server
-- Deploy Admin Dashboard
-- Deploy Web Dashboard
-- Deploy Mobile Applications
-
-## Configuration
-### Google Maps API Keys
-### Nodemailer Setup
-### Configuring Payment Gateways
-### Twilio Setup
-### Sentry Dashboard
-### Configuring Cloudinary
-### Amplitude Dashboard
-### Firebase Setup
-### Push Notification Keys
-### Social Login
-### Configuring Database Server
+slug: how-to-deploy-web-dashboard | chars: 3434
 
 ## How To Deploy Web Dashboard
 ### Enatega Multivendor | Customer Web Deployment
@@ -4157,20 +3042,25 @@ Deploying means making your API server available and functional on the hosting s
 
 ### Railway Cloud Deployment Video
 
------ chunk 60/108 -----
-url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-web-dashboard | chars: 3610
-
-### Hosting Your API
-To make your API accessible to the internet, you need a hosting service. A hosting service provides the infrastructure and resources to run your server, making it available 24/7. Hosting services can be cloud platforms (like Heroku, AWS, or Digital Ocean) or specialized services like Railway Cloud.
-
-## How to Deploy the Backend API
-Deploying means making your API server available and functional on the hosting service. This typically involves uploading your code, configuring the server, and ensuring it’s up and running. Here is how you can deploy your API server and get the SERVER_URL for adding in the .env file.
-
-### Railway Cloud Deployment Video
-
 ### REACT_APP_GOOGLE_CLIENT_ID
 The REACT_APP_GOOGLE_CLIENT_ID is a unique identifier provided by Google when you register your web application with Google’s OAuth (Open Authorization) service. This ID serves as a means for your application to identify itself to Google when attempting to authenticate users through their Google accounts.
+
+### Configuring Google ID for Web Video
+
+### REACT_APP_STRIPE_PUBLIC_KEY
+The Stripe public key is used to interact with the Stripe payment gateway. It’s necessary for handling online payments securely.
+
+### What is Stripe?
+Stripe is a widely-used online payment platform that helps businesses accept payments securely on their websites and apps. It’s known for its simplicity, global reach, and developer-friendly tools.
+
+### How to Create a Stripe Endpoint Secret for this Project?
+Here is how you can create Stripe endpoint secrets.
+
+### Stripe Configuration Video
+
+----- chunk 56/94 -----
+url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
+slug: how-to-deploy-web-dashboard | chars: 3713
 
 ### Configuring Google ID for Web Video
 
@@ -4202,18 +3092,27 @@ Configuring PayPal for your application involves registering with PayPal and sec
 ### REACT_APP_GOOGLE_MAPS_KEY
 The Google Maps API key is a crucial component for integrating Google Maps and related location and mapping services into the application. This key serves as a unique identifier, granting your application access to Google’s mapping and geolocation features.
 
------ chunk 61/108 -----
-url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-web-dashboard | chars: 3195
-
-### REACT_APP_GOOGLE_MAPS_KEY
-The Google Maps API key is a crucial component for integrating Google Maps and related location and mapping services into the application. This key serves as a unique identifier, granting your application access to Google’s mapping and geolocation features.
-
 ### How to Create a Google Maps Key for this Project
 Demonstration of Google Maps API setup video.
 
 ### REACT_APP_AMPLITUDE_API_KEY
 This API key is essential for integrating Amplitude, an analytics and product intelligence service, into a React application. The API key identifies your app when communicating with Amplitude’s servers. By using this key, you can gather data, analyze user behavior, and make data-informed decisions to optimize your application’s performance and user experience.
+
+### Amplitude
+Amplitude helps businesses track and analyze user behavior, such as interactions and events within the app. It’s a critical tool for enhancing user satisfaction and app success.
+
+### How to Create an Amplitude API Key for this Project
+Configuring Amplitude video.
+
+### REACT_APP_GOOGLE_MAP_LIBRARIES
+This variable specifies which Google Maps libraries are included in your application. It can help optimize your application by only including the necessary libraries.
+
+### REACT_APP_GOOGLE_COLOR
+This variable may be used to define a specific color associated with Google-related elements in your application.
+
+----- chunk 57/94 -----
+url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
+slug: how-to-deploy-web-dashboard | chars: 2320
 
 ### Amplitude
 Amplitude helps businesses track and analyze user behavior, such as interactions and events within the app. It’s a critical tool for enhancing user satisfaction and app success.
@@ -4253,78 +3152,9 @@ For Netlify, you would typically connect your code repository (e.g., on GitHub o
 #### Vercel
 Vercel offers a similar process. You connect your code repository, configure your settings, and Vercel handles the build and deployment. Custom domains can be set up on Vercel to determine the URLs for your dashboard and web app.
 
-## Previous
-- How to Deploy Admin Dashboard
-
-## Next
-- How to Deploy Mobile Applications
-
------ chunk 62/108 -----
-url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
-slug: how-to-deploy-web-dashboard | chars: 793
-
-#### Vercel
-Vercel offers a similar process. You connect your code repository, configure your settings, and Vercel handles the build and deployment. Custom domains can be set up on Vercel to determine the URLs for your dashboard and web app.
-
-## Previous
-- How to Deploy Admin Dashboard
-
-## Next
-- How to Deploy Mobile Applications
-
-## Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood Ordering
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
-## Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
-## Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
-## Privacy Policy
-## Terms & Conditions
-©2024 Enatega · All rights reserved.
-
------ chunk 63/108 -----
+----- chunk 58/94 -----
 url: https://enatega.com/how-to-setup-admin-dashboard-locally/ | title: How to setup Admin Dashboard - Multi-Vendor Doc - Enatega
-slug: how-to-setup-admin-dashboard-locally | chars: 2497
-
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
-## License
-## Patch Notes
+slug: how-to-setup-admin-dashboard-locally | chars: 1939
 
 ---
 
@@ -4397,142 +3227,9 @@ slug: how-to-setup-admin-dashboard-locally | chars: 2497
 
 ---
 
-# Previous
-- How to Setup Web Dashboard
-
-# Next
-- How to Setup Customer App
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
------ chunk 64/108 -----
-url: https://enatega.com/how-to-setup-admin-dashboard-locally/ | title: How to setup Admin Dashboard - Multi-Vendor Doc - Enatega
-slug: how-to-setup-admin-dashboard-locally | chars: 579
-
----
-
-# Previous
-- How to Setup Web Dashboard
-
-# Next
-- How to Setup Customer App
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 65/108 -----
+----- chunk 59/94 -----
 url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
-slug: how-to-setup-backend-api-locally | chars: 2439
-
-# Enatega Backend API Setup Guide
-
-## Table of Contents
-- Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-- Getting Started
-  - Introduction
-  - High Level Architecture
-  - Overview of the API
-  - FAQs
-  - License
-  - Patch Notes
-- Installation
-  - Prerequisites
-  - How to Setup Locally
-    - NodeJS Setup
-    - Git and GitHub Setup
-    - Setup Backend API
-    - Setup Web Dashboard
-    - Setup Admin Dashboard
-    - Setup Customer App
-    - Setup Rider App
-    - Setup Restaurant App
-  - How to Setup/Deploy for Production
-    - Configuration
-    - Google Maps API Keys
-    - Nodemailer Setup
-    - Configuring Payment Gateways
-    - Twilio Setup
-    - Sentry Dashboard
-    - Configuring Cloudinary
-    - Amplitude Dashboard
-    - Firebase Setup
-    - Push Notification Keys
-    - Social Login
-    - Configuring Database Server
-
-## Installation
+slug: how-to-setup-backend-api-locally | chars: 2080
 
 ### How To Setup Backend API
 
@@ -4577,18 +3274,27 @@ To buy Backend Visit Enatega
 After setting up Docker, you’ll need to configure the environment variables. Follow these steps to modify or create the .env file with your credentials:  
 ⚠ Note: If you do not find a .env file, create one in the root directory and paste the following contents into the .env file.
 
------ chunk 66/108 -----
+**Contents Of .Env File:**
+```
+PORT=8001
+CONNECTION_STRING=
+RESET_PASSWORD_LINK=auth/reset/?reset=
+SERVER_URL=https://enatega-multivendor.up.railway.app/
+STRIPE_WEBHOOK_ENDPOINT_SECRET=
+DASHBOARD_URL=https://practical-minsky-95a652.netlify.app/#/
+WEB_URL=https://pensive-liskov-5320d4.netlify.app/
+ORDER_DETAIL_WEB_URL=order-detail/
+NODE_DEV=production
+NODE_ENV=production
+SENDGRID_API_KEY=
+```
+
+### Environment Variables Explanation:
+Make sure to understand the purpose of each environment variable before modifying them.
+
+----- chunk 60/94 -----
 url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
-slug: how-to-setup-backend-api-locally | chars: 2958
-
-#### Step 1: Docker Setup
-- **Check Docker Installation:** Ensure Docker is installed on your machine. If not, download it here.
-- **Navigate to Project Directory:** After installing Docker, go to the project directory in your terminal.  
-  Enatega Multivendor | Setup Docker
-
-#### Step 2: Environment Variables
-After setting up Docker, you’ll need to configure the environment variables. Follow these steps to modify or create the .env file with your credentials:  
-⚠ Note: If you do not find a .env file, create one in the root directory and paste the following contents into the .env file.
+slug: how-to-setup-backend-api-locally | chars: 2855
 
 **Contents Of .Env File:**
 ```
@@ -4633,15 +3339,6 @@ After completing the setup steps, you can start using your backend API.
 ⚙️ Tip: Simply run Docker and your API will be up and running, ready to serve your application. To build and start the Docker containers, run the following command:  
 `docker compose up --build`
 
------ chunk 67/108 -----
-url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
-slug: how-to-setup-backend-api-locally | chars: 784
-
-### Running The Backend:
-After completing the setup steps, you can start using your backend API.  
-⚙️ Tip: Simply run Docker and your API will be up and running, ready to serve your application. To build and start the Docker containers, run the following command:  
-`docker compose up --build`
-
 ## Resources
 - Blog
 - Documentation
@@ -4677,59 +3374,10 @@ Phone: +1 (307) 776-8999
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 68/108 -----
+----- chunk 61/94 -----
 url: https://enatega.com/how-to-setup-customer-app-locally/ | title: How to setup Customer App - Multi-Vendor Doc - Enatega
-slug: how-to-setup-customer-app-locally | chars: 2781
+slug: how-to-setup-customer-app-locally | chars: 2121
 
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
-## License
-## Patch Notes
-
----
-
-# Installation
-## Prerequisites
-## How to Setup Locally
-### NodeJS Setup
-### Git and GitHub Setup
-### Setup Backend API
-### Web Dashboard Setup
-### Admin Dashboard Setup
-### Customer App Setup
-### Rider App Setup
-### Restaurant App Setup
-
-## How to Setup/Deploy for Production
-### Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server Configurations
-
----
-
-# Installation
 ## How To Setup Customer App
 1. Clone or download source code from GitHub.
    - To download the Customer App, click here on Download Enatega Multivendor.
@@ -4778,126 +3426,14 @@ slug: how-to-setup-customer-app-locally | chars: 2781
 
 ⚠ Note: The “Continue with Google” feature may not work in the Expo Go app due to certain limitations. The package `react-native-google-signin` used for Google login does not work on Expo managed projects. For a seamless experience, and to easily run the app in the Expo Go app and Expo simulator, we have removed it. “Continue with Google” is available in production.
 
------ chunk 69/108 -----
-url: https://enatega.com/how-to-setup-customer-app-locally/ | title: How to setup Customer App - Multi-Vendor Doc - Enatega
-slug: how-to-setup-customer-app-locally | chars: 1294
-
-### To run the app using Expo Go:
-- Press S to switch to Expo Go from the development build.
-- You can either:
-  - Use the Expo Go app to scan the QR code to run the app.
-  - Use an iOS or Android simulator to run the app.
-
-⚠ Note: The “Continue with Google” feature may not work in the Expo Go app due to certain limitations. The package `react-native-google-signin` used for Google login does not work on Expo managed projects. For a seamless experience, and to easily run the app in the Expo Go app and Expo simulator, we have removed it. “Continue with Google” is available in production.
-
 Reference: [React Native Google Signin Documentation](https://react-native-google-signin.github.io/docs/setting-up/expo)
 
 ---
 
-# Previous
-- How to Setup Admin Dashboard
-
-# Next
-- How to Setup Rider App
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 70/108 -----
+----- chunk 62/94 -----
 url: https://enatega.com/how-to-setup-restaurant-app-locally/ | title: How to setup Restaurant App - Multi-Vendor Doc - Enatega
-slug: how-to-setup-restaurant-app-locally | chars: 2699
+slug: how-to-setup-restaurant-app-locally | chars: 1659
 
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
-## License
-## Patch Notes
-
----
-
-# Installation
-## Prerequisites
-## How to Setup Locally
-### NodeJS Setup
-### Git and GitHub Setup
-### Setup Backend API
-### Web Dashboard Setup
-### Admin Dashboard Setup
-### Customer App Setup
-### Rider App Setup
-### Restaurant App Setup
-
----
-
-# How to Setup/Deploy for Production
-## Configuration
-### Google Maps API Keys
-### Nodemailer Setup
-### Configuring Payment Gateways
-### Twilio Setup
-### Sentry Dashboard
-### Configuring Cloudinary
-### Amplitude Dashboard
-### Firebase Setup
-### Push Notification Keys
-### Social Login
-### Configuring Database Server
-
----
-
-# Installation
 ## How To Setup Restaurant App
 1. Clone or download source code from GitHub.
    - To download the Multivendor Restaurant App, click here on Download Enatega Multivendor.
@@ -4942,145 +3478,10 @@ slug: how-to-setup-restaurant-app-locally | chars: 2699
 
 ---
 
-# Previous
-- How to Setup Rider App
-
-# Next
-- How to Deploy Backend API Server
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
------ chunk 71/108 -----
-url: https://enatega.com/how-to-setup-restaurant-app-locally/ | title: How to setup Restaurant App - Multi-Vendor Doc - Enatega
-slug: how-to-setup-restaurant-app-locally | chars: 837
-
-### To run the app using Expo Go:
-- If you are in development build, press S to switch to Expo Go from the development build. You can either:
-  - Use the Expo Go app to scan the QR code to run the app.
-  - Use an iOS or Android simulator to run the app.
-
----
-
-# Previous
-- How to Setup Rider App
-
-# Next
-- How to Deploy Backend API Server
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 72/108 -----
+----- chunk 63/94 -----
 url: https://enatega.com/how-to-setup-rider-app-locally/ | title: How to setup Rider App - Multi-Vendor Doc - Enatega
-slug: how-to-setup-rider-app-locally | chars: 2751
+slug: how-to-setup-rider-app-locally | chars: 1595
 
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
-## License
-## Patch Notes
-
----
-
-# Installation
-## Prerequisites
-## How to Setup Locally
-### NodeJS Setup
-### Git and GitHub Setup
-### Setup Backend API
-### Web Dashboard Setup
-### Admin Dashboard Setup
-### Customer App Setup
-### Rider App Setup
-### Restaurant App Setup
-
----
-
-# How to Setup/Deploy for Production
-## Configuration
-### Google Maps API Keys
-### Nodemailer Setup
-### Configuring Payment Gateways
-### Twilio Setup
-### Sentry Dashboard
-### Configuring Cloudinary
-### Amplitude Dashboard
-### Firebase Setup
-### Push Notification Keys
-### Social Login
-### Configuring Database Server Configurations
-
----
-
-# Installation
 ## How To Setup Rider App
 1. Clone or download source code from GitHub.
    - To download the Multivendor Rider App, click here on Download Enatega Multivendor.
@@ -5125,182 +3526,9 @@ slug: how-to-setup-rider-app-locally | chars: 2751
 
 ---
 
-# Previous
-- How to Setup Customer App
-
-# Next
-- How to Setup Restaurant App
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
------ chunk 73/108 -----
-url: https://enatega.com/how-to-setup-rider-app-locally/ | title: How to setup Rider App - Multi-Vendor Doc - Enatega
-slug: how-to-setup-rider-app-locally | chars: 580
-
----
-
-# Previous
-- How to Setup Customer App
-
-# Next
-- How to Setup Restaurant App
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 74/108 -----
+----- chunk 64/94 -----
 url: https://enatega.com/how-to-setup-web-dashboard-locally/ | title: How to setup Web Dashboard - Multi-Vendor Doc - Enatega
-slug: how-to-setup-web-dashboard-locally | chars: 2600
-
-# Case Studies
-
-## Use Cases
-
-## Documentation
-
-## Blog
-
-## Features
-
-## Pricing
-
-## Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-## FAQs
-
-## License
-
-## Patch Notes
-
----
-
-# Installation
-
-## Prerequisites
-
-## How to Setup Locally
-
-### NodeJS Setup
-
-### Git and GitHub Setup
-
-### Setup Backend API
-
-### Setup Web Dashboard
-
-### Setup Admin Dashboard
-
-### Setup Customer App
-
-### Setup Rider App
-
-### Setup Restaurant App
-
----
-
-# How to Setup/Deploy for Production
-
-## Configuration
-
-### Google Maps API Keys
-
-### Nodemailer Setup
-
-### Configuring Payment Gateways
-
-### Twilio Setup
-
-### Sentry Dashboard
-
-### Configuring Cloudinary
-
-### Amplitude Dashboard
-
-### Firebase Setup
-
-### Push Notification Keys
-
-### Social Login
-
-### Configuring Database Server Configurations
-
----
-
-# Installation
+slug: how-to-setup-web-dashboard-locally | chars: 1375
 
 ## How To Setup Web Dashboard
 
@@ -5340,109 +3568,7 @@ slug: how-to-setup-web-dashboard-locally | chars: 2600
    npm start
    ```
 
----
-
-## Previous
-
-### How to Setup Backend API
-
-## Next
-
-### How to Setup Admin Dashboard
-
----
-
-# Resources
-
-## Blog
-
-## Documentation
-
-## Features
-
-## Compare
-
-- Blink
-- Deonde
-- GloriaFood
-- Ordering.Co
-- Shipday
-- SpotNeats
-- Yelo
-- Zeew
-
----
-
-# Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
------ chunk 75/108 -----
-url: https://enatega.com/how-to-setup-web-dashboard-locally/ | title: How to setup Web Dashboard - Multi-Vendor Doc - Enatega
-slug: how-to-setup-web-dashboard-locally | chars: 485
-
----
-
-## Previous
-
-### How to Setup Backend API
-
-## Next
-
-### How to Setup Admin Dashboard
-
----
-
-# Resources
-
-## Blog
-
-## Documentation
-
-## Features
-
-## Compare
-
-- Blink
-- Deonde
-- GloriaFood
-- Ordering.Co
-- Shipday
-- SpotNeats
-- Yelo
-- Zeew
-
----
-
-# Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999
-
------ chunk 76/108 -----
+----- chunk 65/94 -----
 url: https://enatega.com/introduction/ | title: Multi Vendor App Intro | Enatega
 slug: introduction | chars: 3446
 
@@ -5534,7 +3660,7 @@ To enhance the developer experience, the code is organized, and unnecessary scre
 - Bootstrap
 - Firebase (for web push notifications)
 
------ chunk 77/108 -----
+----- chunk 66/94 -----
 url: https://enatega.com/introduction/ | title: Multi Vendor App Intro | Enatega
 slug: introduction | chars: 1028
 
@@ -5605,7 +3731,7 @@ United States
 Email: sales@enatega.com  
 Phone: +1 (307) 776-8999
 
------ chunk 78/108 -----
+----- chunk 67/94 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Online Laundry On-Demand Services Solution | Enatega
 slug: laundry-on-demand-services-solution | chars: 3477
 
@@ -5696,7 +3822,7 @@ The Premium Plan features a rich delivery suite ideal for growing businesses, in
 ### Enterprise Plan
 The Enterprise Plan is a custom solution tailored for enterprises needing advanced features and deployment support, including:
 
------ chunk 79/108 -----
+----- chunk 68/94 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Online Laundry On-Demand Services Solution | Enatega
 slug: laundry-on-demand-services-solution | chars: 1371
 
@@ -5744,24 +3870,9 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 80/108 -----
+----- chunk 69/94 -----
 url: https://enatega.com/license/ | title: Multi Vendor App License | Enatega
-slug: license | chars: 1682
-
-# Table of Contents
-- Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
+slug: license | chars: 888
 
 # License
 The license you buy determines how you can use an item. You are given a non-exclusive and non-transferable permission to use the item in your personal or professional projects when you have a license to do so. 
@@ -5771,40 +3882,7 @@ There are no limitations on the number of iOS apps or Android apps you can insta
 
 If the item contains licensed components, you may not extract those components and use them separately; you may only use those components as part of the item. The rules of the GNU General Public License (GPL), to the extent it applies, shall govern your use of the item if it was made using components covered by the GNU General Public License (GPL).
 
-# Patch Notes
-
-# Installation
-## Prerequisites
-## How to Setup Locally
-## How to Setup/Deploy for Production
-
-# Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server
-
-# Getting In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 81/108 -----
+----- chunk 70/94 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: On-Demand White Label Liquor Delivery Solution | Enatega
 slug: liquor-delivery-solution | chars: 3559
 
@@ -5905,7 +3983,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 82/108 -----
+----- chunk 71/94 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: On-Demand White Label Liquor Delivery Solution | Enatega
 slug: liquor-delivery-solution | chars: 1132
 
@@ -5949,7 +4027,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 83/108 -----
+----- chunk 72/94 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Feature-Rich On-Demand Medicine Delivery Solution | Enatega
 slug: medicine-delivery-solution | chars: 3420
 
@@ -6041,7 +4119,7 @@ The Premium Plan includes:
 ### Enterprise Plan
 The Enterprise Plan is a custom solution tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 84/108 -----
+----- chunk 73/94 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Feature-Rich On-Demand Medicine Delivery Solution | Enatega
 slug: medicine-delivery-solution | chars: 1369
 
@@ -6089,7 +4167,7 @@ United States
 
 ©2024 Enatega. All rights reserved.
 
------ chunk 85/108 -----
+----- chunk 74/94 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Launch Your Feature-Rich Milk Delivery App with Enatega
 slug: milk-delivery-solution | chars: 3529
 
@@ -6193,7 +4271,7 @@ United States
 **Email:** sales@enatega.com  
 **Phone:** +1 (307) 776-8999
 
------ chunk 86/108 -----
+----- chunk 75/94 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Launch Your Feature-Rich Milk Delivery App with Enatega
 slug: milk-delivery-solution | chars: 758
 
@@ -6225,7 +4303,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 87/108 -----
+----- chunk 76/94 -----
 url: https://enatega.com/multi-vendor-features/ | title: Enatega Features for Food Delivery Solution | Enatega
 slug: multi-vendor-features | chars: 1630
 
@@ -6289,57 +4367,9 @@ Phone: +1 (307) 776-8999
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 88/108 -----
+----- chunk 77/94 -----
 url: https://enatega.com/overview-of-the-api/ | title: Overview of the API - Multi-Vendor Doc - Enatega
-slug: overview-of-the-api | chars: 2813
-
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-
-## High Level Architecture
-
-## Overview of the API
-
-### FAQs
-
-### License
-
-### Patch Notes
-
-### Installation
-
-#### Prerequisites
-
-#### How to Setup Locally
-
-#### How to Setup/Deploy for Production
-
-### Configuration
-
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server Configurations
-
----
+slug: overview-of-the-api | chars: 1620
 
 # Getting Started Overview of the API
 
@@ -6359,101 +4389,9 @@ Dockerization is the process of packaging and deploying software applications wi
 
 Enatega uses MongoDB to manage its database instead of SQL for database management. You can view MongoDB’s documentation by clicking here.
 
----
-
-# Previous
-
-## High-Level Architecture
-
-# Next
-
-## Frequently Asked Questions
-
----
-
-# Resources
-
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 89/108 -----
+----- chunk 78/94 -----
 url: https://enatega.com/patch-notes/ | title: Multi Vendor App Patch Notes | Enatega
-slug: patch-notes | chars: 2070
-
-# Enatega Documentation
-
-## Navigation
-- Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-## Getting Started
-### Introduction
-### High Level Architecture
-### Overview of the API
-### FAQs
-### License
-### Patch Notes
-### Installation
-- Prerequisites
-- How to Setup Locally
-- How to Setup/Deploy for Production
-### Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server
+slug: patch-notes | chars: 3548
 
 ## Patch Notes
 
@@ -6469,10 +4407,6 @@ slug: patch-notes | chars: 2070
 - **Schedule Review Order Notification**: Never miss a beat with our new review order notification scheduler, ensuring you’re always informed and up-to-date.
 - **ID in Order Delivery Address Fixed**: Rest easy knowing your order is going to the right place with our fixed ID in the order delivery address.
 - **Stripe Integration Fixed**: Enjoy smooth and secure transactions with our fixed Stripe integration, providing a hassle-free payment experience.
-
------ chunk 90/108 -----
-url: https://enatega.com/patch-notes/ | title: Multi Vendor App Patch Notes | Enatega
-slug: patch-notes | chars: 2572
 
 #### New Frontend Features
 - **Different Shop Types**: Discover a variety of shop types including Restaurants and Groceries, offering you more choices to suit your preferences.
@@ -6503,67 +4437,10 @@ slug: patch-notes | chars: 2572
 - Added favourites.
 - Added global notification.
 
-## Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
-## Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
-## Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
-## Legal
-- Privacy Policy
-- Terms & Conditions  
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 91/108 -----
+----- chunk 79/94 -----
 url: https://enatega.com/prerequisites/ | title: Multi Vendor App Server Configurations | Enatega
-slug: prerequisites | chars: 1304
+slug: prerequisites | chars: 545
 
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-## Introduction
-## High Level Architecture
-## Overview of the API
-## FAQs
-## License
-## Patch Notes
-
----
-
-# Installation
 ## Prerequisites
 ### What Prerequisite Knowledge Do You Need To Run This App?
 - Node
@@ -6595,54 +4472,7 @@ slug: prerequisites | chars: 1304
 ## Social Login
 ## Configuring Database Server
 
----
-
-# Server Configurations
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
----
-
-# Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 92/108 -----
+----- chunk 80/94 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3338
 
@@ -6682,7 +4512,7 @@ Snap Delivered is a food delivery platform powered by Enatega, similar to other 
 - This flat rate allowed new business owners to use the service to automate deliveries
 - Helped level the playing field for restaurants of all sizes
 
------ chunk 93/108 -----
+----- chunk 81/94 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3205
 
@@ -6728,7 +4558,7 @@ Borku has a desire to celebrate the diversity of African cuisine through a speci
 
 Easy Eats successfully launched a brand new startup with investors using Enatega's platform.
 
------ chunk 94/108 -----
+----- chunk 82/94 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3539
 
@@ -6767,7 +4597,7 @@ Thanks to Enatega, Vinifynd was able to deploy its own customized and branded ap
 
 StylizeNow is an on-demand styling service platform powered by Enatega that provides professional hair styling services at the customer's doorstep.
 
------ chunk 95/108 -----
+----- chunk 83/94 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 2040
 
@@ -6787,7 +4617,7 @@ Enatega, a versatile white-label delivery solution, emerged as the key player in
 **Results:**
 StylizeNOW has successfully addressed the pain points of traditional salons by providing customers with a hassle-free experience. The company has been able to differentiate itself from traditional salons by providing professional hair styling services at the customer's doorstep. By harnessing Enatega's capabilities, StylizeNOW successfully eliminated the necessity for customers to visit a physical salon.
 
------ chunk 96/108 -----
+----- chunk 84/94 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Customizable Roadside Assistance Services Solution | Enatega
 slug: roadside-assistance-services-solution | chars: 3621
 
@@ -6887,7 +4717,7 @@ The Enterprise Plan is a custom option tailored for businesses needing advanced 
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 97/108 -----
+----- chunk 85/94 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Customizable Roadside Assistance Services Solution | Enatega
 slug: roadside-assistance-services-solution | chars: 750
 
@@ -6920,182 +4750,7 @@ United States
 
 ©2024 Enatega. All rights reserved.
 
------ chunk 98/108 -----
-url: https://enatega.com/sentry-introduction/ | title: Multi Vendor App Sentry Introduction | Enatega
-slug: sentry-introduction | chars: 1268
-
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
----
-
-# Getting Started
-
-## Introduction
-- High Level Architecture
-- Overview of the API
-- FAQs
-- License
-- Patch Notes
-
-## Installation
-- Prerequisites
-- How to Setup Locally
-- How to Setup/Deploy for Production
-
-## Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-
-## Sentry Dashboard
-- Sentry Introduction
-- Sentry Error Reporting
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server Configurations
-
----
-
-# Sentry Introduction
-## Getting Started With Sentry
-- Getting Started with Sentry | Sentry Introduction
-- Previous: Twilio Setup
-- Next: Sentry Error Reporting
-
----
-
-# Resources
-- Blog
-- Documentation
-- Features
-- Compare
-
----
-
-# Case Studies
-- Blink
-- Deonde
-- GloriaFood Ordering.Co
-- Shipday
-- SpotNeats
-- Yelo
-- Zeew
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
----
-
-# Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
----
-
-# Privacy Policy
-# Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 99/108 -----
-url: https://enatega.com/server-configurations/ | title: Multi Vendor App Server Configurations | Enatega
-slug: server-configurations | chars: 1265
-
-# Case Studies
-- Use Cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-## Getting Started
-- Introduction
-- High Level Architecture
-- Overview of the API
-- FAQs
-- License
-- Patch Notes
-
-## Installation
-- Prerequisites
-- How to Setup Locally
-- How to Setup/Deploy for Production
-
-## Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database
-
-## Server Configurations
-- Configuration
-- Server Configurations
-- Deploying API to Digital Ocean Server
-- Video Walk-Through
-- Enatega Multivendor | Configuring NodeJS Application on Digital Ocean Server
-- Previous Configuring Database
-
-## Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
-
-## Case Studies
-- Yalla Delivery
-- Stylizenow
-- Easy Eats
-- Vinifynd
-- Snap Delivered
-- Borku Delivery
-
-## Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
-
-## Privacy Policy
-## Terms & Conditions
-
-©2024 Enatega · All rights reserved.  
-Powered by:
-
------ chunk 100/108 -----
+----- chunk 86/94 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 3582
 
@@ -7135,7 +4790,7 @@ Recognizing the importance of technology in the industry, Snap Delivered continu
 ### Initiated Referral Programs
 While maintaining an affordable flat rate, Snap Delivered introduced referral programs allowing anyone to increase their income. The various options provided to individuals as well as businesses meant that anyone involved with Snap Delivered could earn money via recruitment, word-of-mouth advertisement, or referrals.
 
------ chunk 101/108 -----
+----- chunk 87/94 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 2232
 
@@ -7175,7 +4830,7 @@ Schedule a meeting and get started today.
 - Snap Delivered
 - Borku Delivery
 
------ chunk 102/108 -----
+----- chunk 88/94 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 3603
 
@@ -7229,7 +4884,7 @@ To learn more or to get a quote, please schedule a meeting.
 - Features
 - Compare
 
------ chunk 103/108 -----
+----- chunk 89/94 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 759
 
@@ -7258,7 +4913,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 104/108 -----
+----- chunk 90/94 -----
 url: https://enatega.com/tech_stack/ | title: Enatega — Tech Stack
 slug: tech_stack | chars: 2770
 
@@ -7294,7 +4949,7 @@ Enatega's technology stack enables the delivery of complete food delivery soluti
 
 The architecture maintains the scalability necessary to support multiple restaurants and thousands of concurrent users across various geographic locations. This makes it an ideal white-label solution for entrepreneurs and established businesses looking to launch their own branded food delivery platforms without incurring the substantial development costs typically associated with building such complex systems from scratch.
 
------ chunk 105/108 -----
+----- chunk 91/94 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 3576
 
@@ -7336,7 +4991,7 @@ Schedule a meeting and get a quote to learn more about Vinifynd's offerings.
 - Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
 - Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery
 
------ chunk 106/108 -----
+----- chunk 92/94 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 542
 
@@ -7363,7 +5018,7 @@ Terms & Conditions
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 107/108 -----
+----- chunk 93/94 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 3333
 
@@ -7426,7 +5081,7 @@ With a laser-focused agile approach, Yalla’s MVP was launched within just a fe
 - Growing engagement with daily order volume increasing steadily.
 - Positive reviews citing UI simplicity and multi-functionality.
 
------ chunk 108/108 -----
+----- chunk 94/94 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 1960
 

@@ -20,6 +20,8 @@ Your task is to restructure the following text into clean headings and paragraph
 ⚠️ Rules:
 - Do NOT add any new information, numbers, or claims.
 - If text is already structured, keep it as it is.
+- Dont add meaningless headings like "Case Studies", "Use Cases", "Documentation", "Blog", "Features", "Pricing", "Get A Quote".
+- Text should be meaningful so relevant chunks can be made.
 - Do NOT hallucinate or invent content.
 - Only rewrite what is present.
 - Organize into logical sections with headings and paragraphs.

@@ -62,12 +62,7 @@ URLS = [
     "https://enatega.com/multi-vendor-doc/how-to-deploy-web-dashboard/",
     "https://enatega.com/multi-vendor-doc/how-to-deploy-mobile-applications/",
     "https://enatega.com/multi-vendor-doc/configuration-google-maps-api-keys/",
-    "https://enatega.com/multi-vendor-doc/sentry-introduction/",
-    "https://enatega.com/multi-vendor-doc/configuring-cloudinary/",
     "https://enatega.com/multi-vendor-doc/amplitude-introduction/",
-    "https://enatega.com/multi-vendor-doc/configuration-social-login/",
-    "https://enatega.com/multi-vendor-doc/configuring-database/",
-    "https://enatega.com/multi-vendor-doc/server-configurations/",
 ]
 
 RAW = pathlib.Path("data/raw"); RAW.mkdir(parents=True, exist_ok=True)

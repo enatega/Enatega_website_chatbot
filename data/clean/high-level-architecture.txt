@@ -1,41 +1,5 @@
 # Enatega Platform Documentation
 
-## Case Studies
-- Case studies
-- Use cases
-- Documentation
-- Blog
-- Features
-- Pricing
-- Get A Quote
-
-## Getting Started
-
-### Introduction
-- High-Level Architecture
-- Overview of the API
-- FAQs
-- License
-- Patch Notes
-
-### Installation
-- Prerequisites
-- How to setup locally
-- How to setup/deploy for production
-
-### Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server
-
 ## High-Level Architecture
 
 ### How Everything Comes Together
