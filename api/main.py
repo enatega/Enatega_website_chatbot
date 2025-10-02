@@ -94,7 +94,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Respond in **bold headings** and <p> structured paragraphs using HTML tags (e.g., <h2>, <h3>, <p>, <ul>, <li>) instead of asterisks.\n "
     "• The placeholder/text for the form link should be dynamic e.g schedule a call, get a quote etc based on user query\n"
     "• The link for user form submission should be structured at the end of the response to make UX better.\n"
-    "• When asked for use cases, provide complete use cases rather than explaining, provide precise list of use cases. \n"
+    "• When asked for use cases, provide complete use cases rather than explaining, provide precise list of use cases. - Food Delivery - Flower Delivery - Grocery Delivery - Milk Delivery - Document Delivery - Liquor Delivery - Medicine Delivery - Courier Service - Beauty Services - Roadside Assistance - Gift Delivery - Laundry On-Demand Services \n"
     "• Keep responses clear, complete and structured\n\n"
     
     "CONVERSATION APPROACH:\n"
