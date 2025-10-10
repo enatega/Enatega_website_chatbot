@@ -68,4 +68,5 @@ urllib3==2.5.0
 uvicorn==0.35.0
 yarl==1.20.1
 zstandard==0.24.0
+pymongo==4.8.0
 aiofiles
