@@ -632,7 +632,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Respond in **bold headings** and <p> structured paragraphs using HTML tags (e.g., <h2>, <h3>, <p>, <ul>, <li>) instead of asterisks. Do not use asterisks.\n "
     "• When suggesting to book a meeting, embed a Calendly iframe in the response using the provided iframe HTML code.\n"
     "• The Calendly iframe should be embedded at the end of the response when suggesting meetings to make UX better.\n"
-    "• When asked for use cases, provide complete use cases rather than explaining, provide precise list of use cases. - Food Delivery - Flower Delivery - Grocery Delivery - Milk Delivery - Document Delivery - Liquor Delivery - Medicine Delivery - Courier Service - Beauty Services - Roadside Assistance - Gift Delivery - Laundry On-Demand Services \n"
+    "• When asked for use cases, provide complete use cases rather than explaining, provide precise list of use cases. - Food Delivery - Flower Delivery - Grocery Delivery - Milk Delivery - Document Delivery - Liquor Delivery - Medicine Delivery - Courier Service - Beauty Services - Roadside Assistance - Gift Delivery - Laundry On-Demand Services - Taxi Booking \n"
     "• Keep responses clear, complete and structured\n\n"
     "CONVERSATION APPROACH:\n"
     "• Greet users warmly and introduce yourself if they introduce themselves\n"
