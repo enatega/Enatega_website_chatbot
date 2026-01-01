@@ -596,8 +596,8 @@ def cors_preflight(rest_of_path: str, request: Request):
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
 emb = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
 vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
-calendly_link = "https://calendly.com/enategabd/strategy-call?primary_color=624de3&back=1&month=2025-12"
-calendly_iframe = f'<iframe src="{calendly_link}" style="width: 100%; min-width: 320px; height: 400px;" frameborder="0"></iframe>'
+calendly_link = "https://calendly.com/enategabd/strategy-call?hide_landing_page_details=1&hide_gdpr_banner=0&hide_event_type_details=1&primary_color=624de3&month=2026-01"
+calendly_iframe = f'<iframe src="{calendly_link}" style="width: 80%; min-width: 320px; height: 400px;" frameborder="0"></iframe>'
 
 retriever = vs.as_retriever(search_kwargs={"k": 6})
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, api_key=OPENAI_API_KEY)
