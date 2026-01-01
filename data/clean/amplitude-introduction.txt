@@ -1,11 +1,100 @@
-# Amplitude Introduction
-## Amplitude Integration
-## Firebase Setup
-## Push Notification Keys
-## Social Login
-## Configuring Database Server Configurations
+# Getting Started
 
----
+## Introduction
+Amplitude is a very effective tool for observing the results of your data analytics. With this in mind, we have tightly incorporated Amplitude into our solution so you don’t have to start from scratch.
+
+## High Level Architecture
+- Overview of the API
+- FAQs
+- License
+- Patch Notes
+
+## Installation
+### Prerequisites
+- How to setup locally
+- How to setup/deploy for production
+
+## Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+
+## Amplitude Integration
+### Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server Configurations
 
 # Amplitude Product Demo
-Amplitude is a very effective tool for observing the results of your data analytics. With this in mind, we have tightly incorporated Amplitude into our solution so you don’t have to start from scratch.
+
+## Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+# Resources
+- Blog
+- Documentation
+- Features
+
+# Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato
+
+# Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+# Legal
+- Privacy Policy
+- Terms & Conditions
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN Talk to Enatega AI

@@ -1,14 +1,105 @@
+# Getting Started
 
+## Introduction
+High Level Architecture  
+Overview of the API  
 
-## Frequently Asked Questions
+## FAQs
+- Can you explain the tech stack in more detail, including the front end and back end technologies used, as well as any libraries or packages?
+- How can we add other payment methods?
+- Can this project be used for other similar solutions?
+- Does it support language localization?
+- How is the order tracked?
+- Can you provide more details about the modules included in the solution, such as the web admin dashboard, super admin, and vendor portal?
+- How customizable are these modules?
+- Is everything up to date?
+- Do we need to update anything soon?
+- Is there additional documentation that is not available online?
 
-- Can You Explain The Tech Stack In More Detail, Including The Front End And Back End Technologies Used, As Well As Any Libraries Or Packages?
-- How Can We Add Other Payment Methods?
-- Can This Project Be Used For Other Similar Solutions?
-- Does It Support Language Localization?
-- How Is The Order Tracked?
-- Can You Provide More Details About The Modules Included In The Solution, Such As The Web Admin Dashboard, Super Admin, And Vendor Portal?
-- How Customizable Are These Modules?
-- Is Everything Up To Date?
-- Do We Need To Update Anything Soon?
-- Is There Additional Documentation That Is Not Available Online?
+## License
+Patch Notes  
+
+## Installation
+- Prerequisites
+- How to setup locally
+- How to setup/deploy for production  
+
+## Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server Configurations  
+
+# Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew  
+
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery  
+
+# Resources
+- Blog
+- Documentation
+- Features  
+
+# Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato  
+
+# Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution  
+
+# Privacy Policy
+# Terms & Conditions  
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN Talk to Enatega AI

@@ -18,15 +18,6 @@ Enatega Multivendor offers a comprehensive solution for food delivery, catering 
 - **Multi-Platform Authentication**  
   Simplifying the onboarding process, the multi-platform authentication feature allows customers to use their existing Google, Apple, or Facebook credentials, eliminating the need for separate account creation.
 
-## Additional Resources
-- **Case Studies**
-- **Use Cases**
-- **Documentation**
-- **Blog**
-- **Features**
-- **Pricing**
-- **Get A Quote**
-
 ## Comparison with Other Services
 - Blink
 - Deonde

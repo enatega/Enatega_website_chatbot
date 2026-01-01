@@ -1,43 +1,145 @@
-## How To Setup Restaurant App
-1. Clone or download source code from GitHub.
-   - To download the Multivendor Restaurant App, click here on Download Enatega Multivendor.
-   ⚠ Note: Ensure you have Node.js installed on your computer to launch the module.
-   
-2. After installing Node.js:
-   - Open the Enatega MultiVendor code in a code editor.
-   - To run the enatega-multivendor-restaurant, open it in the integrated terminal by:
-     - Right-clicking on the enatega-multivendor-restaurant folder and selecting “Open in Integrated Terminal” 
-     - Or by using the following command in the terminal: 
-       ```
-       cd <Project directory>
-       ```
-       For example: 
-       ```
-       cd enatega-multivendor-restaurant
-       ```
+# Getting Started
 
-3. To test the Restaurant App (if you don’t have your own server URL) and check the look and feel, no changes are needed.
+## Introduction
 
-4. To run the Restaurant App against your own server URL:
-   - Go to the environment.js file.
-   - Replace the following in environment.js: 
-     - `GRAPHQL_URL`
-     - `WS_GRAPHQL_URL`
+### High Level Architecture
+Overview of the API
 
-5. After completing all the configurations, it’s time to run the Restaurant App. 
-   - To run the Enatega Restaurant App, open the terminal and run the following commands:
-     ```
-     npm install (or yarn install)
-     npm start
-     ```
+### FAQs
+License  
+Patch Notes
 
-6. When you run the commands, you have two options to run your app:
-   - Development build
-   - Using Expo Go
+## Installation
 
-### To run the app using Expo Go:
-- If you are in development build, press S to switch to Expo Go from the development build. You can either:
-  - Use the Expo Go app to scan the QR code to run the app.
-  - Use an iOS or Android simulator to run the app.
+### Prerequisites
+How to setup locally
 
----
+#### NodeJS Setup
+#### Git and GitHub Setup
+#### Setup Backend API
+#### Web Dashboard Setup
+#### Admin Dashboard Setup
+#### Customer App Setup
+#### Rider App Setup
+#### Restaurant App Setup
+
+## How to Setup/Deploy for Production
+
+### Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server Configurations
+
+## Installation
+
+### How To Setup Restaurant App
+1. Clone or download source code from GitHub.  
+   To download the Multivendor Restaurant App, click here on Download Enatega Multivendor.  
+   **Note:** Ensure you have Node.js installed on your computer to launch the module.
+
+2. After installing Node.js:  
+   Open the Enatega MultiVendor code in a code editor.  
+   To run the enatega-multivendor-restaurant, open it in the integrated terminal by:  
+   - Right-clicking on the enatega-multivendor-restaurant folder and selecting “Open in Integrated Terminal”  
+   - Or by using the following command in the terminal:  
+     `cd <Project directory>`  
+     For example: `cd enatega-multivendor-restaurant`
+
+3. To test the Restaurant App (if you don’t have your own server URL) and check the look and feel, no changes are needed.  
+   To run the Restaurant App against your own server URL:  
+   Go to the environment.js file and replace the following in environment.js:  
+   - GRAPHQL_URL  
+   - WS_GRAPHQL_URL
+
+4. After completing all the configurations, it’s time to run the Restaurant App.  
+   To run the Enatega Restaurant App, open the terminal and run the following commands:  
+   - `npm install` (or `yarn install`)  
+   - `npm start`
+
+When you run the commands, you have two options to run your app:  
+- Development build  
+- Using Expo Go  
+
+To run the app using Expo Go:  
+If you are in development build, press S to switch to Expo Go from the development build. You can either:  
+- Use the Expo Go app to scan the QR code to run the app.  
+- Use an iOS or Android simulator to run the app.
+
+## Contact Information
+Get In Touch  
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999
+
+## Comparison
+Compare:  
+- Blink  
+- Deonde  
+- GloriaFood  
+- Ordering.Co  
+- Shipday  
+- SpotNeats  
+- Yelo  
+- Zeew  
+
+## Case Studies
+- Yalla Delivery  
+- Stylizenow  
+- Easy Eats  
+- Vinifynd  
+- Snap Delivered  
+- Borku Delivery  
+
+## Resources
+- Blog  
+- Documentation  
+- Features  
+
+### Clones
+- Blinkit  
+- Deliveroo  
+- Delivery Hero  
+- Dunzo  
+- Foodpanda  
+- Glovo  
+- Grubhub  
+- Justeat  
+- Postmates  
+- Rappi  
+- Swiggy  
+- Talabat  
+- Ubereats  
+- Zepto  
+- Zomato  
+
+### Use Cases
+- Gift Delivery Solution  
+- Milk Delivery Solution  
+- Grocery Delivery Solution  
+- Liquor Delivery Solution  
+- Flower Delivery Solution  
+- Medicine Delivery Solution  
+- Food and Beverage Solution  
+- Courier Delivery Solution  
+- Beauty Services Scheduling Solution  
+- Laundry-On-Demand Services Solution  
+- Roadside Assistance Services Solution  
+- Document Delivery Solution  
+
+## Legal
+Privacy Policy  
+Terms & Conditions  
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN  
+Talk to Enatega AI

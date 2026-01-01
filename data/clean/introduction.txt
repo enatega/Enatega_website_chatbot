@@ -1,125 +1,112 @@
-# Enatega Multivendor Overview
+# Getting Started
 
 ## Introduction
-Enatega Multivendor is a comprehensive food delivery solution designed for iOS, Android, and the Web. It offers a well-designed mobile and dashboard application, enabling quick integration and white labeling for any meal delivery service.
+Enatega Multivendor is a full-featured multivendor food delivery solution for iOS, Android, and the Web. We have ensured that you receive a good mobile and dashboard application design as well as a complete solution that will allow you to quickly integrate and white label into any meal delivery service.
 
-## Getting Started
-### Enatega Multivendor Delivery Tutorial
-- **End-to-End Setup**: A detailed video on the admin section of Enatega showcases all functionalities available in the solution.
-- **Customer App Guide**: A video guide is available to understand the features accessible to customers.
+## Enatega Multivendor Delivery Tutorial
+Below is a detailed video on the admin section of Enatega, showcasing all functionalities available as a solution. To understand what functionalities your customers can enjoy, you can check out our detailed video guide on the Customer App.
 
-### Technical Overview
-- **Mobile Application**: Built using React Native and Expo.
-- **Dashboard Panel**: Developed with React.
-- **API Development**: Utilizes Node with MongoDB, GraphQL for web and mobile, and Apollo Client for endpoint querying and state management.
+## Technology Overview
+The mobile end of this application is built utilizing React Native and Expo. React has been used for the dashboard panel and customer web app. GraphQL is utilized by both web and mobile, with the Apollo Client used for endpoint querying and state management. Node with MongoDB is used to create the API. 
 
-## Enatega's Features
-### Customer Mobile/Web Application
-- Email and phone number verification.
-- Authentication via Google, Apple, and Facebook.
-- Restaurant display based on location with detailed information (reviews, ratings, hours, menu, etc.).
-- Address addition using Maps integration and Google Places suggestions.
-- Analytics and error reporting with Amplitude and Sentry.
-- Push notifications for account creation and order status updates.
-- Real-time tracking of riders and chat options.
-- Multi-language support and theme customization.
-- Rating and review features for orders.
-- Payment integration with PayPal and Stripe.
-- Previous order history and favorite restaurant options.
-- Variations of food items and notes for restaurants.
-- Pick-up and delivery options with timing flexibility.
-- Vouchers and tipping options.
-- Restaurant and item search functionality.
+### Key Features
+The application includes all the features necessary for any restaurant or food delivery application. Some of the features are:
 
-### Restaurant Application
-- Ringer and push notifications for new orders.
-- Time limits for order acceptance and meal preparation.
-- Invoice printing option.
-- History of delivered orders.
-- Online/offline status management.
-- Order details with customer information.
+#### Customer Mobile/Web Application
+- Verification of email and phone numbers
+- Authentication using Google, Apple, and Facebook
+- Restaurants displayed on the map and home screen based on location
+- Information about restaurants, including reviews, ratings, hours of operation, delivery schedules, menu items, and establishment location
+- Address addition using Maps integration and Google Places suggestions
+- Analytics and reporting on errors with Amplitude and Sentry
+- Push notifications and emails for account creation and order status updates, including global push notifications
+- Real-time tracking of riders and chat options with riders
+- Multi-language and theme support
+- Rating and review features for orders
+- Payment integration for both PayPal and Stripe
+- Previous order history and favorite restaurant options
+- Variations of food items and notes to restaurants
+- Pick-up and delivery options with different timings
+- Vouchers and tipping options
+- Search functionality for restaurants and their items
 
-### Rider Application
-- Real-time order status updates.
-- Push notifications and ringer for new orders.
-- Map integration for delivery and restaurant addresses.
-- Time limits for order acceptance and meal preparation.
-- Display of distance and anticipated travel time.
-- Real-time chat with customers.
-- Order history tracking.
-- Online delivery fees management and wallet history.
-- Online/offline status management.
+#### Restaurant Application
+- Ringer and push notification alerts for new incoming orders
+- Time limiter for order acceptance and meal preparation settings
+- Print invoice option for restaurants
+- Delivered orders history
+- Online/offline status management
 
-### Admin Dashboard
-- Role-based administration access.
-- Management of restaurants and vendors.
-- Zone definition for riders.
-- Management of withdrawal requests and commission rates.
-- Application configuration and global order status management.
-- Restaurant order statistics and Stripe account management.
-- Menu management with discount options.
-- User, ratings, coupon, and tipping management.
+#### Rider Application
+- Real-time order status change updates
+- Push notification and ringer feature for new orders
+- Map feature showing delivery and restaurant addresses with Google Maps integration
+- Time limiter for order acceptance and updated meal preparation time
+- Display of distance and anticipated travel time
+- Real-time chat with customers, including push notifications for chats
+- Order history and new orders
+- Online delivery fees management and wallet history
+- Online/offline status management for riders
 
-## Development Experience
-To enhance the developer experience, the code is organized, and unnecessary screens have been removed. The following tools are integrated:
-- **ESLint**: For JavaScript linting.
-- **Prettier**: For code formatting.
-- **Jest**: For unit testing.
-- **Husky**: To prevent bad commits.
+#### Admin Dashboard
+- Role-based administration, granting the administrator access to all features while vendors manage their own establishments
+- Management of restaurants, vendors, and restaurant sections
+- Defining zones for riders and assigning them
+- Managing withdrawal requests from riders and commission rates
+- Configuration of application and global order status management
+- Restaurant order statistics and management of Stripe accounts for commission
+- Menu management with discount features
+- User, ratings, coupon, and tipping option management
+
+## Functionalities for Better Development Experience
+To enhance the development experience, the code is neatly organized, and unnecessary screens have been removed. The following functionalities are included:
+- ESLint for JavaScript linting
+- Prettier for code formatting
+- Jest for unit testing
+- Husky to prevent bad commits
+
+## What Will You Have in the Enatega Full App?
+- Enatega Multivendor Mobile App (iOS and Android)
+- Enatega Multivendor Rider App (iOS and Android)
+- Enatega Multivendor Restaurant App (iOS and Android)
+- Enatega Multivendor Web App
+- Admin Web Dashboard
+- Application Program Interface (API) server
+- Analytics Dashboard with Expo
+- Error reporting with Sentry
 
 ## Enatega Technology Stack
-### Application Program Interface (API) Server
-- NodeJS
-- MongoDB
-- ExpressJS
-- Stripe
-- PayPal
-- Nodemailer
-- Firebase (for web push notifications)
-- Express
-- GraphQL
-- Mongoose (for MongoDB)
+- **Application Program Interface (API) Server**: NodeJS, MongoDB, ExpressJS, Stripe, PayPal, Nodemailer, Firebase (for web push notifications), Express, GraphQL, Mongoose (for MongoDB)
+- **Web Dashboard**: React, GraphQL, Bootstrap, Firebase (for web push notifications)
+- **Mobile App**: React Native, Expo, GraphQL, Sentry, Amplitude
+- **Rider App**: React Native, Expo, GraphQL, Sentry
+- **Restaurant App**: React Native, Expo, GraphQL, Sentry
+- **Customer Web App**: React, Material UI, GraphQL, Amplitude, Sentry, Firebase (for web push notifications)
 
-### Web Dashboard
-- React
-- GraphQL
-- Bootstrap
-- Firebase (for web push notifications)
+## High-Level Architecture
+- Customer Mobile/Web Application
+- Restaurant Application
+- Rider Application
+- Admin Dashboard
 
-### Mobile App
-- React Native
-- Expo
-- GraphQL
-- Sentry
-- Amplitude
+## Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
 
-### Rider App
-- React Native
-- Expo
-- GraphQL
-- Sentry
+## Compare
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
 
-### Restaurant App
-- React Native
-- Expo
-- GraphQL
-- Sentry
-
-### Customer Web App
-- React
-- Material UI
-- GraphQL
-- Amplitude
-- Sentry
-- Firebase (for web push notifications)
-
-## Resources
-- **Blog**
-- **Documentation**
-- **Features**
-- **Compare**: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
-
-## Case Studies (Products of Enatega)
+## Case Studies
 - Yalla Delivery
 - Stylizenow
 - Easy Eats
@@ -127,9 +114,27 @@ To enhance the developer experience, the code is organized, and unnecessary scre
 - Snap Delivered
 - Borku Delivery
 
-## Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-Email: sales@enatega.com  
-Phone: +1 (307) 776-8999  
+## Resources
+- Blog
+- Documentation
+- Features
+- Clones of various food delivery services
+
+## Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+## Privacy Policy
+Terms & Conditions  
+©2025 Enatega · All rights reserved.  
+Powered by: Talk to Enatega AI

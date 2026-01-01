@@ -1,173 +1,292 @@
-# Enatega Development Setup and Deployment Guide
-
-## 1. Initial Development Environment Setup
-
-### 1.1 Node.js and NVM Installation
-
-Ensure Brew is installed on Mac OS by checking the version using `Brew -V`. Use Brew to install NVM (Node Version Manager) with the command `Brew install NVM` and verify installation with `NVM -V`. Install the recommended Node.js version 18.20.4 or any version beyond 18 using `NVM install 18.20.4`.
-
-Use `NVM LS` to list all installed Node.js versions. If multiple versions exist, set the required version as default using `NVM alias default 18.20.4`. The default version will be highlighted in green in the list. Confirm Node.js is working properly by running `Node -V` and executing any simple JavaScript code snippet to verify functionality.
-
-### 1.2 Git and SSH Configuration
-
-Install Git using Brew via the command `Brew install Git` and verify the installation by checking the version with `Git -V`, which should show a version like 2.39 or higher. Generate a new SSH key by following standard git ssh configuration procedures found through a Google search.
-
-During SSH key generation, use an appropriate email address and accept the default path by pressing enter. Enter and reconfirm a passphrase that must be remembered, as it will be required for authentication during project cloning operations.
-
-Start the SSH agent and add the newly generated key to it. Change the directory to `~/.SSH` and create an empty configuration file using the `touch config` command. Open the configuration file with a text editor and paste the SSH configuration from the standard setup article, ensuring the key ID or name is correct to avoid conflicts.
-
-Copy the public key to the clipboard using the command provided in the standard git ssh configuration article. Navigate to your GitHub profile settings, select "SSH and GPG keys", and click "New SSH key". Give the key a meaningful title and select "Authentication Key" from the key type dropdown. Paste the copied public key and click "Add", then confirm by typing your GitHub account password.
-
-### 1.3 Project Cloning
-
-Clone the proprietary Enatega backend API project from GitHub using the SSH link. The cloning process may ask for the passphrase created during SSH key generation. Once cloned, open the project in VS Code using the command `code .`.
-
-## 2. Backend Setup: Backend API
-
-### 2.1 Environment Variables Configuration
-
-Create a new `.env` file in the backend project directory. Paste all required environment variables into this file, including connection string, server URL, backend URL, dashboard URL, and web URL. Ensure the Server URL uses the correct private IP address of your system for proper local network connectivity.
-
-### 2.2 MongoDB Setup and Configuration
-
-Sign in to MongoDB Atlas and create an account if you don't have one. Configure Network Access settings for your cluster. For testing purposes, allow access from any IP address using `0.0.0.0/0`, though this configuration is not recommended for production environments.
-
-Create a database user such as `enatega_test_user` and assign it a password. Assign the user an Admin role or the required role for your configuration. Use the default free cluster named Cluster 0 for your setup. Create a new database with a name like `enatega_test_user` and create a default collection named `user`.
-
-Navigate to the cluster overview and click "Connect". Select "MongoDB for VS Code" to obtain the default connection string. Copy the connection string and update the password field by removing the brackets and inserting your actual password. Update the database name in the connection string to match your created database.
-
-Paste the final valid connection string into the `CONNECTION_STRING` variable in the backend's `.env` file. Optionally, connect to the database using a GUI tool like MongoDB Compass to verify the connection works correctly.
-
-### 2.3 Firebase Service Account Setup
-
-Navigate to the Firebase console and create a new project for your application. Go to Project Settings and select Service Accounts. Choose Node.js as your environment and click "Generate new private key" to download the service account key file.
-
-Open the downloaded service account key file, which contains sensitive authentication information. Copy the entire contents of this JSON file and paste it into the `serviceAccountKey.json` file located in the Enatega API project directory. Ensure this file is never pushed to any public repository as it contains confidential credentials.
-
-### 2.4 Redis Configuration
-
-Add three environment variables to the `.env` file for Redis configuration: Host, Password, and Port. These credentials are configured in the `docker-compose.yaml` file. The container name such as `redis` is used as the host value. The default Redis port is `6379`. The password can be set to `null` if no password is configured for your Redis instance.
-
-### 2.5 Install Dependencies and Start Server
-
-Run `npm install` or `npm i` in the VS Code terminal to install all required packages for the backend. Execute the start command from package.json using `npm run start` to start the backend server. Verify that the server is running and check the accessibility of the GraphQL playground in your browser at the specified server address.
-
-## 3. Backend Deployment on Railway
-
-### 3.1 Local Docker Testing
-
-Download and install Docker Desktop for your operating system. Clean up any existing Docker images or running containers from previous tests. Use the `docker-compose.yaml` file which contains both backend and Redis configurations to deploy locally.
-
-Run the command `docker compose up` to start the Docker containers. This command pulls the Redis image and builds the backend container. Verify the deployed server is accessible by checking localhost on the specified port, typically `localhost:8001`.
-
-### 3.2 Railway Deployment Process
-
-Log into Railway.app and create a new project by importing your code from GitHub. Select "Add Variables" and use the "Raw Editor" to paste all required environment variables from your local `.env` file into Railway's configuration.
-
-Select the correct branch such as main or your designated deployment branch. Create a new domain for API access using port 8001. Set the Start Command to `npm run start` to define how the application should start on Railway.
-
-Click "Deploy" to apply all changes and begin the deployment process. After backend deployment completes, create a new service in the Railway project by clicking "Add" and selecting "Redis" to add a Redis service for notification queues.
-
-Navigate to the deployed Redis service's variables section and copy the `REDIS_HOST`, `REDIS_PASSWORD`, and `REDIS_PORT` values. Return to the backend API variables section and update the corresponding Redis environment variables with the Railway-provided credentials. Deploy the changes to ensure the backend can connect to the deployed Redis service.
-
-Once deployment is successful, copy the public URL from the Railway settings and verify that the API and GraphQL playground are running and accessible.
-
-## 4. Frontend Setup: Web Portals and Configuration
-
-### 4.1 Local Web Portal Setup
-
-Clone the frontend repository using the SSH configuration you set up earlier. The repository may be named something like "food-delivery-multivendor". Navigate to `multivendor-admin/src/configuration/constant.js` and update the `BACKEND_URL` to point to your local backend URL, ensuring the correct private IP address is used.
-
-In the admin directory, run `npm install` to install all dependencies. Start the Admin Portal using `npm run start`. Similarly, navigate to `customer-web/src/configuration/constant.js` and update the local backend URLs with the correct private IP address.
-
-In the customer web directory, run `npm install` and then `npm run start` to launch the Customer Web Portal.
-
-### 4.2 Google Maps API Configuration
-
-In the Google Cloud Console, create a new project for your application. Navigate to APIs & Services and select Library. Enable all required APIs including Geo Coding, Maps JavaScript, Places, Elevation, Static, Geolocation, Distance Matrix, and Maps SDK for Android and iOS.
-
-Obtain the API key from the Google Cloud Console. In the Admin Portal's configuration section, paste the API key into the Google API Key field.
-
-### 4.3 Gmail and Node Mailer Setup
-
-On the Google account that will be used for sending emails, enable 2-Factor Authentication in the account security settings. Navigate to Security settings and search for "App Passwords". Generate a new app password with a custom name like `enatega_test` and save both the app name and generated password.
-
-In the Admin Portal's Node Mailer configuration section, enter the email address, app name, and the generated app password for email functionality.
-
-### 4.4 Stripe Payment Gateway Integration
-
-Log into your Stripe account using a Business profile if setting up for production. Copy the Publishable Key and Secret Key from your account. Paste these keys into the Admin Portal's Stripe configuration fields.
-
-Navigate to Developers section and select Webhooks. Click "Add an endpoint" and use the URL of your Customer Web Portal. Add the required events: `account.updated` and `checkout.session.completed`. Copy the Signing Secret from the webhook details and update the `STRIPE_WEBHOOK_ENDPOINT_SECRET` environment variable in your Railway backend deployment.
-
-### 4.5 PayPal Payment Gateway Integration
-
-Log into PayPal using a Business account, which is recommended for two-way payment processes. Navigate to Apps & Credentials and create a new app. Copy the generated Client ID and Client Secret. Paste these credentials into the Admin Portal's PayPal configuration fields.
-
-### 4.6 Twilio SMS Service Setup
-
-Sign up or log in to a Twilio account. The Twilio console provides your Account SID and Auth Token. Obtain a Twilio phone number, which can be free or purchased depending on your needs.
-
-Paste the Account SID, Auth Token, and Twilio Phone Number into the Admin Portal's Twilio configuration. Update the `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_PHONE_NUMBER` environment variables in your Railway backend deployment.
-
-### 4.7 Sentry Error Tracking Configuration
-
-Log into Sentry and create three separate projects: one for Node.js/Express backend API, one for React Native for mobile applications, and one for React for web applications. Copy the DSN URL for each project.
-
-In the Admin Portal's Sentry configuration section, use the Node.js DSN for the API Sentry URL, the React DSN for the Web and Admin portals, and the React Native DSN for the Mobile apps.
-
-### 4.8 Cloudinary Media Storage Setup
-
-Log into Cloudinary and navigate to Settings, then Upload section. Edit the preset and set it to Unsigned. Note the Environment ID and Preset Name from your account settings.
-
-Construct the Cloudinary URL by replacing the placeholder in the base URL with your Environment ID. Paste the constructed URL into the Cloudinary URL field in the Admin Portal. Paste the Preset Name into the Cloudinary Key field.
-
-### 4.9 Amplitude Analytics Configuration
-
-Log into Amplitude and set up a new app. Obtain the API key for both Web and React Native applications. In the index.html file of both Admin and Customer web portals, replace any old Amplitude script with the new one provided by Amplitude.
-
-Paste the API keys into the Amplitude configuration section of the Admin Portal for both Web and Mobile apps.
-
-## 5. Frontend Deployment on Netlify
-
-### 5.1 Admin Portal Deployment
-
-Log into Netlify and select "Add new site" followed by "Import an existing project" from GitHub. Specify the Base Directory as `admin`. Set the Build Command to `npm run build`. Set the Publish Directory to the subdirectory `build` inside the admin directory. Click deploy to begin the deployment process.
-
-### 5.2 Customer Web Portal Deployment
-
-Follow the same process as the Admin Portal deployment. Specify the Base Directory as `web`. Set the Build Command to `npm run build`. Set the Publish Directory to the subdirectory `build` inside the web directory.
-
-Once deployed, verify the site displays restaurants fetched from the production database, confirming end-to-end functionality.
-
-## 6. Mobile App Setup with Expo and Google Services
-
-### 6.1 Expo Project Configuration
-
-Sign up or log in to Expo and create a new project with a name like `test_customer_app`. Update the `app.json` file in your mobile app directory with the following details from your Expo project: `owner`, `slug`, `project ID`, and bundle identifier for iOS and package name for Android such as `com.customer.app`.
-
-Update the `GRAPHQL_URL` and `WS_GRAPHQL_URL` in `environment.js` with the local private IP address for local development testing.
-
-### 6.2 Firebase Mobile Services Configuration
-
-Create a new Firebase project and do not uncheck the measurement ID switch box. Register both an iOS app and an Android app in the Firebase project, ensuring the bundle identifier and package name match exactly what you specified in `app.json`, such as `com.customer.app`.
-
-Download the `google-services.json` file from the Android app settings. This file is collective and includes details for all registered mobile clients including Customer, Restaurant, and Rider apps. Paste this file into the mobile app directory, replacing any existing file.
-
-In Firebase Cloud Messaging, generate a VAPID key pair. Paste this key into the Firebase Admin configuration section of the Admin Portal. In Firebase Project Settings under Service Accounts, generate a new private key. Paste the content of this complete JSON object into the app's Google service account file.
-
-### 6.3 Google OAuth Client IDs Creation
-
-In the Google Cloud Console, navigate to APIs & Services and Credentials. Configure the OAuth consent screen by selecting External. After a successful Expo production build, retrieve the SHA-1 and SHA-256 fingerprints from the app's credentials in Expo. The SHA-256 fingerprint is used in Firebase app configuration.
-
-Create four separate OAuth Client IDs in the Google Cloud Console. For Web Application used for both Admin and Customer Portals, enter both local origins like localhost:3000 and production Netlify URLs with their corresponding redirect URLs.
-
-For Android, match the package name from app.json and paste the SHA-1 fingerprint from Expo. For iOS, match the bundle identifier from app.json. Create an additional Web Application ID with `https://auth.expo.io` as the URL, appending your Expo owner name and app slug to the redirect URL.
-
-Paste all four generated Client IDs into the Google Credentials section of the Admin Portal.
-
-### 6.4 Mobile App Development and Building
-
-Log in via the terminal using `eas login`. Configure the build using `eas build:configure`. Build for production Android using `eas build --platform android --profile production` or for iOS simulator development using `eas build --platform ios --profile development`.
-
-Run the app locally using `npm run start`, then select A for Android or I for iOS in the Expo go prompt to open the simulator or emulator. Repeat this process for the Restaurant and Rider apps as needed.
+# 1. Initial Development Environment Setup
+
+This section covers the installation and configuration of core tools needed to run the application locally.
+
+## 1.1 Node.js and NVM Installation
+
+- **Install Brew**: Ensure Brew is installed (typically present on Mac OS) by checking the version using `Brew -V`[cite: 1].
+- **Install NVM (Node Version Manager)**: Use Brew to install NVM with the command `Brew installed NVM`[cite: 1]. Verify installation with `NVM -V`[cite: 2].
+- **Install Node.js**: Install the recommended Node.js version (anything beyond 18, here **18.20.4**) using `NVM installed 18.20.4`[cite: 2].
+- **Verify and Set Default Version**: Use `NVM LS` to list installed versions. If multiple versions exist, set the required version as default using the command `NVM Alias default 18.20.4`[cite: 3]. The default version will be highlighted in green[cite: 3, 4].
+- **Final Check**: Confirm Node.js is working with `Node -V` and by running any simple JavaScript code snippet[cite: 4].
+
+## 1.2 Git and SSH Configuration
+
+- **Install Git**: Install Git using Brew via the command `Brew install Git`[cite: 5].
+- **Verify Git**: Check the installed version using `Git -V` (e.g., version 2.39)[cite: 5].
+- **Generate SSH Key**: Follow the steps in the provided article (search "git ssh configuration" on Google) to generate a new SSH key[cite: 6].
+  - Use an appropriate email during generation[cite: 7].
+  - Use the default path by pressing enter[cite: 7].
+  - Enter and reconfirm a passphrase, which must be remembered as it is used for authentication during project cloning[cite: 7, 15].
+- **Add Key to Agent**: Start the SSH agent and add the newly generated key[cite: 8].
+- **Create Configuration File**:
+  - Change the directory to `~/.SSH`[cite: 8].
+  - Create an empty configuration file using a command (e.g., `touch config`) or a command from the article[cite: 9].
+  - Open the file (using `whim` or another editor) and paste the configuration from the article[cite: 9, 10].
+  - Ensure the key ID/name is correct to avoid conflicts[cite: 10].
+- **Copy Public Key**: Copy the public key to the clipboard using the command provided in the article[cite: 11, 12].
+- **Add Key to GitHub**:
+  - Go to your GitHub profile settings[cite: 12, 13].
+  - Select "SSH and GPG keys" and click "New SSH key"[cite: 13].
+  - Give it a meaningful title and select **"Authentication Key"** from the key type dropdown[cite: 13].
+  - Paste the copied key and click "Add"[cite: 13].
+  - Confirm by typing your GitHub account password[cite: 14].
+
+---
+
+# 2. Backend Setup: Backend API
+
+This covers cloning the backend, setting up environment variables, and configuring services.
+
+## 2.1 Cloning the Project
+
+- **Clone**: Clone the proprietary Enatega backend API project from GitHub using the **SSH** link[cite: 14, 15].
+- **Authentication**: The cloning process may ask for the passphrase created during the SSH key generation[cite: 15].
+- **Access Code**: Open the project in VS Code using `code .`[cite: 16].
+
+## 2.2 Environment Variables (`.env`)
+
+- **Create File**: Create a new `.env` file in the project directory[cite: 16].
+- **Paste Variables**: Paste the required environment variables (e.g., connection string, server URL, backend URL, dashboard URL, web URL) from the tutorial's provided content[cite: 17].
+- **Server URL**: Ensure the `Server URL` uses the correct private IP address of your system[cite: 30].
+
+## 2.3 MongoDB Setup
+
+- **Access MongoDB Atlas**: Sign in to MongoDB Atlas and create an account[cite: 18].
+- **Network Access**: Configure Network Access. For testing, it is set to allow access from any IP address (`0.0.0.0/0`), though this is not recommended for production[cite: 18, 19].
+- **Database User**: Create a database user (e.g., `enatega_test_user`) and password[cite: 20].
+- **Assign Role**: Assign the user an **Admin** role (or the required role)[cite: 21].
+- **Database and Collection**: Use the default free cluster (Cluster 0)[cite: 21, 22, 23].
+  - Create a new database (e.g., `enatega_test_user`) and a default collection (e.g., `user`)[cite: 23, 24].
+- **Connection String**:
+  - Go to the cluster overview and click "Connect"[cite: 24].
+  - Select "MongoDB for VS Code" to get the default connection string[cite: 21, 25].
+  - Copy the string and update the **password** (removing brackets) and the **database name**[cite: 25, 26].
+- **Update `.env`**: Paste the final valid connection string into the `CONNECTION_STRING` variable in the backend's `.env` file[cite: 18, 28].
+- **Local Test (Optional)**: Connect to the database using a GUI tool like MongoDB Compass[cite: 27].
+
+## 2.4 Firebase Service Account
+
+- **Create Project**: Go to the Firebase console and create a new project[cite: 28].
+- **Service Account Key**:
+  - Go to **Project Settings** > **Service Accounts**[cite: 28].
+  - Select **Node.js**[cite: 28, 29].
+  - Click **"Generate new private key"**[cite: 29].
+- **Update Code**:
+  - Open the downloaded key file (which is confidential)[cite: 29].
+  - Copy its contents and paste them into the **`serviceAccountKey.json`** file in the Enatega API project[cite: 29, 30].
+  - **Crucially**, ensure this file is *not* pushed to a public repository[cite: 30].
+
+## 2.5 Local Run and Dependencies
+
+- **Install Dependencies**: Run `npm install` (or `npm i`) in the VS Code terminal to install all packages[cite: 31].
+- **Start Server**: Run the start command (e.g., `npm Run start`) from `package.json`[cite: 31].
+- **Verification**: Check the server address and the accessibility of the GraphQL playground in a browser[cite: 31, 39, 40].
+
+## 2.6 Redis Configuration
+
+- **Add Variables**: Add three environment variables to the `.env` file for Redis credentials (Host, Password, Port) as Redis is used for notification queues[cite: 32].
+- **Credentials**: These credentials are configured in the **`docker-compose.yaml`** file[cite: 33, 34].
+  - **Host**: The container name (e.g., `redis`) is used as the host[cite: 35, 36].
+  - **Port**: The default port is `6379`[cite: 33, 35, 36].
+  - **Password**: Can be set to `null` if no password is configured[cite: 35].
+
+---
+
+# 3. Backend Deployment (Railway)
+
+The application is deployed using the Railway app.
+
+## 3.1 Docker Setup (Local Test)
+
+- **Install Docker Desktop**: Download and install Docker Desktop for your system[cite: 37].
+- **Clean Up**: Delete any existing images or running containers[cite: 38].
+- **Deploy via Docker Compose**: Use the `docker-compose.yaml` file (which contains both the backend and Redis configurations)[cite: 38, 39].
+  - Run the command `Docker composer`[cite: 39].
+  - This pulls the Redis image and builds the backend container[cite: 39].
+  - Verify the deployed server is accessible (e.g., on `localhost:8001`)[cite: 40].
+
+## 3.2 Deployment on Railway
+
+- **Connect GitHub**: Log into **Railway.app** and create a new project by importing the code from GitHub[cite: 40, 41].
+- **Environment Variables**: Select **"Add Variables"** and use the **"Raw Editor"** to paste all required environment variables from the local `.env` file[cite: 42].
+- **Settings**:
+  - Select the correct branch (e.g., main or deployment branch)[cite: 43].
+  - Create a new domain for API access, using the port **8001**[cite: 44].
+  - Set the **Start Command** (e.g., `npm Run start`)[cite: 44].
+- **Deploy**: Click "Deploy" to apply changes[cite: 46].
+- **Add Redis Service**: After backend deployment, create a new service in the project by clicking **"Add"** > **"Redis"**[cite: 47, 48].
+- **Update Backend Redis ENVs**:
+  - Go to the deployed Redis service's variables section[cite: 48].
+  - Copy the `REDIS_HOST`, `REDIS_PASSWORD`, and `REDIS_PORT`[cite: 49].
+  - Return to the backend API variables and update the corresponding Redis environment variables with the Railway-provided credentials[cite: 50, 51].
+  - Deploy the changes to ensure the backend can connect to the deployed Redis service[cite: 52].
+- **Final Verification**: Once the deployment is successful, copy the public URL from the settings and verify the API and GraphQL playground are running[cite: 53, 54].
+
+---
+
+# 4. Frontend Setup: Web Portals & Configuration
+
+This section details setting up the Admin and Customer Web Portals and configuring common third-party services via the Admin Portal.
+
+## 4.1 Web Portal Local Setup and Configuration
+
+- **Clone Frontend Repo**: Clone the frontend repository (e.g., **"food-delivery-multivendor"**) using the SSH configuration[cite: 54, 55].
+- **Admin Portal URL Update**:
+  - Navigate to the `multivendor-admin/src/configuration/constant.js` file[cite: 55].
+  - Update the `BACKEND_URL` to point to the local backend URL (ensure the correct private IP address is used)[cite: 56, 110].
+- **Admin Portal Dependencies**: In the admin directory, run `npm install`[cite: 61].
+- **Admin Portal Start**: Run the Admin Portal using its start command (e.g., `npm Run start`)[cite: 61].
+- **Customer Web Portal URL Update**:
+  - Navigate to the `customer-web/src/configuration/constant.js` file[cite: 110, 111].
+  - Update the local backend URLs, ensuring the private IP address is correct[cite: 111].
+- **Customer Web Portal Dependencies and Start**: In the customer web directory, run `npm install` and then `npm Run start`[cite: 112, 113, 114].
+
+## 4.2 Centralized Configuration via Admin Portal
+
+The Admin Portal is used to manage most service API keys in the database.
+
+### Google Maps API
+
+- **Enable APIs**: In the Google Cloud Console, create a new project[cite: 56].
+  - Go to **APIs & Services** > **Library**[cite: 57].
+  - Enable all required APIs (e.g., Geo Encoding, Maps JavaScript, Places, Elevation, Static, Geolocation, Distance Matrix, Maps SDK for Android/iOS)[cite: 57, 58, 59].
+- **Get API Key**: Obtain the API key from the console[cite: 57].
+- **Update Admin Portal**: Paste the API key into the `Google API Key` field in the Admin Portal's configuration section[cite: 62, 63].
+
+### Node Mailer (Gmail)
+
+- **Enable 2-Factor Authentication**: On the Google account used for sending emails, enable 2-Factor Authentication[cite: 64].
+- **Generate App Password**:
+  - Go to **Security** and search for **"App Passwords"**[cite: 64, 65].
+  - Generate a new app password with a custom name (e.g., `enatega_test`)[cite: 65].
+  - Save the app name and the generated password[cite: 65].
+- **Update Admin Portal**: In the Admin Portal's Node Mailer configuration section, enter the email address, app name, and generated app password[cite: 65, 66].
+
+### Stripe Payment Gateway
+
+- **API Keys**: Log in to your Stripe account (use a Business profile for production)[cite: 67, 68].
+  - Copy the **Publishable Key** and the **Secret Key**[cite: 68].
+- **Update Admin Portal**: Paste the keys into the Admin Portal's Stripe configuration fields[cite: 68].
+- **Webhooks**:
+  - Go to **Developers** > **Webhooks** and click "Add an endpoint"[cite: 69].
+  - Use the URL of the **Customer Web Portal**[cite: 69].
+  - Add the required events: `account.updated` and `checkout.session.completed`[cite: 69, 70].
+- **Webhook Secret**:
+  - Copy the **Signing Secret** from the webhook details[cite: 70].
+  - Update the `STRIPE_WEBHOOK_ENDPOINT_SECRET` environment variable in the **Railway backend deployment**[cite: 71].
+
+### PayPal Payment Gateway
+
+- **Developer Account**: Log in to PayPal (Business account recommended for a two-way payment process)[cite: 73, 74].
+- **Create App**: Go to **Apps & Credentials** and create a new app[cite: 75].
+- **API Keys**: Copy the generated **Client ID** and **Client Secret**[cite: 76].
+- **Update Admin Portal**: Paste the Client ID and Secret into the Admin Portal's PayPal configuration fields[cite: 76].
+
+### Twilio SMS
+
+- **Account Setup**: Sign up or log in to a Twilio account[cite: 77].
+- **Credentials**: The Twilio console provides the **Account SID** and **Auth Token**[cite: 78].
+  - Obtain a Twilio phone number (can be free or purchased)[cite: 79, 81].
+- **Update Admin Portal**: Paste the Account SID, Auth Token, and Twilio Phone Number into the Admin Portal's Twilio configuration[cite: 82].
+- **Update Railway ENVs**: Update the `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_PHONE_NUMBER` environment variables in the **Railway backend deployment**[cite: 83].
+
+### Sentry Error Tracking
+
+- **Create Projects**: Log in to Sentry and create three projects[cite: 85, 86]:
+  - **Node.js/Express**: For the backend API[cite: 86].
+  - **React Native**: For the mobile applications (Customer, Restaurant, Rider)[cite: 87].
+  - **React**: For the web applications (Admin and Customer Portals)[cite: 88].
+- **DSN Keys**: Copy the **DSN URL** for each project[cite: 86, 87].
+- **Update Admin Portal**: In the Sentry configuration section:
+  - Use the **Node.js** DSN for the **API Sentry URL**[cite: 89].
+  - Use the **React** DSN for the **Web/Admin** portals[cite: 89].
+  - Use the **React Native** DSN for the **Mobile** apps (App, Customer, etc.)[cite: 89].
+
+### Cloudinary Media Storage
+
+- **Account Setup**: Log in to Cloudinary[cite: 90].
+- **Upload Preset**: Go to **Settings** > **Upload** and edit the preset (set it to **Unsigned**)[cite: 91].
+- **Credentials**: Note the **Environment ID** and the **Preset Name**[cite: 92].
+- **Update Admin Portal**:
+  - The Cloudinary URL is constructed by replacing the placeholder in the base URL with the **Environment ID**[cite: 93].
+  - Paste the constructed URL into the Cloudinary URL field[cite: 93].
+  - Paste the Preset Name into the **Cloudinary Key** field[cite: 93].
+
+### Amplitude Analytics
+
+- **Account Setup**: Log in to Amplitude and set up an app[cite: 95].
+- **API Key**: Obtain the API key for both the **Web** and **React Native** applications[cite: 96].
+- **Update Web Code**: Replace any old Amplitude script with the new one in the **`index.html`** file of both the Admin and Customer web portals[cite: 97, 98].
+- **Update Admin Portal**: Paste the API keys into the Amplitude configuration section for both the Web and Mobile apps[cite: 98, 99].
+
+---
+
+# 5. Frontend Deployment (Netlify)
+
+The Admin and Customer Web Portals are deployed using Netlify.
+
+## 5.1 Admin Portal Deployment
+
+- **Import Code**: Log into Netlify, select **"Add new site"** > **"Import an existing project"** from GitHub[cite: 107].
+- **Configure Build**:
+  - Specify the **Base Directory** as **`admin`**[cite: 108].
+  - Set the **Build Command** to `npm run build`[cite: 108].
+  - Set the **Publish Directory** to the subdirectory **`build`** (inside the admin directory)[cite: 108].
+- **Deploy**: Click deploy[cite: 108].
+
+## 5.2 Customer Web Portal Deployment
+
+- **Import Code**: The process is the same as the Admin Portal[cite: 114, 115].
+- **Configure Build**:
+  - Specify the **Base Directory** as **`web`**[cite: 115].
+  - Set the **Build Command** to `npm run build`[cite: 116].
+  - Set the **Publish Directory** to the subdirectory **`build`** (inside the web directory)[cite: 116].
+- **Verification**: The deployed site will show restaurants fetched from the production database, verifying the end-to-end functionality[cite: 117].
+
+---
+
+# 6. Mobile App Setup (Expo & Google Services)
+
+This covers setting up the required services to build and authenticate the mobile apps.
+
+## 6.1 Expo Setup
+
+- **Create Account**: Sign up or log in to Expo[cite: 122].
+- **Create Project**: Create a new project (e.g., `test_customer_app`)[cite: 122, 123].
+- **Update `app.json`**: Update the following attributes in the mobile app's `app.json` file using the details from your new Expo project:
+  - `owner` [cite: 124]
+  - `slug` [cite: 124]
+  - `project ID` [cite: 124]
+  - `bundle identifier` (for iOS) and `package name` (for Android, e.g., `com.customer.app`) [cite: 124, 125]
+- **Local Backend URL**: Update the `GRAPHQL_URL` and `WS_GRAPHQL_URL` in `environment.js` with the local private IP address for local development[cite: 118, 119, 163].
+
+## 6.2 Firebase for Mobile Services
+
+- **Create Project**: Create a new Firebase project (do **not** uncheck the measurement ID switch box)[cite: 126, 106].
+- **Register Apps**: Register both an **iOS** app and an **Android** app in the Firebase project, ensuring the bundle identifier/package name matches the one in `app.json` (e.g., `com.customer.app`)[cite: 127, 128, 129].
+- **Download `google-services.json`**: Download the `google-services.json` file from the Android app's settings[cite: 130]. This file is collective and will include details for all registered mobile clients (Customer, Restaurant, Rider)[cite: 154, 155].
+- **Update App Code**: Paste the file into the mobile app's directory, replacing any existing file[cite: 130, 131].
+- **VAPID Key**: Generate a VAPID key pair in Firebase Cloud Messaging[cite: 112].
+  - Paste this key into the **`Firebase Admin`** configuration section of the **Admin Portal**[cite: 112, 113].
+- **Service Account Key**: In Firebase **Project Settings** > **Service Accounts**, generate a new private key[cite: 135]. This key is a complete JSON object used for authentication[cite: 136].
+  - Paste the content of this key into the app's Google service account file[cite: 136].
+
+## 6.3 Google OAuth Client IDs
+
+- **Consent Screen**: In the Google Cloud Console, go to **APIs & Services** > **Credentials** and configure the OAuth consent screen (select **External**)[cite: 146, 147].
+- **Get Fingerprints**: After a successful Expo production build, retrieve the **SHA-1** and **SHA-256** fingerprints from the app's credentials in Expo[cite: 144, 145].
+  - **SHA-256** is used in the Firebase app configuration[cite: 145].
+- **Create Client IDs**: Create four separate OAuth Client IDs in the Google Cloud Console:
+  - **Web Application**: Used for both Admin and Customer Portals. Enter both local (`localhost:3000`) and production (Netlify) JavaScript origins and redirect URLs[cite: 147, 148].
+  - **Android**: Match the `package name` from `app.json` and paste the **SHA-1 fingerprint** from Expo[cite: 149, 150].
+  - **iOS**: Match the `bundle identifier` from `app.json`[cite: 151].
+  - **Expo Proxy**: Create another Web Application ID with `https://auth.expo.io` as the URL, appending your Expo owner name and app slug to the redirect URL[cite: 151, 152].
+- **Update Admin Portal**: Paste all four generated Client IDs into the **Google Credentials** section of the **Admin Portal**[cite: 152, 153].
+
+## 6.4 Mobile App Development Builds
+
+- **Login to Expo**: Log in via the terminal using `EAS login`[cite: 138].
+- **Configure Build**: Use the command `EAS build:configure`[cite: 139, 157].
+- **Build**: Use `EAS build --platform Android --profile production` for a production APK, or `EAS build --platform iOS --profile development` for an iOS simulator build[cite: 139, 157].
+- **Local Run**: Run the app locally using `npm Run start`, then select **'A'** (Android) or **'I'** (iOS) in the Expo go prompt to open the simulator/emulator[cite: 160, 161]. The process is repeated for the Restaurant and Rider apps[cite: 162].

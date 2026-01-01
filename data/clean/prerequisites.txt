@@ -1,5 +1,18 @@
-## Prerequisites
-### What Prerequisite Knowledge Do You Need To Run This App?
+# Getting Started
+
+## Introduction
+
+### High Level Architecture
+Overview of the API
+
+### FAQs
+License  
+Patch Notes
+
+## Installation
+
+### Prerequisites
+What Prerequisite Knowledge Do You Need To Run This App?
 - Node
 - Express
 - React
@@ -12,19 +25,83 @@
 - Latest or Stable version of Node
 - Download Latest or Stable version of NPM
 
-## Git and GitHub Setup
+### Git and GitHub Setup
 
----
+## Configuration
 
-# Configuration
-## Google Maps API Keys
-## Nodemailer Setup
-## Configuring Payment Gateways
-## Twilio Setup
-## Sentry Dashboard
-## Configuring Cloudinary
-## Amplitude Dashboard
-## Firebase Setup
-## Push Notification Keys
-## Social Login
-## Configuring Database Server
+### Google Maps API Keys
+### Nodemailer Setup
+### Configuring Payment Gateways
+### Twilio Setup
+### Sentry Dashboard
+### Configuring Cloudinary
+### Amplitude Dashboard
+### Firebase Setup
+### Push Notification Keys
+### Social Login
+### Configuring Database Server Configurations
+
+## Resources
+
+### Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+### Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+## Contact Information
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+## Comparison
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+## Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato
+
+## Legal
+Privacy Policy  
+Terms & Conditions  
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN Talk to Enatega AI

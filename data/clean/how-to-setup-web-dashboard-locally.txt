@@ -1,15 +1,56 @@
-## How To Setup Web Dashboard
+# Getting Started
 
+## Introduction
+
+### High Level Architecture
+Overview of the API
+
+### FAQs
+License  
+Patch Notes
+
+## Installation
+
+### Prerequisites
+How to setup locally
+
+### NodeJS Setup
+### Git and GitHub Setup
+### Setup Backend API
+### Setup Web Dashboard
+### Setup Admin Dashboard
+### Setup Customer App
+### Setup Rider App
+### Setup Restaurant App
+
+## How to Setup/Deploy for Production
+
+### Configuration
+- Google Maps API Keys
+- Nodemailer Setup
+- Configuring Payment Gateways
+- Twilio Setup
+- Sentry Dashboard
+- Configuring Cloudinary
+- Amplitude Dashboard
+- Firebase Setup
+- Push Notification Keys
+- Social Login
+- Configuring Database Server Configurations
+
+## Installation
+
+### How To Setup Web Dashboard
 1. Clone or download source code from GitHub.
    - To download the Enatega Web, click here on Download Enatega Multivendor.
    - Enatega Multivendor | Web and Mobile Project Clone
 
-⚠️ Note: Ensure you have Node.js installed on your computer to launch the module.
+**Note:** Ensure you have Node.js installed on your computer to launch the module.
 
 2. After installing Node.js:
    - Open the Enatega MultiVendor code in a code editor.
    - To run the enatega-multivendor-web, open it in the integrated terminal by:
-     - Right-clicking on the enatega-multivendor-web folder and selecting “Open in Integrated Terminal”
+     - Right-clicking on the enatega-multivendor-web folder and selecting “Open in Integrated Terminal” 
      - Or by using the following command in the terminal: 
        ```
        cd <Project directory>
@@ -35,3 +76,77 @@
    npm install (or yarn install)
    npm start
    ```
+
+## Previous
+How to setup Backend API
+
+## Next
+How to setup Admin Dashboard
+
+## Get In Touch
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+## Compare
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+## Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+## Resources
+- Blog
+- Documentation
+- Features
+
+### Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato
+
+### Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+## Privacy Policy
+## Terms & Conditions
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN  
+Talk to Enatega AI

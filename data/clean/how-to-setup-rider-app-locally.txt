@@ -1,43 +1,203 @@
+# Getting Started
+
+## Introduction
+This section provides an overview of the application and its functionalities.
+
+## High Level Architecture
+An outline of the system's architecture and components.
+
+## Overview of the API
+Details regarding the API and its usage.
+
+## FAQs
+Frequently asked questions about the application.
+
+## License
+Information about the licensing of the software.
+
+## Patch Notes
+Updates and changes made to the application.
+
+# Installation
+
+## Prerequisites
+Requirements needed before installation.
+
+## How to Setup Locally
+
+### NodeJS Setup
+Instructions for setting up Node.js.
+
+### Git and GitHub Setup
+Guidelines for configuring Git and GitHub.
+
+### Setup Backend API
+Steps to set up the backend API.
+
+### Web Dashboard Setup
+Instructions for configuring the web dashboard.
+
+### Admin Dashboard Setup
+Guidelines for setting up the admin dashboard.
+
+### Customer App Setup
+Steps to configure the customer application.
+
+### Rider App Setup
+Instructions for setting up the rider application.
+
+### Restaurant App Setup
+Guidelines for configuring the restaurant application.
+
+## How to Setup/Deploy for Production
+
+### Configuration
+Details on configuring the application for production.
+
+### Google Maps API Keys
+Instructions for setting up Google Maps API keys.
+
+### Nodemailer Setup
+Guidelines for configuring Nodemailer.
+
+### Configuring Payment Gateways
+Steps to set up payment gateways.
+
+### Twilio Setup
+Instructions for configuring Twilio.
+
+### Sentry Dashboard
+Guidelines for setting up Sentry.
+
+### Configuring Cloudinary
+Steps to configure Cloudinary.
+
+### Amplitude Dashboard
+Instructions for setting up Amplitude.
+
+### Firebase Setup
+Guidelines for configuring Firebase.
+
+### Push Notification Keys
+Instructions for setting up push notification keys.
+
+### Social Login
+Steps to configure social login.
+
+### Configuring Database Server
+Guidelines for setting up the database server.
+
+# Installation
+
 ## How To Setup Rider App
-1. Clone or download source code from GitHub.
-   - To download the Multivendor Rider App, click here on Download Enatega Multivendor.
-   
-   ⚠ Note: Ensure you have Node.js installed on your computer to launch the module.
+### Clone or Download Source Code from GitHub
+To download the Multivendor Rider App, click here on Download Enatega Multivendor. Note: Ensure you have Node.js installed on your computer to launch the module.
 
-2. After installing Node.js:
-   - Open the Enatega MultiVendor code in a code editor.
-   - To run the enatega-multivendor-rider, open it in the integrated terminal by:
-     - Right-clicking on the enatega-multivendor-rider folder and selecting “Open in Integrated Terminal”
-     - Or by using the following command in the terminal: 
-       ```
-       cd <Project directory>
-       ```
-       For example: 
-       ```
-       cd enatega-multivendor-rider
-       ```
+### After Installing Node.js
+1. Open the Enatega MultiVendor code in a code editor.
+2. To run the enatega-multivendor-rider, open it in the integrated terminal by:
+   - Right-clicking on the enatega-multivendor-rider folder and selecting “Open in Integrated Terminal”
+   - Or by using the following command in the terminal: 
+     ```
+     cd <Project directory>
+     ```
+     For example: 
+     ```
+     cd enatega-multivendor-rider
+     ```
 
-3. To test the Rider App (if you don’t have your own server URL) and check the look and feel, no changes are needed.
+### Testing the Rider App
+To test the Rider App (if you don’t have your own server URL) and check the look and feel, no changes are needed. 
 
-4. To run the Rider App against your own server URL:
-   - Go to the environment.js file.
-   - Replace the following in environment.js:
-     - GRAPHQL_URL
-     - WS_GRAPHQL_URL
+### Running the Rider App Against Your Own Server URL
+1. Go to the environment.js file.
+2. Replace the following in environment.js:
+   - GRAPHQL_URL
+   - WS_GRAPHQL_URL
 
-5. After completing all the configurations, it’s time to run the Rider App. To run the Enatega Rider App, open the terminal and run the following commands:
-   ```
-   npm install (or yarn install)
-   npm start
-   ```
+### Running the Enatega Rider App
+After completing all configurations, open the terminal and run the following commands:
+```
+npm install (or yarn install)
+npm start
+```
 
-6. When you run the commands, you have two options to run your app:
-   - Development build
-   - Using Expo Go
+### Options to Run Your App
+When you run the commands, you have two options:
+- **Development Build**
+- **Using Expo Go**
 
-### To run the app using Expo Go:
+To run the app using Expo Go:
 - If you are in development build, press S to switch to Expo Go from the development build. You can either:
   - Use the Expo Go app to scan the QR code to run the app.
   - Use an iOS or Android simulator to run the app.
 
----
+# Contact Information
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+Compare with other services:
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+# Resources
+- Blog
+- Documentation
+- Features
+
+# Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato
+
+# Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+# Legal
+- Privacy Policy
+- Terms & Conditions
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN  
+Talk to Enatega AI

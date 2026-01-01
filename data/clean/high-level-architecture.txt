@@ -1,31 +1,80 @@
-# Enatega Platform Documentation
+# Getting Started
 
-## High-Level Architecture
+## Introduction
 
-### How Everything Comes Together
+### High-Level Architecture
+
 The high-level architecture of the Enatega platform is designed for seamless interaction between various components.
 
-### Our High-Level Architecture At A Glance
-The user’s mobile application provides access to both the API Server and the Amplitude analytics dashboard. Meanwhile, the web dashboard exclusively communicates with the API Server. 
+#### Overview of the API
 
-The platform features dedicated apps for different stakeholders: the Rider App and the Restaurant App, both of which interface directly with the API Server. Additionally, a comprehensive error reporting mechanism is in place, with the Customer App, Restaurant App, Rider App, Web Customer App, and the API Server itself all configured to report issues to Sentry, ensuring robust monitoring and quick resolution of any problems.
+The user’s mobile application provides access to both the API Server and the Amplitude analytics dashboard. Meanwhile, the web dashboard exclusively communicates with the API Server. The platform features dedicated apps for different stakeholders: the Rider App and the Restaurant App, both of which interface directly with the API Server. 
 
-### User Roles
-- **Vendors**: Create accounts and register restaurants on the system using the Admin Dashboard. They can manage orders, menus, and profiles.
-- **Customers**: Use the mobile/web app to browse restaurant menus, place food orders, and track delivery status.
-- **Restaurants**: Receive and prepare orders made through the platform. They can view orders and update statuses.
-- **Riders**: Are notified of new delivery requests. They can pick up food from restaurants and drop it off to customers, updating statuses through the Rider App.
-- **API**: Acts as the backend, facilitating communication between all parties and storing/retrieving data in the MongoDB database.
+Additionally, a comprehensive error reporting mechanism is in place, with the Customer App, Restaurant App, Rider App, Web Customer App, and the API Server itself all configured to report issues to Sentry, ensuring robust monitoring and quick resolution of any problems.
 
-## Overview of the API
-- On this page
-- Resources
-- Blog
-- Documentation
-- Features
-- Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
+### User Roles and Interactions
+
+- **Vendors** create accounts and register restaurants on the system using the Admin Dashboard. They can manage orders, menus, and profiles.
+- **Customers** use the mobile/web app to browse restaurant menus, place food orders, and track delivery status.
+- **Restaurants** receive and prepare orders made through the platform. They can view orders and update statuses.
+- **Riders** are notified of new delivery requests. They can pick up food from restaurants and drop it off to customers, updating statuses through the Rider App.
+
+The API acts as the backend, facilitating communication between all parties and storing/retrieving data in the MongoDB database.
+
+## Configuration
+
+### Installation Prerequisites
+
+- How to set up locally
+- How to set up/deploy for production
+
+### Google Maps API Keys
+
+### Nodemailer Setup
+
+### Configuring Payment Gateways
+
+### Twilio Setup
+
+### Sentry Dashboard
+
+### Configuring Cloudinary
+
+### Amplitude Dashboard
+
+### Firebase Setup
+
+### Push Notification Keys
+
+### Social Login
+
+### Configuring Database Server Configurations
+
+## Contact Information
+
+Get in touch at:
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+Email: sales@enatega.com  
+Phone: +1 (307) 776-8999  
+
+## Comparison
+
+Compare with:
+
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
 
 ## Case Studies
+
 - Yalla Delivery
 - Stylizenow
 - Easy Eats
@@ -33,15 +82,50 @@ The platform features dedicated apps for different stakeholders: the Rider App a
 - Snap Delivered
 - Borku Delivery
 
-## Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-sales@enatega.com  
-+1 (307) 776-8999  
+## Resources
+
+### Blog
+
+### Documentation
+
+### Features
+
+### Clone Options
+
+- Clone Blinkit
+- Clone Deliveroo
+- Clone Delivery Hero
+- Clone Dunzo
+- Clone Foodpanda
+- Clone Glovo
+- Clone Grubhub
+- Clone Justeat
+- Clone Postmates
+- Clone Rappi
+- Clone Swiggy
+- Clone Talabat
+- Clone Ubereats
+- Clone Zepto
+- Clone Zomato
+
+### Use Cases
+
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
 
 ## Legal
+
 - Privacy Policy
 - Terms & Conditions
 
-©2024 Enatega · All rights reserved. Powered by:
+©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI

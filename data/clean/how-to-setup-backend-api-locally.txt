@@ -1,6 +1,25 @@
-### How To Setup Backend API
+# Getting Started
 
-#### Prerequisite Knowledge For Running The App:
+## Introduction
+This document provides a comprehensive guide on setting up the backend API locally, including prerequisites, installation steps, and configuration details.
+
+## High Level Architecture
+An overview of the API architecture is provided to help understand the system's structure.
+
+## FAQs
+Frequently asked questions regarding the setup and usage of the backend API.
+
+## License
+Information about licensing requirements for accessing the backend and API.
+
+## Patch Notes
+Updates and changes made to the API and its functionalities.
+
+# Installation
+
+## Prerequisites
+### Knowledge Required
+To run the app, familiarity with the following technologies is necessary:
 - Node
 - Express
 - React
@@ -9,39 +28,36 @@
 - Git
 - expo-cli
 
-#### Pre-Installed Software:
-- Latest or Stable version of Node
-- Latest or Stable version of NPM
+### Pre-Installed Software
+Ensure you have the latest or stable version of:
+- Node
+- NPM
 
-#### Backend API:
-Access to the backend and API requires a license that must be purchased. Please get in touch with us using the methods listed below for more information:  
-Email: ✉ sales@enatega.com  
-To buy Backend Visit Enatega
+### Backend API Access
+Access to the backend and API requires a purchased license. For more information, contact us at sales@enatega.com.
 
-### Setup Instructions:
-1. Make sure Node.js is installed on your machine.
-2. Open the backend API code in the code editor.
+## Setup Instructions
+1. Ensure Node.js is installed on your machine.
+2. Open the backend API code in your code editor.
 3. Follow the setup instructions provided in the video.
 
-⚠ Note: Ensure that you have Node.js installed before proceeding with the setup.
-
 ### Enatega Multivendor Setup
-- Enatega Multivendor | Backend Project Clone
-- Enatega Multivendor | MongoDB Setup
-- Enatega Multivendor | Firebase Setup
-- Enatega Multivendor | Backend API
-- Enatega Multivendor | Setup Redis
+- **Backend Project Clone**
+- **MongoDB Setup**
+- **Firebase Setup**
+- **Backend API**
+- **Setup Redis**
 
-#### Step 1: Docker Setup
-- **Check Docker Installation:** Ensure Docker is installed on your machine. If not, download it here.
-- **Navigate to Project Directory:** After installing Docker, go to the project directory in your terminal.  
-  Enatega Multivendor | Setup Docker
+## Docker Setup
+### Step 1: Check Docker Installation
+Ensure Docker is installed on your machine. If not, download it from the official website.
 
-#### Step 2: Environment Variables
-After setting up Docker, you’ll need to configure the environment variables. Follow these steps to modify or create the .env file with your credentials:  
-⚠ Note: If you do not find a .env file, create one in the root directory and paste the following contents into the .env file.
+### Navigate to Project Directory
+After installing Docker, open your terminal and navigate to the project directory.
 
-**Contents Of .Env File:**
+### Step 2: Environment Variables
+After setting up Docker, configure the environment variables by modifying or creating the `.env` file with your credentials. If the `.env` file does not exist, create one in the root directory and include the following contents:
+
 ```
 PORT=8001
 CONNECTION_STRING=
@@ -56,47 +72,50 @@ NODE_ENV=production
 SENDGRID_API_KEY=
 ```
 
-### Environment Variables Explanation:
-Make sure to understand the purpose of each environment variable before modifying them.
+### Environment Variables Explanation
+- **PORT**: The port number on which the server will run.
+- **CONNECTION_STRING**: Contains the connection string for your MongoDB database.
+- **RESET_PASSWORD_LINK**: Link for resetting passwords.
+- **SERVER_URL**: Base URL of your server.
+- **STRIPE_WEBHOOK_ENDPOINT_SECRET**: Used for Stripe webhook verification.
+- **DASHBOARD_URL**: URL for the dashboard.
+- **WEB_URL**: URL for the web application.
+- **ORDER_DETAIL_WEB_URL**: Partial URL for specific order details.
+- **NODE_DEV**: Node development environment.
+- **NODE_ENV**: Node environment.
+- **SENDGRID_API_KEY**: Enter your SendGrid API key if using SendGrid for emails.
 
-- **PORT:** The port number on which the server will run.
-- **CONNECTION_STRING:** This variable contains the connection string for your MongoDB database. It includes the username and password needed to connect to the database, as well as the cluster URL and some connection options.
-- **RESET_PASSWORD_LINK:** Link for resetting passwords.
-- **SERVER_URL:** This variable specifies the base URL of your server. It’s the root URL where your backend API is hosted.
-- **STRIPE_WEBHOOK_ENDPOINT_SECRET:** This variable is used for Stripe webhook verification. It’s a secret key that Stripe uses to sign webhook events, ensuring their authenticity.
-- **DASHBOARD_URL:** URL for the dashboard.
-- **WEB_URL:** URL for the web application.
-- **ORDER_DETAIL_WEB_URL:** This variable might be a partial URL used to construct links to specific order details in your application.
-- **NODE_DEV:** Node development environment.
-- **NODE_ENV:** Node environment.
-- **SENDGRID_API_KEY:** Please enter your SendGrid API key if you intend to use SendGrid for sending emails; otherwise, leave this field empty.
-
-#### Step 3: Adding ServiceAccountKey.Json
-Lastly, you need to add your own serviceAccountKey.json. This file is typically used for Firebase Admin SDK. Follow these steps to obtain and add the file:
+### Step 3: Adding ServiceAccountKey.json
+To add your `serviceAccountKey.json`:
 1. Go to the Firebase Console.
 2. Select your project.
 3. Navigate to Project Settings > Service accounts.
 4. Click on “Generate new private key” to download the JSON file.
-5. Replace the downloaded serviceAccountKey.json file in the project directory.
+5. Replace the downloaded `serviceAccountKey.json` file in the project directory.
 
-### Running The Backend:
-After completing the setup steps, you can start using your backend API.  
-⚙️ Tip: Simply run Docker and your API will be up and running, ready to serve your application. To build and start the Docker containers, run the following command:  
-`docker compose up --build`
+## Running The Backend
+After completing the setup steps, you can start using your backend API. Simply run Docker, and your API will be ready to serve your application. To build and start the Docker containers, run the following command:
 
-## Resources
-- Blog
-- Documentation
-- Features
-- Compare
-  - Blink
-  - Deonde
-  - GloriaFood
-  - Ordering.Co
-  - Shipday
-  - SpotNeats
-  - Yelo
-  - Zeew
+```
+docker compose up --build
+```
+
+# Contact Information
+For further inquiries, please reach out to us at:
+- **Address**: 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States
+- **Email**: sales@enatega.com
+- **Phone**: +1 (307) 776-8999
+
+# Comparison and Resources
+## Compare
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
 
 ## Case Studies
 - Yalla Delivery
@@ -106,15 +125,44 @@ After completing the setup steps, you can start using your backend API.
 - Snap Delivered
 - Borku Delivery
 
-## Get In Touch
-1021 E Lincolnway Suite #6581,  
-Cheyenne, Wyoming 82001,  
-United States  
-Email: sales@enatega.com  
-Phone: +1 (307) 776-8999  
+## Resources
+- Blog
+- Documentation
+- Features
 
-## Legal
+## Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato
+
+## Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+# Legal
 - Privacy Policy
 - Terms & Conditions
 
-©2024 Enatega · All rights reserved.
+©2025 Enatega · All rights reserved. Powered by: Talk to Enatega AI

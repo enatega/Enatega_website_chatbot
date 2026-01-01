@@ -1,106 +1,112 @@
-## How To Deploy Web Dashboard
-### Enatega Multivendor | Customer Web Deployment
-1. Clone or download source code from GitHub.
-2. To download the Web Application, click here on Download Web Application.
-3. Node.js must be set up on your computer to run the module. The following commands should be entered in the directory after Node.js has been installed:
+# Getting Started
+
+## Introduction
+This document provides a comprehensive guide on deploying the Enatega Multivendor web dashboard, including installation prerequisites, configuration, and deployment steps.
+
+## High-Level Architecture
+An overview of the API and its functionalities is provided, along with frequently asked questions and licensing information.
+
+## Installation Prerequisites
+Before setting up the application, ensure that Node.js is installed on your computer. 
+
+## How to Setup Locally
+To set up the application locally, follow these steps:
+
+1. Clone or download the source code from GitHub.
+2. Navigate to the project directory using the command:
    ```
-   cd <Project directory> e.g. cd enatega-multivendor-web
+   cd <Project directory> e.g., cd enatega-multivendor-web
    ```
 
-### Configuration of Credentials
-You need to change the following credentials in the `constants.js` file. We have numbered each variable, and the explanation is provided below each number. Essentially, you are required to update ‘value#1’ and ‘value#2’, while the remaining values will be automatically retrieved from the configuration (database) once added through the admin panel. In the case that these values are not obtained from the configuration, kindly hardcode them in the `constants.js` file.
+## Configuration
+### Google Maps API Keys
+You will need to configure Google Maps API keys for your application.
 
-### Explanation of Variables in the .env File
-- **REACT_APP_SERVER_URL**: This variable specifies the base URL of your backend server that the web application will communicate with. It’s essential for making API requests to your server.
-- **REACT_APP_WS_SERVER_URL**: This variable defines the WebSocket server URL. WebSockets are used for real-time communication, and this URL is crucial for establishing WebSocket connections with your server.
+### Nodemailer Setup
+Instructions for setting up Nodemailer for email functionalities.
 
-### What is SERVER_URL?
-This variable specifies the base URL of your server. It’s the root URL where your backend API is hosted.
+### Configuring Payment Gateways
+Details on how to set up payment gateways, including Twilio, Sentry, Cloudinary, Amplitude, Firebase, Push Notification Keys, and Social Login.
 
-### What is an API?
-An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. A backend API is responsible for handling data and requests on the server-side of a software application. The backend code of this project is the API for this project.
+### Configuring Database Server
+Instructions for configuring the database server.
 
-### Hosting Your API
-To make your API accessible to the internet, you need a hosting service. A hosting service provides the infrastructure and resources to run your server, making it available 24/7. Hosting services can be cloud platforms (like Heroku, AWS, or Digital Ocean) or specialized services like Railway Cloud.
+## Installation
+### How to Deploy Web Dashboard
+To deploy the Enatega Multivendor web dashboard, follow these steps:
 
-## How to Deploy the Backend API
-Deploying means making your API server available and functional on the hosting service. This typically involves uploading your code, configuring the server, and ensuring it’s up and running. Here is how you can deploy your API server and get the SERVER_URL for adding in the .env file.
+1. **Clone or Download Source Code**: Click here to download the Web Application.
+2. **Node.js Setup**: Ensure Node.js is set up on your computer.
+3. **Change Credentials**: Update the credentials in the `constants.js` file. You will need to modify ‘value#1’ and ‘value#2’. The remaining values will be retrieved from the configuration (database) once added through the admin panel. If these values are not obtained, hardcode them in the `constants.js` file.
 
-### Railway Cloud Deployment Video
+### Environment Variables
+Here’s an explanation of each variable in the `.env` file for your web application:
 
-### REACT_APP_GOOGLE_CLIENT_ID
-The REACT_APP_GOOGLE_CLIENT_ID is a unique identifier provided by Google when you register your web application with Google’s OAuth (Open Authorization) service. This ID serves as a means for your application to identify itself to Google when attempting to authenticate users through their Google accounts.
+- **REACT_APP_SERVER_URL**: Specifies the base URL of your backend server for API requests.
+- **REACT_APP_WS_SERVER_URL**: Defines the WebSocket server URL for real-time communication.
 
-### Configuring Google ID for Web Video
+### Understanding APIs
+An API (Application Programming Interface) allows different software applications to communicate. The backend API handles data and requests on the server side.
 
-### REACT_APP_STRIPE_PUBLIC_KEY
-The Stripe public key is used to interact with the Stripe payment gateway. It’s necessary for handling online payments securely.
+### Hosting Services
+To make your API accessible on the internet, you need a hosting service. Options include cloud platforms like Heroku, AWS, or Digital Ocean, or specialized services like Railway Cloud.
 
-### What is Stripe?
-Stripe is a widely-used online payment platform that helps businesses accept payments securely on their websites and apps. It’s known for its simplicity, global reach, and developer-friendly tools.
+## How to Deploy Backend API
+Deploying your API server involves uploading your code, configuring the server, and ensuring it is operational. 
 
-### How to Create a Stripe Endpoint Secret for this Project?
-Here is how you can create Stripe endpoint secrets.
+### Railway Cloud Deployment
+Instructions for deploying your API server on Railway Cloud.
 
-### Stripe Configuration Video
+## Configuring Google ID for Web
+- **REACT_APP_GOOGLE_CLIENT_ID**: A unique identifier provided by Google for OAuth service.
+- Instructions for creating the Google ID for the web.
 
-### REACT_APP_PAYPAL_KEY
-This variable likely represents the PayPal API key, used for processing PayPal payments in your application.
+## Stripe Configuration
+- **REACT_APP_STRIPE_PUBLIC_KEY**: Used for interacting with the Stripe payment gateway.
+- Instructions for creating a Stripe endpoint secret.
 
-### What is PayPal?
-PayPal is a widely used online payment platform that allows individuals and businesses to send and receive payments securely over the Internet. It supports a variety of payment methods, including credit cards and bank transfers, making it a convenient and trusted way to handle online transactions.
+## PayPal Configuration
+- **REACT_APP_PAYPAL_KEY**: Represents the PayPal API key for processing payments.
+- Steps for registering a PayPal Business account and integrating it into your application.
 
-### How to Configure PayPal for this Project?
-Configuring PayPal for your application involves registering with PayPal and securely integrating it. Here’s a detailed breakdown:
-1. **Registration**: Begin by registering for a PayPal Business account on the PayPal website. This account is required to accept payments for your products or services.
-2. **Accessing Client Credentials**: After registration, PayPal provides you with two crucial credentials: the Client ID and the Client Secret. These are like a username and password for your PayPal account, but they are meant for your application to securely interact with PayPal’s servers.
-3. **Admin Dashboard**: In the configurations area of your admin dashboard, you need to paste these credentials. This is where you configure your application to communicate with PayPal using the Client ID and Secret.
-4. **Secure Integration**: The Client ID and Secret are used to authenticate and authorize your application with PayPal. When customers make payments, your app securely communicates with PayPal’s servers using these credentials to process transactions.
-5. **Payment Handling**: With PayPal integrated, your application can accept payments from customers, and PayPal ensures the security and reliability of these transactions.
+## Google Maps Integration
+- **REACT_APP_GOOGLE_MAPS_KEY**: Essential for integrating Google Maps services.
+- Instructions for creating a Google Maps key.
 
-### REACT_APP_GOOGLE_MAPS_KEY
-The Google Maps API key is a crucial component for integrating Google Maps and related location and mapping services into the application. This key serves as a unique identifier, granting your application access to Google’s mapping and geolocation features.
+## Amplitude Integration
+- **REACT_APP_AMPLITUDE_API_KEY**: Used for integrating Amplitude analytics.
+- Instructions for creating an Amplitude API key.
 
-### How to Create a Google Maps Key for this Project
-Demonstration of Google Maps API setup video.
+## Additional Configuration Variables
+- **REACT_APP_GOOGLE_MAP_LIBRARIES**: Specifies included Google Maps libraries.
+- **REACT_APP_GOOGLE_COLOR**: Defines a specific color for Google-related elements.
+- **REACT_APP_SENTRY_DSN**: Used for error reporting and monitoring on the frontend.
+- **REACT_APP_ENV**: Defines the environment (e.g., production).
 
-### REACT_APP_AMPLITUDE_API_KEY
-This API key is essential for integrating Amplitude, an analytics and product intelligence service, into a React application. The API key identifies your app when communicating with Amplitude’s servers. By using this key, you can gather data, analyze user behavior, and make data-informed decisions to optimize your application’s performance and user experience.
+## Deployment Steps
+### Deploying a React Application
+You can use hosting platforms like Netlify and Vercel for deployment.
 
-### Amplitude
-Amplitude helps businesses track and analyze user behavior, such as interactions and events within the app. It’s a critical tool for enhancing user satisfaction and app success.
-
-### How to Create an Amplitude API Key for this Project
-Configuring Amplitude video.
-
-### REACT_APP_GOOGLE_MAP_LIBRARIES
-This variable specifies which Google Maps libraries are included in your application. It can help optimize your application by only including the necessary libraries.
-
-### REACT_APP_GOOGLE_COLOR
-This variable may be used to define a specific color associated with Google-related elements in your application.
-
-### REACT_APP_SENTRY_DSN
-Similar to the backend, this Sentry DSN is used to report and monitor errors and exceptions on the front end of your application. This variable contains the Data Source Name (DSN) that Sentry uses to report errors and exceptions from your application.
-
-### How to Configure Sentry and Create SENTRY_DSN_LINK for this Project
-Configuring Sentry video.
-
-### REACT_APP_ENV
-It defines the environment in which the web application is running. In this case, it’s set to “prod,” indicating that the application is in production.
-
-### After Setting the (.env) File
-Run the following commands:
-```
-npm install
-npm run build
-```
-
-## How to Deploy a React Application
-To deploy these applications, you can use hosting platforms like Netlify and Vercel, which specialize in hosting web applications. These platforms provide an easy and streamlined deployment process. One of the simplest is to use Netlify. By looking through this documentation, you can browse through its user manual.
-
-### Deployment Steps
 #### Netlify
-For Netlify, you would typically connect your code repository (e.g., on GitHub or GitLab) to your Netlify account. Specify the build settings and configurations for your dashboard and web app. Netlify will automatically build and deploy your applications when you push changes to your repository. You can set custom domains or subdomains for your applications, which will become the URLs for your dashboard and web app.
+1. Connect your code repository to your Netlify account.
+2. Specify build settings and configurations.
+3. Netlify will automatically build and deploy your applications upon changes.
 
 #### Vercel
-Vercel offers a similar process. You connect your code repository, configure your settings, and Vercel handles the build and deployment. Custom domains can be set up on Vercel to determine the URLs for your dashboard and web app.
+1. Connect your code repository and configure settings.
+2. Vercel handles the build and deployment process.
+
+## Contact Information
+For further inquiries, you can reach us at:
+- **Address**: 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, United States
+- **Email**: sales@enatega.com
+- **Phone**: +1 (307) 776-8999
+
+## Resources
+- **Case Studies**: Examples of successful implementations.
+- **Use Cases**: Various applications of the platform.
+- **Documentation**: Detailed guides and manuals.
+- **Features**: Overview of platform capabilities. 
+
+## Privacy Policy and Terms & Conditions
+©2025 Enatega · All rights reserved. Powered by: Talk to Enatega AI
