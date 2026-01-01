@@ -1,19 +1,27 @@
-# How To Deploy Backend API Server
+# Getting Started
 
-1. **Download or Clone the Source Code**  
-   Extract it and open the extracted folder in a terminal. You must have Node.js installed on your computer to launch the module. After installing Node.js, open the directory and type the following commands:  
-   `cd <Project directory>` (e.g., `cd enatega-multivendor-api`)
+## Introduction
+This document provides a comprehensive guide on deploying the Backend API server, Admin Dashboard, Web Dashboard, and Mobile Applications.
 
-2. **Setup Instructions**  
-   Follow the setup instructions for Enatega Multivendor | Backend API Deployment.
+## High-Level Architecture
+An overview of the API architecture is provided, along with frequently asked questions and licensing information.
 
-### Step 1: Docker Setup
+## Installation Prerequisites
+Before proceeding, ensure you have the necessary prerequisites installed.
 
-Make sure you have Docker installed on your machine. If not, you can download it [here](#). Once Docker is installed, navigate to the project directory in your terminal.
+### How to Setup Locally
+Instructions for setting up the environment locally.
 
-### Step 2: Environment Variables
+### How to Setup/Deploy for Production
+Guidelines for deploying the application in a production environment.
 
-After Docker setup, configure the environment variables. Modify the `.env` file with your credentials. If you do not find a `.env` file, create one in the root directory and paste the following contents into the `.env` file:
+# Deploying the Backend API Server
+
+## Step 1: Docker Setup
+Ensure Docker is installed on your machine. If not, download it from the official website. Once installed, navigate to the project directory in your terminal.
+
+## Step 2: Environment Variables
+Configure the environment variables by modifying the `.env` file with your credentials. If the `.env` file is not present, create one in the root directory and include the following contents:
 
 ```
 PORT=8001
@@ -29,38 +37,63 @@ NODE_ENV=production
 SENDGRID_API_KEY=
 ```
 
-#### Environment Variables Explanation
-
+### Environment Variables Explanation
 - **PORT**: The port number on which the server will run.
-- **CONNECTION_STRING**: This variable contains the connection string for your MongoDB database, including the username, password, cluster URL, and connection options. MongoDB is a flexible NoSQL database known for storing data as JSON-like documents.
+- **CONNECTION_STRING**: Contains the connection string for your MongoDB database.
 - **RESET_PASSWORD_LINK**: Link for resetting passwords.
-- **SERVER_URL**: Specifies the base URL of your server. Initially, paste your local server URL, and later replace it with your live server link when deployed.
+- **SERVER_URL**: Specifies the base URL of your server.
 - **STRIPE_WEBHOOK_ENDPOINT_SECRET**: Used for Stripe webhook verification.
 - **DASHBOARD_URL**: URL for the dashboard.
 - **WEB_URL**: URL for the web application.
-- **ORDER_DETAIL_WEB_URL**: A partial URL used to construct links to specific order details in your application.
+- **ORDER_DETAIL_WEB_URL**: Partial URL for specific order details.
 - **NODE_DEV**: Node development environment.
 - **NODE_ENV**: Node environment.
-- **SENDGRID_API_KEY**: Enter your SendGrid API key if you intend to use SendGrid for sending emails; otherwise, leave this field empty.
+- **SENDGRID_API_KEY**: API key for SendGrid, if used for sending emails.
 
-### Step 3: Adding serviceAccountKey.json
-
-You need to add your own `serviceAccountKey.json`. This file is typically used for Firebase Admin SDK. Follow these steps to obtain and add the file:
-
+## Step 3: Adding serviceAccountKey.json
+Add your `serviceAccountKey.json` file, which is used for Firebase Admin SDK. To obtain this file:
 1. Go to the Firebase Console.
 2. Select your project.
 3. Navigate to Project Settings > Service accounts.
 4. Click on “Generate new private key” to download the JSON file.
 5. Replace the downloaded `serviceAccountKey.json` file in the project directory.
 
----
-
-# Running the Backend
-
-After completing the setup steps, you can start using your backend API. Simply run Docker, and your API will be up and running, ready to serve your application. Run the following command to build and start the Docker containers:
+## Running the Backend
+After completing the setup steps, start using your backend API. Run Docker with the following command to build and start the containers:
 
 ```
 docker compose up --build
 ```
 
 For any issues or further assistance, please contact support.
+
+# Deploying the Admin Dashboard and Web Application
+To deploy these applications, consider using hosting platforms like Netlify and Vercel.
+
+## Deployment Steps
+
+### Netlify
+1. Connect your code repository (e.g., GitHub or GitLab) to your Netlify account.
+2. Specify the build settings and configurations for your dashboard and web app.
+3. Netlify will automatically build and deploy your applications upon pushing changes to your repository.
+4. Set custom domains or subdomains for your applications.
+
+### Vercel
+1. Connect your code repository and configure your settings.
+2. Vercel will handle the build and deployment.
+3. Custom domains can be set up to determine the URLs for your dashboard and web app.
+
+# Contact Information
+For inquiries, reach out to:
+
+**Address**:  
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+
+**Email**: sales@enatega.com  
+**Phone**: +1 (307) 776-8999  
+
+# Privacy Policy and Terms & Conditions
+©2025 Enatega · All rights reserved.  
+Powered by: EN Talk to Enatega AI

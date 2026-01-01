@@ -1,17 +1,144 @@
-# Getting Started Overview of the API
+# Getting Started
+
+## Introduction
+
+### High-Level Architecture
+
+### Overview of the API
+
+### FAQs
+
+### License
+
+### Patch Notes
+
+## Installation
+
+### Prerequisites
+
+### How to Setup Locally
+
+### How to Setup/Deploy for Production
+
+## Configuration
+
+### Google Maps API Keys
+
+### Nodemailer Setup
+
+### Configuring Payment Gateways
+
+### Twilio Setup
+
+### Sentry Dashboard
+
+### Configuring Cloudinary
+
+### Amplitude Dashboard
+
+### Firebase Setup
+
+### Push Notification Keys
+
+### Social Login
+
+### Configuring Database Server
+
+### Configurations
+
+# Overview of the API
 
 ## About Our API
 
-Enatega’s API follows a monolithic architecture, which means that the entire software application is developed as a single, unified codebase. Consequently, any modifications made to one section of the code will impact the entire application. Various functionalities like logging, caching, and performance monitoring are encompassed within a single application. This approach simplifies management and facilitates connections with other components and applications. Enatega uses the Express JS framework and GraphQL for building the API. You can view the full GraphQL diagram below:
+Enatega’s API follows a monolithic architecture, which means that the entire software application is developed as a single, unified codebase. Consequently, any modifications made to one section of the code will impact the entire application. Various functionalities like logging, caching, and performance monitoring are encompassed within a single application. This approach simplifies management and facilitates connections with other components and applications. Enatega uses the Express JS framework and GraphQL for building the API. 
 
-### Resolvers
+You can view the full GraphQL diagram below:
 
-In GraphQL, Resolvers are functions that define how to retrieve or mutate data for a specific field in a GraphQL schema. When a client sends a query or mutation to a GraphQL API, the server uses resolvers to determine how to fetch or manipulate the requested data. Each field in the schema has a corresponding resolver function that knows how to resolve that specific field.
+## Resolvers
 
-### Dockerization
+In GraphQL, resolvers are functions that define how to retrieve or mutate data for a specific field in a GraphQL schema. When a client sends a query or mutation to a GraphQL API, the server uses resolvers to determine how to fetch or manipulate the requested data. Each field in the schema has a corresponding resolver function that knows how to resolve that specific field.
+
+## Dockerization
 
 Dockerization is the process of packaging and deploying software applications within isolated containers. By Dockerizing an application, it becomes encapsulated within a lightweight, portable container that includes all the necessary dependencies and libraries. This containerization allows the application to run consistently and reliably across different environments, such as development, testing, and production.
 
-### Database
+## Database
 
 Enatega uses MongoDB to manage its database instead of SQL for database management. You can view MongoDB’s documentation by clicking here.
+
+# Contact Information
+
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+
+Compare:  
+- Blink  
+- Deonde  
+- GloriaFood  
+- Ordering.Co  
+- Shipday  
+- SpotNeats  
+- Yelo  
+- Zeew  
+
+# Case Studies
+
+- Yalla Delivery  
+- Stylizenow  
+- Easy Eats  
+- Vinifynd  
+- Snap Delivered  
+- Borku Delivery  
+
+# Resources
+
+- Blog  
+- Documentation  
+- Features  
+
+# Clones
+
+- Clone Blinkit  
+- Clone Deliveroo  
+- Clone Delivery Hero  
+- Clone Dunzo  
+- Clone Foodpanda  
+- Clone Glovo  
+- Clone Grubhub  
+- Clone Justeat  
+- Clone Postmates  
+- Clone Rappi  
+- Clone Swiggy  
+- Clone Talabat  
+- Clone Ubereats  
+- Clone Zepto  
+- Clone Zomato  
+
+# Use Cases
+
+- Gift Delivery Solution  
+- Milk Delivery Solution  
+- Grocery Delivery Solution  
+- Liquor Delivery Solution  
+- Flower Delivery Solution  
+- Medicine Delivery Solution  
+- Food and Beverage Solution  
+- Courier Delivery Solution  
+- Beauty Services Scheduling Solution  
+- Laundry-On-Demand Services Solution  
+- Roadside Assistance Services Solution  
+- Document Delivery Solution  
+
+# Legal
+
+- Privacy Policy  
+- Terms & Conditions  
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN  
+Talk to Enatega AI

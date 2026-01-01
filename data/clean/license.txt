@@ -1,7 +1,144 @@
-# License
+# Getting Started
+
+## Introduction
+This section provides an overview of the system and its capabilities.
+
+## High Level Architecture
+An outline of the architecture that supports the API.
+
+## Overview of the API
+Details regarding the API functionalities and usage.
+
+## FAQs
+Frequently asked questions about the system.
+
+## License
 The license you buy determines how you can use an item. You are given a non-exclusive and non-transferable permission to use the item in your personal or professional projects when you have a license to do so. 
 
 ### Lifetime License
-There are no limitations on the number of iOS apps or Android apps you can install. The item may be used in work that you are doing for your personal needs or those of your clients. It is prohibited to sell or redistribute the source code. However, the finished app may be sold in the market. 
+- There are no limitations on the number of iOS apps or Android apps you can install.
+- The item may be used in work that you are doing for your personal needs or those of your clients.
+- It is prohibited to sell or redistribute the source code. However, the finished app may be sold in the market.
+- If the item contains licensed components, you may not extract those components and use them separately; you may only use those components as part of the item.
+- The rules of the GNU General Public License (GPL), to the extent it applies, shall govern your use of the item if it was made using components covered by the GNU General Public License (GPL).
 
-If the item contains licensed components, you may not extract those components and use them separately; you may only use those components as part of the item. The rules of the GNU General Public License (GPL), to the extent it applies, shall govern your use of the item if it was made using components covered by the GNU General Public License (GPL).
+## Patch Notes
+Updates and changes made to the system.
+
+## Installation
+
+### Prerequisites
+Requirements needed before installation.
+
+### How to Setup Locally
+Instructions for setting up the system in a local environment.
+
+### How to Setup/Deploy for Production
+Guidelines for deploying the system in a production environment.
+
+## Configuration
+
+### Google Maps API Keys
+Instructions for configuring Google Maps API keys.
+
+### Nodemailer Setup
+Steps for setting up Nodemailer.
+
+### Configuring Payment Gateways
+Guidelines for configuring payment gateways.
+
+### Twilio Setup
+Instructions for setting up Twilio.
+
+### Sentry Dashboard
+Configuration steps for the Sentry dashboard.
+
+### Configuring Cloudinary
+Instructions for setting up Cloudinary.
+
+### Amplitude Dashboard
+Steps for configuring the Amplitude dashboard.
+
+### Firebase Setup
+Instructions for setting up Firebase.
+
+### Push Notification Keys
+Guidelines for configuring push notification keys.
+
+### Social Login
+Instructions for setting up social login.
+
+### Configuring Database
+Steps for configuring the database.
+
+### Server Configurations
+Guidelines for server configurations.
+
+# Contact Information
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+Compare with other services:  
+- Blink  
+- Deonde  
+- GloriaFood  
+- Ordering.Co  
+- Shipday  
+- SpotNeats  
+- Yelo  
+- Zeew  
+
+# Case Studies
+- Yalla Delivery  
+- Stylizenow  
+- Easy Eats  
+- Vinifynd  
+- Snap Delivered  
+- Borku Delivery  
+
+# Resources
+- Blog  
+- Documentation  
+- Features  
+
+# Clones
+- Blinkit  
+- Deliveroo  
+- Delivery Hero  
+- Dunzo  
+- Foodpanda  
+- Glovo  
+- Grubhub  
+- Justeat  
+- Postmates  
+- Rappi  
+- Swiggy  
+- Talabat  
+- Ubereats  
+- Zepto  
+- Zomato  
+
+# Use Cases
+- Gift Delivery Solution  
+- Milk Delivery Solution  
+- Grocery Delivery Solution  
+- Liquor Delivery Solution  
+- Flower Delivery Solution  
+- Medicine Delivery Solution  
+- Food and Beverage Solution  
+- Courier Delivery Solution  
+- Beauty Services Scheduling Solution  
+- Laundry-On-Demand Services Solution  
+- Roadside Assistance Services Solution  
+- Document Delivery Solution  
+
+# Legal
+- Privacy Policy  
+- Terms & Conditions  
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN Talk to Enatega AI

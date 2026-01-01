@@ -1,13 +1,25 @@
+# Getting Started
+
+## Introduction
+High Level Architecture  
+Overview of the API  
+FAQs  
+License  
+Patch Notes  
+
+## Installation
+### Prerequisites
+- How to setup locally  
+- How to setup/deploy for production  
+
 # Configuration
 
 ## Google Maps API Keys
-
 ### Video Walkthrough
-
-### Enatega Multivendor | Configuring Google Maps API Key Setup
+Enatega Multivendor | Configuring Google Maps API Key Setup  
 
 1. Log in with your Google Account or establish an account at [Google Cloud Console](https://console.cloud.google.com).
-2. On the Google Cloud Console, create a project.
+2. Create a project in the Google Cloud Console.
 3. Activate the following APIs in your project:
    - Geocoding API
    - Maps Javascript API
@@ -21,28 +33,96 @@
 
 4. Set up the Google Billing account.
 
-5. Go to API & Services > Credentials from the left menu and select “Create Credentials.”
-6. Create a key called HTTP Key, and then add your website URL as follows under the website restrictions tab. If your website is my-domain.com, add these:
-   - https://my-domain.com/*
-   - https://www.my-domain.com/*
+5. Go to API & Services > Credentials from the left menu and select “Create Credentials.”  
+   - Create a key called HTTP Key, and add your website URL under the website restrictions tab. For example, if your website is my-domain.com, add:
+     - https://my-domain.com/*
+     - https://www.my-domain.com/*  
+   - Ensure you add an asterisk (*) at the end of the URL.
 
-   Make sure to add an asterisk (*) at the end of the URL.
-
-7. Create another key named IP Key and under the IP Addresses section, paste your website/server IP address.
+6. Create another key named IP Key and paste your website/server IP address under the IP Addresses section.
 
 ### Very Important
+The IP address of your website might not always be sufficient to configure the IP limited key in a shared hosting environment. A pop-up notification may appear, indicating an issue with authorization. The message will look like this:  
+"Geocoding failed because `This IP, site or mobile application is not authorized to use this API Key. Request received from IP address *.*.*.* with empty referer."  
+The *.*.*.* represents your server’s IP address, which needs to be set on the IP Restricted key. Go back to the Google Cloud Console and set this IP Address provided in the popup.
 
-The IP address of your website might not always be sufficient to configure the IP limited key in a shared hosting environment. A pop-up notification will appear, looking somewhat like this: 
+7. Modifications should be made to all modules that require GOOGLE_MAPS_KEY or googleMapsAPIkey, and all modifications should be saved.  
+   - It takes Google APIs 5 to 10 minutes to update your website.
 
-"Geocoding failed because `This IP, site or mobile application is not authorized to use this API Key. Request received from IP address *.*.*.* with empty referer."
-
-The *.*.*.* is your server’s IP address, which needs to be set on the IP Restricted key. Go back to the Google Cloud Console and set this IP Address provided in the popup.
-
-Modifications should be made to all modules that require GOOGLE_MAPS_KEY or googleMapsAPIkey, and all modifications should be saved. It takes Google APIs 5 to 10 minutes to update your website.
-
----
-
-# Important Links
-
+## Important Links
 - [Google Cloud](https://cloud.google.com)
 - [Google Map Platform](https://developers.google.com/maps)
+- Find Website IP  
+
+# Next Steps
+- How to deploy Mobile Applications  
+- Nodemailer Setup  
+
+# Contact Information
+Get In Touch  
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001, United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+- Blink  
+- Deonde  
+- GloriaFood  
+- Ordering.Co  
+- Shipday  
+- SpotNeats  
+- Yelo  
+- Zeew  
+
+# Case Studies
+- Yalla Delivery  
+- Stylizenow  
+- Easy Eats  
+- Vinifynd  
+- Snap Delivered  
+- Borku Delivery  
+
+# Resources
+## Blog  
+## Documentation  
+## Features  
+
+# Clones
+- Blinkit  
+- Deliveroo  
+- Delivery Hero  
+- Dunzo  
+- Foodpanda  
+- Glovo  
+- Grubhub  
+- Justeat  
+- Postmates  
+- Rappi  
+- Swiggy  
+- Talabat  
+- Ubereats  
+- Zepto  
+- Zomato  
+
+# Use Cases
+- Gift Delivery Solution  
+- Milk Delivery Solution  
+- Grocery Delivery Solution  
+- Liquor Delivery Solution  
+- Flower Delivery Solution  
+- Medicine Delivery Solution  
+- Food and Beverage Solution  
+- Courier Delivery Solution  
+- Beauty Services Scheduling Solution  
+- Laundry-On-Demand Services Solution  
+- Roadside Assistance Services Solution  
+- Document Delivery Solution  
+
+# Legal
+- Privacy Policy  
+- Terms & Conditions  
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN  
+Talk to Enatega AI

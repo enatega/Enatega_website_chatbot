@@ -1,70 +1,194 @@
----
+# Getting Started
+
+## Introduction
+This section provides an overview of the system and its components.
+
+## High Level Architecture
+An outline of the architecture that supports the application.
+
+## Overview of the API
+Details regarding the API functionalities.
+
+## FAQs
+Frequently asked questions about the system.
+
+## License
+Information about the licensing of the software.
+
+## Patch Notes
+Updates and changes made to the software.
 
 # Installation
+
 ## Prerequisites
+Requirements needed before installation.
+
 ## How to Setup Locally
+
 ### NodeJS Setup
+Instructions for setting up Node.js.
+
 ### Git and GitHub Setup
+Guidelines for configuring Git and GitHub.
+
 ### Setup Backend API
+Steps to set up the backend API.
+
 ### Web Dashboard Setup
+Instructions for setting up the web dashboard.
+
 ### Admin Dashboard Setup
+Steps to set up the admin dashboard.
+
 ### Customer App Setup
+Instructions for setting up the customer application.
+
 ### Rider App Setup
+Steps to set up the rider application.
+
 ### Restaurant App Setup
+Instructions for setting up the restaurant application.
 
-## How to Setup/Deploy for Production
-### Configuration
-- Google Maps API Keys
-- Nodemailer Setup
-- Configuring Payment Gateways
-- Twilio Setup
-- Sentry Dashboard
-- Configuring Cloudinary
-- Amplitude Dashboard
-- Firebase Setup
-- Push Notification Keys
-- Social Login
-- Configuring Database Server Configurations
+# How to Setup/Deploy for Production
 
----
+## Configuration
+Details on configuring the application for production.
+
+### Google Maps API Keys
+Instructions for setting up Google Maps API keys.
+
+### Nodemailer Setup
+Steps for configuring Nodemailer.
+
+### Configuring Payment Gateways
+Guidelines for setting up payment gateways.
+
+### Twilio Setup
+Instructions for configuring Twilio.
+
+### Sentry Dashboard
+Steps for setting up the Sentry dashboard.
+
+### Configuring Cloudinary
+Instructions for configuring Cloudinary.
+
+### Amplitude Dashboard
+Steps for setting up the Amplitude dashboard.
+
+### Firebase Setup
+Instructions for configuring Firebase.
+
+### Push Notification Keys
+Guidelines for setting up push notification keys.
+
+### Social Login
+Instructions for configuring social login.
+
+### Configuring Database Server
+Steps for configuring the database server.
 
 # Installation
-## How To Setup Admin Dashboard
-1. Clone or download source code from GitHub.
-2. To download the Admin Dashboard, click here on Download Enatega Multivendor.
 
-⚠️ **Note:** Ensure you have Node.js installed on your computer to launch the module.
+## How to Setup Admin Dashboard
+1. Clone or download the source code from GitHub. 
+   - To download the Admin Dashboard, click here on Download Enatega Multivendor.
+   - Note: Ensure you have Node.js installed on your computer to launch the module.
 
-### After Installing Node.js:
-- Open the Enatega MultiVendor code in a code editor.
-- To run the enatega-multivendor-admin, open it in the integrated terminal by:
-  - Right-clicking on the enatega-multivendor-admin folder and selecting “Open in Integrated Terminal”
-  - Or by using the following command in the terminal: 
-    ```
-    cd <Project directory>
-    ```
-    For example: 
-    ```
-    cd enatega-multivendor-admin
-    ```
+2. After installing Node.js:
+   - Open the Enatega MultiVendor code in a code editor.
+   - To run the enatega-multivendor-admin, open it in the integrated terminal by:
+     - Right-clicking on the enatega-multivendor-admin folder and selecting “Open in Integrated Terminal” 
+     - Or by using the following command in the terminal: 
+       ```
+       cd <Project directory>
+       ```
+       For example: 
+       ```
+       cd enatega-multivendor-admin
+       ```
 
-### Testing the Admin
-- To test the Admin (if you don’t have your own server URL) and check the look and feel, no changes are needed.
-- To run the Admin against your own server URL:
-  1. Go to the `src` folder.
-  2. Inside the `src` folder, go to the `config` folder.
-  3. In the `config` folder, open `constants.js`.
-  4. Replace the following in `constants.js`:
-    - `SERVER_URL`
-    - `WS_SERVER_URL`
-    - `GOOGLE_MAPS_KEY`
+3. To test the Admin (without your own server URL) and check the look and feel, no changes are needed.
 
-### Running the Admin Dashboard
-- After completing all the configurations, it’s time to run the admin dashboard.
-- To run the admin dashboard, open the terminal and run the following commands:
-  ```
-  npm install (or yarn install)
-  npm start
-  ```
+4. To run the Admin against your own server URL:
+   - Go to the `src` folder.
+   - Inside the `src` folder, go to the `config` folder.
+   - In the `config` folder, open `constants.js`.
+   - Replace the following in `constants.js`:
+     - `SERVER_URL`
+     - `WS_SERVER_URL`
+     - `GOOGLE_MAPS_KEY`
 
----
+5. After completing all the configurations, it’s time to run the admin dashboard. 
+   - To run the admin dashboard, open the terminal and run the following commands:
+     ```
+     npm install (or yarn install)
+     npm start
+     ```
+
+# Contact Information
+1021 E Lincolnway Suite #6581,  
+Cheyenne, Wyoming 82001,  
+United States  
+sales@enatega.com  
++1 (307) 776-8999  
+
+# Comparison
+- Blink
+- Deonde
+- GloriaFood
+- Ordering.Co
+- Shipday
+- SpotNeats
+- Yelo
+- Zeew
+
+# Case Studies
+- Yalla Delivery
+- Stylizenow
+- Easy Eats
+- Vinifynd
+- Snap Delivered
+- Borku Delivery
+
+# Resources
+- Blog
+- Documentation
+- Features
+
+# Clones
+- Blinkit
+- Deliveroo
+- Delivery Hero
+- Dunzo
+- Foodpanda
+- Glovo
+- Grubhub
+- Justeat
+- Postmates
+- Rappi
+- Swiggy
+- Talabat
+- Ubereats
+- Zepto
+- Zomato
+
+# Use Cases
+- Gift Delivery Solution
+- Milk Delivery Solution
+- Grocery Delivery Solution
+- Liquor Delivery Solution
+- Flower Delivery Solution
+- Medicine Delivery Solution
+- Food and Beverage Solution
+- Courier Delivery Solution
+- Beauty Services Scheduling Solution
+- Laundry-On-Demand Services Solution
+- Roadside Assistance Services Solution
+- Document Delivery Solution
+
+# Legal
+- Privacy Policy
+- Terms & Conditions
+
+©2025 Enatega · All rights reserved.  
+Powered by: EN Talk to Enatega AI
