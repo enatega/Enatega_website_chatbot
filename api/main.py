@@ -596,7 +596,8 @@ def cors_preflight(rest_of_path: str, request: Request):
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
 emb = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
 vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
-form_link= "https://enatega.com/contact/?utm_source=AI&utm_medium=Chatbot&utm_campaign=leads"
+calendly_link = "https://calendly.com/enategabd/strategy-call?primary_color=624de3&back=1&month=2025-12"
+calendly_iframe = f'<iframe src="{calendly_link}" style="width: 100%; min-width: 320px; height: 400px;" frameborder="0"></iframe>'
 
 retriever = vs.as_retriever(search_kwargs={"k": 6})
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, api_key=OPENAI_API_KEY)
@@ -629,8 +630,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Use natural, professional language without being overly formal\n"
     "• Reply in the language of the user's query or English only\n"
     "• Respond in **bold headings** and <p> structured paragraphs using HTML tags (e.g., <h2>, <h3>, <p>, <ul>, <li>) instead of asterisks. Do not use asterisks.\n "
-    "• The placeholder/text for the form link should be dynamic e.g schedule a call, get a quote etc based on user query\n"
-    "• The link for user form submission should be structured at the end of the response to make UX better.\n"
+    "• When suggesting to book a meeting, embed a Calendly iframe in the response using the provided iframe HTML code.\n"
+    "• The Calendly iframe should be embedded at the end of the response when suggesting meetings to make UX better.\n"
     "• When asked for use cases, provide complete use cases rather than explaining, provide precise list of use cases. - Food Delivery - Flower Delivery - Grocery Delivery - Milk Delivery - Document Delivery - Liquor Delivery - Medicine Delivery - Courier Service - Beauty Services - Roadside Assistance - Gift Delivery - Laundry On-Demand Services \n"
     "• Keep responses clear, complete and structured\n\n"
     "CONVERSATION APPROACH:\n"
@@ -646,8 +647,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• 'I don't have specific details about that, but I can tell you about [related topic]...'\n"
     "• 'While I can't provide exact information on that, what I can share is... Would you like me to help you explore [alternative]?'\n"
     "• 'That's a great question that would be best answered by our technical team. Meanwhile, let me help you with [related information]...'\n\n"
-    "WHEN TO SUGGEST BOOKING A MEETING OR GET A QUOTE THROUGH FORM SUBMISSION:\n"
-    f"Proactively suggest booking a strategy call by having the user fill out the form at {form_link} when:\n"
+    "WHEN TO SUGGEST BOOKING A MEETING:\n"
+    "Proactively suggest booking a strategy call by embedding the Calendly iframe in your response when:\n"
     "• CRUCIAL: Anything related to Enatega, technical or non-technical that is not in your context\n"
     "• User asks highly technical questions beyond your knowledge (database specifics, complex integrations, custom development)\n"
     "• User shows strong interest (asks about pricing, timeline, implementation)\n"
@@ -656,10 +657,11 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• User asks about Enterprise plan or custom solutions\n"
     "• You cannot adequately address their concerns with available context\n"
     "• User seems ready to move forward but needs technical validation\n\n"
-    "MEETING REFERRAL EXAMPLES BY DIRECTING USERS TO FILL OUT THE FORM:\n"
-    f"• 'This sounds like something our technical team should discuss with you directly. To get started with a free strategy call where you'll receive detailed answers, please fill out our form at {form_link}'\n"
-    f"• 'Based on your requirements, I'd recommend speaking with our team directly. They can provide specific technical details and discuss your customization needs. Please complete the form here to schedule your consultation: {form_link}'\n"
-    f"• 'It sounds like you're seriously considering Enatega for your business. Our team can provide a personalized consultation to address all your questions. Please fill out the form to get started: {form_link}'\n\n"
+    "MEETING REFERRAL EXAMPLES WITH CALENDLY IFRAME:\n"
+    f"When suggesting a meeting, end your response with text like 'Please schedule a time below:' or 'You can book a consultation below:' and then embed this exact Calendly iframe HTML:\n"
+    f"{calendly_iframe}\n"
+    f"Example: 'This sounds like something our technical team should discuss with you directly. To get started with a free strategy call where you'll receive detailed answers, please schedule a time below:'\n"
+    f"Then include the iframe HTML code directly in your response.\n\n"
     "ENGAGEMENT STRATEGIES:\n"
     "• Ask about their business type, size, or specific needs\n"
     "• Suggest relevant features they might not have considered\n"
