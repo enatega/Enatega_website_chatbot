@@ -81,19 +81,36 @@ function addMessage(role, text, sources, latency) {
 }
 
 function sanitizeBasicHTML(html) {
-    // 1) Remove script/style/noscript/iframe objects entirely
-    const blocked = /<\/?(script|style|noscript|iframe|object|embed|form|link|meta)[\s\S]*?>/gi;
-    let safe = html.replace(blocked, "");
+    // 1) Extract Calendly iframes before sanitization
+    const calendlyIframeRegex = /<iframe\s+[^>]*src=["']https?:\/\/(www\.)?calendly\.com[^"']*["'][^>]*>[\s\S]*?<\/iframe>/gi;
+    const calendlyIframes = [];
+    let safe = html.replace(calendlyIframeRegex, (match) => {
+      // Verify it's actually a Calendly iframe and sanitize it
+      if (match.includes('calendly.com')) {
+        calendlyIframes.push(match);
+        return `__CALENDLY_IFRAME_${calendlyIframes.length - 1}__`;
+      }
+      return '';
+    });
   
-    // 2) Strip on* handlers and javascript: urls
+    // 2) Remove script/style/noscript/iframe/object/embed/form/link/meta
+    const blocked = /<\/?(script|style|noscript|iframe|object|embed|form|link|meta)[\s\S]*?>/gi;
+    safe = safe.replace(blocked, "");
+  
+    // 3) Strip on* handlers and javascript: urls
     safe = safe
       .replace(/\son\w+="[^"]*"/gi, "")
       .replace(/\son\w+='[^']*'/gi, "")
       .replace(/javascript:/gi, "");
   
-    // 3) Whitelist-only tags by removing everything else (optional—comment out if too strict)
+    // 4) Whitelist-only tags by removing everything else
     const allowed = /<(\/?(h1|h2|h3|h4|p|ul|ol|li|b|strong|i|em|br|hr|code|pre|a))(\s+[^>]*)?>/gi;
     safe = safe.replace(/<[^>]+>/g, m => m.match(allowed) ? m : "");
+  
+    // 5) Restore Calendly iframes
+    calendlyIframes.forEach((iframe, index) => {
+      safe = safe.replace(`__CALENDLY_IFRAME_${index}__`, iframe);
+    });
   
     return safe;
   }

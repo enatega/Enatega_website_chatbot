@@ -1,7 +1,7 @@
 # chunks from https://enatega.com/ and related pages
 # splitter = token | size=700 | overlap=150
 
------ chunk 1/105 -----
+----- chunk 1/100 -----
 url: https://enatega.com/amplitude-introduction/ | title: Multi Vendor Amplitude Introduction | Enatega
 slug: amplitude-introduction | chars: 388
 
@@ -17,7 +17,7 @@ slug: amplitude-introduction | chars: 388
 # Amplitude Product Demo
 Amplitude is a very effective tool for observing the results of your data analytics. With this in mind, we have tightly incorporated Amplitude into our solution so you don’t have to start from scratch.
 
------ chunk 2/105 -----
+----- chunk 2/100 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution for Salons | Enatega
 slug: beauty-services-scheduling-solution | chars: 3575
 
@@ -116,7 +116,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get In Touch
 For inquiries, please contact us at:
 
------ chunk 3/105 -----
+----- chunk 3/100 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution for Salons | Enatega
 slug: beauty-services-scheduling-solution | chars: 668
 
@@ -148,7 +148,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 4/105 -----
+----- chunk 4/100 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 3471
 
@@ -199,7 +199,7 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999
 
------ chunk 5/105 -----
+----- chunk 5/100 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 820
 
@@ -224,7 +224,7 @@ sales@enatega.com
 Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 6/105 -----
+----- chunk 6/100 -----
 url: https://enatega.com/configuration-google-maps-api-keys/ | title: Multi-Vendor Configuration Google Maps API Keys | Enatega
 slug: configuration-google-maps-api-keys | chars: 1936
 
@@ -277,7 +277,7 @@ Modifications should be made to all modules that require GOOGLE_MAPS_KEY or goog
 - [Google Cloud](https://cloud.google.com)
 - [Google Map Platform](https://developers.google.com/maps)
 
------ chunk 7/105 -----
+----- chunk 7/100 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Customizable Online Courier Delivery Solution | Enatega
 slug: courier-delivery-solution | chars: 3667
 
@@ -380,7 +380,7 @@ For inquiries, please contact:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 8/105 -----
+----- chunk 8/100 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Customizable Online Courier Delivery Solution | Enatega
 slug: courier-delivery-solution | chars: 724
 
@@ -415,7 +415,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 9/105 -----
+----- chunk 9/100 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution | Enatega
 slug: document-delivery-solution | chars: 3692
 
@@ -516,7 +516,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 10/105 -----
+----- chunk 10/100 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution | Enatega
 slug: document-delivery-solution | chars: 740
 
@@ -548,7 +548,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 11/105 -----
+----- chunk 11/100 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 3660
 
@@ -578,7 +578,7 @@ The development team implemented a wallet feature for riders and restaurants, au
 ## Launching The App
 Once all requested features for version 1.0 were completed, the app was ready for launch. The Easy Eats founders participated in the Greenlight Maine competition, where they presented their app to the judges. After showcasing the app's unique features, the Easy Eats team won the competition, receiving $25,000 to expand their operations. Subsequently, they launched the app at their college in Maine and expanded to other nearby universities.
 
------ chunk 12/105 -----
+----- chunk 12/100 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 1661
 
@@ -623,7 +623,7 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999
 
------ chunk 13/105 -----
+----- chunk 13/100 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 3669
 
@@ -674,7 +674,7 @@ With multiple payment integrations, including Stripe, Enatega allows businesses 
 
 ## Choosing The Best Alternative For Blink
 
------ chunk 14/105 -----
+----- chunk 14/100 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 1771
 
@@ -733,7 +733,7 @@ sales@enatega.com
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 15/105 -----
+----- chunk 15/100 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 3362
 
@@ -772,7 +772,7 @@ Enatega’s platform caters to businesses beyond just food delivery, allowing yo
 ### Branding and User Experience
 Enatega offers complete UI control, giving you the freedom to create an app that aligns with your brand’s look and feel. For companies looking for apps like DeOnDe but with greater customization potential, Enatega is an excellent white-label DeOnDe alternative app that allows for distinct brand identity.
 
------ chunk 16/105 -----
+----- chunk 16/100 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 2348
 
@@ -832,7 +832,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 17/105 -----
+----- chunk 17/100 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 3551
 
@@ -903,7 +903,7 @@ Enatega integrates various payment gateways, including Stripe, to streamline tra
 
 ### Scalability for Multiple Services
 
------ chunk 18/105 -----
+----- chunk 18/100 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 1923
 
@@ -976,7 +976,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 19/105 -----
+----- chunk 19/100 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 3682
 
@@ -1053,7 +1053,7 @@ With dedicated support and a scalable architecture, Enatega adapts to your busin
 
 ## Why Enatega Stands Out Among Ordering.Co Competitors?
 
------ chunk 20/105 -----
+----- chunk 20/100 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 1470
 
@@ -1123,7 +1123,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 21/105 -----
+----- chunk 21/100 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 3478
 
@@ -1185,7 +1185,7 @@ Enatega’s extensive customization options and wide-ranging service application
 - **Enhanced Payment and Tracking Options**  
   While Shipday provides real-time tracking, Enatega offers more adaptable tracking features and multiple payment gateways, allowing businesses to create a streamlined customer experience that fits their specific market needs. This payment flexibility makes Enatega a top Shipday similar solution with additional benefits.
 
------ chunk 22/105 -----
+----- chunk 22/100 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 1903
 
@@ -1254,7 +1254,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 23/105 -----
+----- chunk 23/100 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 3335
 
@@ -1325,7 +1325,7 @@ Enatega offers tailored support for onboarding and scaling, ideal for companies 
 
 ## Why Enatega Stands Out Among SpotNeats Competitors?
 
------ chunk 24/105 -----
+----- chunk 24/100 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 1568
 
@@ -1377,7 +1377,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 25/105 -----
+----- chunk 25/100 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 3696
 
@@ -1425,7 +1425,7 @@ Enatega is designed to scale alongside your business, with personalized support 
 ## Conclusion
 For companies that want a marketplace app with expansive customization options, Enatega provides a strong alternative to Yelo. Its extensive feature set and full control over design and branding make Enatega a top choice for businesses ready to innovate in the on-demand delivery market.
 
------ chunk 26/105 -----
+----- chunk 26/100 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 1130
 
@@ -1456,7 +1456,7 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 27/105 -----
+----- chunk 27/100 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 3460
 
@@ -1519,7 +1519,7 @@ Enatega provides a range of payment gateways and API compatibility options to fi
 
 ---
 
------ chunk 28/105 -----
+----- chunk 28/100 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 1473
 
@@ -1553,7 +1553,7 @@ Schedule a meeting and get started with Enatega.
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 29/105 -----
+----- chunk 29/100 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 3382
 
@@ -1620,7 +1620,7 @@ No Dev team or technical skills? Not a problem! We've partnered with Ninjas Code
 ### Enjoy Free Lifetime Updates
 Enatega's frontend is fully open source, allowing you to track real-time updates and address any issues with complete transparency. Our backend, though proprietary, is shared with you during every new release, ensuring your system remains updated with the latest technologies for Android and iOS app development.
 
------ chunk 30/105 -----
+----- chunk 30/100 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 3609
 
@@ -1701,7 +1701,7 @@ Best for enterprises that need advanced features and deployment support. Include
 
 ## Frequently Asked Questions
 
------ chunk 31/105 -----
+----- chunk 31/100 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 1960
 
@@ -1764,7 +1764,7 @@ United States
 **Email**: sales@enatega.com  
 **Phone**: +1 (307) 776-8999
 
------ chunk 32/105 -----
+----- chunk 32/100 -----
 url: https://enatega.com/faqs/ | title: Multi Vendor Marketplace Platform Faqs | Enatega
 slug: faqs | chars: 648
 
@@ -1781,7 +1781,7 @@ slug: faqs | chars: 648
 - Do We Need To Update Anything Soon?
 - Is There Additional Documentation That Is Not Available Online?
 
------ chunk 33/105 -----
+----- chunk 33/100 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 4111
 
@@ -1825,7 +1825,7 @@ You get to optimize your web app's performance with our comprehensive performanc
 ### Order Rating And Reviews
 Get your customer's feedback and gain an insight into their experience with our order rating and reviews feature. After each order, users can provide ratings and reviews to help you improve your delivery business to enable continuous operations.
 
------ chunk 34/105 -----
+----- chunk 34/100 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 3785
 
@@ -1867,7 +1867,7 @@ With our restaurant application features, you get to take complete control of yo
 ### Real-Time Order Receiving
 Delight your customers with a revolutionary real-time order receiving feature. As orders move seamlessly through preparation and delivery stages, your team stays coordinated to ensure your orders get delivered on time and create an unparalleled customer experience.
 
------ chunk 35/105 -----
+----- chunk 35/100 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 3781
 
@@ -1909,7 +1909,7 @@ Enatega's rider application empowers business owners with real-time insights int
 ### Instant Customer Chat
 Enhance your customer service with the instant customer chat feature present in the Enatega's rider application features. Riders can instantly address customer inquiries, provide updates, and ensure a smooth delivery experience.
 
------ chunk 36/105 -----
+----- chunk 36/100 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 3822
 
@@ -1951,7 +1951,7 @@ Take control of your online reputation with the ratings and coupon management fe
 ### Tipping Option Management
 The tipping option management feature is not just a feature; it's a way to appreciate and motivate your delivery team. Enable your customers to show their gratitude and satisfaction with your service through a seamless tipping process present in the admin panel features.
 
------ chunk 37/105 -----
+----- chunk 37/100 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 4168
 
@@ -1994,7 +1994,7 @@ Increase your brand's reach strategically with our delivery area definition feat
 ### Menu Showcase
 Elevate your restaurant's presence with the menu showcase feature. Catch your customers' eye with enticing images, detailed descriptions, and a seamless browsing experience using the menu showcase feature.
 
------ chunk 38/105 -----
+----- chunk 38/100 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 1895
 
@@ -2016,7 +2016,7 @@ Attract and retain customers with the discounted fare feature. Implement strateg
 ### Order And Performance Analytics
 The order and performance analytics feature provide you with invaluable insights into your business operations. You get to stay updated with the current order trends, analyze customer preferences, and optimize your menu based on analytics. Enhance your operational overall performance and reduce your business costs with this admin dashboard feature.
 
------ chunk 39/105 -----
+----- chunk 39/100 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Custom-Made Saas Based Flower Delivery Solution | Enatega
 slug: flower-delivery-solution | chars: 3682
 
@@ -2108,7 +2108,7 @@ A custom plan tailored for enterprises needing advanced features and deployment 
 - Continuous collaboration with Enatega developers.
 - Advanced support and personalized technical guidance.
 
------ chunk 40/105 -----
+----- chunk 40/100 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Custom-Made Saas Based Flower Delivery Solution | Enatega
 slug: flower-delivery-solution | chars: 764
 
@@ -2136,7 +2136,7 @@ For inquiries, please contact:
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 41/105 -----
+----- chunk 41/100 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
 slug: food-and-beverage-solution | chars: 4039
 
@@ -2194,7 +2194,7 @@ The Premium Plan is marked as "Most Popular" and targets growing businesses seek
 
 ### Enterprise Plan - Custom Plan
 
------ chunk 42/105 -----
+----- chunk 42/100 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
 slug: food-and-beverage-solution | chars: 3496
 
@@ -2248,7 +2248,7 @@ The business address is 1021 E Lincolnway Suite #6581, Cheyenne, Wyoming 82001, 
 
 Privacy Policy and Terms & Conditions are available. Content is copyrighted 2024 Enatega with all rights reserved. Multi-language support is available in English and Español.
 
------ chunk 43/105 -----
+----- chunk 43/100 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: Non-Saas Based Food & Beverage Delivery Solution | Enatega
 slug: food-and-beverage-solution | chars: 1952
 
@@ -2286,7 +2286,7 @@ The Admin Dashboard provides comprehensive control of food delivery business, ma
 
 The server infrastructure is robust and scalable, ensuring smooth operations and real-time data synchronization with seamless integration across all platforms for food delivery operations.
 
------ chunk 44/105 -----
+----- chunk 44/100 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: Online Grocery Delivery & Ordering Solution | Enatega
 slug: grocery-delivery-solution | chars: 3542
 
@@ -2384,7 +2384,7 @@ For inquiries, contact us at:
 Cheyenne, Wyoming 82001,  
 United States
 
------ chunk 45/105 -----
+----- chunk 45/100 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: Online Grocery Delivery & Ordering Solution | Enatega
 slug: grocery-delivery-solution | chars: 673
 
@@ -2415,7 +2415,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 46/105 -----
+----- chunk 46/100 -----
 url: https://enatega.com/high-level-architecture/ | title: Multi Vendor High Level Architecture | Enatega
 slug: high-level-architecture | chars: 2054
 
@@ -2467,7 +2467,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 47/105 -----
+----- chunk 47/100 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 3110
 
@@ -2524,7 +2524,7 @@ Deploying means making your API server available and functional on the hosting s
 
 ### Railway Cloud Deployment Video
 
------ chunk 48/105 -----
+----- chunk 48/100 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 3279
 
@@ -2572,7 +2572,7 @@ Deploying means making your API server available and functional on the hosting s
 
 ### So What is Cloudinary?
 
------ chunk 49/105 -----
+----- chunk 49/100 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 3079
 
@@ -2663,7 +2663,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 50/105 -----
+----- chunk 50/100 -----
 url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-backend-api-server | chars: 3097
 
@@ -2732,7 +2732,7 @@ After completing the setup steps, you can start using your backend API. Simply r
 docker compose up --build
 ```
 
------ chunk 51/105 -----
+----- chunk 51/100 -----
 url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-backend-api-server | chars: 610
 
@@ -2754,7 +2754,7 @@ docker compose up --build
 
 For any issues or further assistance, please contact support.
 
------ chunk 52/105 -----
+----- chunk 52/100 -----
 url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-mobile-applications | chars: 3233
 
@@ -2849,7 +2849,7 @@ This variable represents a Google OAuth client ID specifically intended for use 
 
 ## SENTRY_DSN
 
------ chunk 53/105 -----
+----- chunk 53/100 -----
 url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-mobile-applications | chars: 3080
 
@@ -2963,7 +2963,7 @@ Once everything is finished and your app has been tested, you are ready to publi
 
 ### Bundle Identification
 
------ chunk 54/105 -----
+----- chunk 54/100 -----
 url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-mobile-applications | chars: 1413
 
@@ -3015,7 +3015,7 @@ You can get a domain name from any domain name service, for example, GoDaddy. Yo
 
 ---
 
------ chunk 55/105 -----
+----- chunk 55/100 -----
 url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-web-dashboard | chars: 3434
 
@@ -3065,7 +3065,7 @@ Here is how you can create Stripe endpoint secrets.
 
 ### Stripe Configuration Video
 
------ chunk 56/105 -----
+----- chunk 56/100 -----
 url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-web-dashboard | chars: 3713
 
@@ -3117,7 +3117,7 @@ This variable specifies which Google Maps libraries are included in your applica
 ### REACT_APP_GOOGLE_COLOR
 This variable may be used to define a specific color associated with Google-related elements in your application.
 
------ chunk 57/105 -----
+----- chunk 57/100 -----
 url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-web-dashboard | chars: 2320
 
@@ -3159,7 +3159,7 @@ For Netlify, you would typically connect your code repository (e.g., on GitHub o
 #### Vercel
 Vercel offers a similar process. You connect your code repository, configure your settings, and Vercel handles the build and deployment. Custom domains can be set up on Vercel to determine the URLs for your dashboard and web app.
 
------ chunk 58/105 -----
+----- chunk 58/100 -----
 url: https://enatega.com/how-to-setup-admin-dashboard-locally/ | title: How to setup Admin Dashboard - Multi-Vendor Doc - Enatega
 slug: how-to-setup-admin-dashboard-locally | chars: 1939
 
@@ -3234,7 +3234,7 @@ slug: how-to-setup-admin-dashboard-locally | chars: 1939
 
 ---
 
------ chunk 59/105 -----
+----- chunk 59/100 -----
 url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
 slug: how-to-setup-backend-api-locally | chars: 2080
 
@@ -3299,7 +3299,7 @@ SENDGRID_API_KEY=
 ### Environment Variables Explanation:
 Make sure to understand the purpose of each environment variable before modifying them.
 
------ chunk 60/105 -----
+----- chunk 60/100 -----
 url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
 slug: how-to-setup-backend-api-locally | chars: 2855
 
@@ -3381,7 +3381,7 @@ Phone: +1 (307) 776-8999
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 61/105 -----
+----- chunk 61/100 -----
 url: https://enatega.com/how-to-setup-customer-app-locally/ | title: How to setup Customer App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-customer-app-locally | chars: 2121
 
@@ -3437,7 +3437,7 @@ Reference: [React Native Google Signin Documentation](https://react-native-googl
 
 ---
 
------ chunk 62/105 -----
+----- chunk 62/100 -----
 url: https://enatega.com/how-to-setup-restaurant-app-locally/ | title: How to setup Restaurant App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-restaurant-app-locally | chars: 1659
 
@@ -3485,7 +3485,7 @@ slug: how-to-setup-restaurant-app-locally | chars: 1659
 
 ---
 
------ chunk 63/105 -----
+----- chunk 63/100 -----
 url: https://enatega.com/how-to-setup-rider-app-locally/ | title: How to setup Rider App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-rider-app-locally | chars: 1595
 
@@ -3533,7 +3533,7 @@ slug: how-to-setup-rider-app-locally | chars: 1595
 
 ---
 
------ chunk 64/105 -----
+----- chunk 64/100 -----
 url: https://enatega.com/how-to-setup-web-dashboard-locally/ | title: How to setup Web Dashboard - Multi-Vendor Doc - Enatega
 slug: how-to-setup-web-dashboard-locally | chars: 1375
 
@@ -3575,7 +3575,7 @@ slug: how-to-setup-web-dashboard-locally | chars: 1375
    npm start
    ```
 
------ chunk 65/105 -----
+----- chunk 65/100 -----
 url: https://enatega.com/introduction/ | title: Multi Vendor App Intro | Enatega
 slug: introduction | chars: 3446
 
@@ -3667,7 +3667,7 @@ To enhance the developer experience, the code is organized, and unnecessary scre
 - Bootstrap
 - Firebase (for web push notifications)
 
------ chunk 66/105 -----
+----- chunk 66/100 -----
 url: https://enatega.com/introduction/ | title: Multi Vendor App Intro | Enatega
 slug: introduction | chars: 1028
 
@@ -3738,7 +3738,7 @@ United States
 Email: sales@enatega.com  
 Phone: +1 (307) 776-8999
 
------ chunk 67/105 -----
+----- chunk 67/100 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Online Laundry On-Demand Services Solution | Enatega
 slug: laundry-on-demand-services-solution | chars: 3477
 
@@ -3829,7 +3829,7 @@ The Premium Plan features a rich delivery suite ideal for growing businesses, in
 ### Enterprise Plan
 The Enterprise Plan is a custom solution tailored for enterprises needing advanced features and deployment support, including:
 
------ chunk 68/105 -----
+----- chunk 68/100 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Online Laundry On-Demand Services Solution | Enatega
 slug: laundry-on-demand-services-solution | chars: 1371
 
@@ -3877,7 +3877,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 69/105 -----
+----- chunk 69/100 -----
 url: https://enatega.com/license/ | title: Multi Vendor App License | Enatega
 slug: license | chars: 888
 
@@ -3889,7 +3889,7 @@ There are no limitations on the number of iOS apps or Android apps you can insta
 
 If the item contains licensed components, you may not extract those components and use them separately; you may only use those components as part of the item. The rules of the GNU General Public License (GPL), to the extent it applies, shall govern your use of the item if it was made using components covered by the GNU General Public License (GPL).
 
------ chunk 70/105 -----
+----- chunk 70/100 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: On-Demand White Label Liquor Delivery Solution | Enatega
 slug: liquor-delivery-solution | chars: 3559
 
@@ -3990,7 +3990,7 @@ The Enterprise Plan is a custom solution tailored for enterprises needing advanc
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 71/105 -----
+----- chunk 71/100 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: On-Demand White Label Liquor Delivery Solution | Enatega
 slug: liquor-delivery-solution | chars: 1132
 
@@ -4034,7 +4034,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 72/105 -----
+----- chunk 72/100 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Feature-Rich On-Demand Medicine Delivery Solution | Enatega
 slug: medicine-delivery-solution | chars: 3420
 
@@ -4126,7 +4126,7 @@ The Premium Plan includes:
 ### Enterprise Plan
 The Enterprise Plan is a custom solution tailored for enterprises needing advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 73/105 -----
+----- chunk 73/100 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Feature-Rich On-Demand Medicine Delivery Solution | Enatega
 slug: medicine-delivery-solution | chars: 1369
 
@@ -4174,7 +4174,7 @@ United States
 
 ©2024 Enatega. All rights reserved.
 
------ chunk 74/105 -----
+----- chunk 74/100 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Launch Your Feature-Rich Milk Delivery App with Enatega
 slug: milk-delivery-solution | chars: 3529
 
@@ -4278,7 +4278,7 @@ United States
 **Email:** sales@enatega.com  
 **Phone:** +1 (307) 776-8999
 
------ chunk 75/105 -----
+----- chunk 75/100 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Launch Your Feature-Rich Milk Delivery App with Enatega
 slug: milk-delivery-solution | chars: 758
 
@@ -4310,7 +4310,7 @@ United States
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 76/105 -----
+----- chunk 76/100 -----
 url: https://enatega.com/multi-vendor-features/ | title: Enatega Features for Food Delivery Solution | Enatega
 slug: multi-vendor-features | chars: 1630
 
@@ -4374,7 +4374,7 @@ Phone: +1 (307) 776-8999
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 77/105 -----
+----- chunk 77/100 -----
 url: https://enatega.com/overview-of-the-api/ | title: Overview of the API - Multi-Vendor Doc - Enatega
 slug: overview-of-the-api | chars: 1620
 
@@ -4396,7 +4396,7 @@ Dockerization is the process of packaging and deploying software applications wi
 
 Enatega uses MongoDB to manage its database instead of SQL for database management. You can view MongoDB’s documentation by clicking here.
 
------ chunk 78/105 -----
+----- chunk 78/100 -----
 url: https://enatega.com/patch-notes/ | title: Multi Vendor App Patch Notes | Enatega
 slug: patch-notes | chars: 3548
 
@@ -4444,7 +4444,7 @@ slug: patch-notes | chars: 3548
 - Added favourites.
 - Added global notification.
 
------ chunk 79/105 -----
+----- chunk 79/100 -----
 url: https://enatega.com/prerequisites/ | title: Multi Vendor App Server Configurations | Enatega
 slug: prerequisites | chars: 545
 
@@ -4479,7 +4479,7 @@ slug: prerequisites | chars: 545
 ## Social Login
 ## Configuring Database Server
 
------ chunk 80/105 -----
+----- chunk 80/100 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3338
 
@@ -4519,7 +4519,7 @@ Snap Delivered is a food delivery platform powered by Enatega, similar to other 
 - This flat rate allowed new business owners to use the service to automate deliveries
 - Helped level the playing field for restaurants of all sizes
 
------ chunk 81/105 -----
+----- chunk 81/100 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3205
 
@@ -4565,7 +4565,7 @@ Borku has a desire to celebrate the diversity of African cuisine through a speci
 
 Easy Eats successfully launched a brand new startup with investors using Enatega's platform.
 
------ chunk 82/105 -----
+----- chunk 82/100 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3539
 
@@ -4604,7 +4604,7 @@ Thanks to Enatega, Vinifynd was able to deploy its own customized and branded ap
 
 StylizeNow is an on-demand styling service platform powered by Enatega that provides professional hair styling services at the customer's doorstep.
 
------ chunk 83/105 -----
+----- chunk 83/100 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 2040
 
@@ -4624,7 +4624,7 @@ Enatega, a versatile white-label delivery solution, emerged as the key player in
 **Results:**
 StylizeNOW has successfully addressed the pain points of traditional salons by providing customers with a hassle-free experience. The company has been able to differentiate itself from traditional salons by providing professional hair styling services at the customer's doorstep. By harnessing Enatega's capabilities, StylizeNOW successfully eliminated the necessity for customers to visit a physical salon.
 
------ chunk 84/105 -----
+----- chunk 84/100 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Customizable Roadside Assistance Services Solution | Enatega
 slug: roadside-assistance-services-solution | chars: 3621
 
@@ -4724,7 +4724,7 @@ The Enterprise Plan is a custom option tailored for businesses needing advanced 
 ## Get in Touch
 For inquiries, please contact:
 
------ chunk 85/105 -----
+----- chunk 85/100 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Customizable Roadside Assistance Services Solution | Enatega
 slug: roadside-assistance-services-solution | chars: 750
 
@@ -4757,7 +4757,7 @@ United States
 
 ©2024 Enatega. All rights reserved.
 
------ chunk 86/105 -----
+----- chunk 86/100 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 3582
 
@@ -4797,7 +4797,7 @@ Recognizing the importance of technology in the industry, Snap Delivered continu
 ### Initiated Referral Programs
 While maintaining an affordable flat rate, Snap Delivered introduced referral programs allowing anyone to increase their income. The various options provided to individuals as well as businesses meant that anyone involved with Snap Delivered could earn money via recruitment, word-of-mouth advertisement, or referrals.
 
------ chunk 87/105 -----
+----- chunk 87/100 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 2232
 
@@ -4837,7 +4837,7 @@ Schedule a meeting and get started today.
 - Snap Delivered
 - Borku Delivery
 
------ chunk 88/105 -----
+----- chunk 88/100 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 3603
 
@@ -4891,7 +4891,7 @@ To learn more or to get a quote, please schedule a meeting.
 - Features
 - Compare
 
------ chunk 89/105 -----
+----- chunk 89/100 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 759
 
@@ -4920,7 +4920,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 90/105 -----
+----- chunk 90/100 -----
 url: https://enatega.com/tech_stack/ | title: Enatega — Tech Stack
 slug: tech_stack | chars: 2770
 
@@ -4956,7 +4956,7 @@ Enatega's technology stack enables the delivery of complete food delivery soluti
 
 The architecture maintains the scalability necessary to support multiple restaurants and thousands of concurrent users across various geographic locations. This makes it an ideal white-label solution for entrepreneurs and established businesses looking to launch their own branded food delivery platforms without incurring the substantial development costs typically associated with building such complex systems from scratch.
 
------ chunk 91/105 -----
+----- chunk 91/100 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 3576
 
@@ -4998,7 +4998,7 @@ Schedule a meeting and get a quote to learn more about Vinifynd's offerings.
 - Compare: Blink, Deonde, GloriaFood, Ordering.Co, Shipday, SpotNeats, Yelo, Zeew
 - Case Studies: Yalla Delivery, Stylizenow, Easy Eats, Vinifynd, Snap Delivered, Borku Delivery
 
------ chunk 92/105 -----
+----- chunk 92/100 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 542
 
@@ -5025,7 +5025,7 @@ Terms & Conditions
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 93/105 -----
+----- chunk 93/100 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 3333
 
@@ -5088,7 +5088,7 @@ With a laser-focused agile approach, Yalla’s MVP was launched within just a fe
 - Growing engagement with daily order volume increasing steadily.
 - Positive reviews citing UI simplicity and multi-functionality.
 
------ chunk 94/105 -----
+----- chunk 94/100 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 1960
 
@@ -5156,338 +5156,247 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 95/105 -----
+----- chunk 95/100 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 1081
+slug: youtube | chars: 3034
+
+# Enatega Development Setup and Deployment Guide
 
 ## 1. Initial Development Environment Setup
 
-This section covers the installation and configuration of core tools needed to run the application locally.
-
 ### 1.1 Node.js and NVM Installation
-* [cite_start]**Install Brew**: Ensure Brew is installed (typically present on Mac OS) by checking the version using `Brew -V`[cite: 1].
-* [cite_start]**Install NVM (Node Version Manager)**: Use Brew to install NVM with the command `Brew installed NVM`[cite: 1]. [cite_start]Verify installation with `NVM -V`[cite: 2].
-* [cite_start]**Install Node.js**: Install the recommended Node.js version (anything beyond 18, here **18.20.4**) using `NVM installed 18.20.4`[cite: 2].
-* **Verify and Set Default Version**: Use `NVM LS` to list installed versions. [cite_start]If multiple versions exist, set the required version as default using the command `NVM Alias default 18.20.4`[cite: 3]. [cite_start]The default version will be highlighted in green[cite: 3, 4].
-* [cite_start]**Final Check**: Confirm Node.js is working with `Node -V` and by running any simple JavaScript code snippet[cite: 4].
 
------ chunk 96/105 -----
-url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2271
+Ensure Brew is installed on Mac OS by checking the version using `Brew -V`. Use Brew to install NVM (Node Version Manager) with the command `Brew install NVM` and verify installation with `NVM -V`. Install the recommended Node.js version 18.20.4 or any version beyond 18 using `NVM install 18.20.4`.
+
+Use `NVM LS` to list all installed Node.js versions. If multiple versions exist, set the required version as default using `NVM alias default 18.20.4`. The default version will be highlighted in green in the list. Confirm Node.js is working properly by running `Node -V` and executing any simple JavaScript code snippet to verify functionality.
 
 ### 1.2 Git and SSH Configuration
-* [cite_start]**Install Git**: Install Git using Brew via the command `Brew install Git`[cite: 5].
-* [cite_start]**Verify Git**: Check the installed version using `Git -V` (e.g., version 2.39)[cite: 5].
-* [cite_start]**Generate SSH Key**: Follow the steps in the provided article (search "git ssh configuration" on Google) to generate a new SSH key[cite: 6].
-    * [cite_start]Use an appropriate email during generation[cite: 7].
-    * [cite_start]Use the default path by pressing enter[cite: 7].
-    * [cite_start]Enter and reconfirm a passphrase, which must be remembered as it is used for authentication during project cloning[cite: 7, 15].
-* [cite_start]**Add Key to Agent**: Start the SSH agent and add the newly generated key[cite: 8].
-* **Create Configuration File**:
-    * [cite_start]Change the directory to `~/.SSH`[cite: 8].
-    * [cite_start]Create an empty configuration file using a command (e.g., `touch config`) or a command from the article[cite: 9].
-    * [cite_start]Open the file (using `whim` or another editor) and paste the configuration from the article[cite: 9, 10].
-    * [cite_start]Ensure the key ID/name is correct to avoid conflicts[cite: 10].
-* [cite_start]**Copy Public Key**: Copy the public key to the clipboard using the command provided in the article[cite: 11, 12].
-* **Add Key to GitHub**:
-    * [cite_start]Go to your GitHub profile settings[cite: 12, 13].
-    * [cite_start]Select "SSH and GPG keys" and click "New SSH key"[cite: 13].
-    * [cite_start]Give it a meaningful title and select **"Authentication Key"** from the key type dropdown[cite: 13].
-    * [cite_start]Paste the copied key and click "Add"[cite: 13].
-    * [cite_start]Confirm by typing your GitHub account password[cite: 14].
 
----
+Install Git using Brew via the command `Brew install Git` and verify the installation by checking the version with `Git -V`, which should show a version like 2.39 or higher. Generate a new SSH key by following standard git ssh configuration procedures found through a Google search.
+
+During SSH key generation, use an appropriate email address and accept the default path by pressing enter. Enter and reconfirm a passphrase that must be remembered, as it will be required for authentication during project cloning operations.
+
+Start the SSH agent and add the newly generated key to it. Change the directory to `~/.SSH` and create an empty configuration file using the `touch config` command. Open the configuration file with a text editor and paste the SSH configuration from the standard setup article, ensuring the key ID or name is correct to avoid conflicts.
+
+Copy the public key to the clipboard using the command provided in the standard git ssh configuration article. Navigate to your GitHub profile settings, select "SSH and GPG keys", and click "New SSH key". Give the key a meaningful title and select "Authentication Key" from the key type dropdown. Paste the copied public key and click "Add", then confirm by typing your GitHub account password.
+
+### 1.3 Project Cloning
+
+Clone the proprietary Enatega backend API project from GitHub using the SSH link. The cloning process may ask for the passphrase created during SSH key generation. Once cloned, open the project in VS Code using the command `code .`.
 
 ## 2. Backend Setup: Backend API
 
-This covers cloning the backend, setting up environment variables, and configuring services.
+### 2.1 Environment Variables Configuration
 
-### 2.1 Cloning the Project
-* [cite_start]**Clone**: Clone the proprietary Enatega backend API project from GitHub using the **SSH** link[cite: 14, 15].
-* [cite_start]**Authentication**: The cloning process may ask for the passphrase created during the SSH key generation[cite: 15].
-* [cite_start]**Access Code**: Open the project in VS Code using `code .`[cite: 16].
+Create a new `.env` file in the backend project directory. Paste all required environment variables into this file, including connection string, server URL, backend URL, dashboard URL, and web URL. Ensure the Server URL uses the correct private IP address of your system for proper local network connectivity.
 
------ chunk 97/105 -----
+### 2.2 MongoDB Setup and Configuration
+
+Sign in to MongoDB Atlas and create an account if you don't have one. Configure Network Access settings for your cluster. For testing purposes, allow access from any IP address using `0.0.0.0/0`, though this configuration is not recommended for production environments.
+
+----- chunk 96/100 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2288
-
----
+slug: youtube | chars: 3280
 
 ## 2. Backend Setup: Backend API
 
-This covers cloning the backend, setting up environment variables, and configuring services.
+### 2.1 Environment Variables Configuration
 
-### 2.1 Cloning the Project
-* [cite_start]**Clone**: Clone the proprietary Enatega backend API project from GitHub using the **SSH** link[cite: 14, 15].
-* [cite_start]**Authentication**: The cloning process may ask for the passphrase created during the SSH key generation[cite: 15].
-* [cite_start]**Access Code**: Open the project in VS Code using `code .`[cite: 16].
+Create a new `.env` file in the backend project directory. Paste all required environment variables into this file, including connection string, server URL, backend URL, dashboard URL, and web URL. Ensure the Server URL uses the correct private IP address of your system for proper local network connectivity.
 
-### 2.2 Environment Variables (`.env`)
-* [cite_start]**Create File**: Create a new `.env` file in the project directory[cite: 16].
-* [cite_start]**Paste Variables**: Paste the required environment variables (e.g., connection string, server URL, backend URL, dashboard URL, web URL) from the tutorial's provided content[cite: 17].
-* [cite_start]**Server URL**: Ensure the `Server URL` uses the correct private IP address of your system[cite: 30].
+### 2.2 MongoDB Setup and Configuration
 
-### 2.3 MongoDB Setup
-* [cite_start]**Access MongoDB Atlas**: Sign in to MongoDB Atlas and create an account[cite: 18].
-* **Network Access**: Configure Network Access. [cite_start]For testing, it is set to allow access from any IP address (`0.0.0.0/0`), though this is not recommended for production[cite: 18, 19].
-* [cite_start]**Database User**: Create a database user (e.g., `enatega_test_user`) and password[cite: 20].
-* [cite_start]**Assign Role**: Assign the user an **Admin** role (or the required role)[cite: 21].
-* [cite_start]**Database and Collection**: Use the default free cluster (Cluster 0)[cite: 21, 22, 23].
-    * [cite_start]Create a new database (e.g., `enatega_test_user`) and a default collection (e.g., `user`)[cite: 23, 24].
-* **Connection String**:
-    * [cite_start]Go to the cluster overview and click "Connect"[cite: 24].
-    * [cite_start]Select "MongoDB for VS Code" to get the default connection string[cite: 21, 25].
-    * [cite_start]Copy the string and update the **password** (removing brackets) and the **database name**[cite: 25, 26].
-* [cite_start]**Update `.env`**: Paste the final valid connection string into the `CONNECTION_STRING` variable in the backend's `.env` file[cite: 18, 28].
-* [cite_start]**Local Test (Optional)**: Connect to the database using a GUI tool like MongoDB Compass[cite: 27].
+Sign in to MongoDB Atlas and create an account if you don't have one. Configure Network Access settings for your cluster. For testing purposes, allow access from any IP address using `0.0.0.0/0`, though this configuration is not recommended for production environments.
 
------ chunk 98/105 -----
+Create a database user such as `enatega_test_user` and assign it a password. Assign the user an Admin role or the required role for your configuration. Use the default free cluster named Cluster 0 for your setup. Create a new database with a name like `enatega_test_user` and create a default collection named `user`.
+
+Navigate to the cluster overview and click "Connect". Select "MongoDB for VS Code" to obtain the default connection string. Copy the connection string and update the password field by removing the brackets and inserting your actual password. Update the database name in the connection string to match your created database.
+
+Paste the final valid connection string into the `CONNECTION_STRING` variable in the backend's `.env` file. Optionally, connect to the database using a GUI tool like MongoDB Compass to verify the connection works correctly.
+
+### 2.3 Firebase Service Account Setup
+
+Navigate to the Firebase console and create a new project for your application. Go to Project Settings and select Service Accounts. Choose Node.js as your environment and click "Generate new private key" to download the service account key file.
+
+Open the downloaded service account key file, which contains sensitive authentication information. Copy the entire contents of this JSON file and paste it into the `serviceAccountKey.json` file located in the Enatega API project directory. Ensure this file is never pushed to any public repository as it contains confidential credentials.
+
+### 2.4 Redis Configuration
+
+Add three environment variables to the `.env` file for Redis configuration: Host, Password, and Port. These credentials are configured in the `docker-compose.yaml` file. The container name such as `redis` is used as the host value. The default Redis port is `6379`. The password can be set to `null` if no password is configured for your Redis instance.
+
+### 2.5 Install Dependencies and Start Server
+
+Run `npm install` or `npm i` in the VS Code terminal to install all required packages for the backend. Execute the start command from package.json using `npm run start` to start the backend server. Verify that the server is running and check the accessibility of the GraphQL playground in your browser at the specified server address.
+
+## 3. Backend Deployment on Railway
+
+### 3.1 Local Docker Testing
+
+Download and install Docker Desktop for your operating system. Clean up any existing Docker images or running containers from previous tests. Use the `docker-compose.yaml` file which contains both backend and Redis configurations to deploy locally.
+
+----- chunk 97/100 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2419
+slug: youtube | chars: 3430
 
-### 2.4 Firebase Service Account
-* [cite_start]**Create Project**: Go to the Firebase console and create a new project[cite: 28].
-* **Service Account Key**:
-    * [cite_start]Go to **Project Settings** > **Service Accounts**[cite: 28].
-    * [cite_start]Select **Node.js**[cite: 28, 29].
-    * [cite_start]Click **"Generate new private key"**[cite: 29].
-* **Update Code**:
-    * [cite_start]Open the downloaded key file (which is confidential)[cite: 29].
-    * [cite_start]Copy its contents and paste them into the **`serviceAccountKey.json`** file in the Enatega API project[cite: 29, 30].
-    * [cite_start]**Crucially**, ensure this file is *not* pushed to a public repository[cite: 30].
+### 2.5 Install Dependencies and Start Server
 
-### 2.5 Local Run and Dependencies
-* [cite_start]**Install Dependencies**: Run `npm install` (or `npm i`) in the VS Code terminal to install all packages[cite: 31].
-* [cite_start]**Start Server**: Run the start command (e.g., `npm Run start`) from `package.json`[cite: 31].
-* [cite_start]**Verification**: Check the server address and the accessibility of the GraphQL playground in a browser[cite: 31, 39, 40].
+Run `npm install` or `npm i` in the VS Code terminal to install all required packages for the backend. Execute the start command from package.json using `npm run start` to start the backend server. Verify that the server is running and check the accessibility of the GraphQL playground in your browser at the specified server address.
 
-### 2.6 Redis Configuration
-* [cite_start]**Add Variables**: Add three environment variables to the `.env` file for Redis credentials (Host, Password, Port) as Redis is used for notification queues[cite: 32].
-* [cite_start]**Credentials**: These credentials are configured in the **`docker-compose.yaml`** file[cite: 33, 34].
-    * [cite_start]**Host**: The container name (e.g., `redis`) is used as the host[cite: 35, 36].
-    * [cite_start]**Port**: The default port is `6379`[cite: 33, 35, 36].
-    * [cite_start]**Password**: Can be set to `null` if no password is configured[cite: 35].
+## 3. Backend Deployment on Railway
 
----
+### 3.1 Local Docker Testing
 
-## 3. Backend Deployment (Railway)
+Download and install Docker Desktop for your operating system. Clean up any existing Docker images or running containers from previous tests. Use the `docker-compose.yaml` file which contains both backend and Redis configurations to deploy locally.
 
-The application is deployed using the Railway app.
+Run the command `docker compose up` to start the Docker containers. This command pulls the Redis image and builds the backend container. Verify the deployed server is accessible by checking localhost on the specified port, typically `localhost:8001`.
 
-### 3.1 Docker Setup (Local Test)
-* [cite_start]**Install Docker Desktop**: Download and install Docker Desktop for your system[cite: 37].
-* [cite_start]**Clean Up**: Delete any existing images or running containers[cite: 38].
-* [cite_start]**Deploy via Docker Compose**: Use the `docker-compose.yaml` file (which contains both the backend and Redis configurations)[cite: 38, 39].
-    * [cite_start]Run the command `Docker composer`[cite: 39].
-    * [cite_start]This pulls the Redis image and builds the backend container[cite: 39].
-    * [cite_start]Verify the deployed server is accessible (e.g., on `localhost:8001`)[cite: 40].
+### 3.2 Railway Deployment Process
 
------ chunk 99/105 -----
+Log into Railway.app and create a new project by importing your code from GitHub. Select "Add Variables" and use the "Raw Editor" to paste all required environment variables from your local `.env` file into Railway's configuration.
+
+Select the correct branch such as main or your designated deployment branch. Create a new domain for API access using port 8001. Set the Start Command to `npm run start` to define how the application should start on Railway.
+
+Click "Deploy" to apply all changes and begin the deployment process. After backend deployment completes, create a new service in the Railway project by clicking "Add" and selecting "Redis" to add a Redis service for notification queues.
+
+Navigate to the deployed Redis service's variables section and copy the `REDIS_HOST`, `REDIS_PASSWORD`, and `REDIS_PORT` values. Return to the backend API variables section and update the corresponding Redis environment variables with the Railway-provided credentials. Deploy the changes to ensure the backend can connect to the deployed Redis service.
+
+Once deployment is successful, copy the public URL from the Railway settings and verify that the API and GraphQL playground are running and accessible.
+
+## 4. Frontend Setup: Web Portals and Configuration
+
+### 4.1 Local Web Portal Setup
+
+Clone the frontend repository using the SSH configuration you set up earlier. The repository may be named something like "food-delivery-multivendor". Navigate to `multivendor-admin/src/configuration/constant.js` and update the `BACKEND_URL` to point to your local backend URL, ensuring the correct private IP address is used.
+
+In the admin directory, run `npm install` to install all dependencies. Start the Admin Portal using `npm run start`. Similarly, navigate to `customer-web/src/configuration/constant.js` and update the local backend URLs with the correct private IP address.
+
+In the customer web directory, run `npm install` and then `npm run start` to launch the Customer Web Portal.
+
+### 4.2 Google Maps API Configuration
+
+In the Google Cloud Console, create a new project for your application. Navigate to APIs & Services and select Library. Enable all required APIs including Geo Coding, Maps JavaScript, Places, Elevation, Static, Geolocation, Distance Matrix, and Maps SDK for Android and iOS.
+
+Obtain the API key from the Google Cloud Console. In the Admin Portal's configuration section, paste the API key into the Google API Key field.
+
+----- chunk 98/100 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 1681
+slug: youtube | chars: 3113
 
-### 3.2 Deployment on Railway
-* [cite_start]**Connect GitHub**: Log into **Railway.app** and create a new project by importing the code from GitHub[cite: 40, 41].
-* [cite_start]**Environment Variables**: Select **"Add Variables"** and use the **"Raw Editor"** to paste all required environment variables from the local `.env` file[cite: 42].
-* **Settings**:
-    * [cite_start]Select the correct branch (e.g., main or deployment branch)[cite: 43].
-    * [cite_start]Create a new domain for API access, using the port **8001**[cite: 44].
-    * [cite_start]Set the **Start Command** (e.g., `npm Run start`)[cite: 44].
-* [cite_start]**Deploy**: Click "Deploy" to apply changes[cite: 46].
-* [cite_start]**Add Redis Service**: After backend deployment, create a new service in the project by clicking **"Add"** > **"Redis"**[cite: 47, 48].
-* **Update Backend Redis ENVs**:
-    * [cite_start]Go to the deployed Redis service's variables section[cite: 48].
-    * [cite_start]Copy the `REDIS_HOST`, `REDIS_PASSWORD`, and `REDIS_PORT`[cite: 49].
-    * [cite_start]Return to the backend API variables and update the corresponding Redis environment variables with the Railway-provided credentials[cite: 50, 51].
-    * [cite_start]Deploy the changes to ensure the backend can connect to the deployed Redis service[cite: 52].
-* [cite_start]**Final Verification**: Once the deployment is successful, copy the public URL from the settings and verify the API and GraphQL playground are running[cite: 53, 54].
+In the customer web directory, run `npm install` and then `npm run start` to launch the Customer Web Portal.
 
----
+### 4.2 Google Maps API Configuration
 
-## 4. Frontend Setup: Web Portals & Configuration
+In the Google Cloud Console, create a new project for your application. Navigate to APIs & Services and select Library. Enable all required APIs including Geo Coding, Maps JavaScript, Places, Elevation, Static, Geolocation, Distance Matrix, and Maps SDK for Android and iOS.
 
-This section details setting up the Admin and Customer Web Portals and configuring common third-party services via the Admin Portal.
+Obtain the API key from the Google Cloud Console. In the Admin Portal's configuration section, paste the API key into the Google API Key field.
 
------ chunk 100/105 -----
+### 4.3 Gmail and Node Mailer Setup
+
+On the Google account that will be used for sending emails, enable 2-Factor Authentication in the account security settings. Navigate to Security settings and search for "App Passwords". Generate a new app password with a custom name like `enatega_test` and save both the app name and generated password.
+
+In the Admin Portal's Node Mailer configuration section, enter the email address, app name, and the generated app password for email functionality.
+
+### 4.4 Stripe Payment Gateway Integration
+
+Log into your Stripe account using a Business profile if setting up for production. Copy the Publishable Key and Secret Key from your account. Paste these keys into the Admin Portal's Stripe configuration fields.
+
+Navigate to Developers section and select Webhooks. Click "Add an endpoint" and use the URL of your Customer Web Portal. Add the required events: `account.updated` and `checkout.session.completed`. Copy the Signing Secret from the webhook details and update the `STRIPE_WEBHOOK_ENDPOINT_SECRET` environment variable in your Railway backend deployment.
+
+### 4.5 PayPal Payment Gateway Integration
+
+Log into PayPal using a Business account, which is recommended for two-way payment processes. Navigate to Apps & Credentials and create a new app. Copy the generated Client ID and Client Secret. Paste these credentials into the Admin Portal's PayPal configuration fields.
+
+### 4.6 Twilio SMS Service Setup
+
+Sign up or log in to a Twilio account. The Twilio console provides your Account SID and Auth Token. Obtain a Twilio phone number, which can be free or purchased depending on your needs.
+
+Paste the Account SID, Auth Token, and Twilio Phone Number into the Admin Portal's Twilio configuration. Update the `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_PHONE_NUMBER` environment variables in your Railway backend deployment.
+
+### 4.7 Sentry Error Tracking Configuration
+
+Log into Sentry and create three separate projects: one for Node.js/Express backend API, one for React Native for mobile applications, and one for React for web applications. Copy the DSN URL for each project.
+
+In the Admin Portal's Sentry configuration section, use the Node.js DSN for the API Sentry URL, the React DSN for the Web and Admin portals, and the React Native DSN for the Mobile apps.
+
+### 4.8 Cloudinary Media Storage Setup
+
+Log into Cloudinary and navigate to Settings, then Upload section. Edit the preset and set it to Unsigned. Note the Environment ID and Preset Name from your account settings.
+
+----- chunk 99/100 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2625
+slug: youtube | chars: 3181
 
----
+### 4.7 Sentry Error Tracking Configuration
 
-## 4. Frontend Setup: Web Portals & Configuration
+Log into Sentry and create three separate projects: one for Node.js/Express backend API, one for React Native for mobile applications, and one for React for web applications. Copy the DSN URL for each project.
 
-This section details setting up the Admin and Customer Web Portals and configuring common third-party services via the Admin Portal.
+In the Admin Portal's Sentry configuration section, use the Node.js DSN for the API Sentry URL, the React DSN for the Web and Admin portals, and the React Native DSN for the Mobile apps.
 
-### 4.1 Web Portal Local Setup and Configuration
-* [cite_start]**Clone Frontend Repo**: Clone the frontend repository (e.g., **"food-delivery-multivendor"**) using the SSH configuration[cite: 54, 55].
-* **Admin Portal URL Update**:
-    * [cite_start]Navigate to the `multivendor-admin/src/configuration/constant.js` file[cite: 55].
-    * [cite_start]Update the `BACKEND_URL` to point to the local backend URL (ensure the correct private IP address is used)[cite: 56, 110].
-* [cite_start]**Admin Portal Dependencies**: In the admin directory, run `npm install`[cite: 61].
-* [cite_start]**Admin Portal Start**: Run the Admin Portal using its start command (e.g., `npm Run start`)[cite: 61].
-* **Customer Web Portal URL Update**:
-    * [cite_start]Navigate to the `customer-web/src/configuration/constant.js` file[cite: 110, 111].
-    * [cite_start]Update the local backend URLs, ensuring the private IP address is correct[cite: 111].
-* [cite_start]**Customer Web Portal Dependencies and Start**: In the customer web directory, run `npm install` and then `npm Run start`[cite: 112, 113, 114].
+### 4.8 Cloudinary Media Storage Setup
 
-### 4.2 Centralized Configuration via Admin Portal
+Log into Cloudinary and navigate to Settings, then Upload section. Edit the preset and set it to Unsigned. Note the Environment ID and Preset Name from your account settings.
 
-The Admin Portal is used to manage most service API keys in the database.
+Construct the Cloudinary URL by replacing the placeholder in the base URL with your Environment ID. Paste the constructed URL into the Cloudinary URL field in the Admin Portal. Paste the Preset Name into the Cloudinary Key field.
 
-#### Google Maps API
-* [cite_start]**Enable APIs**: In the Google Cloud Console, create a new project[cite: 56].
-    * [cite_start]Go to **APIs & Services** > **Library**[cite: 57].
-    * [cite_start]Enable all required APIs (e.g., Geo Encoding, Maps JavaScript, Places, Elevation, Static, Geolocation, Distance Matrix, Maps SDK for Android/iOS)[cite: 57, 58, 59].
-* [cite_start]**Get API Key**: Obtain the API key from the console[cite: 57].
-* [cite_start]**Update Admin Portal**: Paste the API key into the `Google API Key` field in the Admin Portal's configuration section[cite: 62, 63].
+### 4.9 Amplitude Analytics Configuration
 
-#### Node Mailer (Gmail)
-* [cite_start]**Enable 2-Factor Authentication**: On the Google account used for sending emails, enable 2-Factor Authentication[cite: 64].
-* **Generate App Password**:
-    * [cite_start]Go to **Security** and search for **"App Passwords"**[cite: 64, 65].
-    * [cite_start]Generate a new app password with a custom name (e.g., `enatega_test`)[cite: 65].
-    * [cite_start]Save the app name and the generated password[cite: 65].
-* [cite_start]**Update Admin Portal**: In the Admin Portal's Node Mailer configuration section, enter the email address, app name, and generated app password[cite: 65, 66].
+Log into Amplitude and set up a new app. Obtain the API key for both Web and React Native applications. In the index.html file of both Admin and Customer web portals, replace any old Amplitude script with the new one provided by Amplitude.
 
------ chunk 101/105 -----
-url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 1982
+Paste the API keys into the Amplitude configuration section of the Admin Portal for both Web and Mobile apps.
 
-#### Stripe Payment Gateway
-* [cite_start]**API Keys**: Log in to your Stripe account (use a Business profile for production)[cite: 67, 68].
-    * [cite_start]Copy the **Publishable Key** and the **Secret Key**[cite: 68].
-* [cite_start]**Update Admin Portal**: Paste the keys into the Admin Portal's Stripe configuration fields[cite: 68].
-* **Webhooks**:
-    * [cite_start]Go to **Developers** > **Webhooks** and click "Add an endpoint"[cite: 69].
-    * [cite_start]Use the URL of the **Customer Web Portal**[cite: 69].
-    * [cite_start]Add the required events: `account.updated` and `checkout.session.completed`[cite: 69, 70].
-* **Webhook Secret**:
-    * [cite_start]Copy the **Signing Secret** from the webhook details[cite: 70].
-    * [cite_start]Update the `STRIPE_WEBHOOK_ENDPOINT_SECRET` environment variable in the **Railway backend deployment**[cite: 71].
-
-#### PayPal Payment Gateway
-* [cite_start]**Developer Account**: Log in to PayPal (Business account recommended for a two-way payment process)[cite: 73, 74].
-* [cite_start]**Create App**: Go to **Apps & Credentials** and create a new app[cite: 75].
-* [cite_start]**API Keys**: Copy the generated **Client ID** and **Client Secret**[cite: 76].
-* [cite_start]**Update Admin Portal**: Paste the Client ID and Secret into the Admin Portal's PayPal configuration fields[cite: 76].
-
-#### Twilio SMS
-* [cite_start]**Account Setup**: Sign up or log in to a Twilio account[cite: 77].
-* [cite_start]**Credentials**: The Twilio console provides the **Account SID** and **Auth Token**[cite: 78].
-    * [cite_start]Obtain a Twilio phone number (can be free or purchased)[cite: 79, 81].
-* [cite_start]**Update Admin Portal**: Paste the Account SID, Auth Token, and Twilio Phone Number into the Admin Portal's Twilio configuration[cite: 82].
-* [cite_start]**Update Railway ENVs**: Update the `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_PHONE_NUMBER` environment variables in the **Railway backend deployment**[cite: 83].
-
------ chunk 102/105 -----
-url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2087
-
-#### Sentry Error Tracking
-* [cite_start]**Create Projects**: Log in to Sentry and create three projects[cite: 85, 86]:
-    * [cite_start]**Node.js/Express**: For the backend API[cite: 86].
-    * [cite_start]**React Native**: For the mobile applications (Customer, Restaurant, Rider)[cite: 87].
-    * [cite_start]**React**: For the web applications (Admin and Customer Portals)[cite: 88].
-* [cite_start]**DSN Keys**: Copy the **DSN URL** for each project[cite: 86, 87].
-* **Update Admin Portal**: In the Sentry configuration section:
-    * [cite_start]Use the **Node.js** DSN for the **API Sentry URL**[cite: 89].
-    * [cite_start]Use the **React** DSN for the **Web/Admin** portals[cite: 89].
-    * [cite_start]Use the **React Native** DSN for the **Mobile** apps (App, Customer, etc.)[cite: 89].
-
-#### Cloudinary Media Storage
-* [cite_start]**Account Setup**: Log in to Cloudinary[cite: 90].
-* [cite_start]**Upload Preset**: Go to **Settings** > **Upload** and edit the preset (set it to **Unsigned**)[cite: 91].
-* [cite_start]**Credentials**: Note the **Environment ID** and the **Preset Name**[cite: 92].
-* **Update Admin Portal**:
-    * [cite_start]The Cloudinary URL is constructed by replacing the placeholder in the base URL with the **Environment ID**[cite: 93].
-    * [cite_start]Paste the constructed URL into the Cloudinary URL field[cite: 93].
-    * [cite_start]Paste the Preset Name into the **Cloudinary Key** field[cite: 93].
-
-#### Amplitude Analytics
-* [cite_start]**Account Setup**: Log in to Amplitude and set up an app[cite: 95].
-* [cite_start]**API Key**: Obtain the API key for both the **Web** and **React Native** applications[cite: 96].
-* [cite_start]**Update Web Code**: Replace any old Amplitude script with the new one in the **`index.html`** file of both the Admin and Customer web portals[cite: 97, 98].
-* [cite_start]**Update Admin Portal**: Paste the API keys into the Amplitude configuration section for both the Web and Mobile apps[cite: 98, 99].
-
----
-
-## 5. Frontend Deployment (Netlify)
-
-The Admin and Customer Web Portals are deployed using Netlify.
-
------ chunk 103/105 -----
-url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2098
-
----
-
-## 5. Frontend Deployment (Netlify)
-
-The Admin and Customer Web Portals are deployed using Netlify.
+## 5. Frontend Deployment on Netlify
 
 ### 5.1 Admin Portal Deployment
-* [cite_start]**Import Code**: Log into Netlify, select **"Add new site"** > **"Import an existing project"** from GitHub[cite: 107].
-* **Configure Build**:
-    * [cite_start]Specify the **Base Directory** as **`admin`**[cite: 108].
-    * [cite_start]Set the **Build Command** to `npm run build`[cite: 108].
-    * [cite_start]Set the **Publish Directory** to the subdirectory **`build`** (inside the admin directory)[cite: 108].
-* [cite_start]**Deploy**: Click deploy[cite: 108].
+
+Log into Netlify and select "Add new site" followed by "Import an existing project" from GitHub. Specify the Base Directory as `admin`. Set the Build Command to `npm run build`. Set the Publish Directory to the subdirectory `build` inside the admin directory. Click deploy to begin the deployment process.
 
 ### 5.2 Customer Web Portal Deployment
-* [cite_start]**Import Code**: The process is the same as the Admin Portal[cite: 114, 115].
-* **Configure Build**:
-    * [cite_start]Specify the **Base Directory** as **`web`**[cite: 115].
-    * [cite_start]Set the **Build Command** to `npm run build`[cite: 116].
-    * [cite_start]Set the **Publish Directory** to the subdirectory **`build`** (inside the web directory)[cite: 116].
-* [cite_start]**Verification**: The deployed site will show restaurants fetched from the production database, verifying the end-to-end functionality[cite: 117].
 
----
+Follow the same process as the Admin Portal deployment. Specify the Base Directory as `web`. Set the Build Command to `npm run build`. Set the Publish Directory to the subdirectory `build` inside the web directory.
 
-## 6. Mobile App Setup (Expo & Google Services)
+Once deployed, verify the site displays restaurants fetched from the production database, confirming end-to-end functionality.
 
-This covers setting up the required services to build and authenticate the mobile apps.
+## 6. Mobile App Setup with Expo and Google Services
 
-### 6.1 Expo Setup
-* [cite_start]**Create Account**: Sign up or log in to Expo[cite: 122].
-* [cite_start]**Create Project**: Create a new project (e.g., `test_customer_app`)[cite: 122, 123].
-* **Update `app.json`**: Update the following attributes in the mobile app's `app.json` file using the details from your new Expo project:
-    * [cite_start]`owner` [cite: 124]
-    * [cite_start]`slug` [cite: 124]
-    * [cite_start]`project ID` [cite: 124]
-    * [cite_start]`bundle identifier` (for iOS) and `package name` (for Android, e.g., `com.customer.app`) [cite: 124, 125]
-* [cite_start]**Local Backend URL**: Update the `GRAPHQL_URL` and `WS_GRAPHQL_URL` in `environment.js` with the local private IP address for local development[cite: 118, 119, 163].
+### 6.1 Expo Project Configuration
 
------ chunk 104/105 -----
+Sign up or log in to Expo and create a new project with a name like `test_customer_app`. Update the `app.json` file in your mobile app directory with the following details from your Expo project: `owner`, `slug`, `project ID`, and bundle identifier for iOS and package name for Android such as `com.customer.app`.
+
+Update the `GRAPHQL_URL` and `WS_GRAPHQL_URL` in `environment.js` with the local private IP address for local development testing.
+
+### 6.2 Firebase Mobile Services Configuration
+
+Create a new Firebase project and do not uncheck the measurement ID switch box. Register both an iOS app and an Android app in the Firebase project, ensuring the bundle identifier and package name match exactly what you specified in `app.json`, such as `com.customer.app`.
+
+Download the `google-services.json` file from the Android app settings. This file is collective and includes details for all registered mobile clients including Customer, Restaurant, and Rider apps. Paste this file into the mobile app directory, replacing any existing file.
+
+----- chunk 100/100 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 2686
+slug: youtube | chars: 2546
 
-### 6.2 Firebase for Mobile Services
-* [cite_start]**Create Project**: Create a new Firebase project (do **not** uncheck the measurement ID switch box)[cite: 126, 106].
-* [cite_start]**Register Apps**: Register both an **iOS** app and an **Android** app in the Firebase project, ensuring the bundle identifier/package name matches the one in `app.json` (e.g., `com.customer.app`)[cite: 127, 128, 129].
-* [cite_start]**Download `google-services.json`**: Download the `google-services.json` file from the Android app's settings[cite: 130]. [cite_start]This file is collective and will include details for all registered mobile clients (Customer, Restaurant, Rider)[cite: 154, 155].
-* [cite_start]**Update App Code**: Paste the file into the mobile app's directory, replacing any existing file[cite: 130, 131].
-* [cite_start]**VAPID Key**: Generate a VAPID key pair in Firebase Cloud Messaging[cite: 112].
-    * [cite_start]Paste this key into the **`Firebase Admin`** configuration section of the **Admin Portal**[cite: 112, 113].
-* [cite_start]**Service Account Key**: In Firebase **Project Settings** > **Service Accounts**, generate a new private key[cite: 135]. [cite_start]This key is a complete JSON object used for authentication[cite: 136].
-    * [cite_start]Paste the content of this key into the app's Google service account file[cite: 136].
+Update the `GRAPHQL_URL` and `WS_GRAPHQL_URL` in `environment.js` with the local private IP address for local development testing.
 
-### 6.3 Google OAuth Client IDs
-* [cite_start]**Consent Screen**: In the Google Cloud Console, go to **APIs & Services** > **Credentials** and configure the OAuth consent screen (select **External**)[cite: 146, 147].
-* [cite_start]**Get Fingerprints**: After a successful Expo production build, retrieve the **SHA-1** and **SHA-256** fingerprints from the app's credentials in Expo[cite: 144, 145].
-    * [cite_start]**SHA-256** is used in the Firebase app configuration[cite: 145].
-* **Create Client IDs**: Create four separate OAuth Client IDs in the Google Cloud Console:
-    * **Web Application**: Used for both Admin and Customer Portals. [cite_start]Enter both local (`localhost:3000`) and production (Netlify) JavaScript origins and redirect URLs[cite: 147, 148].
-    * [cite_start]**Android**: Match the `package name` from `app.json` and paste the **SHA-1 fingerprint** from Expo[cite: 149, 150].
-    * [cite_start]**iOS**: Match the `bundle identifier` from `app.json`[cite: 151].
-    * [cite_start]**Expo Proxy**: Create another Web Application ID with `https://auth.expo.io` as the URL, appending your Expo owner name and app slug to the redirect URL[cite: 151, 152].
-* [cite_start]**Update Admin Portal**: Paste all four generated Client IDs into the **Google Credentials** section of the **Admin Portal**[cite: 152, 153].
+### 6.2 Firebase Mobile Services Configuration
 
------ chunk 105/105 -----
-url: https://enatega.com/youtube/ | title: Enatega — Youtube
-slug: youtube | chars: 684
+Create a new Firebase project and do not uncheck the measurement ID switch box. Register both an iOS app and an Android app in the Firebase project, ensuring the bundle identifier and package name match exactly what you specified in `app.json`, such as `com.customer.app`.
 
-### 6.4 Mobile App Development Builds
-* [cite_start]**Login to Expo**: Log in via the terminal using `EAS login`[cite: 138].
-* [cite_start]**Configure Build**: Use the command `EAS build:configure`[cite: 139, 157].
-* [cite_start]**Build**: Use `EAS build --platform Android --profile production` for a production APK, or `EAS build --platform iOS --profile development` for an iOS simulator build[cite: 139, 157].
-* [cite_start]**Local Run**: Run the app locally using `npm Run start`, then select **'A'** (Android) or **'I'** (iOS) in the Expo go prompt to open the simulator/emulator[cite: 160, 161]. [cite_start]The process is repeated for the Restaurant and Rider apps[cite: 162].
+Download the `google-services.json` file from the Android app settings. This file is collective and includes details for all registered mobile clients including Customer, Restaurant, and Rider apps. Paste this file into the mobile app directory, replacing any existing file.
+
+In Firebase Cloud Messaging, generate a VAPID key pair. Paste this key into the Firebase Admin configuration section of the Admin Portal. In Firebase Project Settings under Service Accounts, generate a new private key. Paste the content of this complete JSON object into the app's Google service account file.
+
+### 6.3 Google OAuth Client IDs Creation
+
+In the Google Cloud Console, navigate to APIs & Services and Credentials. Configure the OAuth consent screen by selecting External. After a successful Expo production build, retrieve the SHA-1 and SHA-256 fingerprints from the app's credentials in Expo. The SHA-256 fingerprint is used in Firebase app configuration.
+
+Create four separate OAuth Client IDs in the Google Cloud Console. For Web Application used for both Admin and Customer Portals, enter both local origins like localhost:3000 and production Netlify URLs with their corresponding redirect URLs.
+
+For Android, match the package name from app.json and paste the SHA-1 fingerprint from Expo. For iOS, match the bundle identifier from app.json. Create an additional Web Application ID with `https://auth.expo.io` as the URL, appending your Expo owner name and app slug to the redirect URL.
+
+Paste all four generated Client IDs into the Google Credentials section of the Admin Portal.
+
+### 6.4 Mobile App Development and Building
+
+Log in via the terminal using `eas login`. Configure the build using `eas build:configure`. Build for production Android using `eas build --platform android --profile production` or for iOS simulator development using `eas build --platform ios --profile development`.
+
+Run the app locally using `npm run start`, then select A for Android or I for iOS in the Expo go prompt to open the simulator or emulator. Repeat this process for the Restaurant and Rider apps as needed.
 
