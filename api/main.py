@@ -598,6 +598,8 @@ emb = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
 vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
 calendly_link = "https://calendly.com/enategabd/strategy-call?hide_landing_page_details=1&hide_gdpr_banner=0&hide_event_type_details=1&primary_color=624de3&month=2026-01"
 calendly_iframe = f'<iframe src="{calendly_link}" style="width: 80%; min-width: 320px; height: 400px;" frameborder="0"></iframe>'
+github_repo_link = "https://github.com/enatega/food-delivery-multivendor"
+github_repo_html = f'<a href="{github_repo_link}" target="_blank" rel="noopener noreferrer">GitHub Multivendor Repository</a>'
 
 retriever = vs.as_retriever(search_kwargs={"k": 6})
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, api_key=OPENAI_API_KEY)
@@ -632,6 +634,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Respond in **bold headings** and <p> structured paragraphs using HTML tags (e.g., <h2>, <h3>, <p>, <ul>, <li>) instead of asterisks. Do not use asterisks.\n "
     "• When suggesting to book a meeting, embed a Calendly iframe in the response using the provided iframe HTML code.\n"
     "• The Calendly iframe should be embedded at the end of the response when suggesting meetings to make UX better.\n"
+    f"• When users ask about downloading, viewing, or accessing the code/software/repository, provide the GitHub repository link as an HTML anchor tag: {github_repo_html}\n"
     "• CRUCIAL PITCH ALL INCLUDING TAXI BOOKING: When asked for use cases, provide complete use cases rather than explaining, provide precise list of use cases. - Food Delivery - Flower Delivery - Grocery Delivery - Milk Delivery - Document Delivery - Liquor Delivery - Medicine Delivery - Courier Service - Beauty Services - Roadside Assistance - Gift Delivery - Laundry On-Demand Services - Taxi Booking - Pet Marketplace \n"
     "• Keep responses clear, complete and structured\n\n"
     "CONVERSATION APPROACH:\n"
@@ -659,14 +662,16 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• User asks about Enterprise plan or custom solutions\n"
     "• You cannot adequately address their concerns with available context\n"
     "• User seems ready to move forward but needs technical validation\n"
-    "• User expresses interest in purchasing, signing up, or getting started\n\n"
+    "• User expresses interest in purchasing, signing up, or getting started\n"
+    "• User asks about downloading, viewing, accessing, or getting the code/software/repository - provide the GitHub link\n\n"
     "MEETING REFERRAL EXAMPLES WITH CALENDLY IFRAME:\n"
     f"When suggesting a meeting, end your response with text like 'Please schedule a time below:' or 'You can book a consultation below:' and then embed this exact Calendly iframe HTML:\n"
     f"{calendly_iframe}\n"
     f"Example for 'Get a Quote': 'Great! I'd love to help you get a personalized quote for Enatega. Our team can discuss your specific needs, pricing options, and provide you with a tailored solution. Please schedule a strategy call below:'\n"
     f"Example for 'Launch Now' or buying intent: 'Excellent! I'm excited to help you launch your delivery service with Enatega. Our team can guide you through the setup process, discuss your specific requirements, and get you started on the right foot. Please schedule a strategy call below to begin:'\n"
     f"Then embed the iframe. Example for general interest: 'This sounds like something our technical team should discuss with you directly. To get started with a free strategy call where you'll receive detailed answers, please schedule a time below:'\n"
-    f"Then include the iframe HTML code directly in your response. NEVER mention forms or form submissions when user asks for quotes or pricing.\n\n"
+    f"Then include the iframe HTML code directly in your response. NEVER mention forms or form submissions when user asks for quotes or pricing.\n"
+    f"Example for code/repository requests: 'You can access our GitHub Multivendor Repository here: {github_repo_html}. This contains the complete source code for Enatega's multi-vendor delivery platform.'\n\n"
     "ENGAGEMENT STRATEGIES:\n"
     "• Ask about their business type, size, or specific needs\n"
     "• Suggest relevant features they might not have considered\n"
