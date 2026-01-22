@@ -599,7 +599,7 @@ vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
 # calendly_link = "https://calendly.com/enategabd/strategy-call?hide_landing_page_details=1&hide_gdpr_banner=0&hide_event_type_details=1&primary_color=624de3&month=2026-01&utm_source=chatbot&utm_medium=AI"
 # calendly_iframe = f'<iframe src="{calendly_link}" style="width: 80%; min-width: 320px; height: 400px;" frameborder="0"></iframe>'
 onboarding_link = "https://onboarding.enatega.com/home/"
-onboarding_button_html = '<a href="{{link}}" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #7C6CE4 0, #624DE3 100%); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 12px;">{{placeholder}}</a>'
+onboarding_button_html = '<a href="{{{{link}}}}" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #7C6CE4 0, #624DE3 100%); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 12px;">{{{{placeholder}}}}</a>'
 github_repo_link = "https://github.com/enatega/food-delivery-multivendor"
 github_repo_html = f'<a href="{github_repo_link}" target="_blank" rel="noopener noreferrer">Get Source Code</a>'
 
