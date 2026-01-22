@@ -599,7 +599,8 @@ vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
 # calendly_link = "https://calendly.com/enategabd/strategy-call?hide_landing_page_details=1&hide_gdpr_banner=0&hide_event_type_details=1&primary_color=624de3&month=2026-01&utm_source=chatbot&utm_medium=AI"
 # calendly_iframe = f'<iframe src="{calendly_link}" style="width: 80%; min-width: 320px; height: 400px;" frameborder="0"></iframe>'
 onboarding_link = "https://onboarding.enatega.com/home/"
-onboarding_button_html = '<a href="{{{{link}}}}" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #7C6CE4 0, #624DE3 100%); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 12px;">{{{{placeholder}}}}</a>'
+# Button template with link already included - only placeholder text needs to be replaced
+onboarding_button_template = f'<a href="{onboarding_link}" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #7C6CE4 0, #624DE3 100%); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 12px;">PLACEHOLDER_TEXT</a>'
 github_repo_link = "https://github.com/enatega/food-delivery-multivendor"
 github_repo_html = f'<a href="{github_repo_link}" target="_blank" rel="noopener noreferrer">Get Source Code</a>'
 
@@ -669,9 +670,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• User asks about downloading, viewing, accessing, or getting FRONTEND code/software/repository - provide the GitHub link\n"
     "• User asks about BACKEND source code, server code, API code, or backend repository - inform that backend is paid/proprietary and IMMEDIATELY suggest registering on onboarding page\n\n"
     "REGISTRATION/ONBOARDING REFERRAL EXAMPLES:\n"
-    f"When suggesting registration, end your response with appropriate text and then add a dynamic button. The button HTML template is: {onboarding_button_html}\n"
-    f"Replace {{link}} with: {onboarding_link}\n"
-    f"Replace {{placeholder}} with dynamic text based on user query (e.g., 'Get a Quote', 'Schedule a Call', 'Register Now', 'Get Started', 'Book a Meeting', 'Request a Demo').\n"
+    f"When suggesting registration, end your response with appropriate text and then add a dynamic button. The button HTML template is: {onboarding_button_template}\n"
+    f"Replace PLACEHOLDER_TEXT with dynamic text based on user query (e.g., 'Get a Quote', 'Schedule a Call', 'Register Now', 'Get Started', 'Book a Meeting', 'Request a Demo'). The link is already set to {onboarding_link}.\n"
     f"Example for 'Get a Quote': 'Great! I'd love to help you get a personalized quote for Enatega. Our team can discuss your specific needs, pricing options, and provide you with a tailored solution. Please register below to get started:'\n"
     f"Then add the button with placeholder 'Get a Quote'. Example for 'Launch Now' or buying intent: 'Excellent! I'm excited to help you launch your delivery service with Enatega. Our team can guide you through the setup process, discuss your specific requirements, and get you started on the right foot. Please register below to begin:'\n"
     f"Then add the button with placeholder 'Get Started'. Example for general interest: 'This sounds like something our technical team should discuss with you directly. To get started and receive detailed answers, please register below:'\n"
