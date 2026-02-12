@@ -1,0 +1,11 @@
+API structure of enatega:
+Enatega’s API follows a monolithic architecture, which means that the entire software application is developed as a single, unified codebase. Consequently, any modifications made to one section of the code will impact the entire application. Various functionalities like logging, caching, and performance monitoring are encompassed within a single application. This approach simplifies management and facilitates connections with other components and applications.
+
+Enatega uses the Express JS framework and Graph QL for building the API. You can view the full Graph QL diagram below:
+ResolversIn GraphQL, Resolvers are functions that define how to retrieve or mutate data for a specific field in a GraphQL schema.
+When a client sends a query or mutation to a GraphQL API, the server uses resolvers to determine how to fetch or manipulate the requested data. Each field in the schema has a corresponding resolver function that knows how to resolve that specific field.
+DockerizationDockerization is the process of packaging and deploying software applications within isolated containers. By Dockerizing an application, it becomes encapsulated within a lightweight, portable container that includes all the necessary dependencies and libraries. This containerization allows the application to run consistently and reliably across different environments, such as development, testing, and production.
+DatabaseEnatega uses Mongo DB to manage it’s database instead of SQL for database management.
+
+Payment options available to buy Enatega:
+Credit/Debit CardPaypalGPayWire TransferPayoneer

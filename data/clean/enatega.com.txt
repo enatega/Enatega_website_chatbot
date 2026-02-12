@@ -42,6 +42,8 @@ Enatega is more than just a food delivery platform; it supports various delivery
 - Roadside Assistance
 - Gift Delivery
 - Laundry On-Demand Services
+- Taxi Delivery
+- Pet Marketplace
 
 Enatega’s versatility allows businesses across multiple industries to digitize operations and provide a wide range of services through a single platform.
 

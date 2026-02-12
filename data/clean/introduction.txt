@@ -133,6 +133,8 @@ sales@enatega.com
 - Laundry-On-Demand Services Solution
 - Roadside Assistance Services Solution
 - Document Delivery Solution
+- Taxi Booking Solution
+- Pet Marketplace Solution
 
 ## Privacy Policy
 Terms & Conditions  

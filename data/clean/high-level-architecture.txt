@@ -122,6 +122,8 @@ Compare with:
 - Laundry-On-Demand Services Solution
 - Roadside Assistance Services Solution
 - Document Delivery Solution
+- Taxi Booking Solution
+- Pet Marketplace Solution
 
 ## Legal
 

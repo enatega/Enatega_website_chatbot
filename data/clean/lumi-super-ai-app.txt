@@ -1,0 +1,91 @@
+Overview
+
+Lumi is Qatar’s first all-in-one AI-powered super app. Built on the Enatega platform, it is a dynamic food and grocery delivery application offering a seamless bilingual experience. Designed for growth, Lumi delivers fast and intuitive services across the regional market.
+
+The platform includes a Web App, Customer App, Admin Panel, and Rider App.
+
+Introduction
+
+Lumi is a next-generation super app based in Qatar. It is built on the Enatega framework and enhanced with proprietary AI extensions to create a unified ride-sharing and food delivery platform.
+
+The Challenge
+
+Lumi set out to address several market needs.
+
+Service Fragmentation
+Users in Qatar relied on multiple separate applications for transportation, food delivery, hospitality services, and travel. Lumi aimed to unify these services under one platform.
+
+AI-Driven Personalisation
+Traditional service apps in the region lacked intelligent recommendations and adaptive user experiences.
+
+Multi-Service Architecture
+Integrating ride sharing, delivery, and future travel services into a single scalable application required rethinking the base architecture.
+
+Local Relevance and Language Support
+Qatar’s diverse population required support for both Arabic and English within the same interface.
+
+To meet these demands, Lumi needed a scalable solution that could adapt quickly without compromising performance or user experience.
+
+Development Journey
+
+Lumi’s development was based on the Enatega white-label super app platform, selected for its modular architecture and on-demand service foundation. The framework was extended with a new ride-sharing module that included driver onboarding, trip management, real-time tracking, and dynamic pricing logic.
+
+Stage I: Architectural Enhancement
+
+Artificial intelligence components were added to improve search relevance, tailor ride and food recommendations, and optimise routing for drivers and delivery partners.
+
+Stage II: AI Features Integration
+
+AI capabilities were embedded to enhance personalisation, predictive searches, and contextual service suggestions.
+
+Stage III: Localisation and Language Support
+
+The user interface was fully localised with support for both right-to-left (Arabic) and left-to-right (English) layouts. Cultural and regional preferences guided UI design decisions throughout this stage.
+
+Stage IV: Scalable Modules for Future Services
+
+Hotel booking, flight reservations, and hospitality services were architected as independent modules, allowing them to be enabled without affecting core ride or delivery services.
+
+The development process followed an iterative approach with continuous user testing to validate usability and responsiveness across services.
+
+Key Capabilities
+Ride Sharing
+
+Lumi offers fast rider-driver matching with transparent pricing and fare estimates. The experience includes options for tipping, discounts, and feedback, along with real-time tracking, trip updates, preferred language support, and local payment methods.
+
+Food Delivery
+
+The food delivery service includes a wide selection of partner restaurants, seamless ordering with live order tracking, smart recommendations influenced by user behaviour, and integrated maps with delivery ETA visibility.
+
+AI-Powered Enhancements
+
+AI-driven features include intelligent suggestions tailored to user preferences, predictive searches based on prior activity, and context-aware ride and food options.
+
+Scalable Architecture
+
+Lumi is built on a modular architecture designed for future expansion into hotel, flight, and hospitality services. The platform supports shared user accounts across services and a unified payment system.
+
+Launch and Results
+
+Lumi’s rollout focused on stabilising core services in major population centres across Qatar. Early adoption demonstrated strong user interest in combined services.
+
+Key outcomes included rapid adoption with strong user retention, positive feedback on AI recommendations and interface simplicity, smooth onboarding of partner drivers and restaurants, and high engagement across both ride-sharing and food delivery services.
+
+Future Service Expansion
+
+Lumi is designed to extend into additional service areas.
+
+Hotel Booking
+Integration with global and regional hotel partners, supported by AI-based stay recommendations.
+
+Flight Booking
+Search and booking across airlines with fare predictions and smart alerts.
+
+Hospitality Services
+Concierge-level services including home cleaning, laundry, electrician, and other technical services.
+
+Each new capability is designed to integrate naturally within the existing app experience.
+
+Conclusion
+
+Lumi represents a pioneering initiative within Qatar’s digital ecosystem. By combining ride sharing and food delivery with artificial intelligence and a flexible architectural foundation, it delivers a compelling multi-service experience. Built on the Enatega framework and enhanced with customised modules, Lumi is positioned to expand into travel and hospitality while setting a new standard for super apps in the region.
