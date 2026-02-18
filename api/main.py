@@ -740,6 +740,82 @@ DEMO_LINKS = {
     },
 }
 
+# ---- Use Case Prototypes Catalog ----
+USE_CASE_PROTOTYPES = {
+    "food_and_beverage_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/Hi8fAXM0NwEGZhJUQW56",
+            "https://embed.figma.com/proto/7t5xmP8Q8phBVlxvM3SR",
+            "https://embed.figma.com/proto/yJR49T3sXgBclT2zlY3C",
+            "https://embed.figma.com/proto/3IsFQ4y0dngt3gDBj9O4"
+        ]
+    },
+    "grocery_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/hzLj7ulZRk6E52m3VvX0",
+            "https://embed.figma.com/proto/RFmA1PUoAWMwUihmUOhj",
+            "https://embed.figma.com/proto/IpDkGbRRBUKh0qqf6vXC"
+        ]
+    },
+    "milk_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/fGYqxGYxzJBWC96KmMKX",
+            "https://embed.figma.com/proto/Lks3Hj5zOFdWpINtzmvd"
+        ]
+    },
+    "courier_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/lEwKVXJlaJV9qRhsye2k",
+            "https://embed.figma.com/proto/JH8QQTpeu8QAw4SFubuz"
+        ]
+    },
+    "beauty_services_scheduling_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/7PGECsllcOjAGYmZa8Dd",
+            "https://embed.figma.com/proto/5VAgHel7XWwuVyHDc9H6"
+        ]
+    },
+    "laundry_on_demand_services_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/DNEB3NWlL0yldIyPMCLQ",
+            "https://embed.figma.com/proto/zUBXz6MSKzzAaQq36giA"
+        ]
+    },
+    "document_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/HpXD8czrCbuQzfTJsTBY"
+        ]
+    },
+    "flower_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/RFmA1PUoAWMwUihmUOhj"
+        ]
+    },
+    "medicine_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/hzLj7ulZRk6E52m3VvX0"
+        ]
+    },
+    "liquor_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/IpDkGbRRBUKh0qqf6vXC"
+        ]
+    },
+    "gift_delivery_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/Lks3Hj5zOFdWpINtzmvd"
+        ]
+    },
+    "roadside_assistance_services_solution": {
+        "prototypes": [
+            "https://embed.figma.com/proto/JH8QQTpeu8QAw4SFubuz"
+        ]
+    },
+    "single_vendor_web_demo": {
+        "web": "https://enatega-single-multivendor-web.netlify.app/"
+    }
+}
+
 # Aliases (no regex). You can add more colloquialisms here.
 APP_ALIASES = {
     "customer": "customer app",
@@ -764,6 +840,54 @@ TYPE_ALIASES = {
     "docs": "docs", "documentation": "docs",
 }
 
+# Use case aliases (mapping common names to canonical keys)
+USE_CASE_ALIASES = {
+    "food and beverage": "food_and_beverage_solution",
+    "food and beverage solution": "food_and_beverage_solution",
+    "food delivery": "food_and_beverage_solution",
+    "food": "food_and_beverage_solution",
+    "grocery delivery": "grocery_delivery_solution",
+    "grocery delivery solution": "grocery_delivery_solution",
+    "grocery": "grocery_delivery_solution",
+    "milk delivery": "milk_delivery_solution",
+    "milk delivery solution": "milk_delivery_solution",
+    "milk": "milk_delivery_solution",
+    "courier delivery": "courier_delivery_solution",
+    "courier delivery solution": "courier_delivery_solution",
+    "courier": "courier_delivery_solution",
+    "courier service": "courier_delivery_solution",
+    "beauty services": "beauty_services_scheduling_solution",
+    "beauty services scheduling": "beauty_services_scheduling_solution",
+    "beauty services scheduling solution": "beauty_services_scheduling_solution",
+    "beauty": "beauty_services_scheduling_solution",
+    "laundry on demand": "laundry_on_demand_services_solution",
+    "laundry on demand services": "laundry_on_demand_services_solution",
+    "laundry on demand services solution": "laundry_on_demand_services_solution",
+    "laundry": "laundry_on_demand_services_solution",
+    "document delivery": "document_delivery_solution",
+    "document delivery solution": "document_delivery_solution",
+    "document": "document_delivery_solution",
+    "flower delivery": "flower_delivery_solution",
+    "flower delivery solution": "flower_delivery_solution",
+    "flower": "flower_delivery_solution",
+    "medicine delivery": "medicine_delivery_solution",
+    "medicine delivery solution": "medicine_delivery_solution",
+    "medicine": "medicine_delivery_solution",
+    "liquor delivery": "liquor_delivery_solution",
+    "liquor delivery solution": "liquor_delivery_solution",
+    "liquor": "liquor_delivery_solution",
+    "gift delivery": "gift_delivery_solution",
+    "gift delivery solution": "gift_delivery_solution",
+    "gift": "gift_delivery_solution",
+    "roadside assistance": "roadside_assistance_services_solution",
+    "roadside assistance services": "roadside_assistance_services_solution",
+    "roadside assistance services solution": "roadside_assistance_services_solution",
+    "roadside": "roadside_assistance_services_solution",
+    "single vendor web": "single_vendor_web_demo",
+    "single vendor web demo": "single_vendor_web_demo",
+    "single vendor": "single_vendor_web_demo",
+}
+
 def _norm_app(s: Optional[str]) -> Optional[str]:
     if not s: return None
     key = s.strip().lower()
@@ -778,6 +902,16 @@ def _norm_type(s: Optional[str]) -> Optional[str]:
     if not s: return None
     key = s.strip().lower()
     return TYPE_ALIASES.get(key, key)
+
+def _norm_use_case(s: Optional[str]) -> Optional[str]:
+    if not s: return None
+    key = s.strip().lower()
+    if key in USE_CASE_ALIASES:
+        return USE_CASE_ALIASES[key]
+    # fuzzy match to canonical keys
+    canon = list(USE_CASE_PROTOTYPES.keys())
+    match = get_close_matches(key, canon, n=1, cutoff=0.75)
+    return match[0] if match else key
 
 def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
     app = _norm_app(app)
@@ -805,20 +939,64 @@ def _render_demo_html(app: Optional[str] = None, demo_type: Optional[str] = None
         return "<p>No demo links configured yet.</p>"
     return "<h2>Explore Our Live Demos<br></h2>" + "".join(blocks)
 
+def _render_use_case_prototypes_html(use_case: Optional[str] = None) -> str:
+    use_case = _norm_use_case(use_case)
+    
+    def pill(label, url):
+        return f'<a href="{url}">{label}</a>'
+    
+    def format_use_case_name(name: str) -> str:
+        """Convert snake_case to Title Case"""
+        return name.replace("_", " ").title()
+    
+    blocks = []
+    items = USE_CASE_PROTOTYPES.items()
+    if use_case and use_case in USE_CASE_PROTOTYPES:
+        items = [(use_case, USE_CASE_PROTOTYPES[use_case])]
+    
+    for use_case_name, data in items:
+        pills = []
+        # Handle prototypes list
+        if "prototypes" in data:
+            for i, proto_url in enumerate(data["prototypes"], 1):
+                pills.append(pill(f"Prototype {i}", proto_url))
+        # Handle web demo
+        if "web" in data:
+            pills.append(pill("Web Demo", data["web"]))
+        
+        if not pills:
+            continue
+        
+        title = format_use_case_name(use_case_name)
+        blocks.append(f"<h3>{title}</h3><p>{' '.join(pills)}</p>")
+    
+    if not blocks:
+        return "<p>No prototype links found for this use case.</p>"
+    return "<h2>Use Case Prototypes & Demos<br></h2>" + "".join(blocks)
+
 @tool("get_demo_links", return_direct=False)
 def get_demo_links(app: Optional[str] = None, demo_type: Optional[str] = None) -> str:
     """Return HTML with demo links. app ∈ {customer app, rider app, restaurant app, customer web, admin dashboard, server}. demo_type ∈ {ios, android, web, prototype, docs}. Omit args to show all."""
     return _render_demo_html(app, demo_type)
 
+@tool("get_use_case_prototypes", return_direct=False)
+def get_use_case_prototypes(use_case: Optional[str] = None) -> str:
+    """Return HTML with prototype links for use cases. use_case can be any use case name (e.g., 'food delivery', 'grocery delivery', 'courier delivery', etc.). Omit arg to show all."""
+    return _render_use_case_prototypes_html(use_case)
+
 # Small, deterministic router that only decides whether to call the tool
-router_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.0, api_key=OPENAI_API_KEY).bind_tools([get_demo_links])
+router_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.0, api_key=OPENAI_API_KEY).bind_tools([get_demo_links, get_use_case_prototypes])
 
 ROUTER_SYS = (
-    "You can call get_demo_links when the user asks for a demo or demo links. "
+    "You can call get_demo_links when the user asks for a demo or demo links for applications. "
     "If they specify an app (customer app, rider app, restaurant app, customer web, admin dashboard, server) "
     "and/or a demo type (ios, android, web, prototype, docs), pass them. "
     "If unspecified, omit the arg to show all. "
-    "If the request is not about demos, do not call any tool."
+    "You can call get_use_case_prototypes when the user asks for prototypes, demos, or demo links related to use cases "
+    "(e.g., food delivery, grocery delivery, courier delivery, beauty services, laundry, document delivery, flower delivery, "
+    "medicine delivery, liquor delivery, gift delivery, roadside assistance, single vendor web demo). "
+    "If they specify a use case name, pass it. If unspecified, omit the arg to show all. "
+    "If the request is not about demos or prototypes, do not call any tool."
 )
 
 def maybe_answer_with_demos(user_msg: str) -> Optional[str]:
@@ -830,6 +1008,10 @@ def maybe_answer_with_demos(user_msg: str) -> Optional[str]:
             raw = (c.get("function") or {}).get("arguments") or "{}"
             args = json.loads(raw)
             return get_demo_links.invoke(args)
+        elif fn == "get_use_case_prototypes":
+            raw = (c.get("function") or {}).get("arguments") or "{}"
+            args = json.loads(raw)
+            return get_use_case_prototypes.invoke(args)
     return None
 
 # ---------- Mongo helpers ----------

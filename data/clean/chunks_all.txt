@@ -1,7 +1,7 @@
 # chunks from https://enatega.com/ and related pages
 # splitter = token | size=700 | overlap=150
 
------ chunk 1/116 -----
+----- chunk 1/119 -----
 url: https://enatega.com/Api/ | title: Enatega — Api
 slug: Api | chars: 1610
 
@@ -17,7 +17,7 @@ DatabaseEnatega uses Mongo DB to manage it’s database instead of SQL for datab
 Payment options available to buy Enatega:
 Credit/Debit CardPaypalGPayWire TransferPayoneer
 
------ chunk 2/116 -----
+----- chunk 2/119 -----
 url: https://enatega.com/amplitude-introduction/ | title: Multi Vendor Amplitude Introduction | Enatega
 slug: amplitude-introduction | chars: 1777
 
@@ -122,7 +122,7 @@ sales@enatega.com
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 3/116 -----
+----- chunk 3/119 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution Software for Salons
 slug: beauty-services-scheduling-solution | chars: 3520
 
@@ -218,7 +218,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 ### Enterprise Plan
 
------ chunk 4/116 -----
+----- chunk 4/119 -----
 url: https://enatega.com/beauty-services-scheduling-solution/ | title: Beauty Services Scheduling Solution Software for Salons
 slug: beauty-services-scheduling-solution | chars: 2204
 
@@ -307,7 +307,7 @@ Phone: +1 (307) 776-8999
 
 ©2025 Enatega · All rights reserved. Powered by: Talk to Enatega AI
 
------ chunk 5/116 -----
+----- chunk 5/119 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 3471
 
@@ -358,7 +358,7 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999
 
------ chunk 6/116 -----
+----- chunk 6/119 -----
 url: https://enatega.com/borku-delivery/ | title: Borku - Authentic African Cuisine Delivery App | Case Study
 slug: borku-delivery | chars: 820
 
@@ -383,7 +383,7 @@ sales@enatega.com
 Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 7/116 -----
+----- chunk 7/119 -----
 url: https://enatega.com/configuration-google-maps-api-keys/ | title: Multi-Vendor Configuration Google Maps API Keys | Enatega
 slug: configuration-google-maps-api-keys | chars: 2725
 
@@ -477,7 +477,7 @@ sales@enatega.com
 ## Documentation  
 ## Features
 
------ chunk 8/116 -----
+----- chunk 8/119 -----
 url: https://enatega.com/configuration-google-maps-api-keys/ | title: Multi-Vendor Configuration Google Maps API Keys | Enatega
 slug: configuration-google-maps-api-keys | chars: 1151
 
@@ -550,7 +550,7 @@ sales@enatega.com
 Powered by: EN  
 Talk to Enatega AI
 
------ chunk 9/116 -----
+----- chunk 9/119 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Courier Delivery Solution – Fastly Automate Your Deliveries
 slug: courier-delivery-solution | chars: 3442
 
@@ -636,7 +636,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 ### Enterprise Plan
 
------ chunk 10/116 -----
+----- chunk 10/119 -----
 url: https://enatega.com/courier-delivery-solution/ | title: Courier Delivery Solution – Fastly Automate Your Deliveries
 slug: courier-delivery-solution | chars: 1945
 
@@ -708,7 +708,7 @@ United States
 
 ©2025 Enatega · All rights reserved. Powered by: Talk to Enatega AI
 
------ chunk 11/116 -----
+----- chunk 11/119 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution
 slug: document-delivery-solution | chars: 3588
 
@@ -807,7 +807,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 A custom plan tailored for enterprises that need advanced features and deployment support, including:
 
------ chunk 12/116 -----
+----- chunk 12/119 -----
 url: https://enatega.com/document-delivery-solution/ | title: On-Demand Legal Document Delivery Solution
 slug: document-delivery-solution | chars: 2214
 
@@ -893,7 +893,7 @@ Terms & Conditions
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 13/116 -----
+----- chunk 13/119 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 3660
 
@@ -923,7 +923,7 @@ The development team implemented a wallet feature for riders and restaurants, au
 ## Launching The App
 Once all requested features for version 1.0 were completed, the app was ready for launch. The Easy Eats founders participated in the Greenlight Maine competition, where they presented their app to the judges. After showcasing the app's unique features, the Easy Eats team won the competition, receiving $25,000 to expand their operations. Subsequently, they launched the app at their college in Maine and expanded to other nearby universities.
 
------ chunk 14/116 -----
+----- chunk 14/119 -----
 url: https://enatega.com/easy-eats/ | title: Easy Eats | Custom-Built Food Delivery Solution by Enatega
 slug: easy-eats | chars: 1346
 
@@ -943,7 +943,7 @@ United States
 sales@enatega.com  
 +1 (307) 776-8999
 
------ chunk 15/116 -----
+----- chunk 15/119 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 3572
 
@@ -994,7 +994,7 @@ With multiple payment integrations, including Stripe, Enatega facilitates seamle
 
 ## Choosing The Best Alternative For Blink
 
------ chunk 16/116 -----
+----- chunk 16/119 -----
 url: https://enatega.com/enatega-vs-blink/ | title: All in one food delivery solution for Blinkco Alternative | Explore Enatega
 slug: enatega-vs-blink | chars: 1709
 
@@ -1052,7 +1052,7 @@ sales@enatega.com
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 17/116 -----
+----- chunk 17/119 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 3362
 
@@ -1091,7 +1091,7 @@ Enatega’s platform caters to businesses beyond just food delivery, allowing yo
 ### Branding and User Experience
 Enatega offers complete UI control, giving you the freedom to create an app that aligns with your brand’s look and feel. For companies looking for apps like DeOnDe but with greater customization potential, Enatega is an excellent white-label DeOnDe alternative app that allows for distinct brand identity.
 
------ chunk 18/116 -----
+----- chunk 18/119 -----
 url: https://enatega.com/enatega-vs-deonde/ | title: Enatega vs Deonde | Choose Best For Your Business.
 slug: enatega-vs-deonde | chars: 2061
 
@@ -1127,7 +1127,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 19/116 -----
+----- chunk 19/119 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 3726
 
@@ -1186,7 +1186,7 @@ Enatega supports a wide range of on-demand services, from groceries to courier d
 
 ---
 
------ chunk 20/116 -----
+----- chunk 20/119 -----
 url: https://enatega.com/enatega-vs-gloriafood/ | title: Enatega vs. GloriaFood | Best Online Ordering Platform
 slug: enatega-vs-gloriafood | chars: 1608
 
@@ -1253,7 +1253,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 21/116 -----
+----- chunk 21/119 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 3509
 
@@ -1314,7 +1314,7 @@ With dedicated support and a scalable architecture, Enatega adapts to your busin
 
 ## Why Enatega Stands Out Among Ordering.Co Competitors?
 
------ chunk 22/116 -----
+----- chunk 22/119 -----
 url: https://enatega.com/enatega-vs-ordering-co/ | title: Enatega vs Ordering.co | Who Rules the Delivery Industry?
 slug: enatega-vs-ordering-co | chars: 1432
 
@@ -1382,7 +1382,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 23/116 -----
+----- chunk 23/119 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 3639
 
@@ -1427,7 +1427,7 @@ Enatega’s extensive customization options and wide-ranging service application
 - **Scalable and Supportive Platform**  
   Enatega provides personalized support for onboarding and scalability, designed to grow with your business. For companies aiming to expand, Enatega is an excellent Shipday alternative app that supports business growth effectively.
 
------ chunk 24/116 -----
+----- chunk 24/119 -----
 url: https://enatega.com/enatega-vs-shipday/ | title: Upgrade with Enatega | The Ultimate Shipday Alternatives
 slug: enatega-vs-shipday | chars: 1572
 
@@ -1483,7 +1483,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 25/116 -----
+----- chunk 25/119 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 3665
 
@@ -1544,7 +1544,7 @@ As an all-in-one platform with strong customization capabilities, Enatega stands
 
 ## Schedule A Meeting And Get Started Today
 
------ chunk 26/116 -----
+----- chunk 26/119 -----
 url: https://enatega.com/enatega-vs-spotneats/ | title: Enatega vs Spotneats | Choose the Right Solution
 slug: enatega-vs-spotneats | chars: 1185
 
@@ -1588,7 +1588,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved. Powered by:
 
------ chunk 27/116 -----
+----- chunk 27/119 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 3696
 
@@ -1636,7 +1636,7 @@ Enatega is designed to scale alongside your business, with personalized support 
 ## Conclusion
 For companies that want a marketplace app with expansive customization options, Enatega provides a strong alternative to Yelo. Its extensive feature set and full control over design and branding make Enatega a top choice for businesses ready to innovate in the on-demand delivery market.
 
------ chunk 28/116 -----
+----- chunk 28/119 -----
 url: https://enatega.com/enatega-vs-yelo/ | title: Enatega vs Yelo | Which Is Better in Food Delivery Industry?
 slug: enatega-vs-yelo | chars: 1130
 
@@ -1667,7 +1667,7 @@ Phone: +1 (307) 776-8999
 Privacy Policy | Terms & Conditions  
 ©2024 Enatega · All rights reserved.
 
------ chunk 29/116 -----
+----- chunk 29/119 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 3565
 
@@ -1710,7 +1710,7 @@ Enatega provides a range of payment gateways and API compatibility options to fi
 ## Enatega: One of the Best Apps Like Zeew?
 Enatega stands out as a top alternative solution for businesses looking to expand or diversify their on-demand services. With customizable features, robust tracking, and extensive support, Enatega is a compelling choice for companies seeking to innovate and elevate their delivery offerings.
 
------ chunk 30/116 -----
+----- chunk 30/119 -----
 url: https://enatega.com/enatega-vs-zeew/ | title: Enatega vs Zeew | Which is Best for Your Business?
 slug: enatega-vs-zeew | chars: 927
 
@@ -1734,7 +1734,7 @@ Schedule a meeting and get started with Enatega.
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 31/116 -----
+----- chunk 31/119 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 3398
 
@@ -1829,7 +1829,7 @@ To begin setting up your Android and iOS app development process, purchase the E
 
 ### Free Technical Consultation
 
------ chunk 32/116 -----
+----- chunk 32/119 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 2864
 
@@ -1903,7 +1903,7 @@ Best for enterprises needing advanced features and deployment support. This plan
 
 ## Frequently Asked Questions
 
------ chunk 33/116 -----
+----- chunk 33/119 -----
 url: https://enatega.com/enatega.com/ | title: Open-Source Delivery App Solution for Businesses | Enatega
 slug: enatega.com | chars: 1845
 
@@ -1958,7 +1958,7 @@ United States
 **Email**: sales@enatega.com  
 **Phone**: +1 (307) 776-8999
 
------ chunk 34/116 -----
+----- chunk 34/119 -----
 url: https://enatega.com/faqs/ | title: Multi Vendor Marketplace Platform Faqs | Enatega
 slug: faqs | chars: 2146
 
@@ -2068,7 +2068,7 @@ sales@enatega.com
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 35/116 -----
+----- chunk 35/119 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 4257
 
@@ -2138,7 +2138,7 @@ The tipping feature allows customers to express appreciation for excellent servi
 ### Order Notification
 The advanced order notification feature empowers restaurants to respond promptly to new orders, enhancing customer satisfaction through quick delivery.
 
------ chunk 36/116 -----
+----- chunk 36/119 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 4098
 
@@ -2223,7 +2223,7 @@ This feature captures and organizes customer data for personalized interactions,
 ### Ratings and Coupon Management
 The ratings and coupon management feature helps businesses respond to customer feedback and manage promotions effectively.
 
------ chunk 37/116 -----
+----- chunk 37/119 -----
 url: https://enatega.com/features/ | title: Page not found - Enatega
 slug: features | chars: 2879
 
@@ -2292,7 +2292,7 @@ The discounted fare feature implements strategic discounts to attract and retain
 ### Order and Performance Analytics
 This feature provides insights into business operations, helping to optimize menu offerings and enhance overall performance.
 
------ chunk 38/116 -----
+----- chunk 38/119 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Flower Delivery Solution – Sell and Send Flowers Online
 slug: flower-delivery-solution | chars: 3557
 
@@ -2386,7 +2386,7 @@ The custom plan is tailored for enterprises needing advanced features and deploy
 ## Contact Enatega
 For inquiries, please fill out the Enatega Quote Form or contact us at:
 
------ chunk 39/116 -----
+----- chunk 39/119 -----
 url: https://enatega.com/flower-delivery-solution/ | title: Flower Delivery Solution – Sell and Send Flowers Online
 slug: flower-delivery-solution | chars: 1445
 
@@ -2432,7 +2432,7 @@ Explore various use cases and solutions offered by Enatega, including:
 Privacy Policy | Terms & Conditions  
 Powered by: EN Talk to Enatega AI
 
------ chunk 40/116 -----
+----- chunk 40/119 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: All-in-One Food and Beverage Solution – Boost Orders & Sales
 slug: food-and-beverage-solution | chars: 3442
 
@@ -2532,7 +2532,7 @@ Enatega offers a simple pricing model with no recurring subscriptions or additio
 
 A custom plan tailored for enterprises needing advanced features and deployment support, including:
 
------ chunk 41/116 -----
+----- chunk 41/119 -----
 url: https://enatega.com/food-and-beverage-solution/ | title: All-in-One Food and Beverage Solution – Boost Orders & Sales
 slug: food-and-beverage-solution | chars: 2205
 
@@ -2621,7 +2621,7 @@ Phone: +1 (307) 776-8999
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 42/116 -----
+----- chunk 42/119 -----
 url: https://enatega.com/gift-delivery-solution/ | title: Customized Open-Source Gift Delivery Solution | Enatega
 slug: gift-delivery-solution | chars: 3494
 
@@ -2721,7 +2721,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 A custom plan tailored for enterprises that need advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 43/116 -----
+----- chunk 43/119 -----
 url: https://enatega.com/gift-delivery-solution/ | title: Customized Open-Source Gift Delivery Solution | Enatega
 slug: gift-delivery-solution | chars: 2034
 
@@ -2793,7 +2793,7 @@ A custom plan tailored for enterprises that need advanced features and deploymen
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 44/116 -----
+----- chunk 44/119 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: All-in-One Grocery Delivery Solution to Boost Online Sales
 slug: grocery-delivery-solution | chars: 3536
 
@@ -2893,7 +2893,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 A custom plan tailored for enterprises that need advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 45/116 -----
+----- chunk 45/119 -----
 url: https://enatega.com/grocery-delivery-solution/ | title: All-in-One Grocery Delivery Solution to Boost Online Sales
 slug: grocery-delivery-solution | chars: 2506
 
@@ -2999,7 +2999,7 @@ sales@enatega.com
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 46/116 -----
+----- chunk 46/119 -----
 url: https://enatega.com/high-level-architecture/ | title: Multi Vendor High Level Architecture | Enatega
 slug: high-level-architecture | chars: 3105
 
@@ -3135,7 +3135,7 @@ Compare with:
 - Privacy Policy
 - Terms & Conditions
 
------ chunk 47/116 -----
+----- chunk 47/119 -----
 url: https://enatega.com/high-level-architecture/ | title: Multi Vendor High Level Architecture | Enatega
 slug: high-level-architecture | chars: 549
 
@@ -3163,7 +3163,7 @@ slug: high-level-architecture | chars: 549
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 48/116 -----
+----- chunk 48/119 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 2761
 
@@ -3235,7 +3235,7 @@ In the admin panel under the configuration, you need to add all the values. As w
 
 ### Understanding APIs
 
------ chunk 49/116 -----
+----- chunk 49/119 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 3259
 
@@ -3279,7 +3279,7 @@ Deploying means making your API server available and functional on the hosting s
 
 - **REACT_APP_PROJECT_ID**: The Firebase Project ID uniquely identifies your Firebase project, allowing you to manage and configure it within the Firebase console.
 
------ chunk 50/116 -----
+----- chunk 50/119 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 3265
 
@@ -3329,7 +3329,7 @@ Vercel offers a similar process. You connect your code repository, configure you
 
 ## Contact Information
 
------ chunk 51/116 -----
+----- chunk 51/119 -----
 url: https://enatega.com/how-to-deploy-admin-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-admin-dashboard | chars: 1752
 
@@ -3415,7 +3415,7 @@ sales@enatega.com
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 52/116 -----
+----- chunk 52/119 -----
 url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-backend-api-server | chars: 2921
 
@@ -3493,7 +3493,7 @@ To deploy these applications, consider using hosting platforms like Netlify and 
 
 ## Deployment Steps
 
------ chunk 53/116 -----
+----- chunk 53/119 -----
 url: https://enatega.com/how-to-deploy-backend-api-server/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-backend-api-server | chars: 1288
 
@@ -3537,7 +3537,7 @@ United States
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 54/116 -----
+----- chunk 54/119 -----
 url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-mobile-applications | chars: 3183
 
@@ -3629,7 +3629,7 @@ To create builds for both Android and iOS, enter the following commands in your 
    ```
 3. Create a new project in your Expo account.
 
------ chunk 55/116 -----
+----- chunk 55/119 -----
 url: https://enatega.com/how-to-deploy-mobile-applications/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-mobile-applications | chars: 1696
 
@@ -3705,7 +3705,7 @@ sales@enatega.com
 ©2025 Enatega · All rights reserved.  
 Powered by: EN
 
------ chunk 56/116 -----
+----- chunk 56/119 -----
 url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-web-dashboard | chars: 3404
 
@@ -3784,7 +3784,7 @@ Instructions for deploying your API server on Railway Cloud.
 - **REACT_APP_GOOGLE_MAPS_KEY**: Essential for integrating Google Maps services.
 - Instructions for creating a Google Maps key.
 
------ chunk 57/116 -----
+----- chunk 57/119 -----
 url: https://enatega.com/how-to-deploy-web-dashboard/ | title: Multi Vendor App Server Configurations | Enatega
 slug: how-to-deploy-web-dashboard | chars: 2207
 
@@ -3842,7 +3842,7 @@ For further inquiries, you can reach us at:
 ## Privacy Policy and Terms & Conditions
 ©2025 Enatega · All rights reserved. Powered by: Talk to Enatega AI
 
------ chunk 58/116 -----
+----- chunk 58/119 -----
 url: https://enatega.com/how-to-setup-admin-dashboard-locally/ | title: How to setup Admin Dashboard - Multi-Vendor Doc - Enatega
 slug: how-to-setup-admin-dashboard-locally | chars: 3059
 
@@ -3966,7 +3966,7 @@ Steps for configuring the database server.
      - `WS_SERVER_URL`
      - `GOOGLE_MAPS_KEY`
 
------ chunk 59/116 -----
+----- chunk 59/119 -----
 url: https://enatega.com/how-to-setup-admin-dashboard-locally/ | title: How to setup Admin Dashboard - Multi-Vendor Doc - Enatega
 slug: how-to-setup-admin-dashboard-locally | chars: 1680
 
@@ -4056,7 +4056,7 @@ sales@enatega.com
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 60/116 -----
+----- chunk 60/119 -----
 url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
 slug: how-to-setup-backend-api-locally | chars: 2867
 
@@ -4147,7 +4147,7 @@ SENDGRID_API_KEY=
 - **NODE_ENV**: Node environment.
 - **SENDGRID_API_KEY**: Enter your SendGrid API key if using SendGrid for emails.
 
------ chunk 61/116 -----
+----- chunk 61/119 -----
 url: https://enatega.com/how-to-setup-backend-api-locally/ | title: How to setup Backend API - Multi-Vendor Doc - Enatega
 slug: how-to-setup-backend-api-locally | chars: 2429
 
@@ -4246,7 +4246,7 @@ For further inquiries, please reach out to us at:
 
 ©2025 Enatega · All rights reserved. Powered by: Talk to Enatega AI
 
------ chunk 62/116 -----
+----- chunk 62/119 -----
 url: https://enatega.com/how-to-setup-customer-app-locally/ | title: How to setup Customer App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-customer-app-locally | chars: 3113
 
@@ -4365,7 +4365,7 @@ Instructions for setting up the database server.
    - SERVER_URL  
    - Google_MAPS_KEY
 
------ chunk 63/116 -----
+----- chunk 63/119 -----
 url: https://enatega.com/how-to-setup-customer-app-locally/ | title: How to setup Customer App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-customer-app-locally | chars: 2495
 
@@ -4460,7 +4460,7 @@ sales@enatega.com
 ©2025 Enatega · All rights reserved.  
 Powered by: Talk to Enatega AI
 
------ chunk 64/116 -----
+----- chunk 64/119 -----
 url: https://enatega.com/how-to-setup-restaurant-app-locally/ | title: How to setup Restaurant App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-restaurant-app-locally | chars: 2723
 
@@ -4571,7 +4571,7 @@ Compare:
 - Documentation  
 - Features
 
------ chunk 65/116 -----
+----- chunk 65/119 -----
 url: https://enatega.com/how-to-setup-restaurant-app-locally/ | title: How to setup Restaurant App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-restaurant-app-locally | chars: 1164
 
@@ -4646,7 +4646,7 @@ Terms & Conditions
 Powered by: EN  
 Talk to Enatega AI
 
------ chunk 66/116 -----
+----- chunk 66/119 -----
 url: https://enatega.com/how-to-setup-rider-app-locally/ | title: How to setup Rider App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-rider-app-locally | chars: 3209
 
@@ -4779,7 +4779,7 @@ When you run the commands, you have two options:
 - **Development Build**
 - **Using Expo Go**
 
------ chunk 67/116 -----
+----- chunk 67/119 -----
 url: https://enatega.com/how-to-setup-rider-app-locally/ | title: How to setup Rider App - Multi-Vendor Doc - Enatega
 slug: how-to-setup-rider-app-locally | chars: 1927
 
@@ -4879,7 +4879,7 @@ Compare with other services:
 Powered by: EN  
 Talk to Enatega AI
 
------ chunk 68/116 -----
+----- chunk 68/119 -----
 url: https://enatega.com/how-to-setup-web-dashboard-locally/ | title: How to setup Web Dashboard - Multi-Vendor Doc - Enatega
 slug: how-to-setup-web-dashboard-locally | chars: 2518
 
@@ -4998,7 +4998,7 @@ sales@enatega.com
 - Documentation
 - Features
 
------ chunk 69/116 -----
+----- chunk 69/119 -----
 url: https://enatega.com/how-to-setup-web-dashboard-locally/ | title: How to setup Web Dashboard - Multi-Vendor Doc - Enatega
 slug: how-to-setup-web-dashboard-locally | chars: 1111
 
@@ -5076,7 +5076,7 @@ sales@enatega.com
 Powered by: EN  
 Talk to Enatega AI
 
------ chunk 70/116 -----
+----- chunk 70/119 -----
 url: https://enatega.com/introduction/ | title: Multi Vendor App Intro | Enatega
 slug: introduction | chars: 3789
 
@@ -5147,7 +5147,7 @@ To enhance the development experience, the code is neatly organized, and unneces
 - Jest for unit testing
 - Husky to prevent bad commits
 
------ chunk 71/116 -----
+----- chunk 71/119 -----
 url: https://enatega.com/introduction/ | title: Multi Vendor App Intro | Enatega
 slug: introduction | chars: 2359
 
@@ -5234,7 +5234,7 @@ Terms & Conditions
 ©2025 Enatega · All rights reserved.  
 Powered by: Talk to Enatega AI
 
------ chunk 72/116 -----
+----- chunk 72/119 -----
 url: https://enatega.com/languages/ | title: Enatega — Languages
 slug: languages | chars: 928
 
@@ -5269,7 +5269,7 @@ Turkish
 Uzbek
 Vietnamese
 
------ chunk 73/116 -----
+----- chunk 73/119 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Laundry On-Demand Services Solution – Launch Your App Fast
 slug: laundry-on-demand-services-solution | chars: 3452
 
@@ -5366,7 +5366,7 @@ Enatega offers a straightforward pricing model with no recurring subscriptions o
 
 The custom plan is tailored for enterprises needing advanced features and deployment support, including:
 
------ chunk 74/116 -----
+----- chunk 74/119 -----
 url: https://enatega.com/laundry-on-demand-services-solution/ | title: Laundry On-Demand Services Solution – Launch Your App Fast
 slug: laundry-on-demand-services-solution | chars: 2344
 
@@ -5476,7 +5476,7 @@ Phone: +1 (307) 776-8999
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 75/116 -----
+----- chunk 75/119 -----
 url: https://enatega.com/license/ | title: Multi Vendor App License | Enatega
 slug: license | chars: 2997
 
@@ -5604,7 +5604,7 @@ Compare with other services:
 - Zepto  
 - Zomato
 
------ chunk 76/116 -----
+----- chunk 76/119 -----
 url: https://enatega.com/license/ | title: Multi Vendor App License | Enatega
 slug: license | chars: 935
 
@@ -5661,7 +5661,7 @@ slug: license | chars: 935
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 77/116 -----
+----- chunk 77/119 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: Liquor Delivery Solution – Build Your Own Drizly-Style App
 slug: liquor-delivery-solution | chars: 3515
 
@@ -5761,7 +5761,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 A custom plan tailored for enterprises that need advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 78/116 -----
+----- chunk 78/119 -----
 url: https://enatega.com/liquor-delivery-solution/ | title: Liquor Delivery Solution – Build Your Own Drizly-Style App
 slug: liquor-delivery-solution | chars: 2243
 
@@ -5849,7 +5849,7 @@ sales@enatega.com
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 79/116 -----
+----- chunk 79/119 -----
 url: https://enatega.com/lumi-super-ai-app/ | title: Lumi Super AI App - Enatega
 slug: lumi-super-ai-app | chars: 3842
 
@@ -5924,7 +5924,7 @@ Launch and Results
 
 Lumi’s rollout focused on stabilising core services in major population centres across Qatar. Early adoption demonstrated strong user interest in combined services.
 
------ chunk 80/116 -----
+----- chunk 80/119 -----
 url: https://enatega.com/lumi-super-ai-app/ | title: Lumi Super AI App - Enatega
 slug: lumi-super-ai-app | chars: 2044
 
@@ -5965,7 +5965,7 @@ Conclusion
 
 Lumi represents a pioneering initiative within Qatar’s digital ecosystem. By combining ride sharing and food delivery with artificial intelligence and a flexible architectural foundation, it delivers a compelling multi-service experience. Built on the Enatega framework and enhanced with customised modules, Lumi is positioned to expand into travel and hospitality while setting a new standard for super apps in the region.
 
------ chunk 81/116 -----
+----- chunk 81/119 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Launch Medicine Delivery Solution with 24/7 Support
 slug: medicine-delivery-solution | chars: 3500
 
@@ -6065,7 +6065,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 A custom plan tailored for enterprises that need advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 82/116 -----
+----- chunk 82/119 -----
 url: https://enatega.com/medicine-delivery-solution/ | title: Launch Medicine Delivery Solution with 24/7 Support
 slug: medicine-delivery-solution | chars: 2279
 
@@ -6129,7 +6129,7 @@ Enatega can be compared with various other delivery services such as Blink, Deon
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 83/116 -----
+----- chunk 83/119 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Online Milk Delivery Solution to Grow Your Dairy Business
 slug: milk-delivery-solution | chars: 3487
 
@@ -6229,7 +6229,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 A custom plan tailored for enterprises that need advanced features and deployment support. It includes everything in the Premium Plan plus:
 
------ chunk 84/116 -----
+----- chunk 84/119 -----
 url: https://enatega.com/milk-delivery-solution/ | title: Online Milk Delivery Solution to Grow Your Dairy Business
 slug: milk-delivery-solution | chars: 2415
 
@@ -6335,7 +6335,7 @@ sales@enatega.com
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 85/116 -----
+----- chunk 85/119 -----
 url: https://enatega.com/multi-vendor-features/ | title: Enatega Features for Food Delivery Solution | Enatega
 slug: multi-vendor-features | chars: 1492
 
@@ -6390,7 +6390,7 @@ Phone: +1 (307) 776-8999
 ©2024 Enatega · All rights reserved.  
 Powered by:
 
------ chunk 86/116 -----
+----- chunk 86/119 -----
 url: https://enatega.com/onboarding/ | title: Enatega — Onboarding
 slug: onboarding | chars: 2565
 
@@ -6423,7 +6423,7 @@ To get pricing, please register on our onboarding platform. The onboarding platf
 Our pricing model is transparent and flexible, with no hidden fees or recurring subscriptions. You pay once for the complete solution, which includes full source code and all essential applications.
 Please register below to get started:
 
------ chunk 87/116 -----
+----- chunk 87/119 -----
 url: https://enatega.com/overview-of-the-api/ | title: Overview of the API - Multi-Vendor Doc - Enatega
 slug: overview-of-the-api | chars: 2876
 
@@ -6550,7 +6550,7 @@ Compare:
 
 # Use Cases
 
------ chunk 88/116 -----
+----- chunk 88/119 -----
 url: https://enatega.com/overview-of-the-api/ | title: Overview of the API - Multi-Vendor Doc - Enatega
 slug: overview-of-the-api | chars: 981
 
@@ -6611,7 +6611,7 @@ slug: overview-of-the-api | chars: 981
 Powered by: EN  
 Talk to Enatega AI
 
------ chunk 89/116 -----
+----- chunk 89/119 -----
 url: https://enatega.com/patch-notes/ | title: Multi Vendor App Patch Notes | Enatega
 slug: patch-notes | chars: 1981
 
@@ -6657,7 +6657,7 @@ Patch Notes
 - **ID in Order Delivery Address Fixed**: Rest easy knowing your order is going to the right place with our fixed ID in the order delivery address.  
 - **Stripe Integration Fixed**: Enjoy smooth and secure transactions with our fixed Stripe integration, providing a hassle-free payment experience.
 
------ chunk 90/116 -----
+----- chunk 90/119 -----
 url: https://enatega.com/patch-notes/ | title: Multi Vendor App Patch Notes | Enatega
 slug: patch-notes | chars: 2754
 
@@ -6736,7 +6736,7 @@ sales@enatega.com
   - Zepto  
   - Zomato
 
------ chunk 91/116 -----
+----- chunk 91/119 -----
 url: https://enatega.com/patch-notes/ | title: Multi Vendor App Patch Notes | Enatega
 slug: patch-notes | chars: 976
 
@@ -6793,7 +6793,7 @@ slug: patch-notes | chars: 976
 Powered by: EN  
 Talk to Enatega AI
 
------ chunk 92/116 -----
+----- chunk 92/119 -----
 url: https://enatega.com/prerequisites/ | title: Multi Vendor App Server Configurations | Enatega
 slug: prerequisites | chars: 1718
 
@@ -6905,7 +6905,7 @@ Terms & Conditions
 ©2025 Enatega · All rights reserved.  
 Powered by: EN Talk to Enatega AI
 
------ chunk 93/116 -----
+----- chunk 93/119 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3376
 
@@ -6951,7 +6951,7 @@ Snap Delivered is a food delivery platform powered by Enatega, similar to other 
 
 ### Challenges Addressed
 
------ chunk 94/116 -----
+----- chunk 94/119 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3473
 
@@ -7007,7 +7007,7 @@ Through Enatega's online ordering system, Easy Eats can build its brand recognit
 
 ### Solution Benefits
 
------ chunk 95/116 -----
+----- chunk 95/119 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 3642
 
@@ -7055,7 +7055,7 @@ Before StylizeNOW, potential customers faced inconveniences such as waiting for 
 
 ### Solution Implementation
 
------ chunk 96/116 -----
+----- chunk 96/119 -----
 url: https://enatega.com/products/ | title: Enatega — Products
 slug: products | chars: 1483
 
@@ -7075,7 +7075,7 @@ Enatega, a versatile white-label delivery solution, emerged as the key player in
 
 StylizeNOW has successfully addressed the pain points of traditional salons by providing customers with a hassle-free experience. The company has been able to differentiate itself from traditional salons by providing professional hair styling services at the customer's doorstep. By harnessing Enatega's capabilities, StylizeNOW successfully eliminated the necessity for customers to visit a physical salon.
 
------ chunk 97/116 -----
+----- chunk 97/119 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Emergency Roadside Assistance Services Solution – Enatega
 slug: roadside-assistance-services-solution | chars: 3580
 
@@ -7172,7 +7172,7 @@ Enatega has a simple pricing model with no recurring subscriptions and no additi
 
 ### Enterprise Plan
 
------ chunk 98/116 -----
+----- chunk 98/119 -----
 url: https://enatega.com/roadside-assistance-services-solution/ | title: Emergency Roadside Assistance Services Solution – Enatega
 slug: roadside-assistance-services-solution | chars: 2087
 
@@ -7241,7 +7241,7 @@ Phone: +1 (307) 776-8999
 
 ©2025 Enatega · All rights reserved. Powered by: EN Talk to Enatega AI
 
------ chunk 99/116 -----
+----- chunk 99/119 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 3914
 
@@ -7287,7 +7287,7 @@ The development of Snap Delivered's first version was a race against time. With 
 ## The Future For Snap Delivered
 Snap Delivered’s strategic efforts to overcome challenges have yielded positive results. The platform has gained traction among local businesses and consumers, carving out a niche in the competitive food delivery landscape. Flexible pricing models and an emphasis on community engagement have contributed to a growing user base.
 
------ chunk 100/116 -----
+----- chunk 100/119 -----
 url: https://enatega.com/snap-delivered/ | title: Snap Delivered | Innovative Food Delivery App By Enatega
 slug: snap-delivered | chars: 1516
 
@@ -7321,7 +7321,7 @@ Schedule a meeting and get started today.
 - Snap Delivered
 - Borku Delivery
 
------ chunk 101/116 -----
+----- chunk 101/119 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 3603
 
@@ -7375,7 +7375,7 @@ To learn more or to get a quote, please schedule a meeting.
 - Features
 - Compare
 
------ chunk 102/116 -----
+----- chunk 102/119 -----
 url: https://enatega.com/stylizenow/ | title: On Demand Styling Services and Solution | Case Study
 slug: stylizenow | chars: 759
 
@@ -7404,7 +7404,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 103/116 -----
+----- chunk 103/119 -----
 url: https://enatega.com/tech_stack/ | title: Enatega — Tech Stack
 slug: tech_stack | chars: 2770
 
@@ -7440,7 +7440,106 @@ Enatega's technology stack enables the delivery of complete food delivery soluti
 
 The architecture maintains the scalability necessary to support multiple restaurants and thousands of concurrent users across various geographic locations. This makes it an ideal white-label solution for entrepreneurs and established businesses looking to launch their own branded food delivery platforms without incurring the substantial development costs typically associated with building such complex systems from scratch.
 
------ chunk 104/116 -----
+----- chunk 104/119 -----
+url: https://enatega.com/video/ | title: Enatega — Video
+slug: video | chars: 3468
+
+How to Setup Domain & DNS 
+To set up your domain, review the details of what you are purchasing, including your domain name and order summary. Click on continue to proceed to the billing section. Fill in your billing details and click continue again to move to payment. Once the payment is completed, your domain will be successfully registered.
+
+How to Setup Expo Account 
+To create your Expo account, search for Expo and click on sign up. Enter your email, username, and password to create the account, then agree to the terms and complete the signup process. After logging in, go to the top-right corner and open User Settings. You may convert the account to an organization account if needed. This step is optional. You can either share your username and password or invite a team member to the organization.
+
+
+
+
+
+How to Setup Firebase
+Search for Firebase on Google and open the official website. If you are already logged into a Google account, you will be signed in automatically. Go to the console and create a new project by clicking “Get Started.” Enter a project name and accept the terms. You may enable Google Developer Program features, AI assistance, and Google Analytics if required. Set your location and complete any additional required details.
+Once the project is ready, go to Project Overview and open Project Settings. You will find your project name and ID there. Navigate to Service Accounts and generate a private key. A JSON file will be downloaded. Share this file with the team.
+
+How to Setup GitHub Account
+Search for GitHub and open the official website. Click on sign up. You can continue with Google or Apple, or manually enter your email, username, and a password longer than 15 characters. Select your region and email preferences if desired. Complete the account verification process by solving the security puzzle. Once verified, your GitHub account will be ready.
+
+
+
+How to Setup Gmail Account
+Go to Google and select the option to create a new account. Enter your first and last name, choose your desired email address, and set a password. Confirm your password and proceed. Enter your phone number for verification, along with your date of birth and gender. Choose your personalization settings and accept the privacy and terms to complete the setup.
+
+How to Setup Google Console Account
+Search for Google Play Console and open the official link. Select your organization type. You will need a DUNS number, which can be obtained from the Dun & Bradstreet website.
+Link a payment profile and pay the one-time $25 USD registration fee. Create a new payments profile and continue. Enter your DUNS number and provide the required organizational details such as company size and contact information. Complete the acknowledgments and finalize the registration.
+
+How to Setup Amplitude Account
+Search for Amplitude and open the official website. Click on Get Started and create a new account using your work email or Google. Select or create a new organization, provide its name and URL, and complete the setup. Once created, share your API key with the team.
+
+How to Submit App Logos
+You will need to submit your app icons. Refer to Apple and Google design guidelines to ensure your logos meet their recommended specifications. For iOS, follow the required dimensions, file type, color range, and size guidelines. Logos must be square. For Android, ensure the logo is not transparent and meets the specified dimensions and requirements.
+
+----- chunk 105/119 -----
+url: https://enatega.com/video/ | title: Enatega — Video
+slug: video | chars: 3027
+
+How to Setup Amplitude Account
+Search for Amplitude and open the official website. Click on Get Started and create a new account using your work email or Google. Select or create a new organization, provide its name and URL, and complete the setup. Once created, share your API key with the team.
+
+How to Submit App Logos
+You will need to submit your app icons. Refer to Apple and Google design guidelines to ensure your logos meet their recommended specifications. For iOS, follow the required dimensions, file type, color range, and size guidelines. Logos must be square. For Android, ensure the logo is not transparent and meets the specified dimensions and requirements.
+
+Provide App Names
+Provide names for the Customer App, Store App, and Rider App. Once finalized, submit all three names. These will be used to represent your apps on the App Store and Google Play.
+
+How to Setup Apple Developer Account
+Search for the Apple Developer Program and open the official website. To create an organizational account, you will need your company’s legal name, address, DUNS number, phone number, email, and website. The annual fee is $100 USD.
+Sign in with your Apple ID or create one if necessary. Select your entity type and provide the required organization details. Review and confirm your information. Accept the agreements and complete the payment process. Your enrollment will then be processed.
+
+Provide Color Scheme
+Provide a color scheme consisting of three colors: primary, secondary, and accent. If unsure, you may use a color generator tool to select matching colors. Share the hex codes through the portal. If you have brand guidelines, you may share them via link or PDF.
+
+How to Setup Netlify
+Go to Netlify and click sign up. You can register using Google or your email. Enter your details, including name, company name, and team size. Once inside the dashboard, navigate to Usage and Billing. You may use the free plan or upgrade to a Personal or Pro plan if required.
+
+How to Setup PayPal Account 
+Search for PayPal and open the official website. Click sign up for free and enter your phone number for verification. Provide your email, name, and password to create your account. Enter your address and personal details, then agree to the terms. You may link a card immediately or skip this step for later. Once completed, your account will be ready to send and receive payments.
+
+How to Setup Railway Account
+Visit Railway and review the pricing plans. Select the Pro plan and sign in using GitHub or email. Accept the privacy and fair use policies. Enter your payment details and subscribe to the Pro plan. Your account will then be created.
+
+How to Setup Sentry
+Go to sentry.io and click Get Started. Create an account by entering your name, organization name, email, and password. Accept the terms and create your account. Skip onboarding if desired. Create a new project, select Node.js and Express as the framework, and name your project. Copy the DSN from the project dashboard and share it with the team.
+
+----- chunk 106/119 -----
+url: https://enatega.com/video/ | title: Enatega — Video
+slug: video | chars: 3481
+
+How to Setup Railway Account
+Visit Railway and review the pricing plans. Select the Pro plan and sign in using GitHub or email. Accept the privacy and fair use policies. Enter your payment details and subscribe to the Pro plan. Your account will then be created.
+
+How to Setup Sentry
+Go to sentry.io and click Get Started. Create an account by entering your name, organization name, email, and password. Accept the terms and create your account. Skip onboarding if desired. Create a new project, select Node.js and Express as the framework, and name your project. Copy the DSN from the project dashboard and share it with the team.
+
+How to Setup Stripe Account
+Search for Stripe and open the official website. Click sign up and enter your email, full name, country, and password. Verify your email address. Activate payments by completing your business profile, including business location, type, and personal verification details.
+Provide VAT details if applicable and select your industry. Add website or social media information if needed. Describe your order fulfillment process and provide public-facing details such as your store descriptor. Select your currency and enable two-factor authentication using an authenticator app, security key, or SMS. Save your backup code securely. Review your information and complete the setup. Your Stripe dashboard will then be active and ready to accept payments.
+
+How to Setup Google Play Organization Account
+To set up your Google Play Organization account, go to the Google Play Console by searching for it on Google and clicking the official link. Once there, select the type of organization you have. You will need a DUNS number, which can be obtained from the Dun & Bradstreet website by searching for it online and applying for a DUNS number.
+
+On the next page, link a payment profile to your account. There is a one-time registration fee of $25 USD required to activate your Google Play Organization account. Create a new payment profile and click continue.
+
+You will then be asked to enter your DUNS number, so make sure you have it ready. After entering the number, proceed by clicking continue and next.
+
+Next, provide additional details about your organization, including its size, phone number, and other required information. Ensure all details are accurate before proceeding. You may be asked to provide further information and complete an acknowledgment. Fill in all required fields and continue to complete the setup process.
+
+
+How to Setup MongoDB
+Go to mongodb.com and click Get Started. Sign up using Google or your credentials. Accept the privacy policy and terms of service. You may personalize your setup or skip this step. Choose a cluster, such as the free tier for testing purposes, and create it. Once created, note your username and password and share them with the team.
+
+How to Setup AWS Account and S3
+Go to Amazon Web Services and create a new account. Enter your email address and account name, verify your email, and set a password. Choose a free or paid plan and provide your business and payment details. A small verification charge may apply. Confirm your identity using your mobile number and verification code.
+Once your account is ready, access the AWS Management Console. Navigate to Services and select S3 under the Storage section. Create a new bucket by providing a bucket name and region. Configure the necessary settings and create the bucket. Share the bucket name and region with the team.
+
+----- chunk 107/119 -----
 url: https://enatega.com/vinifynd/ | title: Best Wine Delivery and Selling Services App | Case Study
 slug: vinifynd | chars: 3569
 
@@ -7488,7 +7587,7 @@ Terms & Conditions
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 105/116 -----
+----- chunk 108/119 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 3452
 
@@ -7555,7 +7654,7 @@ Yalla has quickly cemented its reputation as a go-to app in the food and grocery
 
 ## Client Showcase: See Yalla in Action
 
------ chunk 106/116 -----
+----- chunk 109/119 -----
 url: https://enatega.com/yalla-delivery/ | title: Yalla Delivery | Food & Grocery Delivery App by Enatega
 slug: yalla-delivery | chars: 1698
 
@@ -7619,7 +7718,7 @@ sales@enatega.com
 
 ©2024 Enatega · All rights reserved.
 
------ chunk 107/116 -----
+----- chunk 110/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2577
 
@@ -7661,7 +7760,7 @@ This section covers the installation and configuration of core tools needed to r
 
 # 2. Backend Setup: Backend API
 
------ chunk 108/116 -----
+----- chunk 111/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2108
 
@@ -7700,7 +7799,7 @@ This covers cloning the backend, setting up environment variables, and configuri
 
 ## 2.4 Firebase Service Account
 
------ chunk 109/116 -----
+----- chunk 112/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2172
 
@@ -7747,7 +7846,7 @@ The application is deployed using the Railway app.
 
 ## 3.2 Deployment on Railway
 
------ chunk 110/116 -----
+----- chunk 113/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2091
 
@@ -7783,7 +7882,7 @@ This section details setting up the Admin and Customer Web Portals and configuri
 
 ## 4.1 Web Portal Local Setup and Configuration
 
------ chunk 111/116 -----
+----- chunk 114/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2417
 
@@ -7829,7 +7928,7 @@ The Admin Portal is used to manage most service API keys in the database.
 
 ### Stripe Payment Gateway
 
------ chunk 112/116 -----
+----- chunk 115/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2327
 
@@ -7870,7 +7969,7 @@ slug: youtube | chars: 2327
 
 ### Sentry Error Tracking
 
------ chunk 113/116 -----
+----- chunk 116/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2338
 
@@ -7920,7 +8019,7 @@ The Admin and Customer Web Portals are deployed using Netlify.
 
 ## 5.2 Customer Web Portal Deployment
 
------ chunk 114/116 -----
+----- chunk 117/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 1804
 
@@ -7961,7 +8060,7 @@ This covers setting up the required services to build and authenticate the mobil
 
 ## 6.2 Firebase for Mobile Services
 
------ chunk 115/116 -----
+----- chunk 118/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 2494
 
@@ -7990,7 +8089,7 @@ slug: youtube | chars: 2494
 
 ## 6.4 Mobile App Development Builds
 
------ chunk 116/116 -----
+----- chunk 119/119 -----
 url: https://enatega.com/youtube/ | title: Enatega — Youtube
 slug: youtube | chars: 624
 
