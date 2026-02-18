@@ -166,7 +166,11 @@ def main():
         print(f" - {name}: {words} words → {n_chunks} chunks")
 
     # Step 3: Push to Qdrant
-    client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
+    client = QdrantClient(
+        url=QDRANT_URL, 
+        api_key=QDRANT_API_KEY,
+        timeout=120
+    )
 
     if args.recreate:
         try:
@@ -187,10 +191,36 @@ def main():
 
     emb = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
     vs = QdrantVectorStore(client=client, collection_name=COLLECTION, embedding=emb)
-    vs.add_documents(all_docs)
+    
+    # Upload in batches with retry logic
+    batch_size = 10
+    print(f"\nUploading {len(all_docs)} chunks in batches of {batch_size}...")
+    
+    import time
+    for i in range(0, len(all_docs), batch_size):
+        batch = all_docs[i:i+batch_size]
+        batch_num = i//batch_size + 1
+        total_batches = (len(all_docs)-1)//batch_size + 1
+        
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                vs.add_documents(batch)
+                print(f"  ✓ Batch {batch_num}/{total_batches} ({len(batch)} chunks)")
+                time.sleep(2)
+                break
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    print(f"  ⚠ Batch {batch_num} failed (attempt {attempt+1}/{max_retries}), retrying in 5s...")
+                    time.sleep(5)
+                else:
+                    print(f"  ✗ Batch {batch_num} failed after {max_retries} attempts: {e}")
+                    print(f"\n⚠️  Partial upload completed. {i} chunks uploaded successfully.")
+                    print(f"Run the script again WITHOUT --recreate to continue.")
+                    return
 
     cnt = client.count(collection_name=COLLECTION, exact=True).count
-    print(f"\nUpserted {len(all_docs)} chunks. Collection '{COLLECTION}' now has {cnt} points.")
+    print(f"\n✓ Successfully uploaded {len(all_docs)} chunks. Collection '{COLLECTION}' now has {cnt} points.")
     print("Sample metadata:", all_docs[0].metadata)
 
 
