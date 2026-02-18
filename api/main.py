@@ -553,6 +553,7 @@ from datetime import datetime, timedelta, timezone
 from pymongo import MongoClient, ASCENDING
 from pymongo.errors import DuplicateKeyError
 import html
+import jwt
 
 # ---------- env ----------
 load_dotenv()
@@ -566,6 +567,9 @@ MONGO_URI = os.getenv("MONGO_URI")  # e.g. mongodb+srv://user:pass@cluster/enate
 MONGO_DB  = os.getenv("MONGO_DB", "enatega")
 MONGO_COL = os.getenv("MONGO_COL", "chat_sessions")
 TTL_DAYS  = int(os.getenv("CHAT_TTL_DAYS", "7"))
+
+# User token signing secret
+ENATEGA_USER_SIGNING_SECRET = os.getenv("ENATEGA_USER_SIGNING_SECRET", "Hyvsyftwo2398cvvvGG8cw5")
 
 if not OPENAI_API_KEY:
     raise RuntimeError("OPENAI_API_KEY missing")
@@ -703,6 +707,7 @@ RAG_PROMPT = PromptTemplate.from_template(
 class ChatReq(BaseModel):
     session_id: str
     message: str
+    user_token: Optional[str] = None
 
 class ChatResp(BaseModel):
     answer: str
@@ -1039,8 +1044,26 @@ def _ensure_indexes():
 
 _ensure_indexes()
 
-def ensure_session_doc(session_id: str, page_url: Optional[str] = None):
-    """Create or touch a session document."""
+def decode_user_token(user_token: Optional[str]) -> Optional[Dict]:
+    """Decode and verify user token to extract user details."""
+    if not user_token:
+        return None
+    try:
+        # Decode JWT token with the signing secret
+        decoded = jwt.decode(user_token, ENATEGA_USER_SIGNING_SECRET, algorithms=["HS256"])
+        return decoded
+    except jwt.ExpiredSignatureError:
+        print("User token expired")
+        return None
+    except jwt.InvalidTokenError as e:
+        print(f"Invalid user token: {e}")
+        return None
+    except Exception as e:
+        print(f"Error decoding user token: {e}")
+        return None
+
+def ensure_session_doc(session_id: str, page_url: Optional[str] = None, user_details: Optional[Dict] = None):
+    """Create or touch a session document with user details."""
     if chat_col is None or not session_id:
         return
     try:
@@ -1057,23 +1080,31 @@ def ensure_session_doc(session_id: str, page_url: Optional[str] = None):
         }
         if page_url:
             update["$addToSet"] = {"page_urls": page_url}
+        if user_details:
+            # Store user details (e.g., user_id, email, etc. from token)
+            update["$set"]["user_details"] = user_details
         chat_col.update_one({"session_id": session_id}, update, upsert=True)
     except DuplicateKeyError:
         pass
 
-def append_message(session_id: str, role: str, html_text: str):
-    """Append a message into the session transcript."""
+def append_message(session_id: str, role: str, html_text: str, user_details: Optional[Dict] = None):
+    """Append a message into the session transcript with user details."""
     if chat_col is None or not session_id:
         return
     safe = (html_text or "").strip()
+    message_doc = {
+        "role": "assistant" if role == "assistant" else "user",
+        "html": safe,
+        "ts": _now_utc(),
+    }
+    # Add user details to user messages
+    if role == "user" and user_details:
+        message_doc["user_details"] = user_details
+    
     chat_col.update_one(
         {"session_id": session_id},
         {
-            "$push": {"messages": {
-                "role": "assistant" if role == "assistant" else "user",
-                "html": safe,
-                "ts": _now_utc(),
-            }},
+            "$push": {"messages": message_doc},
             "$set": {"last_active": _now_utc(), "expireAt": _expire_at()},
         },
         upsert=True,
@@ -1094,10 +1125,13 @@ def chat(req: ChatReq):
         raise HTTPException(status_code=400, detail="Empty message")
     t0 = time.time()
 
-    # NEW: persist user turn
+    # Decode user token to get user details
+    user_details = decode_user_token(req.user_token)
+
+    # NEW: persist user turn with user details
     try:
-        ensure_session_doc(req.session_id)
-        append_message(req.session_id, "user", html.escape(req.message))
+        ensure_session_doc(req.session_id, user_details=user_details)
+        append_message(req.session_id, "user", html.escape(req.message), user_details=user_details)
     except Exception as e:
         print("Mongo log (user) failed:", e)
 
@@ -1195,10 +1229,13 @@ async def chat_stream(req: ChatReq):
     if not req.message.strip():
         raise HTTPException(status_code=400, detail="Empty message")
 
-    # NEW: persist user turn
+    # Decode user token to get user details
+    user_details = decode_user_token(req.user_token)
+
+    # NEW: persist user turn with user details
     try:
-        ensure_session_doc(req.session_id)
-        append_message(req.session_id, "user", html.escape(req.message))
+        ensure_session_doc(req.session_id, user_details=user_details)
+        append_message(req.session_id, "user", html.escape(req.message), user_details=user_details)
     except Exception as e:
         print("Mongo log (user stream) failed:", e)
 
