@@ -1045,13 +1045,45 @@ def _ensure_indexes():
 _ensure_indexes()
 
 def decode_user_token(user_token: Optional[str]) -> Optional[Dict]:
-    """Decode and verify user token to extract user details."""
+    """Decode and verify user token to extract user details from JWT payload."""
     if not user_token:
         return None
     try:
         # Decode JWT token with the signing secret
         decoded = jwt.decode(user_token, ENATEGA_USER_SIGNING_SECRET, algorithms=["HS256"])
-        return decoded
+        
+        # Extract and structure user information from decoded token
+        # The token payload contains user information (ID, email, username, etc.)
+        user_info = {}
+        
+        # Map common JWT claim names to user detail fields
+        if "id" in decoded or "user_id" in decoded or "ID" in decoded or "userId" in decoded:
+            user_info["id"] = decoded.get("id") or decoded.get("user_id") or decoded.get("ID") or decoded.get("userId")
+        
+        if "user_login" in decoded or "username" in decoded or "login" in decoded:
+            user_info["user_login"] = decoded.get("user_login") or decoded.get("username") or decoded.get("login")
+        
+        if "user_nicename" in decoded or "nicename" in decoded:
+            user_info["user_nicename"] = decoded.get("user_nicename") or decoded.get("nicename")
+        
+        if "user_email" in decoded or "email" in decoded:
+            user_info["user_email"] = decoded.get("user_email") or decoded.get("email")
+        
+        if "user_url" in decoded or "url" in decoded or "website" in decoded:
+            user_info["user_url"] = decoded.get("user_url") or decoded.get("url") or decoded.get("website")
+        
+        if "user_registered" in decoded or "registered" in decoded or "created_at" in decoded:
+            user_info["user_registered"] = decoded.get("user_registered") or decoded.get("registered") or decoded.get("created_at")
+        
+        if "display_name" in decoded or "name" in decoded or "full_name" in decoded:
+            user_info["display_name"] = decoded.get("display_name") or decoded.get("name") or decoded.get("full_name")
+        
+        # Include all other fields from the token as well
+        for key, value in decoded.items():
+            if key not in user_info:
+                user_info[key] = value
+        
+        return user_info if user_info else decoded
     except jwt.ExpiredSignatureError:
         print("User token expired")
         return None
