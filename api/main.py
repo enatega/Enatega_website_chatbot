@@ -1048,42 +1048,39 @@ def decode_user_token(user_token: Optional[str]) -> Optional[Dict]:
     """Decode and verify user token to extract user details from JWT payload."""
     if not user_token:
         return None
+    
     try:
         # Decode JWT token with the signing secret
         decoded = jwt.decode(user_token, ENATEGA_USER_SIGNING_SECRET, algorithms=["HS256"])
         
-        # Extract and structure user information from decoded token
+        # Return the decoded token payload as user details
         # The token payload contains user information (ID, email, username, etc.)
+        # We'll structure it according to database schema format
         user_info = {}
         
-        # Map common JWT claim names to user detail fields
-        if "id" in decoded or "user_id" in decoded or "ID" in decoded or "userId" in decoded:
-            user_info["id"] = decoded.get("id") or decoded.get("user_id") or decoded.get("ID") or decoded.get("userId")
+        # Map common JWT claim names to user detail fields (database schema format)
+        user_info["id"] = decoded.get("id") or decoded.get("user_id") or decoded.get("ID") or decoded.get("userId")
+        user_info["user_login"] = decoded.get("user_login") or decoded.get("username") or decoded.get("login")
+        user_info["user_nicename"] = decoded.get("user_nicename") or decoded.get("nicename")
+        user_info["user_email"] = decoded.get("user_email") or decoded.get("email")
+        user_info["user_url"] = decoded.get("user_url") or decoded.get("url") or decoded.get("website")
+        user_info["user_registered"] = decoded.get("user_registered") or decoded.get("registered") or decoded.get("created_at")
+        user_info["display_name"] = decoded.get("display_name") or decoded.get("name") or decoded.get("full_name")
         
-        if "user_login" in decoded or "username" in decoded or "login" in decoded:
-            user_info["user_login"] = decoded.get("user_login") or decoded.get("username") or decoded.get("login")
-        
-        if "user_nicename" in decoded or "nicename" in decoded:
-            user_info["user_nicename"] = decoded.get("user_nicename") or decoded.get("nicename")
-        
-        if "user_email" in decoded or "email" in decoded:
-            user_info["user_email"] = decoded.get("user_email") or decoded.get("email")
-        
-        if "user_url" in decoded or "url" in decoded or "website" in decoded:
-            user_info["user_url"] = decoded.get("user_url") or decoded.get("url") or decoded.get("website")
-        
-        if "user_registered" in decoded or "registered" in decoded or "created_at" in decoded:
-            user_info["user_registered"] = decoded.get("user_registered") or decoded.get("registered") or decoded.get("created_at")
-        
-        if "display_name" in decoded or "name" in decoded or "full_name" in decoded:
-            user_info["display_name"] = decoded.get("display_name") or decoded.get("name") or decoded.get("full_name")
-        
-        # Include all other fields from the token as well
+        # Include all other fields from the token as well (remove None values)
         for key, value in decoded.items():
-            if key not in user_info:
+            if key not in user_info and value is not None:
                 user_info[key] = value
         
-        return user_info if user_info else decoded
+        # Remove None values from user_info
+        user_info = {k: v for k, v in user_info.items() if v is not None}
+        
+        # Return user_info if it has any data, otherwise return decoded token as-is
+        # Always return something - even if it's just the raw decoded token
+        result = user_info if user_info else decoded
+        if result:
+            print(f"Debug: Decoded user token with fields: {list(result.keys())}")
+        return result
     except jwt.ExpiredSignatureError:
         print("User token expired")
         return None
@@ -1092,6 +1089,8 @@ def decode_user_token(user_token: Optional[str]) -> Optional[Dict]:
         return None
     except Exception as e:
         print(f"Error decoding user token: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def ensure_session_doc(session_id: str, page_url: Optional[str] = None, user_details: Optional[Dict] = None):
@@ -1263,6 +1262,12 @@ async def chat_stream(req: ChatReq):
 
     # Decode user token to get user details
     user_details = decode_user_token(req.user_token)
+    
+    # Debug: Log if user token was provided but decoding failed
+    if req.user_token and not user_details:
+        print(f"Warning: User token provided but decoding returned None for session {req.session_id}")
+    elif user_details:
+        print(f"Debug: User details decoded successfully for session {req.session_id}: {list(user_details.keys())}")
 
     # NEW: persist user turn with user details
     try:
