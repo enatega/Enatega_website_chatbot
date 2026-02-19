@@ -554,6 +554,9 @@ from pymongo import MongoClient, ASCENDING
 from pymongo.errors import DuplicateKeyError
 import html
 import jwt
+import base64
+import hmac
+import hashlib
 
 # ---------- env ----------
 load_dotenv()
@@ -1045,47 +1048,76 @@ def _ensure_indexes():
 _ensure_indexes()
 
 def decode_user_token(user_token: Optional[str]) -> Optional[Dict]:
-    """Decode and verify user token to extract user details from JWT payload."""
+    """
+    Decode and verify custom WordPress user token.
+    Format: {base64url_encoded_json}.{hmac_signature}
+    The token contains: iss, iat, exp, uid, uname, email
+    """
     if not user_token:
         return None
     
     try:
-        # Decode JWT token with the signing secret
-        decoded = jwt.decode(user_token, ENATEGA_USER_SIGNING_SECRET, algorithms=["HS256"])
+        # Split token into payload and signature
+        parts = user_token.split('.')
+        if len(parts) != 2:
+            print(f"Invalid token format: expected 'payload.signature', got {len(parts)} parts")
+            return None
         
-        # Return the decoded token payload as user details
-        # The token payload contains user information (ID, email, username, etc.)
-        # We'll structure it according to database schema format
-        user_info = {}
+        b64_payload, sig = parts
         
-        # Map common JWT claim names to user detail fields (database schema format)
-        user_info["id"] = decoded.get("id") or decoded.get("user_id") or decoded.get("ID") or decoded.get("userId")
-        user_info["user_login"] = decoded.get("user_login") or decoded.get("username") or decoded.get("login")
-        user_info["user_nicename"] = decoded.get("user_nicename") or decoded.get("nicename")
-        user_info["user_email"] = decoded.get("user_email") or decoded.get("email")
-        user_info["user_url"] = decoded.get("user_url") or decoded.get("url") or decoded.get("website")
-        user_info["user_registered"] = decoded.get("user_registered") or decoded.get("registered") or decoded.get("created_at")
-        user_info["display_name"] = decoded.get("display_name") or decoded.get("name") or decoded.get("full_name")
+        # Verify signature using HMAC SHA256
+        expected_sig = hmac.new(
+            ENATEGA_USER_SIGNING_SECRET.encode('utf-8'),
+            b64_payload.encode('utf-8'),
+            hashlib.sha256
+        ).hexdigest()
         
-        # Include all other fields from the token as well (remove None values)
-        for key, value in decoded.items():
-            if key not in user_info and value is not None:
-                user_info[key] = value
+        if not hmac.compare_digest(sig, expected_sig):
+            print("Token signature verification failed")
+            return None
         
-        # Remove None values from user_info
+        # Decode base64url payload
+        # Base64URL uses -_ instead of +/ and no padding
+        b64_payload_normalized = b64_payload.replace('-', '+').replace('_', '/')
+        # Add padding if needed
+        padding = len(b64_payload_normalized) % 4
+        if padding:
+            b64_payload_normalized += '=' * (4 - padding)
+        
+        decoded_bytes = base64.b64decode(b64_payload_normalized)
+        decoded = json.loads(decoded_bytes.decode('utf-8'))
+        
+        # Check expiration
+        exp = decoded.get('exp')
+        if exp and exp < time.time():
+            print("User token expired")
+            return None
+        
+        # Map token fields to database schema format
+        # Token contains: uid, uname, email, iss, iat, exp
+        user_info = {
+            "id": decoded.get("uid"),  # WordPress user ID
+            "user_login": decoded.get("uname"),  # WordPress username
+            "user_email": decoded.get("email"),  # User email
+        }
+        
+        # Remove None values
         user_info = {k: v for k, v in user_info.items() if v is not None}
         
-        # Return user_info if it has any data, otherwise return decoded token as-is
-        # Always return something - even if it's just the raw decoded token
-        result = user_info if user_info else decoded
-        if result:
-            print(f"Debug: Decoded user token with fields: {list(result.keys())}")
-        return result
-    except jwt.ExpiredSignatureError:
-        print("User token expired")
-        return None
-    except jwt.InvalidTokenError as e:
-        print(f"Invalid user token: {e}")
+        # Include other token fields for reference
+        if decoded.get("iss"):
+            user_info["iss"] = decoded.get("iss")  # Issuer (home_url)
+        if decoded.get("iat"):
+            user_info["iat"] = decoded.get("iat")  # Issued at
+        if decoded.get("exp"):
+            user_info["exp"] = decoded.get("exp")  # Expiration
+        
+        if user_info:
+            print(f"Debug: Decoded user token - ID: {user_info.get('id')}, Login: {user_info.get('user_login')}, Email: {user_info.get('user_email')}")
+        return user_info if user_info else None
+        
+    except json.JSONDecodeError as e:
+        print(f"Error decoding token JSON: {e}")
         return None
     except Exception as e:
         print(f"Error decoding user token: {e}")
