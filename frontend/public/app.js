@@ -19,7 +19,8 @@ const DEFAULT_SUGGESTIONS = [
     "Give me demos",
     "Use cases of Enatega",
     "Pricing options",
-    "Get a Quote"
+    "Get a Quote",
+    "Products Powered by Enatega",
   ];
   
 
