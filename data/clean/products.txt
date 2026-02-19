@@ -1,6 +1,6 @@
 # Products Powered by Enatega
 
-Enatega has successfully powered diverse delivery platforms across multiple industries, demonstrating the versatility and effectiveness of its open-source solution. From Yalla's multifunctional food and grocery delivery app serving Arabic and English-speaking communities to Snap Delivered's disruptive $2 flat-rate delivery model that has onboarded over 100 stores, these real-world implementations showcase tangible results. Notable successes include Borku's authentic African cuisine platform that saved $100,000 USD in commissions, Easy Eats' investor-backed startup launch targeting college campuses, Vinifynd as the region's first wine delivery solution, and StylizeNow's innovative on-demand styling services that eliminated the need for traditional salon visits.
+Enatega has successfully powered diverse delivery platforms across multiple industries, demonstrating the versatility and effectiveness of its open-source solution. From Yalla's multifunctional food and grocery delivery app serving Arabic and English-speaking communities to Snap Delivered's disruptive $2 flat-rate delivery model that has onboarded over 100 stores, these real-world implementations showcase tangible results. Notable successes include Borku's authentic African cuisine platform that saved $100,000 USD in commissions, Easy Eats' investor-backed startup launch targeting college campuses, Vinifynd as the region's first wine delivery solution, StylizeNow's innovative on-demand styling services that eliminated the need for traditional salon visits and Lumi Super AI App as First ever AI powered All-in-one Super App in Qatar.
 
 ## Yalla Delivery
 
@@ -115,3 +115,7 @@ Enatega, a versatile white-label delivery solution, emerged as the key player in
 ### Results
 
 StylizeNOW has successfully addressed the pain points of traditional salons by providing customers with a hassle-free experience. The company has been able to differentiate itself from traditional salons by providing professional hair styling services at the customer's doorstep. By harnessing Enatega's capabilities, StylizeNOW successfully eliminated the necessity for customers to visit a physical salon.
+
+## Lumi Super AI App
+
+Lumi Super AI App is the first-ever AI-powered all-in-one super app in Qatar, powered by Enatega. It offers a wide range of services, including food delivery, grocery delivery, ride-hailing, and more.
