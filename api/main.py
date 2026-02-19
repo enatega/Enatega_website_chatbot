@@ -1262,6 +1262,18 @@ def chat(req: ChatReq):
 
 app.mount("/static", StaticFiles(directory="frontend/public"), name="static")
 
+# Serve admin panel
+@app.get("/admin/{file_path:path}", include_in_schema=False)
+def serve_admin(file_path: str):
+    from pathlib import Path
+    admin_dir = Path("admin")
+    if not file_path:
+        file_path = "index.html"
+    file = admin_dir / file_path
+    if file.exists() and file.is_file():
+        return FileResponse(file)
+    return FileResponse(admin_dir / "index.html")
+
 @app.get("/", include_in_schema=False)
 def root():
     return FileResponse("frontend/public/index.html")
