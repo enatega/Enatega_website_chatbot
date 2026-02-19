@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enatega Knowledge Base Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen" class="screen">
+        <div class="login-box">
+            <h1>🔐 Admin Login</h1>
+            <p>Enatega Knowledge Base Management</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="login-error" class="error"></div>
+        </div>
+    </div>
+
+    <div id="admin-screen" class="screen hidden">
+        <header>
+            <h1>📚 Knowledge Base Admin</h1>
+            <div class="header-actions">
+                <span id="status-info"></span>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="actions">
+                <button onclick="showCreateModal()" class="btn-primary">+ New File</button>
+                <button onclick="refreshFiles()" class="btn-secondary">🔄 Refresh</button>
+                <button onclick="reingest()" class="btn-warning">⚡ Re-ingest to Qdrant</button>
+            </div>
+
+            <div id="files-list" class="files-list">
+                <p>Loading files...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Create/Edit Modal -->
+    <div id="file-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Create New File</h2>
+                <button onclick="closeModal()" class="close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="file-name" placeholder="filename.txt" />
+                <textarea id="file-content" placeholder="Enter file content here..."></textarea>
+                <div class="modal-hint">
+                    <strong>Format Guide:</strong> Use # for headings, ## for subheadings, and clear paragraphs.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal()" class="btn-secondary">Cancel</button>
+                <button onclick="saveFile()" class="btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
