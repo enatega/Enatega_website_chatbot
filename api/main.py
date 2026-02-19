@@ -558,6 +558,9 @@ import base64
 import hmac
 import hashlib
 
+# ----- Admin KB Router -----
+from api.admin_kb import router as admin_router
+
 # ---------- env ----------
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -579,6 +582,10 @@ if not OPENAI_API_KEY:
 
 # ---------- app ----------
 app = FastAPI(title="Enatega RAG API")
+
+# Include admin router
+app.include_router(admin_router)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],          # (optionally restrict to your domains)
