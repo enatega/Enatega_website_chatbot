@@ -139,8 +139,8 @@ def delete_file(filename: str, username: str = Depends(verify_admin)):
 @router.post("/reingest")
 async def reingest_knowledge(username: str = Depends(verify_admin)):
     """Trigger re-ingestion with real-time progress updates"""
-    from fastapi.responses import StreamingResponse
     import asyncio
+    import json
     
     async def progress_stream():
         try:
@@ -158,7 +158,9 @@ async def reingest_knowledge(username: str = Depends(verify_admin)):
                 bufsize=1
             )
             
-            yield f"data: {{\"status\": \"started\", \"message\": \"Starting re-ingestion...\"}}\n\n"
+            # Send started message
+            msg = json.dumps({"status": "started", "message": "Starting re-ingestion..."})
+            yield f"data: {msg}\n\n"
             
             while True:
                 line = process.stdout.readline()
@@ -166,19 +168,22 @@ async def reingest_knowledge(username: str = Depends(verify_admin)):
                     break
                 if line:
                     line = line.strip()
-                    # Escape quotes and backslashes for JSON
-                    safe_line = line.replace('\\', '\\\\').replace('"', '')
-                    yield f"data: {{\"status\": \"progress\", \"message\": \"{safe_line}\"}}\n\n"
+                    # Use json.dumps to properly escape the message
+                    msg = json.dumps({"status": "progress", "message": line})
+                    yield f"data: {msg}\n\n"
                 await asyncio.sleep(0.1)
             
             stderr = process.stderr.read()
             if process.returncode == 0:
-                yield f"data: {{\"status\": \"success\", \"message\": \"Re-ingestion completed successfully!\"}}\n\n"
+                msg = json.dumps({"status": "success", "message": "Re-ingestion completed successfully!"})
+                yield f"data: {msg}\n\n"
             else:
-                error_msg = stderr.replace('"', '').replace('\n', ' ')[:500]
-                yield f"data: {{\"status\": \"error\", \"message\": \"Re-ingestion failed: {error_msg}\"}}\n\n"
+                error_msg = stderr[:500]
+                msg = json.dumps({"status": "error", "message": f"Re-ingestion failed: {error_msg}"})
+                yield f"data: {msg}\n\n"
         except Exception as e:
-            yield f"data: {{\"status\": \"error\", \"message\": \"Error: {str(e).replace('"', '')}\"}}\n\n"
+            msg = json.dumps({"status": "error", "message": f"Error: {str(e)}"})
+            yield f"data: {msg}\n\n"
     
     return StreamingResponse(progress_stream(), media_type="text/event-stream")
 
