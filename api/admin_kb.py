@@ -195,7 +195,9 @@ async def reingest_knowledge(username: str = Depends(verify_admin)):
                 msg = json.dumps({"status": "error", "message": f"Re-ingestion failed: {error_msg}"})
                 yield f"data: {msg}\n\n"
         except Exception as e:
-            msg = json.dumps({"status": "error", "message": f"Error: {str(e)}"})
+            # Safely escape error message to avoid JSON issues
+            error_message = str(e).replace('"', "'").replace('\n', ' ')
+            msg = json.dumps({"status": "error", "message": f"Error: {error_message}"})
             yield f"data: {msg}\n\n"
 
     return StreamingResponse(progress_stream(), media_type="text/event-stream")
