@@ -588,9 +588,14 @@ app.include_router(admin_router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          # (optionally restrict to your domains)
-    allow_credentials=False,
-    allow_methods=["*"],
+    allow_origins=[
+        "https://enatega-chatbot-knowledge-update.netlify.app",
+        "http://localhost:8080",
+        "http://localhost:3000",
+        "*"  # Fallback - remove in production if you want strict security
+    ],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
     expose_headers=["*"],
     max_age=86400,
@@ -601,7 +606,7 @@ app.add_middleware(
 def cors_preflight(rest_of_path: str, request: Request):
     return Response(status_code=204, headers={
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
         "Access-Control-Max-Age": "86400",
     })
