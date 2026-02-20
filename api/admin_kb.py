@@ -166,7 +166,9 @@ async def reingest_knowledge(username: str = Depends(verify_admin)):
                     break
                 if line:
                     line = line.strip()
-                    yield f"data: {{\"status\": \"progress\", \"message\": \"{line.replace('"', '')}\"}}\n\n"
+                    # Escape quotes and backslashes for JSON
+                    safe_line = line.replace('\\', '\\\\').replace('"', '')
+                    yield f"data: {{\"status\": \"progress\", \"message\": \"{safe_line}\"}}\n\n"
                 await asyncio.sleep(0.1)
             
             stderr = process.stderr.read()
