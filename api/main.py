@@ -588,15 +588,28 @@ app = FastAPI(title="Enatega RAG API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://enatega-chatbot-knowledge-update.netlify.app",
-        "http://localhost:8080",
-        "http://localhost:3000",
-    ],
-    allow_credentials=False,  # set True only if you use cookies
+    allow_origins=["*"],  # Allow all origins for chat endpoints (WordPress sites)
+    allow_credentials=False,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=86400,
 )
+
+# Explicit CORS preflight handler for chat endpoints (backup)
+@app.options("/chat")
+@app.options("/chat_stream")
+@app.options("/clear")
+def cors_preflight():
+    return Response(
+        status_code=200,
+        headers={
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+            "Access-Control-Max-Age": "86400",
+        }
+    )
 
 app.include_router(admin_router)
 
