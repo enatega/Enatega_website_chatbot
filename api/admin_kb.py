@@ -1,9 +1,11 @@
 # api/admin_kb.py
 import os
+import sys
 import secrets
 from pathlib import Path
 from typing import List
 from fastapi import APIRouter, HTTPException, Depends, status
+from fastapi.responses import StreamingResponse
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -135,23 +137,48 @@ def delete_file(filename: str, username: str = Depends(verify_admin)):
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/reingest")
-def reingest_knowledge(username: str = Depends(verify_admin)):
-    """Trigger re-ingestion of knowledge base to Qdrant"""
-    try:
-        result = subprocess.run(
-            ["python", "ingest_qdrant.py", "--recreate"],
-            capture_output=True,
-            text=True,
-            timeout=300
-        )
-        if result.returncode == 0:
-            return {"message": "Re-ingestion completed successfully", "output": result.stdout}
-        else:
-            raise HTTPException(status_code=500, detail=f"Re-ingestion failed: {result.stderr}")
-    except subprocess.TimeoutExpired:
-        raise HTTPException(status_code=504, detail="Re-ingestion timeout")
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+async def reingest_knowledge(username: str = Depends(verify_admin)):
+    """Trigger re-ingestion with real-time progress updates"""
+    from fastapi.responses import StreamingResponse
+    import asyncio
+    
+    async def progress_stream():
+        try:
+            env = os.environ.copy()
+            env['PYTHONIOENCODING'] = 'utf-8'
+            
+            process = subprocess.Popen(
+                [sys.executable, "ingest_qdrant.py", "--recreate"],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                env=env,
+                encoding='utf-8',
+                errors='replace',
+                bufsize=1
+            )
+            
+            yield f"data: {{\"status\": \"started\", \"message\": \"Starting re-ingestion...\"}}\n\n"
+            
+            while True:
+                line = process.stdout.readline()
+                if not line and process.poll() is not None:
+                    break
+                if line:
+                    line = line.strip()
+                    yield f"data: {{\"status\": \"progress\", \"message\": \"{line.replace('"', '')}\"}}\n\n"
+                await asyncio.sleep(0.1)
+            
+            stderr = process.stderr.read()
+            if process.returncode == 0:
+                yield f"data: {{\"status\": \"success\", \"message\": \"Re-ingestion completed successfully!\"}}\n\n"
+            else:
+                error_msg = stderr.replace('"', '').replace('\n', ' ')[:500]
+                yield f"data: {{\"status\": \"error\", \"message\": \"Re-ingestion failed: {error_msg}\"}}\n\n"
+        except Exception as e:
+            yield f"data: {{\"status\": \"error\", \"message\": \"Error: {str(e).replace('"', '')}\"}}\n\n"
+    
+    return StreamingResponse(progress_stream(), media_type="text/event-stream")
 
 @router.get("/status")
 def get_status(username: str = Depends(verify_admin)):

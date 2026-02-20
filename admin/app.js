@@ -214,7 +214,14 @@ async function deleteFile(filename) {
 async function reingest() {
     if (!confirm('This will re-ingest all files to Qdrant. This may take a few minutes. Continue?')) return;
     
-    showNotification('Re-ingestion started... This may take a few minutes', 'info');
+    const progressModal = document.getElementById('progress-modal');
+    const progressLog = document.getElementById('progress-log');
+    const progressStatus = document.getElementById('progress-status');
+    
+    progressModal.classList.remove('hidden');
+    progressLog.innerHTML = '';
+    progressStatus.textContent = 'Starting...';
+    progressStatus.className = 'progress-status';
     
     try {
         const response = await fetch(`${API_URL}/reingest`, {
@@ -223,15 +230,65 @@ async function reingest() {
         });
         
         if (!response.ok) {
-            const error = await response.json();
-            throw new Error(error.detail || 'Re-ingestion failed');
+            throw new Error('Failed to start re-ingestion');
         }
         
-        showNotification('Re-ingestion completed successfully!', 'success');
-        loadStatus();
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            
+            const chunk = decoder.decode(value);
+            const lines = chunk.split('\n');
+            
+            for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                    try {
+                        const data = JSON.parse(line.substring(6));
+                        
+                        // Add to log
+                        const logEntry = document.createElement('div');
+                        logEntry.className = `log-entry ${data.status}`;
+                        logEntry.textContent = data.message;
+                        progressLog.appendChild(logEntry);
+                        progressLog.scrollTop = progressLog.scrollHeight;
+                        
+                        // Update status
+                        if (data.status === 'success') {
+                            progressStatus.textContent = '✓ Completed';
+                            progressStatus.className = 'progress-status success';
+                            setTimeout(() => {
+                                progressModal.classList.add('hidden');
+                                loadStatus();
+                                showNotification('Re-ingestion completed successfully!', 'success');
+                            }, 2000);
+                        } else if (data.status === 'error') {
+                            progressStatus.textContent = '✗ Failed';
+                            progressStatus.className = 'progress-status error';
+                        } else if (data.status === 'progress') {
+                            progressStatus.textContent = '⟳ Processing...';
+                            progressStatus.className = 'progress-status progress';
+                        }
+                    } catch (e) {
+                        console.error('Failed to parse SSE data:', e);
+                    }
+                }
+            }
+        }
     } catch (error) {
-        showNotification(error.message, 'error');
+        progressStatus.textContent = '✗ Error';
+        progressStatus.className = 'progress-status error';
+        const logEntry = document.createElement('div');
+        logEntry.className = 'log-entry error';
+        logEntry.textContent = error.message;
+        progressLog.appendChild(logEntry);
     }
+}
+
+function closeProgressModal() {
+    document.getElementById('progress-modal').classList.add('hidden');
 }
 
 // Refresh
@@ -245,6 +302,10 @@ function refreshFiles() {
 function closeModal() {
     document.getElementById('file-modal').classList.add('hidden');
     currentEditFile = null;
+}
+
+function closeProgressModal() {
+    document.getElementById('progress-modal').classList.add('hidden');
 }
 
 // Notification
