@@ -583,8 +583,7 @@ if not OPENAI_API_KEY:
 # ---------- app ----------
 app = FastAPI(title="Enatega RAG API")
 
-# Include admin router
-app.include_router(admin_router)
+
 
 # app.add_middleware(
 #     CORSMiddleware,
@@ -619,6 +618,7 @@ def cors_preflight():
         }
     )
 
+# Include admin router
 app.include_router(admin_router)
 
 # ---------- models / vector store ----------

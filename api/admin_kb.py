@@ -34,9 +34,9 @@ def verify_admin(request: Request, credentials: HTTPBasicCredentials = Depends(s
             detail="Missing credentials",
             headers={
                 "WWW-Authenticate": "Basic",
-                "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
             },
         )
+
 
     correct_username = secrets.compare_digest(credentials.username, ADMIN_USERNAME)
     correct_password = secrets.compare_digest(credentials.password, ADMIN_PASSWORD)
@@ -46,9 +46,9 @@ def verify_admin(request: Request, credentials: HTTPBasicCredentials = Depends(s
             detail="Invalid credentials",
             headers={
                 "WWW-Authenticate": "Basic",
-                "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
-            },
+        },
         )
+
     return credentials.username
 
 # --- Models ---
