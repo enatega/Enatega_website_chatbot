@@ -763,78 +763,124 @@ DEMO_LINKS = {
 }
 
 # ---- Use Case Prototypes Catalog ----
+# Structure: Each use case has multivendor and single_vendor sections
 USE_CASE_PROTOTYPES = {
-    "food_and_beverage_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/Hi8fAXM0NwEGZhJUQW56",
-            "https://embed.figma.com/proto/7t5xmP8Q8phBVlxvM3SR",
-            "https://embed.figma.com/proto/yJR49T3sXgBclT2zlY3C",
-            "https://embed.figma.com/proto/3IsFQ4y0dngt3gDBj9O4"
-        ]
+    "food_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/LSolukFLwl0bAzMUd6Pmg4/Customer-Mobile-App?page-id=2751%3A10941&node-id=5502-4571&p=f&viewport=537%2C341%2C0.02&scaling=scale-down&content-scaling=responsive&starting-point-node-id=5502%3A4571&embed-host=share",
+            "ios": "https://apps.apple.com/us/app/enatega-multivendor/id1526488093",
+            "android": "https://play.google.com/store/apps/details?id=com.enatega.multivendor"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/Hi8fAXM0NwEGZhJUQW56yD/Food-Delivery-Single-vendor?page-id=10845%3A3557&node-id=35506-6490&viewport=-1318%2C1716%2C0.13&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "grocery_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/hzLj7ulZRk6E52m3VvX0",
-            "https://embed.figma.com/proto/RFmA1PUoAWMwUihmUOhj",
-            "https://embed.figma.com/proto/IpDkGbRRBUKh0qqf6vXC"
-        ]
+    "taxi_booking": {
+        "admin_dashboard": {
+            "prototype": "https://embed.figma.com/proto/yJR49T3sXgBclT2zlY3CYO/Enatega-Rider-Admin?page-id=2692%3A7064&node-id=2692-7065&viewport=-967%2C601%2C0.05&scaling=contain&content-scaling=fixed&embed-host=share"
+        },
+        "rider_side": {
+            "prototype": "https://embed.figma.com/proto/7t5xmP8Q8phBVlxvM3SRja/Online-Taxi-Booking--Single-Vendor--?page-id=2%3A23700&node-id=139-26828&viewport=-388%2C135%2C0.19&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "customer_side": {
+            "prototype": "https://embed.figma.com/proto/7t5xmP8Q8phBVlxvM3SRja/Online-Taxi-Booking--Single-Vendor--?page-id=56%3A10356&node-id=79-26206&viewport=243%2C-66%2C0.11&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "milk_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/fGYqxGYxzJBWC96KmMKX",
-            "https://embed.figma.com/proto/Lks3Hj5zOFdWpINtzmvd"
-        ]
+    "flower_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/3IsFQ4y0dngt3gDBj9O4Ki/Flower-App--Multi-vendor-?page-id=2751%3A10941&node-id=33278-18295&viewport=-7076%2C5028%2C0.25&scaling=scale-down&content-scaling=fixed&starting-point-node-id=33278%3A18295&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/hzLj7ulZRk6E52m3VvX07e/Flower-App--Single-vendor-?page-id=10845%3A3557&node-id=37587-4082&viewport=-17895%2C4473%2C0.39&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "courier_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/lEwKVXJlaJV9qRhsye2k",
-            "https://embed.figma.com/proto/JH8QQTpeu8QAw4SFubuz"
-        ]
+    "grocery_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/RFmA1PUoAWMwUihmUOhjTR/Grocery-Delivery-App--Single-vendor-?page-id=10845%3A3557&node-id=35506-6490&viewport=-24500%2C5980%2C0.53&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/RFmA1PUoAWMwUihmUOhjTR/Grocery-Delivery-App--Single-vendor-?page-id=10845%3A3557&node-id=35506-6490&viewport=-24500%2C5980%2C0.53&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "beauty_services_scheduling_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/7PGECsllcOjAGYmZa8Dd",
-            "https://embed.figma.com/proto/5VAgHel7XWwuVyHDc9H6"
-        ]
+    "document_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/IpDkGbRRBUKh0qqf6vXC5W/Courier-Service-App--Multi-vendor-?page-id=2751%3A10941&node-id=38746-8779&viewport=-2361%2C7836%2C0.17&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/fGYqxGYxzJBWC96KmMKXIb/Document-Delivery---Single-vendor-?page-id=10845%3A3557&node-id=35506-6490&viewport=-15595%2C3940%2C0.34&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "laundry_on_demand_services_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/DNEB3NWlL0yldIyPMCLQ",
-            "https://embed.figma.com/proto/zUBXz6MSKzzAaQq36giA"
-        ]
+    "liquor_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/Lks3Hj5zOFdWpINtzmvd4U/Liquor-Delivery--Multi-vendor-?page-id=2751%3A10941&node-id=34524-14390&viewport=-139%2C708%2C0.02&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/lEwKVXJlaJV9qRhsye2kJb/Liquor-App--Single-vendor-?page-id=10845%3A3557&node-id=39572-4195&viewport=-10279%2C2531%2C0.22&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "document_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/HpXD8czrCbuQzfTJsTBY"
-        ]
+    "gift_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/JH8QQTpeu8QAw4SFubuzLy/Gift-Delivery-App--Multi-vendor-?page-id=2751%3A10941&node-id=34591-19335&viewport=-1895%2C2183%2C0.1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=34591%3A19335&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/7PGECsllcOjAGYmZa8Dd8W/Gift-Delivery--Single-vendor-?page-id=10845%3A3557&node-id=45572-4074&viewport=-4693%2C1207%2C0.1&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "flower_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/RFmA1PUoAWMwUihmUOhj"
-        ]
+    "laundry_on_demand": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/5VAgHel7XWwuVyHDc9H6O4/Laundary--Service-App--Multi-vendor-?page-id=2751%3A10941&node-id=36736-11260&viewport=-3849%2C6876%2C0.17&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/DNEB3NWlL0yldIyPMCLQvd/Laundry-on-Demand---Single-vendor-?page-id=10845%3A3557&node-id=43529-3008&viewport=-7624%2C1974%2C0.17&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "medicine_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/hzLj7ulZRk6E52m3VvX0"
-        ]
+    "milk_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/zUBXz6MSKzzAaQq36giAim/Milk-Delivery-App--Multi-vendor-?page-id=2751%3A10941&node-id=34628-11817&viewport=-14772%2C10052%2C0.39&scaling=scale-down&content-scaling=fixed&starting-point-node-id=34628%3A11817&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/HpXD8czrCbuQzfTJsTBYXF/Milk-Delivery--Single-vendor-?page-id=10845%3A3557&node-id=39504-2958&viewport=-11132%2C2845%2C0.24&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "liquor_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/IpDkGbRRBUKh0qqf6vXC"
-        ]
+    "courier_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/IpDkGbRRBUKh0qqf6vXC5W/Courier-Service-App--Multi-vendor-?page-id=2751%3A10941&node-id=38746-8779&viewport=-2361%2C7836%2C0.17&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/KRlPG2L8SB5Wnp9lKiC56K/Courier-Service--Single-vendor-?page-id=10845%3A3557&node-id=47585-3168&viewport=-7963%2C2340%2C0.18&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "gift_delivery_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/Lks3Hj5zOFdWpINtzmvd"
-        ]
+    "roadside_assistance": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/WDjMsjD0yoUKEOS8gGbV76/Road-Side-Service-App--Multi-vendor-?page-id=2751%3A10941&node-id=36624-12771&viewport=-652%2C829%2C0.03&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/1E4WCaAhV2erFp3iGzb7AL/Roadside-App--Single-vendor-?page-id=10845%3A3557&node-id=41635-3341&viewport=-12489%2C1527%2C0.28&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "roadside_assistance_services_solution": {
-        "prototypes": [
-            "https://embed.figma.com/proto/JH8QQTpeu8QAw4SFubuz"
-        ]
+    "medicine_delivery": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/PuDZkoNsK8WhIwzwBZTZfF/Medicine-Delivery--Multi-vendor-?page-id=2751%3A10941&node-id=34604-39731&viewport=-1058%2C1852%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=34604%3A39731&show-proto-sidebar=1&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/13iHkXMQg6TvgIBv4GHD7I/Medicine-Delivery--Single-vendor-?page-id=10845%3A3557&node-id=35506-6490&viewport=-7456%2C2014%2C0.17&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        }
     },
-    "single_vendor_web_demo": {
-        "web": "https://enatega-single-multivendor-web.netlify.app/"
+    "beauty_services": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/prjfwqZ5XqOei1VYtv3FUJ/Beauty-Service-App--Multi-vendor-?page-id=2751%3A10941&node-id=34636-12649&viewport=-4370%2C2884%2C0.16&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/PrDHCJJhrFYqAAfrCQ9w8e/Beauty-Services--Single-vendor-?page-id=10845%3A3557&node-id=35506-6490&p=f&viewport=-10721%2C2722%2C0.23&scaling=scale-down&content-scaling=fixed&starting-point-node-id=47510%3A3796&embed-host=share"
+        }
+    },
+    "pet_marketplace": {
+        "multivendor": {
+            "prototype": "https://embed.figma.com/proto/IpMAzFzp228HS2BXONl1s9/Pet-Market-Place-App-Multivendor?page-id=2751%3A10941&node-id=36617-7202&viewport=-2874%2C2268%2C0.07&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        },
+        "single_vendor": {
+            "prototype": "https://embed.figma.com/proto/pFlFHRXiOGLHXRmbM0z8ix/Pet-Market-Place-App--Single-vendor-?page-id=10845%3A3557&node-id=41505-11214&viewport=-5209%2C1372%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=41505%3A11064&embed-host=share"
+        }
     }
 }
 
@@ -864,50 +910,52 @@ TYPE_ALIASES = {
 
 # Use case aliases (mapping common names to canonical keys)
 USE_CASE_ALIASES = {
-    "food and beverage": "food_and_beverage_solution",
-    "food and beverage solution": "food_and_beverage_solution",
-    "food delivery": "food_and_beverage_solution",
-    "food": "food_and_beverage_solution",
-    "grocery delivery": "grocery_delivery_solution",
-    "grocery delivery solution": "grocery_delivery_solution",
-    "grocery": "grocery_delivery_solution",
-    "milk delivery": "milk_delivery_solution",
-    "milk delivery solution": "milk_delivery_solution",
-    "milk": "milk_delivery_solution",
-    "courier delivery": "courier_delivery_solution",
-    "courier delivery solution": "courier_delivery_solution",
-    "courier": "courier_delivery_solution",
-    "courier service": "courier_delivery_solution",
-    "beauty services": "beauty_services_scheduling_solution",
-    "beauty services scheduling": "beauty_services_scheduling_solution",
-    "beauty services scheduling solution": "beauty_services_scheduling_solution",
-    "beauty": "beauty_services_scheduling_solution",
-    "laundry on demand": "laundry_on_demand_services_solution",
-    "laundry on demand services": "laundry_on_demand_services_solution",
-    "laundry on demand services solution": "laundry_on_demand_services_solution",
-    "laundry": "laundry_on_demand_services_solution",
-    "document delivery": "document_delivery_solution",
-    "document delivery solution": "document_delivery_solution",
-    "document": "document_delivery_solution",
-    "flower delivery": "flower_delivery_solution",
-    "flower delivery solution": "flower_delivery_solution",
-    "flower": "flower_delivery_solution",
-    "medicine delivery": "medicine_delivery_solution",
-    "medicine delivery solution": "medicine_delivery_solution",
-    "medicine": "medicine_delivery_solution",
-    "liquor delivery": "liquor_delivery_solution",
-    "liquor delivery solution": "liquor_delivery_solution",
-    "liquor": "liquor_delivery_solution",
-    "gift delivery": "gift_delivery_solution",
-    "gift delivery solution": "gift_delivery_solution",
-    "gift": "gift_delivery_solution",
-    "roadside assistance": "roadside_assistance_services_solution",
-    "roadside assistance services": "roadside_assistance_services_solution",
-    "roadside assistance services solution": "roadside_assistance_services_solution",
-    "roadside": "roadside_assistance_services_solution",
-    "single vendor web": "single_vendor_web_demo",
-    "single vendor web demo": "single_vendor_web_demo",
-    "single vendor": "single_vendor_web_demo",
+    "food and beverage": "food_delivery",
+    "food and beverage solution": "food_delivery",
+    "food delivery": "food_delivery",
+    "food": "food_delivery",
+    "grocery delivery": "grocery_delivery",
+    "grocery delivery solution": "grocery_delivery",
+    "grocery": "grocery_delivery",
+    "milk delivery": "milk_delivery",
+    "milk delivery solution": "milk_delivery",
+    "milk": "milk_delivery",
+    "courier delivery": "courier_delivery",
+    "courier delivery solution": "courier_delivery",
+    "courier": "courier_delivery",
+    "courier service": "courier_delivery",
+    "beauty services": "beauty_services",
+    "beauty services scheduling": "beauty_services",
+    "beauty services scheduling solution": "beauty_services",
+    "beauty": "beauty_services",
+    "laundry on demand": "laundry_on_demand",
+    "laundry on demand services": "laundry_on_demand",
+    "laundry on demand services solution": "laundry_on_demand",
+    "laundry": "laundry_on_demand",
+    "document delivery": "document_delivery",
+    "document delivery solution": "document_delivery",
+    "document": "document_delivery",
+    "flower delivery": "flower_delivery",
+    "flower delivery solution": "flower_delivery",
+    "flower": "flower_delivery",
+    "medicine delivery": "medicine_delivery",
+    "medicine delivery solution": "medicine_delivery",
+    "medicine": "medicine_delivery",
+    "liquor delivery": "liquor_delivery",
+    "liquor delivery solution": "liquor_delivery",
+    "liquor": "liquor_delivery",
+    "gift delivery": "gift_delivery",
+    "gift delivery solution": "gift_delivery",
+    "gift": "gift_delivery",
+    "roadside assistance": "roadside_assistance",
+    "roadside assistance services": "roadside_assistance",
+    "roadside assistance services solution": "roadside_assistance",
+    "roadside": "roadside_assistance",
+    "taxi booking": "taxi_booking",
+    "taxi": "taxi_booking",
+    "pet marketplace": "pet_marketplace",
+    "pet market": "pet_marketplace",
+    "pet": "pet_marketplace",
 }
 
 def _norm_app(s: Optional[str]) -> Optional[str]:
@@ -965,11 +1013,15 @@ def _render_use_case_prototypes_html(use_case: Optional[str] = None) -> str:
     use_case = _norm_use_case(use_case)
     
     def pill(label, url):
-        return f'<a href="{url}">{label}</a>'
+        return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{label}</a>'
     
     def format_use_case_name(name: str) -> str:
         """Convert snake_case to Title Case"""
         return name.replace("_", " ").title()
+    
+    def format_section_name(section: str) -> str:
+        """Format section names for display"""
+        return section.replace("_", " ").title()
     
     blocks = []
     items = USE_CASE_PROTOTYPES.items()
@@ -977,20 +1029,38 @@ def _render_use_case_prototypes_html(use_case: Optional[str] = None) -> str:
         items = [(use_case, USE_CASE_PROTOTYPES[use_case])]
     
     for use_case_name, data in items:
-        pills = []
-        # Handle prototypes list
-        if "prototypes" in data:
-            for i, proto_url in enumerate(data["prototypes"], 1):
-                pills.append(pill(f"Prototype {i}", proto_url))
-        # Handle web demo
-        if "web" in data:
-            pills.append(pill("Web Demo", data["web"]))
+        use_case_title = format_use_case_name(use_case_name)
+        use_case_block = []
         
-        if not pills:
-            continue
+        # Iterate through sections (multivendor, single_vendor, admin_dashboard, etc.)
+        for section_name, section_data in data.items():
+            if not isinstance(section_data, dict):
+                continue
+            
+            section_pills = []
+            section_title = format_section_name(section_name)
+            
+            # Add prototype link
+            if "prototype" in section_data:
+                section_pills.append(pill("Prototype", section_data["prototype"]))
+            
+            # Add iOS link if available
+            if "ios" in section_data:
+                section_pills.append(pill("iOS", section_data["ios"]))
+            
+            # Add Android link if available
+            if "android" in section_data:
+                section_pills.append(pill("Android", section_data["android"]))
+            
+            # Add web link if available
+            if "web" in section_data:
+                section_pills.append(pill("Web", section_data["web"]))
+            
+            if section_pills:
+                use_case_block.append(f"<h4>{section_title}</h4><p>{' '.join(section_pills)}</p>")
         
-        title = format_use_case_name(use_case_name)
-        blocks.append(f"<h3>{title}</h3><p>{' '.join(pills)}</p>")
+        if use_case_block:
+            blocks.append(f"<h3>{use_case_title}</h3>{''.join(use_case_block)}")
     
     if not blocks:
         return "<p>No prototype links found for this use case.</p>"
