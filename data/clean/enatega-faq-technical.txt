@@ -1,0 +1,135 @@
+ENATEGA TECHNICAL FAQ - Architecture, Stack, Deployment, Security
+
+This document contains technical questions and answers about the Enatega food delivery platform, covering architecture, technology stack, APIs, scaling, security, and deployment options.
+
+Topic: Multi-Tenant Architecture
+Question: Is multi-tenant architecture implemented natively or does it need adaptation?
+Answer: Enatega is a multi-vendor, multi-restaurant marketplace by design. One deployed instance can serve many restaurants and vendors out of the box, so you do not need a separate architecture for basic multi-tenancy.
+
+Topic: Data Isolation
+Question: How is data isolated between different restaurants?
+Answer: Data is isolated logically. Every record such as menus and orders is linked to a specific restaurant or store and vendor where applicable. Role-based access control ensures restaurant users only see their own data in dashboards and apps.
+
+Topic: Database Model
+Question: Do you use database-per-tenant, schema-per-tenant, or row-level security?
+Answer: Enatega uses a single MongoDB database with multiple collections and row-level (document-level) separation by restaurant and vendor IDs. There is no DB-per-tenant or schema-per-tenant model by default.
+
+Topic: Multi-Tenant Deployment Strategy
+Question: What deployment strategy do you support for multi-tenant? Single instance with multiple restaurants or a separate instance per restaurant?
+Answer: The standard approach is one instance with many restaurants (multi-vendor marketplace). If required, you can run separate instances per brand or per large client using the same codebase.
+
+Topic: Scaling
+Question: How does scaling work when the number of restaurants grows? Are there scalability limits?
+Answer: The backend is a stateless Node.js service. Scaling is done by running more instances behind a load balancer and scaling MongoDB vertically or horizontally. There is no hard-coded limit on number of restaurants. Practical limits depend on the infrastructure such as CPU, RAM, and DB tier you choose.
+
+Topic: Restaurants Per Instance
+Question: How many restaurants can run simultaneously on one instance?
+Answer: This depends on traffic (orders per second, users online, menu size) and your server specs. In practice, a properly sized instance can support hundreds of restaurants. For very large numbers (1000+), we suggest splitting by region or brand and upgrading DB and infrastructure tiers.
+
+Topic: Simultaneous Orders
+Question: How many simultaneous orders can the system handle?
+Answer: The stack (Node.js and MongoDB) is designed to handle high concurrency when deployed on adequate infrastructure. As a guideline, a mid-range server (4 vCPU / 8-16 GB RAM with managed MongoDB) can serve thousands of concurrent sessions and high order throughput, and you can scale horizontally from there.
+
+Topic: Known Bottlenecks
+Question: What are the known bottlenecks?
+Answer: Known bottlenecks in Enatega are mostly infrastructure and configuration-related, not hard limits in the code. The main bottlenecks are: MongoDB performance if the DB tier is under-sized, indexes are missing, or queries are not optimized (most common bottleneck); real-time features load such as rider location updates and order status streams if update frequency is too high; third-party services latency such as Google Maps APIs quotas, payment gateways, and SMS/OTP providers; and single-server deployments without horizontal scaling during peak order spikes.
+
+Topic: Technology Stack
+Question: What is the exact full technology stack?
+Answer: Backend is Node.js with Express and MongoDB. Mobile apps use React Native Expo for Customer, Rider, and Store apps. Web uses Next.js for Customer Web, Admin, Vendor, and Store dashboards. Maps and geo use Google Maps APIs. Push notifications use Firebase Cloud Messaging (FCM). Payments support Stripe, PayPal, and Cash on Delivery by default, with other gateways integratable on demand.
+
+Topic: Architecture Type
+Question: Is the architecture monolithic or microservices-based?
+Answer: Enatega uses a single, modular monolith backend (one Node.js service with modules for orders, users, payments, etc.). It is not microservices-based by default. Clients are free to split modules into separate services later if they wish.
+
+Topic: Microservices Communication
+Question: If microservices are used, how do they communicate with each other?
+Answer: Microservices are not applicable by default in Enatega. Communication is internal within one backend service. If a client decides to implement microservices, they choose their own communication strategy such as HTTP or a message bus.
+
+Topic: API Type
+Question: Is the API REST, GraphQL, or both?
+Answer: The backend API is GraphQL-based. All mobile apps and web applications communicate with the server through a centralized GraphQL API, including queries, mutations, and subscriptions for real-time updates.
+
+Topic: API Documentation
+Question: Is the API fully documented with OpenAPI or Swagger?
+Answer: Since the backend is built entirely on GraphQL, Enatega does not use OpenAPI or Swagger (which is typically for REST APIs). GraphQL provides self-documenting schema introspection, meaning the full schema including types, queries, mutations, and subscriptions can be explored directly using tools like GraphQL Playground or Apollo Studio. The schema can be exported and used to generate documentation automatically.
+
+Topic: Postman Collection
+Question: Is there a Postman collection or similar API reference?
+Answer: Yes, Enatega provides a Postman collection or equivalent API reference for integration partners.
+
+Topic: Authentication
+Question: What authentication methods does the API support? JWT, OAuth, API keys?
+Answer: The primary method is JWT-based authentication for apps and dashboards. Social logins (Google, Apple) use their standard OAuth flows, but tokens are then managed as JWTs on Enatega's side. External API key support for third-party integrations can be added on a per-project basis.
+
+Topic: Refresh Tokens
+Question: How are refresh tokens handled?
+Answer: Token lifetime and refresh or rotation are configurable. Current implementations use short-lived tokens with refresh flows or re-authentication depending on the client's security policy.
+
+Topic: Real-Time Data Synchronization
+Question: How does real-time data synchronization work?
+Answer: Enatega uses a combination of GraphQL subscriptions and polling depending on the use case. For main real-time flows such as order status updates, rider location updates, and live dashboards, GraphQL subscriptions are used so clients receive updates pushed from the server without needing to poll. For less frequently changing parts of the system, periodic polling is used. Push notifications are used alongside this to alert users about key events such as new orders, status changes, and assignments.
+
+Topic: Included Applications
+Question: What applications are included in the package?
+Answer: The package includes: Customer App (iOS and Android via React Native), Customer Web (Next.js), Rider/Driver App (React Native), Store/Restaurant App (React Native), Admin Dashboard (Web), Vendor Dashboard (Web), and Store Dashboard (Web). All mobile apps are cross-platform (React Native Expo).
+
+Topic: Native vs Cross-Platform
+Question: Are the applications native or cross-platform?
+Answer: All mobile apps are cross-platform built with React Native Expo.
+
+Topic: White-Labeling
+Question: How is white-labeling and rebranding done? Is it simple configuration or code modification? Can multiple brands run on the same codebase?
+Answer: White-labeling is done by changing app names, logos, colors, splash screens, and domains. Most of this is configuration and theme work plus light code changes such as package names and bundle IDs. Multiple brands can run on the same codebase via separate deployments (one codebase, multiple environments/instances), each with its own branding and configuration.
+
+Topic: Backup and Disaster Recovery
+Question: How are backup and disaster recovery handled?
+Answer: Enatega delivers the code and you host the system on your own infrastructure. When using MongoDB Atlas premium tiers, Atlas handles automatic backups and point-in-time recovery. If you self-host MongoDB, you configure backups using mongodump and storage snapshots according to your policies. Disaster recovery with multi-region and replicas is controlled by your chosen hosting provider, and Enatega is fully compatible with those setups.
+
+Topic: Data Migration
+Question: Do you support data migration from other systems? Are there scripts or tools for import?
+Answer: Data migration is supported as part of implementation projects. Enatega typically creates one-off import scripts (CSV, Excel, JSON) for restaurants, products, and users from legacy systems. There is no generic one-click importer for every third-party platform; mapping is done per source system.
+
+Topic: Load Testing and Requests Per Second
+Question: Has load testing been performed? How many requests per second can it handle?
+Answer: Different clients run the system on their own servers, and Enatega recommends each client performs load testing in their target environment. There is no hard-coded limit. The number of requests per second depends on server CPU and RAM, MongoDB performance tier, whether horizontal scaling is used, complexity of queries, and frequency of subscriptions. As a general guideline, a single mid-range server (4-8 vCPU, 8-16 GB RAM) can handle hundreds of requests per second under normal workload. With horizontal scaling, the system can scale linearly by adding more nodes.
+
+Topic: Concurrent Users
+Question: How many concurrent users can the system handle?
+Answer: There is no fixed cap inside the system. Concurrent user capacity depends on active sessions, real-time subscription usage, and server and DB sizing. As a rough benchmark, a properly sized single-node deployment can support several thousand concurrent active users. With horizontal scaling and a properly sized MongoDB cluster, it can support tens of thousands of concurrent users depending on traffic patterns.
+
+Topic: Caching
+Question: Is caching implemented? At what level? What strategy?
+Answer: The core relies primarily on proper MongoDB indexing and efficient queries. Basic in-memory caching can be used where appropriate. Redis-based caching for menu data, configuration, sessions, or rate limiting can be added and is recommended for high-scale projects. Whether and where to use Redis is decided per deployment.
+
+Topic: Infrastructure Recommendations
+Question: What infrastructure do you recommend for 10 restaurants, 100 restaurants, and 1000+ restaurants?
+Answer: For up to 10 restaurants: 2-4 vCPU, 4-8 GB RAM app server with a small MongoDB instance (Atlas M10-M20 tier). For 10-100 restaurants: 4-8 vCPU, 8-16 GB RAM with managed MongoDB with replica set (Atlas M30-M40 tier). For 100+ or 1000+ restaurants: multiple app server instances behind a load balancer, managed MongoDB cluster with appropriate tier and IO capacity, and optional Redis, CDN, WAF, and separated read/write roles. Environment-specific load tests are always recommended before going live at large scale.
+
+Topic: Security
+Question: What security measures are implemented?
+Answer: Security measures include JWT-based authentication, HTTPS recommended in production, no card data stored (payments via Stripe, PayPal, or local gateways), input validation, and basic rate limiting on critical APIs.
+
+Topic: Role-Based Access Control
+Question: Is role-based access control (RBAC) available?
+Answer: Yes, role-based access control is available for Super Admin, Staff roles, Vendor, Store Admin, Rider, and Customer.
+
+Topic: Audit Logging
+Question: How is audit logging handled?
+Answer: Application logs cover key operations such as logins and critical changes. Additional audit logging including per-field change logs and admin actions can be extended depending on compliance requirements. For production monitoring, clients usually plug the app into tools like Sentry, ELK/EFK, or cloud-native logging.
+
+Topic: Code Documentation and Setup
+Question: How is the code documented? Is there setup documentation from zero?
+Answer: Code is structured in modules with inline comments where needed. Enatega provides setup documentation from zero covering how to configure backend, web, and apps, environment variables, and deployments.
+
+Topic: Deployment Options
+Question: What deployment options do you offer? Docker, Kubernetes, CI/CD pipeline?
+Answer: The backend is dockerized and can be run via Docker or Docker Compose. Kubernetes and ECS are not mandatory; if you want those, your DevOps team can add them using the provided Docker image and code. CI/CD is not shipped as a fixed pipeline; clients usually integrate the repo into their own CI/CD tools such as GitHub Actions or GitLab CI.
+
+Topic: Infrastructure Requirements by Scale
+Question: What infrastructure requirements are needed for different scales in terms of CPU, RAM, and storage?
+Answer: Start with a small VPS for low volume, then scale CPU and RAM and DB tier as restaurant count and traffic grow. Storage requirements are modest covering text and images, but image storage is often offloaded to object storage such as S3 in larger deployments.
+
+Topic: Monitoring and Logging
+Question: How are monitoring and logging handled in production?
+Answer: The application emits standard logs to stdout/stderr or log files. You can plug these into cloud logging (CloudWatch, Stackdriver, etc.), Sentry, Datadog, ELK/EFK, New Relic, and others. Monitoring choice including metrics, APM, and alerting is left to the client, and Enatega is compatible with common tooling.

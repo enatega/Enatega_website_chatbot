@@ -1,0 +1,131 @@
+ENATEGA BUSINESS FAQ - Roles, Orders, Couriers, Reporting, Pricing, Licensing
+
+This document contains business logic questions and answers about the Enatega food delivery platform, covering marketplace features, user roles, order flow, courier management, financial reporting, and licensing.
+
+Topic: Marketplace Support
+Question: Does the platform support a real marketplace (not single restaurant)?
+Answer: Yes. Enatega is built as a multi-vendor marketplace supporting many restaurants under one platform.
+
+Topic: User Roles
+Question: Are there distinct roles such as platform admin, restaurant admin, courier, and customer?
+Answer: Yes. The roles available are: Super Admin (Platform owner), Staff roles (dispatcher, finance, support - configurable), Vendor/Restaurant Admin, Store Staff (per restaurant), Courier/Rider, and Customer.
+
+Topic: Restaurant Dashboard
+Question: Does each restaurant have its own dashboard with orders, history, and reports?
+Answer: Yes. Each restaurant and store has its own Store Dashboard (Web) and Store App with access to orders, order history, basic reports, menu management, and store settings.
+
+Topic: Admin Dashboard Capabilities
+Question: What can the platform admin dashboard do? Can it add/edit/delete restaurants, activate/deactivate restaurants, assign couriers, view all orders, and set commission percentages?
+Answer: Yes to all. The admin dashboard can add, edit, and delete restaurants. It can activate and deactivate restaurants. Riders can be linked to zones and stores or treated as a global pool depending on configuration. The admin can view orders from all restaurants and access all settings of each restaurant as Super Admin. Per-store and per-restaurant commission configuration is supported.
+
+Topic: Courier Assignment to Restaurants
+Question: Can a courier work for one single restaurant, multiple restaurants, or a global pool managed by Super Admin?
+Answer: One courier can work for multiple restaurants in a region. Couriers can be managed as a global pool per zone by the Super Admin. If you want strict one-restaurant-only riders, that can be enforced through configuration and assignment rules.
+
+Topic: Financial Reporting
+Question: Is there financial reporting for total revenue per restaurant, platform commissions, payment status, and report exports?
+Answer: Yes. Total revenue per restaurant is available. Platform commissions due are tracked based on configured commissions. Payment status (paid/unpaid) is available via wallets and payout views. CSV and Excel exports can be provided, and PDF exports can be added if required.
+
+Topic: Financial Reconciliation
+Question: How is financial reconciliation handled? Can Super Admin see how much each restaurant owes? Is there automatic invoicing?
+Answer: Super Admin can see wallet and balance information per restaurant showing what is owed or earned based on commissions and payouts. Automatic invoicing is not a generic module; it can be implemented per client's accounting needs including invoice format, frequency, and taxation rules.
+
+Topic: Multiple Currencies
+Question: Do you support multiple currencies? Can each restaurant use its own currency?
+Answer: The core system is typically deployed with one primary currency per instance. Multi-currency support with different currencies per restaurant is not the default but can be added as a customization if needed.
+
+Topic: Multiple Languages
+Question: Do you support multiple languages for application interfaces and for content like menus and product descriptions?
+Answer: Yes. Application interfaces for admin, restaurant, customer, and courier are multi-language capable including RTL languages. Menu content can be stored in multiple languages if needed and the UI can be adapted; this is usually configured per project based on localization requirements.
+
+Topic: Cash on Delivery
+Question: Do you support Cash on Delivery? How is collected cash tracked? Does the courier report collected cash?
+Answer: Yes, COD is supported by default. Orders paid by COD are flagged and COD collected per courier can be tracked. COD balances per courier can be tracked in their wallet and limited via COD limits per driver. Settlements and reconciliation are handled via admin workflows.
+
+Topic: Order Flow
+Question: What is the full order flow? Are there automatic notifications at each stage?
+Answer: The full order flow is: Customer places order, Restaurant receives it, Restaurant accepts or rejects, Courier is assigned, Courier picks up, Courier delivers, Order is completed. Yes, automatic notifications via push and in-app status changes are sent at each key stage.
+
+Topic: Order Add-ons and Extras
+Question: Does the system allow adding paid extras to an order such as extra meat?
+Answer: Yes, through add-ons and extras attached to menu items that are priced separately.
+
+Topic: Order Notes
+Question: Does the system allow adding notes per product or per order, for example no onion?
+Answer: Yes, both item-level notes and order-level notes are supported.
+
+Topic: Order Rejection
+Question: Can a restaurant reject an order? What happens to a rejected order? Is the customer automatically notified?
+Answer: Yes, restaurants can reject orders. The order is marked as rejected or cancelled and the customer is notified automatically. For prepaid orders, refund handling follows your platform's policy and payment gateway processes.
+
+Topic: Courier Assignment to Orders
+Question: How are couriers assigned to orders?
+Answer: Depending on configuration, assignment can be manual (dispatcher or admin picks rider) or basic automatic based on zone and availability. More advanced allocation logic based on distance, rating, or load balancing can be added per project.
+
+Topic: Scheduled Orders and Pickup
+Question: Can orders be scheduled for the future? Do you support pickup orders?
+Answer: Yes, orders can be scheduled for future delivery. Yes, restaurants can accept pickup and self-pickup orders as well as delivery if enabled.
+
+Topic: Courier App Features
+Question: How does the courier app work? Does it have real-time GPS tracking? Does the courier see all available orders or only assigned ones? Can they reject orders?
+Answer: The courier app shows assigned orders and optionally available orders. Riders can accept or reject new orders if that feature is enabled. Real-time GPS tracking sends location updates to the backend. The rider navigates to the restaurant and customer via integrated maps and updates statuses such as arrived, picked up, and delivered.
+
+Topic: Automatic Courier Allocation
+Question: Is there an automatic courier allocation algorithm based on geographic proximity, availability, or rating?
+Answer: Basic automatic assignment can be done by zone and availability. Distance-based, rating-based, or more complex algorithms are possible but not part of a rigid default; they are typically configured and customized per client.
+
+Topic: Customer Real-Time Tracking
+Question: Can the customer see the courier on the map? Is there dynamic delivery time estimation?
+Answer: Yes, customers see the live courier location on a map during delivery and receive status updates. ETAs can be displayed based on order status and distance; more sophisticated ETA logic can be added as needed.
+
+Topic: Courier Earnings
+Question: How is courier earnings calculated? Per delivery? Percentage of order value? Can Super Admin set different rates?
+Answer: Earnings logic is configurable. Options include fixed fee per delivery, distance-based fees, or combinations of the above. Super Admin can set rates per courier or per zone and store depending on the model implemented.
+
+Topic: Courier Rating
+Question: Is there a courier rating system? Can customers rate the courier? Does it influence courier prioritization?
+Answer: Courier ratings can be stored where implemented; store and restaurant ratings are supported by default. Using ratings to influence allocation priority can be added as a business rule in the assignment logic.
+
+Topic: Delivery Pricing
+Question: Can we set different earning percentages per courier? Can we set delivery price as base fee plus price per km?
+Answer: Yes, per-km delivery pricing is supported. Enatega supports a base fee plus per-km delivery fee model.
+
+Topic: Super Admin Dashboard Metrics
+Question: Can Super Admin see aggregated dashboard across all restaurants, total platform sales, total orders per restaurant, top restaurants by sales, and courier performance?
+Answer: Yes. The Admin dashboard can show aggregated platform metrics including sales and orders, orders per restaurant, top restaurants by sales, and basic courier performance metrics including completed deliveries and earnings. Rating-based views can also be shown if implemented.
+
+Topic: Restaurant Admin Dashboard Metrics
+Question: Can Restaurant Admin see their own dashboard with relevant metrics, best-selling products, peak order hours, average rating, and customer reviews?
+Answer: Yes. Restaurant admins see their own dashboard with sales and order metrics, best-selling items and products, ratings and customer reviews, and peak order hours. More advanced analytics can be added or expanded as needed.
+
+Topic: Report Exports
+Question: Can reports be exported? In what format?
+Answer: You can view reports directly. CSV, Excel, and PDF report exports can be added if required.
+
+Topic: Product Availability Management
+Question: Can restaurants manage product availability? Temporarily mark products out of stock? Automatically hide when stock is zero?
+Answer: Restaurants can toggle items as available or unavailable. Out of stock behaviour and automatic hiding when stock is zero can be supported as part of the inventory configuration for the project.
+
+Topic: In-App Chat
+Question: Is there chat between customer and restaurant, customer and courier, and restaurant and courier?
+Answer: Yes. Enatega supports in-app communication between the customer and the restaurant or store regarding an active order. Customers and couriers can also communicate during an active delivery for directions or delivery clarification. Direct in-app chat between restaurant and courier is not enabled by default in all deployments, but a dedicated restaurant to courier chat can be added if required.
+
+Topic: Source Code Ownership
+Question: Can we fully modify the source code? Do we get full ownership after purchase?
+Answer: You receive the full frontend and backend server code and can modify it for your own platform. You have operational ownership of the deployed solution and of your production data. Legal ownership and redistribution rights are governed by the license and contract signed with Enatega.
+
+Topic: Reselling and White-Label SaaS
+Question: Can we resell the solution as white-label? Are we allowed to offer it as SaaS to our own clients?
+Answer: By default, the license covers use for your own platform and brand. Resale, SaaS, and sub-licensing rights can be negotiated explicitly in the contract if you want to go in that direction.
+
+Topic: Customer References
+Question: Can we speak with other customers who bought the code? Success cases and challenges encountered?
+Answer: Enatega can connect you with selected reference customers subject to their availability and confidentiality agreements.
+
+Topic: Demo and Trial Access
+Question: Can we get access to a full live demo of all panels, a trial period, or temporary repository access for code review?
+Answer: Live demo: Yes, Enatega provides access to all panels (Customer, Rider, Restaurant, Admin) with test data. For repository or trial access, the full repo is not opened publicly, but for serious evaluations code review access or extended demo environments can be discussed under NDA.
+
+Topic: Deployed Demo Environment
+Question: Do you have a deployed demo version we can test with test data for each role?
+Answer: Yes, Enatega maintains a deployed demo environment where you can test the Customer app and web, Rider app, Restaurant/Store app, and Admin and Store dashboards all with sample data.

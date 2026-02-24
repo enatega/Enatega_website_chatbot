@@ -588,28 +588,30 @@ app.include_router(admin_router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://enatega-chatbot-knowledge-update.netlify.app",
-        "http://localhost:8080",
-        "http://localhost:3000",
-        "*"  # Fallback - remove in production if you want strict security
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],  # Allow all origins for chat endpoints (WordPress sites)
+    allow_credentials=False,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
     expose_headers=["*"],
     max_age=86400,
 )
 
-# Explicit CORS preflight handler (helps some hosts)
-@app.options("/{rest_of_path:path}")
-def cors_preflight(rest_of_path: str, request: Request):
-    return Response(status_code=204, headers={
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-        "Access-Control-Max-Age": "86400",
-    })
+# Explicit CORS preflight handler for chat endpoints (backup)
+@app.options("/chat")
+@app.options("/chat_stream")
+@app.options("/clear")
+def cors_preflight():
+    return Response(
+        status_code=200,
+        headers={
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+            "Access-Control-Max-Age": "86400",
+        }
+    )
+
+app.include_router(admin_router)
 
 # ---------- models / vector store ----------
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
