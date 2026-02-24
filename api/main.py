@@ -586,20 +586,28 @@ app = FastAPI(title="Enatega RAG API")
 # Include admin router
 app.include_router(admin_router)
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],  # Allow all origins for chat endpoints (WordPress sites)
+#     allow_credentials=False,
+#     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+#     allow_headers=["*"],
+#     expose_headers=["*"],
+#     max_age=86400,
+# )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for chat endpoints (WordPress sites)
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_origin_regex="https://.*",
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["*"],
-    max_age=86400,
 )
 
 # Explicit CORS preflight handler for chat endpoints (backup)
-@app.options("/chat")
-@app.options("/chat_stream")
-@app.options("/clear")
+# @app.options("/chat")
+# @app.options("/chat_stream")
+# @app.options("/clear")
 def cors_preflight():
     return Response(
         status_code=200,
