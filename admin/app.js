@@ -1,7 +1,7 @@
 // Configuration
 const API_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:8000/admin/api'
-    : 'https://enatega-website-chatbot-production.up.railway.app/admin/api';
+    : 'https://enategawebsitechatbot-production.up.railway.app/admin/api';
 
 let credentials = null;
 let currentEditFile = null;

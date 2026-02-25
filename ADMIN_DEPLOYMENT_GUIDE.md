@@ -34,7 +34,7 @@ This guide helps you safely deploy the Knowledge Base Admin Panel to Netlify whi
 ```javascript
 const API_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:8000/admin/api'
-    : 'https://enatega-website-chatbot-production.up.railway.app/admin/api';
+    : 'https://enategawebsitechatbot-production.up.railway.app/admin/api';
 ```
 
 **Action Required:**
