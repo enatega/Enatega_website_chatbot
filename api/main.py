@@ -585,22 +585,22 @@ app = FastAPI(title="Enatega RAG API")
 
 
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["*"],  # Allow all origins for chat endpoints (WordPress sites)
-#     allow_credentials=False,
-#     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-#     allow_headers=["*"],
-#     expose_headers=["*"],
-#     max_age=86400,
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins for chat endpoints (WordPress sites)
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=86400,
+)
 
-ALLOWED_ORIGINS = [
-    "https://enatega-chatbot-knowledge-update.netlify.app",
-    "https://enatega.com",
-    "https://www.enatega.com",
-    "https://onboarding.enatega.com",
-]
+# ALLOWED_ORIGINS = [
+#     "https://enatega-chatbot-knowledge-update.netlify.app",
+#     "https://enatega.com",
+#     "https://www.enatega.com",
+#     "https://onboarding.enatega.com",
+# ]
 
 app.add_middleware(
     CORSMiddleware,
