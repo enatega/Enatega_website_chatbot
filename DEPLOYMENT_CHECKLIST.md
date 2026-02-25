@@ -42,7 +42,7 @@
 
 ## Troubleshooting (If Needed)
 - [ ] Check Railway dashboard - service running?
-- [ ] Test backend: `curl https://enatega-website-chatbot-production.up.railway.app/healthz`
+- [ ] Test backend: `curl https://enategawebsitechatbot-production.up.railway.app/healthz`
 - [ ] Check browser console for errors
 - [ ] Verify API_URL in `admin/app.js` matches Railway URL
 - [ ] Check Railway logs for API errors
@@ -53,7 +53,7 @@
 
 **Test backend:**
 ```bash
-curl https://enatega-website-chatbot-production.up.railway.app/healthz
+curl https://enategawebsitechatbot-production.up.railway.app/healthz
 ```
 
 **Deploy via CLI:**
@@ -71,8 +71,8 @@ railway logs --tail
 
 ## Important URLs
 
-- **Backend API:** https://enatega-website-chatbot-production.up.railway.app
-- **Admin API:** https://enatega-website-chatbot-production.up.railway.app/admin/api
+- **Backend API:** https://enategawebsitechatbot-production.up.railway.app
+- **Admin API:** https://enategawebsitechatbot-production.up.railway.app/admin/api
 - **Netlify Dashboard:** https://app.netlify.com/
 - **Railway Dashboard:** https://railway.app/
 

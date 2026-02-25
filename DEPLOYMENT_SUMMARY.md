@@ -3,7 +3,7 @@
 ## ✅ Current Configuration
 
 ### Backend API (Railway)
-- **URL:** `https://enatega-website-chatbot-production.up.railway.app`
+- **URL:** `https://enategawebsitechatbot-production.up.railway.app/`
 - **Admin API Endpoint:** `/admin/api`
 - **Status:** Already configured in `admin/app.js`
 
@@ -24,7 +24,7 @@
 ### Step 1: Verify Backend is Running
 Test your backend API:
 ```bash
-curl https://enatega-website-chatbot-production.up.railway.app/healthz
+curl https://enategawebsitechatbot-production.up.railway.app/healthz
 ```
 Should return: `{"ok":true,"collection":"enatega_home","points":119}`
 
@@ -189,7 +189,7 @@ After deployment, test these features:
 **Cause:** Backend not reachable
 **Fix:**
 1. Check Railway dashboard - is service running?
-2. Test backend: `curl https://enatega-website-chatbot-production.up.railway.app/healthz`
+2. Test backend: `curl https://enategawebsitechatbot-production.up.railway.app/healthz`
 3. Check Railway logs for errors
 
 ### Issue: "Invalid credentials"
