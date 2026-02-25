@@ -558,6 +558,8 @@ import base64
 import hmac
 import hashlib
 
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request as StarletteRequest
 # ----- Admin KB Router -----
 from api.admin_kb import router as admin_router
 
@@ -595,49 +597,46 @@ app = FastAPI(title="Enatega RAG API")
 #     max_age=86400,
 # )
 
-# ALLOWED_ORIGINS = [
-#     "https://enatega-chatbot-knowledge-update.netlify.app",
-#     "https://enatega.com",
-#     "https://www.enatega.com",
-#     "https://onboarding.enatega.com",
-# ]
+# app.include_router(admin_router)
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=ALLOWED_ORIGINS,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+class SmartCORSMiddleware(BaseHTTPMiddleware):
+    ADMIN_ORIGIN = "https://enatega-chatbot-knowledge-update.netlify.app"
+    PUBLIC_ORIGINS = ["*"]
 
+    async def dispatch(self, request: StarletteRequest, call_next):
+        origin = request.headers.get("origin", "")
+        is_admin = request.url.path.startswith("/admin")
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origin_regex="https://.*",
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+        # Handle preflight
+        if request.method == "OPTIONS":
+            from starlette.responses import Response
+            headers = self._cors_headers(origin, is_admin)
+            return Response(status_code=200, headers=headers)
 
+        response = await call_next(request)
+        for k, v in self._cors_headers(origin, is_admin).items():
+            response.headers[k] = v
+        return response
+
+    def _cors_headers(self, origin: str, is_admin: bool) -> dict:
+        if is_admin:
+            return {
+                "Access-Control-Allow-Origin": self.ADMIN_ORIGIN,
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers": "Authorization, Content-Type",
+            }
+        else:
+            return {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": "false",
+                "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+                "Access-Control-Allow-Headers": "*",
+            }
+
+app = FastAPI(title="Enatega RAG API")
+app.add_middleware(SmartCORSMiddleware)
 app.include_router(admin_router)
-
-    # Explicit CORS preflight handler for chat endpoints (backup)
-    # @app.options("/chat")
-    # @app.options("/chat_stream")
-    # @app.options("/clear")
-    # def cors_preflight():
-    #     return Response(
-    #         status_code=200,
-    #         headers={
-    #             "Access-Control-Allow-Origin": "*",
-    #             "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-    #             "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-    #             "Access-Control-Max-Age": "86400",
-    #         }
-    #     )
-
-    # Include admin router
-    # app.include_router(admin_router)
 
 # ---------- models / vector store ----------
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
