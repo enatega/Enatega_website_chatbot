@@ -69,6 +69,19 @@ class UpdateFileReq(BaseModel):
     content: str
 
 # --- Endpoints ---
+
+@router.get("/debug")
+def debug_info(username: str = Depends(verify_admin)):
+    import os
+    return {
+        "cwd": os.getcwd(),
+        "data_dir_absolute": str(DATA_DIR.absolute()),
+        "data_dir_exists": DATA_DIR.exists(),
+        "data_dir_is_dir": DATA_DIR.is_dir() if DATA_DIR.exists() else False,
+        "files": [f.name for f in DATA_DIR.glob("*.txt")] if DATA_DIR.exists() else [],
+        "parent_contents": [f.name for f in DATA_DIR.parent.iterdir()] if DATA_DIR.parent.exists() else [],
+    }
+
 @router.get("/files", response_model=List[FileItem])
 def list_files(username: str = Depends(verify_admin)):
     """List all .txt files in data/clean/"""
