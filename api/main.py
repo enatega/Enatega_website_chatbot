@@ -595,31 +595,40 @@ app = FastAPI(title="Enatega RAG API")
 #     max_age=86400,
 # )
 
+ALLOWED_ORIGINS = [
+    "https://enatega-chatbot-knowledge-update.netlify.app",
+    "https://enatega.com",
+    "https://www.enatega.com",
+    "https://onboarding.enatega.com",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex="https://.*",
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Explicit CORS preflight handler for chat endpoints (backup)
-# @app.options("/chat")
-# @app.options("/chat_stream")
-# @app.options("/clear")
-def cors_preflight():
-    return Response(
-        status_code=200,
-        headers={
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-            "Access-Control-Max-Age": "86400",
-        }
-    )
-
-# Include admin router
 app.include_router(admin_router)
+
+    # Explicit CORS preflight handler for chat endpoints (backup)
+    # @app.options("/chat")
+    # @app.options("/chat_stream")
+    # @app.options("/clear")
+    # def cors_preflight():
+    #     return Response(
+    #         status_code=200,
+    #         headers={
+    #             "Access-Control-Allow-Origin": "*",
+    #             "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    #             "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+    #             "Access-Control-Max-Age": "86400",
+    #         }
+    #     )
+
+    # Include admin router
+    # app.include_router(admin_router)
 
 # ---------- models / vector store ----------
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
