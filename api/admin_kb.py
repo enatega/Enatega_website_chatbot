@@ -2,6 +2,8 @@
 import os
 import sys
 import secrets
+import base64
+import requests
 from pathlib import Path
 from typing import List
 from fastapi import APIRouter, HTTPException, Depends, status, Request
@@ -19,8 +21,83 @@ security = HTTPBasic(auto_error=False)
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
 DATA_DIR = Path("data/clean")
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+# GitHub config
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_REPO = os.getenv("GITHUB_REPO")   # e.g. "your-username/your-repo"
+GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 
 ALLOWED_ORIGIN = "https://enatega-chatbot-knowledge-update.netlify.app"
+
+
+# --- GitHub Sync ---
+def _github_headers():
+    return {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json",
+    }
+
+def _get_file_sha(filename: str) -> str | None:
+    """Get the SHA of an existing file in GitHub (needed for updates/deletes)."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return None
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data/clean/{filename}"
+    resp = requests.get(url, headers=_github_headers(), params={"ref": GITHUB_BRANCH})
+    if resp.status_code == 200:
+        return resp.json().get("sha")
+    return None
+
+def github_upsert_file(filename: str, content: str, commit_message: str):
+    """Create or update a file in GitHub."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        print("GitHub sync skipped: GITHUB_TOKEN or GITHUB_REPO not set")
+        return
+
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data/clean/{filename}"
+    encoded = base64.b64encode(content.encode("utf-8")).decode("utf-8")
+
+    payload = {
+        "message": commit_message,
+        "content": encoded,
+        "branch": GITHUB_BRANCH,
+    }
+
+    # If file already exists in GitHub, we need its SHA to update it
+    sha = _get_file_sha(filename)
+    if sha:
+        payload["sha"] = sha
+
+    resp = requests.put(url, headers=_github_headers(), json=payload)
+    if resp.status_code not in (200, 201):
+        print(f"GitHub upsert failed for {filename}: {resp.status_code} {resp.text}")
+    else:
+        print(f"GitHub sync success: {commit_message}")
+
+def github_delete_file(filename: str, commit_message: str):
+    """Delete a file from GitHub."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        print("GitHub sync skipped: GITHUB_TOKEN or GITHUB_REPO not set")
+        return
+
+    sha = _get_file_sha(filename)
+    if not sha:
+        print(f"GitHub delete skipped: {filename} not found in repo")
+        return
+
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data/clean/{filename}"
+    payload = {
+        "message": commit_message,
+        "sha": sha,
+        "branch": GITHUB_BRANCH,
+    }
+
+    resp = requests.delete(url, headers=_github_headers(), json=payload)
+    if resp.status_code != 200:
+        print(f"GitHub delete failed for {filename}: {resp.status_code} {resp.text}")
+    else:
+        print(f"GitHub sync success: {commit_message}")
+
 
 # --- Auth ---
 def verify_admin(request: Request, credentials: HTTPBasicCredentials = Depends(security)):
@@ -32,11 +109,8 @@ def verify_admin(request: Request, credentials: HTTPBasicCredentials = Depends(s
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Missing credentials",
-            headers={
-                "WWW-Authenticate": "Basic",
-            },
+            headers={"WWW-Authenticate": "Basic"},
         )
-
 
     correct_username = secrets.compare_digest(credentials.username, ADMIN_USERNAME)
     correct_password = secrets.compare_digest(credentials.password, ADMIN_PASSWORD)
@@ -44,12 +118,11 @@ def verify_admin(request: Request, credentials: HTTPBasicCredentials = Depends(s
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid credentials",
-            headers={
-                "WWW-Authenticate": "Basic",
-        },
+            headers={"WWW-Authenticate": "Basic"},
         )
 
     return credentials.username
+
 
 # --- Models ---
 class FileItem(BaseModel):
@@ -68,20 +141,8 @@ class CreateFileReq(BaseModel):
 class UpdateFileReq(BaseModel):
     content: str
 
+
 # --- Endpoints ---
-
-@router.get("/debug")
-def debug_info(username: str = Depends(verify_admin)):
-    import os
-    return {
-        "cwd": os.getcwd(),
-        "data_dir_absolute": str(DATA_DIR.absolute()),
-        "data_dir_exists": DATA_DIR.exists(),
-        "data_dir_is_dir": DATA_DIR.is_dir() if DATA_DIR.exists() else False,
-        "files": [f.name for f in DATA_DIR.glob("*.txt")] if DATA_DIR.exists() else [],
-        "parent_contents": [f.name for f in DATA_DIR.parent.iterdir()] if DATA_DIR.parent.exists() else [],
-    }
-
 @router.get("/files", response_model=List[FileItem])
 def list_files(username: str = Depends(verify_admin)):
     """List all .txt files in data/clean/"""
@@ -116,7 +177,7 @@ def get_file(filename: str, username: str = Depends(verify_admin)):
 
 @router.post("/files", status_code=201)
 def create_file(req: CreateFileReq, username: str = Depends(verify_admin)):
-    """Create a new knowledge file"""
+    """Create a new knowledge file and sync to GitHub"""
     if ".." in req.name or "/" in req.name or "\\" in req.name:
         raise HTTPException(status_code=400, detail="Invalid filename")
     if not req.name.endswith(".txt"):
@@ -128,13 +189,19 @@ def create_file(req: CreateFileReq, username: str = Depends(verify_admin)):
 
     try:
         file_path.write_text(req.content, encoding="utf-8")
+        # Sync to GitHub
+        github_upsert_file(
+            filename=req.name,
+            content=req.content,
+            commit_message=f"[Admin] Create {req.name}",
+        )
         return {"message": "File created successfully", "name": req.name}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.put("/files/{filename}")
 def update_file(filename: str, req: UpdateFileReq, username: str = Depends(verify_admin)):
-    """Update an existing file"""
+    """Update an existing file and sync to GitHub"""
     if ".." in filename or "/" in filename or "\\" in filename:
         raise HTTPException(status_code=400, detail="Invalid filename")
 
@@ -144,13 +211,19 @@ def update_file(filename: str, req: UpdateFileReq, username: str = Depends(verif
 
     try:
         file_path.write_text(req.content, encoding="utf-8")
+        # Sync to GitHub
+        github_upsert_file(
+            filename=filename,
+            content=req.content,
+            commit_message=f"[Admin] Update {filename}",
+        )
         return {"message": "File updated successfully", "name": filename}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.delete("/files/{filename}")
 def delete_file(filename: str, username: str = Depends(verify_admin)):
-    """Delete a knowledge file"""
+    """Delete a knowledge file and sync to GitHub"""
     if ".." in filename or "/" in filename or "\\" in filename:
         raise HTTPException(status_code=400, detail="Invalid filename")
 
@@ -160,6 +233,11 @@ def delete_file(filename: str, username: str = Depends(verify_admin)):
 
     try:
         file_path.unlink()
+        # Sync to GitHub
+        github_delete_file(
+            filename=filename,
+            commit_message=f"[Admin] Delete {filename}",
+        )
         return {"message": "File deleted successfully", "name": filename}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -208,7 +286,6 @@ async def reingest_knowledge(username: str = Depends(verify_admin)):
                 msg = json.dumps({"status": "error", "message": f"Re-ingestion failed: {error_msg}"})
                 yield f"data: {msg}\n\n"
         except Exception as e:
-            # Safely escape error message to avoid JSON issues
             error_message = str(e).replace('"', "'").replace('\n', ' ')
             msg = json.dumps({"status": "error", "message": f"Error: {error_message}"})
             yield f"data: {msg}\n\n"
@@ -234,3 +311,18 @@ def get_status(username: str = Depends(verify_admin)):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/debug")
+def debug_info(username: str = Depends(verify_admin)):
+    """Debug: check filesystem state on Railway"""
+    return {
+        "cwd": os.getcwd(),
+        "data_dir_absolute": str(DATA_DIR.absolute()),
+        "data_dir_exists": DATA_DIR.exists(),
+        "data_dir_is_dir": DATA_DIR.is_dir() if DATA_DIR.exists() else False,
+        "files": [f.name for f in DATA_DIR.glob("*.txt")] if DATA_DIR.exists() else [],
+        "parent_contents": [f.name for f in DATA_DIR.parent.iterdir()] if DATA_DIR.parent.exists() else [],
+        "github_configured": bool(GITHUB_TOKEN and GITHUB_REPO),
+        "github_repo": GITHUB_REPO or "not set",
+        "github_branch": GITHUB_BRANCH,
+    }
