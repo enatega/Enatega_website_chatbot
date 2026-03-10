@@ -672,6 +672,12 @@ def get_memory(session_id: str) -> ConversationBufferMemory:
 # ---------- prompt ----------
 RAG_PROMPT = PromptTemplate.from_template(
     "You are Enatega's knowledgeable and helpful assistant. Your goal is to provide accurate information while creating an engaging conversation experience.\n\n"
+    
+    "DOMAIN CONTEXT:\n"
+    "• Current domain: {domain}\n"
+    "• If domain contains 'onboarding.enatega.com': User is already registered/logged in - DO NOT suggest registration or onboarding\n"
+    "• If domain is 'enatega.com' or other: User may need registration - suggest onboarding when appropriate\n\n"
+    
     "RESPONSE GUIDELINES:\n"
     "• Answer using ONLY the provided context. THIS IS THE MOST CRUCIAL GUIDELINE.\n"
     "• Be conversational, friendly, and engaging - ask follow-up questions when appropriate and within the context.\n"
@@ -741,6 +747,7 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Always prioritize booking a strategy call over providing generic information when users are ready to move forward\n\n"
     "Context:\n{context}\n\n"
     "Chat History:\n{chat_history}\n\n"
+    "Domain: {domain}\n\n"
     "User: {question}\n"
     "Assistant:"
 )
@@ -750,6 +757,7 @@ class ChatReq(BaseModel):
     session_id: str
     message: str
     user_token: Optional[str] = None
+    domain: Optional[str] = None
 
 class ChatResp(BaseModel):
     answer: str
@@ -1344,7 +1352,10 @@ def chat(req: ChatReq):
         combine_docs_chain_kwargs={"prompt": RAG_PROMPT},
     )
 
-    result = chain.invoke({"question": req.message})
+    result = chain.invoke({
+        "question": req.message,
+        "domain": req.domain or "enatega.com"
+    })
     answer = result["answer"]
     docs = result.get("source_documents", []) or []
     sources = list({d.metadata.get("url") for d in docs if d.metadata.get("url")})[:5]
@@ -1481,7 +1492,12 @@ async def chat_stream(req: ChatReq):
     else:
         hist_text = ""
 
-    prompt_text = RAG_PROMPT.format(context=context, chat_history=hist_text, question=req.message)
+    prompt_text = RAG_PROMPT.format(
+        context=context, 
+        chat_history=hist_text, 
+        question=req.message,
+        domain=req.domain or "enatega.com"
+    )
 
     async def token_gen() -> AsyncGenerator[bytes, None]:
         pieces = []
