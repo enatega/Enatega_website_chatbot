@@ -675,8 +675,9 @@ RAG_PROMPT = PromptTemplate.from_template(
     
     "DOMAIN CONTEXT:\n"
     "• Current domain: {domain}\n"
-    "• If domain contains 'onboarding.enatega.com': User is already registered/logged in - DO NOT suggest registration or onboarding\n"
-    "• If domain is 'enatega.com' or other: User may need registration - suggest onboarding when appropriate\n\n"
+    "• User token present: {user_token_present}\n"
+    "• If domain contains 'onboarding.enatega.com' OR user token is present: User is already registered/logged in - DO NOT suggest registration or onboarding\n"
+    "• If domain is 'enatega.com' or other AND no user token: User may need registration - suggest onboarding when appropriate\n\n"
     
     "RESPONSE GUIDELINES:\n"
     "• Answer using ONLY the provided context. THIS IS THE MOST CRUCIAL GUIDELINE.\n"
@@ -747,7 +748,8 @@ RAG_PROMPT = PromptTemplate.from_template(
     "• Always prioritize booking a strategy call over providing generic information when users are ready to move forward\n\n"
     "Context:\n{context}\n\n"
     "Chat History:\n{chat_history}\n\n"
-    "Domain: {domain}\n\n"
+    "Domain: {domain}\n"
+    "User Token Present: {user_token_present}\n\n"
     "User: {question}\n"
     "Assistant:"
 )
@@ -1354,7 +1356,8 @@ def chat(req: ChatReq):
 
     result = chain.invoke({
         "question": req.message,
-        "domain": req.domain or "enatega.com"
+        "domain": req.domain or "enatega.com",
+        "user_token_present": "Yes" if req.user_token else "No"
     })
     answer = result["answer"]
     docs = result.get("source_documents", []) or []
@@ -1496,7 +1499,8 @@ async def chat_stream(req: ChatReq):
         context=context, 
         chat_history=hist_text, 
         question=req.message,
-        domain=req.domain or "enatega.com"
+        domain=req.domain or "enatega.com",
+        user_token_present="Yes" if req.user_token else "No"
     )
 
     async def token_gen() -> AsyncGenerator[bytes, None]:

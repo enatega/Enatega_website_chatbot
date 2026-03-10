@@ -409,7 +409,7 @@
       const res = await fetch(STREAM_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sid, message })
+        body: JSON.stringify({ session_id: sid, message, domain: window.location.hostname })
       });
       if (!res.ok || !res.body) {
         const t = await res.text();
@@ -504,7 +504,7 @@
       const res = await fetch(JSON_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sid, message })
+        body: JSON.stringify({ session_id: sid, message, domain: window.location.hostname })
       });
       const data = await res.json();
       const safe = normalizeHTML(sanitizeBasicHTML(data.answer || "(no answer)"));
