@@ -1579,6 +1579,27 @@ def diag_retrieval(req: DiagReq):
     return {"k": len(docs), "chunks": payload}
 
 # ---------- OPTIONAL: simple session browsers ----------
+@app.get("/debug/mongo")
+def debug_mongo():
+    if chat_col is None:
+        return {"error": "MongoDB not connected", "mongo_uri_present": bool(MONGO_URI)}
+    try:
+        count = chat_col.count_documents({})
+        recent = list(chat_col.find({}).sort("last_active", -1).limit(5))
+        # Convert ObjectId to string for JSON serialization
+        for doc in recent:
+            if "_id" in doc:
+                doc["_id"] = str(doc["_id"])
+        return {
+            "status": "connected", 
+            "total_sessions": count, 
+            "recent_sessions": recent,
+            "collection_name": MONGO_COL,
+            "database_name": MONGO_DB
+        }
+    except Exception as e:
+        return {"error": f"MongoDB query failed: {str(e)}"}
+
 @app.get("/sessions")
 def list_sessions(limit: int = 50):
     if chat_col is None:
